@@ -1,0 +1,166 @@
+{
+  "@context": {
+    "@vocab": "https://example.org/agent-capability-graph#",
+    "acg": "https://example.org/agent-capability-graph#",
+    "schema": "https://schema.org/",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": { "@id": "schema:url", "@type": "@id" },
+    "license": { "@id": "schema:license", "@type": "@id" },
+    "sourceUrl": { "@id": "acg:sourceUrl", "@type": "@id" },
+    "retrievedAt": { "@id": "acg:retrievedAt", "@type": "http://www.w3.org/2001/XMLSchema#date" },
+    "exposesTool": { "@id": "acg:exposesTool", "@type": "@id" },
+    "providesCapability": { "@id": "acg:providesCapability", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "@id": "urn:acg:server:filesystem",
+      "@type": ["acg:MCPServer", "schema:SoftwareApplication"],
+      "name": "Filesystem MCP Server",
+      "description": "Node.js server implementing MCP for filesystem operations.",
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md",
+      "sourceRevision": "main (not commit-pinned)",
+      "retrievedAt": "2026-10-28",
+      "schema:runtimePlatform": "Node.js 24 or later",
+      "transport": "stdio",
+      "accessControl": "Operations are restricted to directories passed at startup.",
+      "license": "https://github.com/modelcontextprotocol/servers/blob/main/LICENSE",
+      "documentedToolCount": 13,
+      "toolCoverage": "selected_examples_only",
+      "exposesTool": [
+        "urn:acg:tool:filesystem:read-text-file",
+        "urn:acg:tool:filesystem:write-file",
+        "urn:acg:tool:filesystem:search-files",
+        "urn:acg:tool:filesystem:list-allowed-directories"
+      ]
+    },
+    {
+      "@id": "urn:acg:tool:filesystem:read-text-file",
+      "@type": "acg:MCPTool",
+      "name": "read_text_file",
+      "description": "Read the complete contents of a file as text.",
+      "inputSummary": "path (string); optional head (number) or tail (number), but not both.",
+      "behavior": "read_only",
+      "readOnlyHint": true,
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md",
+      "sourceRevision": "main (not commit-pinned)",
+      "retrievedAt": "2026-10-28",
+      "providesCapability": "urn:acg:capability:file-read",
+      "classificationBasis": "Curator mapping based on the source description."
+    },
+    {
+      "@id": "urn:acg:tool:filesystem:write-file",
+      "@type": "acg:MCPTool",
+      "name": "write_file",
+      "description": "Create a file or overwrite an existing file.",
+      "inputSummary": "path (string), content (string).",
+      "behavior": "creates_or_overwrites_files",
+      "readOnlyHint": false,
+      "idempotentHint": true,
+      "destructiveHint": true,
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md",
+      "sourceRevision": "main (not commit-pinned)",
+      "retrievedAt": "2026-10-28",
+      "providesCapability": "urn:acg:capability:file-write",
+      "classificationBasis": "Curator mapping based on the source description."
+    },
+    {
+      "@id": "urn:acg:tool:filesystem:search-files",
+      "@type": "acg:MCPTool",
+      "name": "search_files",
+      "description": "Recursively search for files or directories using glob-style patterns.",
+      "inputSummary": "path (string), pattern (string), excludePatterns (string array).",
+      "behavior": "read_only",
+      "readOnlyHint": true,
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md",
+      "sourceRevision": "main (not commit-pinned)",
+      "retrievedAt": "2026-10-28",
+      "providesCapability": "urn:acg:capability:file-search",
+      "classificationBasis": "Curator mapping based on the source description."
+    },
+    {
+      "@id": "urn:acg:tool:filesystem:list-allowed-directories",
+      "@type": "acg:MCPTool",
+      "name": "list_allowed_directories",
+      "description": "List the directories the server is allowed to access.",
+      "inputSummary": "No input required.",
+      "behavior": "read_only",
+      "readOnlyHint": true,
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md",
+      "sourceRevision": "main (not commit-pinned)",
+      "retrievedAt": "2026-10-28",
+      "providesCapability": "urn:acg:capability:access-scope-inspection",
+      "classificationBasis": "Curator mapping based on the source description."
+    },
+    {
+      "@id": "urn:acg:skill:xlsx",
+      "@type": ["acg:AgentSkill", "schema:CreativeWork"],
+      "name": "xlsx",
+      "description": "Use for spreadsheet creation, reading, editing, analysis, and conversion tasks.",
+      "instructionsSummary": "Guidance for spreadsheet creation, editing, formulas, recalculation, and verification.",
+      "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+      "sourceRevision": "main (not commit-pinned)",
+      "retrievedAt": "2026-10-28",
+      "license": "https://github.com/anthropics/skills/blob/main/skills/xlsx/LICENSE.txt",
+      "dependency": ["openpyxl", "pandas", "markitdown", "LibreOffice for formula recalculation"],
+      "referencedScript": "skills/xlsx/scripts/recalc.py",
+      "providesCapability": [
+        "urn:acg:capability:spreadsheet-create",
+        "urn:acg:capability:spreadsheet-edit",
+        "urn:acg:capability:spreadsheet-analyze"
+      ],
+      "classificationBasis": "Curator mapping based on the Skill description and instructions; not a source-defined taxonomy."
+    },
+    {
+      "@id": "urn:acg:capability:file-read",
+      "@type": "acg:Capability",
+      "name": "Read files",
+      "description": "Retrieve file contents as text.",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md"
+    },
+    {
+      "@id": "urn:acg:capability:file-write",
+      "@type": "acg:Capability",
+      "name": "Write files",
+      "description": "Create or overwrite file contents.",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md"
+    },
+    {
+      "@id": "urn:acg:capability:file-search",
+      "@type": "acg:Capability",
+      "name": "Search files",
+      "description": "Find files or directories by pattern.",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md"
+    },
+    {
+      "@id": "urn:acg:capability:access-scope-inspection",
+      "@type": "acg:Capability",
+      "name": "Inspect allowed directories",
+      "description": "List the directories accessible to the server.",
+      "sourceUrl": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md"
+    },
+    {
+      "@id": "urn:acg:capability:spreadsheet-create",
+      "@type": "acg:Capability",
+      "name": "Create spreadsheets",
+      "description": "Create spreadsheet files from scratch or from other data.",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md"
+    },
+    {
+      "@id": "urn:acg:capability:spreadsheet-edit",
+      "@type": "acg:Capability",
+      "name": "Edit spreadsheets",
+      "description": "Edit or fix existing spreadsheet files.",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md"
+    },
+    {
+      "@id": "urn:acg:capability:spreadsheet-analyze",
+      "@type": "acg:Capability",
+      "name": "Analyze spreadsheets",
+      "description": "Read and analyze spreadsheet contents.",
+      "sourceUrl": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md"
+    }
+  ]
+}

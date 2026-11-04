@@ -1,0 +1,107 @@
+{
+
+  "dataset_note": "Exploratory source sample, not the final RDF schema. Facts are based on the linked source files. A status of not_documented means the reviewed source does not say; it does not prove absence. The two records are independent, with no declared integration between the Skill and the MCP server.",
+  "examples": [
+    {
+      "id": "mcp-filesystem",
+      "type": "mcp_server",
+      "name": "Filesystem MCP Server",
+      "description": "Node.js server implementing Model Context Protocol (MCP) for filesystem operations.",
+      "source": {
+        "repository": "https://github.com/modelcontextprotocol/servers",
+        "path": "src/filesystem/README.md",
+        "url": "https://github.com/modelcontextprotocol/servers/blob/main/src/filesystem/README.md",
+        "revision": "main (not commit-pinned)",
+        "retrieved_at": "2026-10-28"
+      },
+      "license": "MIT",
+      "connection": {
+        "transport": "stdio",
+        "launch_command": "npx -y @modelcontextprotocol/server-filesystem <allowed-directory>",
+        "runtime_requirement": "Node.js 24 or later",
+        "authentication": {
+          "status": "not_documented"
+        },
+        "access_control": "Operations are restricted to directories passed as command-line arguments."
+      },
+      "mcp_features": {
+        "documented_tool_count": 13,
+        "tool_coverage": "selected_examples_only",
+        "resources_and_prompts": {
+          "status": "not_documented_in_reviewed_readme"
+        }
+      },
+      "tools": [
+        {
+          "name": "read_text_file",
+          "description": "Read the complete contents of a file as text.",
+          "input_summary": "path (string); head (number, optional) or tail (number, optional). The source says head and tail cannot both be specified.",
+          "behavior": "read_only",
+          "mcp_annotations": {
+            "readOnlyHint": true
+          }
+        },
+        {
+          "name": "write_file",
+          "description": "Create a file or overwrite an existing file.",
+          "input_summary": "path (string), content (string).",
+          "behavior": "creates_or_overwrites_files",
+          "mcp_annotations": {
+            "readOnlyHint": false,
+            "idempotentHint": true,
+            "destructiveHint": true
+          }
+        },
+        {
+          "name": "search_files",
+          "description": "Recursively search for files or directories using glob-style patterns.",
+          "input_summary": "path (string), pattern (string), excludePatterns (string array).",
+          "behavior": "read_only",
+          "mcp_annotations": {
+            "readOnlyHint": true
+          }
+        },
+        {
+          "name": "list_allowed_directories",
+          "description": "List the directories the server is allowed to access.",
+          "input_summary": "No input required.",
+          "behavior": "read_only",
+          "mcp_annotations": {
+            "readOnlyHint": true
+          }
+        }
+      ],
+      "source_notes": [
+        "The README overview mentions deleting directories, but its detailed tool list does not enumerate a delete tool. Verify the runtime tools/list response before asserting that deletion is available."
+      ]
+    },
+    {
+      "id": "agent-skill-xlsx",
+      "type": "agent_skill",
+      "name": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path (for example, \"the xlsx in my downloads\") and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "instructions_summary": "Instructions for creating, editing, and analyzing spreadsheets, including guidance on formulas, formatting, formula recalculation, and verification.",
+      "source": {
+        "repository": "https://github.com/anthropics/skills",
+        "path": "skills/xlsx/SKILL.md",
+        "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+        "revision": "main (not commit-pinned)",
+        "retrieved_at": "2026-10-28"
+      },
+      "license": "Proprietary; the source points to LICENSE.txt for terms.",
+      "dependencies_mentioned": [
+        "openpyxl",
+        "pandas",
+        "markitdown",
+        "LibreOffice for formula recalculation"
+      ],
+      "referenced_script": "skills/xlsx/scripts/recalc.py",
+      "agent_platform_compatibility": {
+        "status": "not_documented_in_reviewed_skill_metadata"
+      },
+      "mcp_server_dependency": {
+        "status": "not_documented_in_source"
+      }
+    }
+  ]
+}
