@@ -2,6 +2,7 @@
 
   "dataset_note": "Exploratory source sample, not the final RDF schema. Facts are based on the linked source files. A status of not_documented means the reviewed source does not say; it does not prove absence. The two records are independent, with no declared integration between the Skill and the MCP server.",
   "examples": [
+   
     {
       "id": "mcp-filesystem",
       "type": "mcp_server",
@@ -14,6 +15,7 @@
         "revision": "main (not commit-pinned)",
         "retrieved_at": "2026-10-28"
       },
+
       "license": "MIT",
       "connection": {
         "transport": "stdio",
@@ -24,6 +26,7 @@
         },
         "access_control": "Operations are restricted to directories passed as command-line arguments."
       },
+
       "mcp_features": {
         "documented_tool_count": 13,
         "tool_coverage": "selected_examples_only",
@@ -31,6 +34,7 @@
           "status": "not_documented_in_reviewed_readme"
         }
       },
+      
       "tools": [
         {
           "name": "read_text_file",
@@ -75,6 +79,8 @@
         "The README overview mentions deleting directories, but its detailed tool list does not enumerate a delete tool. Verify the runtime tools/list response before asserting that deletion is available."
       ]
     },
+
+
     {
       "id": "agent-skill-xlsx",
       "type": "agent_skill",

@@ -1,4 +1,4 @@
-# Phase 0 Meeting Deliverables: Sample and Candidate Vocabulary
+# Phase 0 Meeting Deliverables
 
 **Prepared:** 2026-11-04  
 **Status:** Discussion draft for the Thursday progress meeting. This is not the final schema, ontology, or RDF dataset.
