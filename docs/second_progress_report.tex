@@ -1,0 +1,153 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=2.4cm,headheight=15pt]{geometry}
+\usepackage{setspace,parskip,enumitem,booktabs,longtable,xcolor,hyperref,fancyhdr,titlesec,listings}
+\definecolor{bleu}{RGB}{26,65,110}
+\definecolor{lien}{RGB}{20,75,140}
+\hypersetup{colorlinks=true,linkcolor=bleu,urlcolor=lien,pdftitle={Second Progress Report -- Agent Capability Graph}}
+\setstretch{1.1}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.25em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.35em}
+\titleformat{\section}{\Large\bfseries\color{bleu}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{bleu}}{\thesubsection}{0.7em}{}
+\pagestyle{fancy}\fancyhf{}\lhead{\small Second Progress Report}\rhead{\small Agent Capability Graph}\cfoot{\thepage}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,frame=single}
+
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\centering\vspace*{1.7cm}
+{\Large\bfseries MY 2nd PROGRESS REPORT \par}
+\vspace{1.2cm}
+{\Huge\bfseries\color{bleu} Agent Capability Graph\par}
+\vspace{0.5cm}
+{\LARGE Building an RDF Knowledge Graph to Discover MCP Servers and Agent Skills\par}
+\vspace{1.4cm}
+\begin{tabular}{@{}ll@{}}
+\textbf{Main Supervisor:} & Raphael Troncy\\
+\textbf{Secondary Supervisor:} & Thibault Ehrhart\\
+\textbf{Document Type:} & Progress Report\\
+\textbf{Phase:} & Dataset and RDF Pipeline Prototype\\
+\end{tabular}
+
+\vfill
+
+\vspace{1cm}{\large \today\par}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+
+\section{Project goal}
+
+The project explores how an RDF knowledge graph can help users discover and
+compare MCP servers, their tools, and Agent Skills. The graph is intended to
+connect source-backed descriptions with normalized capability information,
+while keeping track of where each metadata value came from. The current work is
+a prototype and a curated sample, rather than a general-purpose web crawler.
+
+\section{Dataset collection}
+
+The expanded sample contains ten MCP servers, forty-three selected documented
+tools, and ten Agent Skills. The records come from nine GitHub repositories.
+The MCP sample includes the official MCP server repository and projects from
+GitHub, Brave, Cloudflare, and AWS. The Skills sample includes repositories
+from Anthropic, Vercel, Microsoft, and Google.
+
+\begin{center}
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Collected item} & \textbf{Count}\\
+\midrule
+MCP servers & 10\\
+Documented tool samples linked to servers & 43\\
+Agent Skills & 10\\
+Distinct source repositories & 9\\
+Downloaded Skill package archives & 10\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The collector records repository revisions, source URLs, field values, and
+evidence statuses in SQLite and exports a CSV for review. It saves the reviewed
+MCP README files and downloads each selected Skill directory as a ZIP package.
+The downloaded files are not executed. The tool list is a documented sample
+transcribed from the selected source material; it is not guaranteed to include
+every tool available from a server at runtime.
+
+\section{Ontology and graph model}
+
+The first ontology version is written in Turtle in
+\texttt{docs/acg\_ontology.ttl}. It defines classes for MCP servers, MCP tools,
+Agent Skills, capabilities, source documents, metadata observations, and
+capability assertions. It also defines relationships such as
+\texttt{acg:exposesTool}, which connects a server to its tools, and provenance
+properties that record reviewed sources and observation status.
+
+The ontology reuses terms from Schema.org, SKOS, PROV-O, RDF, RDFS, and OWL where
+appropriate. Its namespace, \texttt{urn:acg:ontology:}, is still provisional.
+The model distinguishes source descriptions from curator-assigned capability
+labels and preserves source evidence for later review.
+
+\section{SQLite-to-RDF pipeline}
+
+The current workflow has two main steps:
+
+\begin{enumerate}
+  \item The expanded collector harvests the curated sample and writes the
+  SQLite database and CSV under the interim-data directory.
+  \item The RDF generator maps the records to the ontology and writes the
+  harvested Turtle graph under the processed-data directory.
+\end{enumerate}
+
+The generated graph currently contains 2,210 RDF triples representing 63
+harvested entities: 10 servers, 43 tools, and 10 Skills. Each collected field is
+retained as a source-backed metadata observation. The conversion also links each
+tool to its parent server and emits direct RDF properties for selected fields.
+
+The generator parses both the ontology and the output graph, and checks that
+used ACG classes and properties are declared, that tools have server links, and
+that metadata observations are complete. These application-level checks are
+useful for the current pipeline, but they are not a full OWL reasoning step or
+SHACL validation. SHACL remains a possible later validation step, not a current
+project requirement.
+
+\section{Project organization}
+
+The code is organized in \texttt{src/acg/}. Small root-level launchers preserve
+the commands used during earlier development. Data is separated into
+\texttt{data/sources/} for maintained inputs,
+\texttt{data/raw/downloads/} for retrieved source packages,
+\texttt{data/interim/} for the SQLite and CSV collection outputs, and
+\texttt{data/processed/} for the generated RDF graph. Project reports and
+ontology documents are kept under \texttt{docs/}. A \texttt{.gitignore} file
+excludes local Python environments, cache files, and downloaded packages.
+
+\section{Current limitations and next steps}
+
+The current sample and pipeline provide a working base for evaluating the
+ontology, but several steps remain:
+
+\begin{itemize}
+  \item Refine competency questions from the perspective of graph users and
+  state the expected answer for each question.
+  \item Test whether the generated graph can answer those questions using
+  SPARQL queries.
+  \item Improve direct RDF mappings for useful metadata such as repository
+  identity, Skill compatibility, and package archive location. These values are
+  currently preserved as observations when no dedicated mapping is applied.
+  \item Review the sample and its source evidence, and distinguish clearly
+  between source-declared facts and curator interpretations.
+  \item Consider SHACL shapes after the ontology and data fields stabilize.
+\end{itemize}
+
+\section{Conclusion}
+
+The project has progressed from a small exploratory JSON-LD example to a
+multi-source dataset and a reproducible SQLite-to-RDF prototype. The next
+milestone is to connect the ontology and graph to concrete user questions, then
+refine the model and mappings based on the answers those questions require.
+
+\end{document}
