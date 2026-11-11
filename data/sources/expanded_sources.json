@@ -1,0 +1,145 @@
+{
+  "mcp_servers": [
+    {
+      "id": "filesystem",
+      "name": "Filesystem MCP Server",
+      "repository": "modelcontextprotocol/servers",
+      "readme": "src/filesystem/README.md",
+      "description": "Secure file operations within configured directories.",
+      "tools": [
+        ["read_text_file", "Read the contents of a file as text."],
+        ["write_file", "Create or overwrite a file."],
+        ["search_files", "Search recursively for files using patterns."],
+        ["list_allowed_directories", "List directories the server can access."]
+      ]
+    },
+    {
+      "id": "memory",
+      "name": "Memory MCP Server",
+      "repository": "modelcontextprotocol/servers",
+      "readme": "src/memory/README.md",
+      "description": "Persistent knowledge graph memory with entity and relation operations.",
+      "tools": [
+        ["create_entities", "Create entities in the knowledge graph."],
+        ["create_relations", "Create relations between graph entities."],
+        ["add_observations", "Add observations to existing entities."],
+        ["search_nodes", "Search graph nodes by query."],
+        ["open_nodes", "Retrieve named graph nodes."],
+        ["read_graph", "Read the knowledge graph."]
+      ]
+    },
+    {
+      "id": "fetch",
+      "name": "Fetch MCP Server",
+      "repository": "modelcontextprotocol/servers",
+      "readme": "src/fetch/README.md",
+      "description": "Fetch web content and convert HTML to Markdown.",
+      "tools": [["fetch", "Fetch a URL and extract its contents as Markdown."]]
+    },
+    {
+      "id": "git",
+      "name": "Git MCP Server",
+      "repository": "modelcontextprotocol/servers",
+      "readme": "src/git/README.md",
+      "description": "Read, search, and manipulate Git repositories.",
+      "tools": [
+        ["git_status", "Show the working tree status."],
+        ["git_diff_unstaged", "Show unstaged changes."],
+        ["git_diff_staged", "Show staged changes."],
+        ["git_diff", "Compare a repository with a branch, commit, or revision range."],
+        ["git_log", "Show repository commit history."],
+        ["git_show", "Show a commit or object."],
+        ["git_branch", "List or inspect repository branches."],
+        ["git_add", "Stage files in a repository."],
+        ["git_commit", "Create a repository commit."],
+        ["git_checkout", "Switch the working tree to a branch or revision."]
+      ]
+    },
+    {
+      "id": "time",
+      "name": "Time MCP Server",
+      "repository": "modelcontextprotocol/servers",
+      "readme": "src/time/README.md",
+      "description": "Get and convert times across IANA time zones.",
+      "tools": [
+        ["get_current_time", "Get the current time in a timezone."],
+        ["convert_time", "Convert a time between timezones."],
+        ["get_time_ago", "Get a time a specified duration in the past."]
+      ]
+    },
+    {
+      "id": "sequential-thinking",
+      "name": "Sequential Thinking MCP Server",
+      "repository": "modelcontextprotocol/servers",
+      "readme": "src/sequentialthinking/README.md",
+      "description": "A structured tool for iterative problem-solving and analysis.",
+      "tools": [["sequentialthinking", "Support a structured, revisable thinking process."]]
+    },
+    {
+      "id": "github",
+      "name": "GitHub MCP Server",
+      "repository": "github/github-mcp-server",
+      "readme": "README.md",
+      "description": "Interact with GitHub repositories, issues, and pull requests.",
+      "tools": [
+        ["get_file_contents", "Read files and directories from a repository."],
+        ["issue_read", "Read GitHub issue information."],
+        ["create_pull_request", "Create a pull request."]
+      ]
+    },
+    {
+      "id": "brave-search",
+      "name": "Brave Search MCP Server",
+      "repository": "brave/brave-search-mcp-server",
+      "readme": "README.md",
+      "description": "Search the web, local businesses, videos, images, and news with Brave Search.",
+      "tools": [
+        ["brave_web_search", "Search the web for pages matching a query."],
+        ["brave_local_search", "Search for local businesses and places."],
+        ["brave_video_search", "Search for videos."],
+        ["brave_image_search", "Search for images."],
+        ["brave_news_search", "Search for current news articles."]
+      ]
+    },
+    {
+      "id": "cloudflare-api",
+      "name": "Cloudflare API MCP Server",
+      "repository": "cloudflare/mcp",
+      "readme": "README.md",
+      "description": "Search Cloudflare developer documentation and interact with Cloudflare APIs using code mode.",
+      "tools": [
+        ["docs", "Search Cloudflare developer documentation."],
+        ["search", "Search the Cloudflare API specification for endpoints."],
+        ["execute", "Execute an API request through the Cloudflare client."],
+        ["whoami", "Identify the authenticated Cloudflare user or account."]
+      ]
+    },
+    {
+      "id": "aws-documentation",
+      "name": "AWS Documentation MCP Server",
+      "repository": "awslabs/mcp",
+      "readme": "src/aws-documentation-mcp-server/README.md",
+      "description": "Search and retrieve AWS documentation and recommendations.",
+      "tools": [
+        ["read_documentation", "Fetch an AWS documentation page as Markdown."],
+        ["search_documentation", "Search AWS documentation."],
+        ["read_sections", "Fetch selected sections of a documentation page."],
+        ["search_table", "Search selected rows in large documentation tables."],
+        ["recommend", "Get content recommendations for a documentation page."],
+        ["get_available_services", "List AWS services available in China regions."]
+      ]
+    }
+  ],
+  "agent_skills": [
+    {"id": "pdf", "repository": "anthropics/skills", "skill_md": "skills/pdf/SKILL.md"},
+    {"id": "docx", "repository": "anthropics/skills", "skill_md": "skills/docx/SKILL.md"},
+    {"id": "xlsx", "repository": "anthropics/skills", "skill_md": "skills/xlsx/SKILL.md"},
+    {"id": "vercel-react-best-practices", "repository": "vercel-labs/agent-skills", "skill_md": "skills/react-best-practices/SKILL.md"},
+    {"id": "vercel-web-design-guidelines", "repository": "vercel-labs/agent-skills", "skill_md": "skills/web-design-guidelines/SKILL.md"},
+    {"id": "azure-cosmos-db-py", "repository": "microsoft/skills", "skill_md": ".github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md"},
+    {"id": "mcp-builder", "repository": "microsoft/skills", "skill_md": ".github/skills/mcp-builder/SKILL.md"},
+    {"id": "gcloud", "repository": "google/skills", "skill_md": "skills/cloud/gcloud/SKILL.md"},
+    {"id": "cloud-databases-onboarding", "repository": "google/skills", "skill_md": "skills/cloud/cloud-databases-onboarding/SKILL.md"},
+    {"id": "retrieving-developer-knowledge", "repository": "google/skills", "skill_md": "plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/SKILL.md"}
+  ]
+}

@@ -1,0 +1,267 @@
+@prefix acg:    <urn:acg:ontology:> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+
+<urn:acg:ontology:> a owl:Ontology ;
+    rdfs:label "Agent Capability Graph ontology"@en ;
+    rdfs:comment "First project ontology for describing MCP servers, tools, Agent Skills, capabilities, and evidence. The namespace is provisional and local to this project; choose a stable public namespace before publishing."@en ;
+    owl:versionInfo "0.1.0" .
+
+# Core discoverable entities
+
+acg:MCPServer a owl:Class ;
+    rdfs:label "MCP server"@en ;
+    rdfs:comment "Software implementing MCP and exposing tools, resources, or prompts. This class describes server software, not a running client session."@en ;
+    rdfs:subClassOf schema:SoftwareApplication .
+
+acg:MCPTool a owl:Class ;
+    rdfs:label "MCP tool"@en ;
+    rdfs:comment "An invocable operation declared by an MCP server, with its source description, input schema, optional output schema, and optional annotations."@en .
+
+acg:AgentSkill a owl:Class ;
+    rdfs:label "Agent Skill"@en ;
+    rdfs:comment "A portable package of agent instructions that may include scripts, references, and other supporting files."@en ;
+    rdfs:subClassOf schema:CreativeWork .
+
+acg:Capability a owl:Class ;
+    rdfs:label "Capability"@en ;
+    rdfs:comment "A normalized concept used to group resources that support a task. Keep source descriptions separate from curator-assigned capability concepts."@en ;
+    rdfs:subClassOf skos:Concept .
+
+acg:Parameter a owl:Class ;
+    rdfs:label "Parameter"@en ;
+    rdfs:comment "A parameter of an MCP tool input or output. Use only when parameter-level information is extracted from the declared schema."@en .
+
+acg:Resource a owl:Class ;
+    rdfs:label "MCP resource"@en ;
+    rdfs:comment "A resource exposed by an MCP server."@en .
+
+acg:Prompt a owl:Class ;
+    rdfs:label "MCP prompt"@en ;
+    rdfs:comment "A prompt template exposed by an MCP server."@en .
+
+acg:SoftwareProject a owl:Class ;
+    rdfs:label "Software project"@en ;
+    rdfs:comment "A software project or repository associated with an MCP server or Agent Skill."@en ;
+    rdfs:subClassOf schema:SoftwareSourceCode .
+
+acg:DirectoryListing a owl:Class ;
+    rdfs:label "Directory listing"@en ;
+    rdfs:comment "A registry or directory record that lists or describes an MCP server, Skill, or software project."@en ;
+    rdfs:subClassOf schema:CreativeWork .
+
+acg:RiskSignal a owl:Class ;
+    rdfs:label "Risk signal"@en ;
+    rdfs:comment "A source-declared or curator-assessed indicator relevant to operational or security risk. Its origin and assessment method should be recorded."@en .
+
+acg:QualitySignal a owl:Class ;
+    rdfs:label "Quality signal"@en ;
+    rdfs:comment "An indicator of software or metadata quality, such as maintenance evidence. Its source and assessment method should be recorded."@en .
+
+# Evidence and provenance
+
+acg:SourceDocument a owl:Class ;
+    rdfs:label "Source document"@en ;
+    rdfs:comment "A reviewed README, SKILL.md, registry record, package manifest, protocol response, or other evidence document."@en ;
+    rdfs:subClassOf prov:Entity, schema:CreativeWork .
+
+acg:CapabilityAssertion a owl:Class ;
+    rdfs:label "Capability assertion"@en ;
+    rdfs:comment "A sourced or curated claim that a server, tool, or Skill supports a normalized capability. The assertion is a separate resource so its evidence and method can be recorded."@en .
+
+acg:MetadataObservation a owl:Class ;
+    rdfs:label "Metadata observation"@en ;
+    rdfs:comment "The result of checking a field for an entity against a reviewed source and scope."@en .
+
+acg:AssertionMethod a owl:Class ;
+    rdfs:label "Assertion method"@en ;
+    rdfs:comment "A controlled method describing how a capability assertion was obtained."@en .
+
+acg:ObservationStatus a owl:Class ;
+    rdfs:label "Observation status"@en ;
+    rdfs:comment "A controlled status for a metadata observation. An undocumented value is not evidence that the feature is absent."@en .
+
+# Relationships
+
+acg:exposesTool a owl:ObjectProperty ;
+    rdfs:label "exposes tool"@en ;
+    rdfs:comment "Relates an MCP server to a tool it declares or exposes."@en ;
+    rdfs:domain acg:MCPServer ; rdfs:range acg:MCPTool .
+
+acg:exposesResource a owl:ObjectProperty ;
+    rdfs:label "exposes resource"@en ;
+    rdfs:domain acg:MCPServer ; rdfs:range acg:Resource .
+
+acg:exposesPrompt a owl:ObjectProperty ;
+    rdfs:label "exposes prompt"@en ;
+    rdfs:domain acg:MCPServer ; rdfs:range acg:Prompt .
+
+acg:hasParameter a owl:ObjectProperty ;
+    rdfs:label "has parameter"@en ;
+    rdfs:domain acg:MCPTool ; rdfs:range acg:Parameter .
+
+acg:hasCapabilityAssertion a owl:ObjectProperty ;
+    rdfs:label "has capability assertion"@en ;
+    rdfs:comment "Links a server, tool, or Skill to a capability claim. The intended subject types are MCPServer, MCPTool, and AgentSkill."@en ;
+    rdfs:range acg:CapabilityAssertion .
+
+acg:assertedCapability a owl:ObjectProperty ;
+    rdfs:label "asserted capability"@en ;
+    rdfs:domain acg:CapabilityAssertion ; rdfs:range acg:Capability .
+
+acg:assertionMethod a owl:ObjectProperty ;
+    rdfs:label "assertion method"@en ;
+    rdfs:domain acg:CapabilityAssertion ; rdfs:range acg:AssertionMethod .
+
+acg:basedOnSource a owl:ObjectProperty ;
+    rdfs:label "based on source"@en ;
+    rdfs:domain acg:CapabilityAssertion ; rdfs:range acg:SourceDocument .
+
+acg:documentedBy a owl:ObjectProperty ;
+    rdfs:label "documented by"@en ;
+    rdfs:comment "Links a described resource to a source document used to review its metadata."@en ;
+    rdfs:range acg:SourceDocument .
+
+acg:associatedProject a owl:ObjectProperty ;
+    rdfs:label "associated project"@en ;
+    rdfs:range acg:SoftwareProject .
+
+acg:listedIn a owl:ObjectProperty ;
+    rdfs:label "listed in"@en ;
+    rdfs:range acg:DirectoryListing .
+
+acg:hasRiskSignal a owl:ObjectProperty ;
+    rdfs:label "has risk signal"@en ;
+    rdfs:range acg:RiskSignal .
+
+acg:hasQualitySignal a owl:ObjectProperty ;
+    rdfs:label "has quality signal"@en ;
+    rdfs:range acg:QualitySignal .
+
+acg:observesEntity a owl:ObjectProperty ;
+    rdfs:label "observes entity"@en ;
+    rdfs:domain acg:MetadataObservation ;
+    rdfs:comment "Identifies the resource whose field was checked."@en .
+
+acg:observedProperty a owl:ObjectProperty ;
+    rdfs:label "observed property"@en ;
+    rdfs:domain acg:MetadataObservation ; rdfs:range rdf:Property .
+
+acg:reviewedSource a owl:ObjectProperty ;
+    rdfs:label "reviewed source"@en ;
+    rdfs:domain acg:MetadataObservation ; rdfs:range acg:SourceDocument .
+
+acg:observationStatus a owl:ObjectProperty ;
+    rdfs:label "observation status"@en ;
+    rdfs:domain acg:MetadataObservation ; rdfs:range acg:ObservationStatus .
+
+acg:hasObservedValue a owl:DatatypeProperty ;
+    rdfs:label "has observed value"@en ;
+    rdfs:domain acg:MetadataObservation ;
+    rdfs:comment "Optional serialized value observed for the field. Use a suitable RDF datatype or preserve structured JSON as an rdf:JSON literal."@en .
+
+acg:observedFieldName a owl:DatatypeProperty ;
+    rdfs:label "observed field name"@en ;
+    rdfs:domain acg:MetadataObservation ; rdfs:range xsd:string ;
+    rdfs:comment "Original field key from the harvested metadata record."@en .
+
+acg:evidenceStatus a owl:DatatypeProperty ;
+    rdfs:label "raw evidence status"@en ;
+    rdfs:domain acg:MetadataObservation ; rdfs:range xsd:string ;
+    rdfs:comment "Exact evidence status emitted by the collector, retained alongside the broader ObservationStatus classification."@en .
+
+# MCP, Skill, source, and signal properties
+
+acg:transport a owl:DatatypeProperty ;
+    rdfs:label "transport"@en ; rdfs:domain acg:MCPServer ; rdfs:range xsd:string .
+
+acg:installationMethod a owl:DatatypeProperty ;
+    rdfs:label "installation method"@en ; rdfs:range xsd:string .
+
+acg:authenticationRequirement a owl:DatatypeProperty ;
+    rdfs:label "authentication requirement"@en ; rdfs:range xsd:string .
+
+acg:installationCommand a owl:DatatypeProperty ;
+    rdfs:label "installation command"@en ; rdfs:range xsd:string .
+
+acg:inputSchema a owl:DatatypeProperty ;
+    rdfs:label "input schema"@en ; rdfs:domain acg:MCPTool ; rdfs:range rdf:JSON ;
+    rdfs:comment "The machine-readable input JSON Schema declared by the MCP tool. Do not use a prose summary here."@en .
+
+acg:outputSchema a owl:DatatypeProperty ;
+    rdfs:label "output schema"@en ; rdfs:domain acg:MCPTool ; rdfs:range rdf:JSON .
+
+acg:readOnlyHint a owl:DatatypeProperty ;
+    rdfs:label "read-only hint"@en ; rdfs:domain acg:MCPTool ; rdfs:range xsd:boolean .
+
+acg:idempotentHint a owl:DatatypeProperty ;
+    rdfs:label "idempotent hint"@en ; rdfs:domain acg:MCPTool ; rdfs:range xsd:boolean .
+
+acg:destructiveHint a owl:DatatypeProperty ;
+    rdfs:label "destructive hint"@en ; rdfs:domain acg:MCPTool ; rdfs:range xsd:boolean .
+
+acg:openWorldHint a owl:DatatypeProperty ;
+    rdfs:label "open-world hint"@en ; rdfs:domain acg:MCPTool ; rdfs:range xsd:boolean .
+
+acg:activationCondition a owl:DatatypeProperty ;
+    rdfs:label "activation condition"@en ; rdfs:domain acg:AgentSkill ; rdfs:range xsd:string .
+
+acg:exclusionCondition a owl:DatatypeProperty ;
+    rdfs:label "exclusion condition"@en ; rdfs:domain acg:AgentSkill ; rdfs:range xsd:string .
+
+acg:dependency a owl:DatatypeProperty ;
+    rdfs:label "dependency"@en ; rdfs:domain acg:AgentSkill ; rdfs:range xsd:string .
+
+acg:supportingFile a owl:DatatypeProperty ;
+    rdfs:label "supporting file"@en ; rdfs:domain acg:AgentSkill ; rdfs:range xsd:string .
+
+acg:parameterName a owl:DatatypeProperty ;
+    rdfs:label "parameter name"@en ; rdfs:domain acg:Parameter ; rdfs:range xsd:string .
+
+acg:parameterType a owl:DatatypeProperty ;
+    rdfs:label "parameter type"@en ; rdfs:domain acg:Parameter ; rdfs:range xsd:string .
+
+acg:required a owl:DatatypeProperty ;
+    rdfs:label "required"@en ; rdfs:domain acg:Parameter ; rdfs:range xsd:boolean .
+
+acg:sourcePath a owl:DatatypeProperty ;
+    rdfs:label "source path"@en ; rdfs:domain acg:SourceDocument ; rdfs:range xsd:string .
+
+acg:sourceUrl a owl:DatatypeProperty ;
+    rdfs:label "source URL with locator"@en ; rdfs:domain acg:SourceDocument ; rdfs:range xsd:string ;
+    rdfs:comment "Exact source URL as recorded by the collector, optionally including a line anchor. Use schema:url for the canonical document URL."@en .
+
+acg:revision a owl:DatatypeProperty ;
+    rdfs:label "revision"@en ; rdfs:domain acg:SourceDocument ; rdfs:range xsd:string .
+
+acg:retrievedAt a owl:DatatypeProperty ;
+    rdfs:label "retrieved at"@en ; rdfs:domain acg:SourceDocument ; rdfs:range xsd:date .
+
+acg:signalDescription a owl:DatatypeProperty ;
+    rdfs:label "signal description"@en ; rdfs:range xsd:string .
+
+acg:assessmentMethod a owl:DatatypeProperty ;
+    rdfs:label "assessment method"@en ; rdfs:range xsd:string .
+
+# Initial controlled values
+
+acg:sourceDeclared a acg:AssertionMethod ;
+    rdfs:label "source declared"@en .
+
+acg:curatorMapped a acg:AssertionMethod ;
+    rdfs:label "curator mapped"@en .
+
+acg:inferred a acg:AssertionMethod ;
+    rdfs:label "inferred"@en .
+
+acg:present a acg:ObservationStatus ; rdfs:label "present"@en .
+acg:explicitlyAbsent a acg:ObservationStatus ; rdfs:label "explicitly absent"@en .
+acg:notDocumented a acg:ObservationStatus ; rdfs:label "not documented"@en .
+acg:notChecked a acg:ObservationStatus ; rdfs:label "not checked"@en .
+acg:notApplicable a acg:ObservationStatus ; rdfs:label "not applicable"@en .
+acg:conflicting a acg:ObservationStatus ; rdfs:label "conflicting"@en .

@@ -1,7 +1,7 @@
 {
   "@context": {
     "@vocab": "https://example.org/agent-capability-graph#",
-    "acg": "https://example.org/agent-capability-graph#",
+    "acg": "https://example.org/agen't-capability-graph#",
     "schema": "https://schema.org/",
     "name": "schema:name",
     "description": "schema:description",

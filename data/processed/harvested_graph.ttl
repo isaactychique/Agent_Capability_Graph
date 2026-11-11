@@ -1,0 +1,2504 @@
+@prefix acg: <urn:acg:ontology:> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:acg:data:observation/009472492d28c35f539ba4a42787bf5a9020a66bae4db78ec7fbe1b3573e0676> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"SKILL.md\", \"references/attribution.md\", \"references/cli-usage.md\", \"references/mcp-usage.md\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/gcloud> ;
+    acg:reviewedSource <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> .
+
+<urn:acg:data:observation/02ccf6e569bf52518068ae3d4ff23544e5e8535ff99ccd9f79daf8831a115ab2> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "List AWS services available in China regions." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Aget_available_services> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/0585460ba0b662e0490941423866d806b64466e7990555f0affcf757b22eb8eb> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "pdf" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/pdf> ;
+    acg:reviewedSource <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> .
+
+<urn:acg:data:observation/064aff47d0b522e03b0a45219981c62cb9776cb2b7e58ea15824fe8bc0cef2f3> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "A structured tool for iterative problem-solving and analysis." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/sequential-thinking> ;
+    acg:reviewedSource <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:observation/066a454c9199f5474cadd8b462874634166d5eb555ed4d6bf363e5a08e7d99c6> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/google/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/gcloud> ;
+    acg:reviewedSource <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> .
+
+<urn:acg:data:observation/084dbe4420236e983bc08a12c575189137b1df28d545cf0cc5b39bfe62e1f9ab> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"SKILL.md\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/vercel-web-design-guidelines> ;
+    acg:reviewedSource <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> .
+
+<urn:acg:data:observation/0931bc242e0056cc7fdb62cd1d498a1b3313cd24d2cde2816e7894776d09f5d6> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"SKILL.md\", \"assets/conftest_template.py\", \"assets/cosmos_client_template.py\", \"assets/service_template.py\", \"references/client-setup.md\", \"references/error-handling.md\", \"references/partitioning.md\", \"references/service-layer.md\", \"references/testing.md\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/azure-cosmos-db-py> ;
+    acg:reviewedSource <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> .
+
+<urn:acg:data:observation/09e6ce4e0506deefdb3a38270eaecf0f90e6a91a868d17292072111d498ca54a> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "brave_news_search" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_news_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/0b0ed3b1e234106006b1cf0067ac07d90a69bd17b9234c90b4237fdf42f3ed04> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "search_table" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Asearch_table> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/0b63229fce1abf9c264cfd7e63d91992074a232fdb1b952418631da0e78571b1> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 1 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/sequential-thinking> ;
+    acg:reviewedSource <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:observation/0e731eeb904a4a0338074e86636bbe665e5a737977a419e3817cf33dee4bcb1e> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Build Azure Cosmos DB NoSQL services with Python/FastAPI following production-grade patterns. Use when implementing database client setup with dual auth (DefaultAzureCredential + emulator), service layer classes with CRUD operations, partition key strategies, parameterized queries, or TDD patterns for Cosmos. Triggers on phrases like \"Cosmos DB\", \"NoSQL database\", \"document store\", \"add persistence\", \"database service layer\", or \"Python Cosmos SDK\"." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/azure-cosmos-db-py> ;
+    acg:reviewedSource <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> .
+
+<urn:acg:data:observation/0e92c4dc83a739d3e637fbf959d52a2b36dd33dd8062852fb45439ca64688204> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/github/github-mcp-server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/github> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/0e97963d7a320a5f87bf202200389926a25ce51e2e30602362b982762ebd65c1> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "List directories the server can access." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Alist_allowed_directories> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/12db8bf74b39bf50d81c3761924005670d3301f7dac5d675b5ec0cb3e2951f7d> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "convert_time" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/time%3Aconvert_time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/149338fc25efac9060fa390ca2de56579eeb3c62bae7d3d787e45eadba2da2ff> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 4 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/filesystem> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/17083b67d60c924bc9b9ee3ba28910db983b6222c2f1147b1e9b839762b9cd31> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Fetch selected sections of a documentation page." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Aread_sections> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/1a39875e6a662c4bd18385b042a19dda9077a763d743ee88fee8ed2f745ae170> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 10 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/git> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/1b1c5a6d76a7052e43c7bb386bdac53eade25880f1eaaef95a3c469c8d5eda66> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/mcp-builder> ;
+    acg:reviewedSource <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> .
+
+<urn:acg:data:observation/1b3b6d3dc1ba0440631f5d9bc07b44c4987fb40e6754e2ef1b2ac846ead47572> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_commit" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_commit> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/1bb5750c30c3ff322ae498e35bf221d2de483fadc530d3e6d0041db9b5a59cb0> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/gcloud> ;
+    acg:reviewedSource <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> .
+
+<urn:acg:data:observation/1ca21e8e643342e7ef5814c5de381c267affbd153255505c075fbc7ff6ec1586> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_diff_unstaged" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_diff_unstaged> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/1cf3674fc4b778aa1379b64d418bf7fa0c6c8cfa70770cf5b7e83e68883d9824> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/cloud-databases-onboarding> ;
+    acg:reviewedSource <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> .
+
+<urn:acg:data:observation/1d42097273455c9a069d78b58f1b68f4986a6ad3cef3edb727d711fbffa9cf43> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Create relations between graph entities." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Acreate_relations> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/1dcfd09a13d142f22a0ffed4dae6150d41424a232c023408bf0dbc97bcc6b17e> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "read_sections" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Aread_sections> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/1e77e8d448da9b9283ca2673e96d79ab7e573f7850695d767df7be96c2dcf75b> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "search_documentation" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Asearch_documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/20e7a25eebcf5e2220d4c2e82315d80b78bb8a585d4e73b33cac85e6bc6a27d1> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Identify the authenticated Cloudflare user or account." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Awhoami> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/22036e1020c9205ba1fac05da78165d7a555cb8932b1b7011152d00dbf8fe9d1> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/awslabs/mcp" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/22c8cd169d7fe94ef59608ca540ed5bc0885bc07100b282a32cc28423b25eb30> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "brave_image_search" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_image_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/22fc20ac38389b4a2ad1fbc608fd6e70afa46a57f22f51f7f3a9c667a7461814> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "vercel-react-best-practices" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/vercel-react-best-practices> ;
+    acg:reviewedSource <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> .
+
+<urn:acg:data:observation/251645fb8aac89d2658874d1bbcf668dafa9dcc97f004ce6976314302bc314d1> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Fetch MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/fetch> ;
+    acg:reviewedSource <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:observation/287e050c53ca5de4a9a50f30022b179c15ce740c0debf2aa585297b48a5d3a11> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"SKILL.md\", \"references/attribution.md\", \"references/onboarding_prompts.md\", \"references/recommendation_matrix.txt\", \"references/selection_prompts.md\", \"scripts/database_onboarding_skill.py\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/cloud-databases-onboarding> ;
+    acg:reviewedSource <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> .
+
+<urn:acg:data:observation/293ee6615bf7d4a5970f3b001f26fcb1abc22e8d20c83480ae24484085ac8f3f> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Create entities in the knowledge graph." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Acreate_entities> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/296da92eb8db39db67e3163d21799b85c7b87998e9915996579b655534e35760> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 1 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/fetch> ;
+    acg:reviewedSource <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:observation/31384706bce71c7581761fb80d2d17e6d101beaf5adacaed58e946f7886ea156> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search selected rows in large documentation tables." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Asearch_table> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/32eed558d84535232a3b997e46dae9c25dc318324b5914a6259baacc720e42d0> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "src/git/README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/git> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/33351f1d68e7d66776dc183fddef6377f197ba6cb866eba3ff8754b5ac1bbd71> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Show the working tree status." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_status> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/353ef897529ab338a9c50c000fb8bba64db6a8aa0b4b12333ca415b7df1c758e> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "search" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Asearch> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/36000b0f36323112f54fef6c7275ac1253f3bbf3975e90a03a519992bb7d62e9> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Read, search, and manipulate Git repositories." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/36a307ec332a8b3eb3a696a238f013ee9d8cd43a3321f73457ff0622db4b124c> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/gcloud> ;
+    acg:reviewedSource <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> .
+
+<urn:acg:data:observation/37f39705510c7031c973644422b359a153580cd448927ddf0665c8d82e705bcd> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Sequential Thinking MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/sequential-thinking> ;
+    acg:reviewedSource <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:observation/3822511c07a2049bb613ec9ec4e4cab70a15ce98a1bb0b166cd9687a32a97ef0> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "brave_web_search" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_web_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/38d3c9fe3e6f2e3ccc5842f729c7aa13932f50a1e0c1565dcbde7dc6d01ebfe3> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Get content recommendations for a documentation page." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Arecommend> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/3901501b37bb669b96a270ff5dc20f300f0a3ff41b37a0e589bdaecedd972237> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Fetch web content and convert HTML to Markdown." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/fetch> ;
+    acg:reviewedSource <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:observation/397ffd15d46993dd22ff1f2d1fa8d583e890d6f71a023faf88881a1378c14427> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "create_pull_request" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/github%3Acreate_pull_request> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/39d8ff183843803acd5267dc0b220141a27cd80388bc4f9b02baf0031f43baa1> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Complete terms in LICENSE.txt" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/docx> ;
+    acg:reviewedSource <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> .
+
+<urn:acg:data:observation/3a3027e3993b38c8a4f6b090c0e7aa04402a0884ffc1b1524c058e4e04343df9> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/google__skills__cloud-databases-onboarding.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/cloud-databases-onboarding> ;
+    acg:reviewedSource <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> .
+
+<urn:acg:data:observation/3ceb06a91495a67ebb16362a7c0096babde9c914f6b625d8f72664fb54e2035e> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "docx" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/docx> ;
+    acg:reviewedSource <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> .
+
+<urn:acg:data:observation/4012de23206e6c9c53362c578b6e4ca69677fec56db4f6f2e64b3790951c58bd> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "issue_read" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/github%3Aissue_read> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/4109b375e5daac845622baf998ea6cdb60e8b6d59433d464bf055b6333c6a374> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "get_current_time" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/time%3Aget_current_time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/429ce2937e4457679aaa2679149c13a4074006826d282791989438544e07faf8> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/modelcontextprotocol/servers" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/fetch> ;
+    acg:reviewedSource <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:observation/42a55ee3b6a14d2262d3595b1067cda5bb213da22fe6ea9f890ce85bf9cd7d70> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/modelcontextprotocol/servers" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/filesystem> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/42cd30fed3d005b3921b7cb9b552d3542a7f1ca74bf4d3098017999221603eb0> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/xlsx> ;
+    acg:reviewedSource <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> .
+
+<urn:acg:data:observation/441e73ad6274474ad77b7cb1f4e95133d51008f6bd5ea00d96b3a69d03daa73c> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/anthropics__skills__xlsx.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/xlsx> ;
+    acg:reviewedSource <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> .
+
+<urn:acg:data:observation/44a0b793593e257d91f26bcb8d45430699b1f1069a82035179993bb1b3cdd6fb> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Retrieve named graph nodes." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Aopen_nodes> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/46575c6c5a1917e0bcb2aa3c43590009a4a097de9b35765862e4375b8d453fa4> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Get the current time in a timezone." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/time%3Aget_current_time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/474405dbfc8c578d3a74a47dc74243424d73be7f24bbd5868dbbd1b25d9afd05> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_diff" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_diff> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/48074458349d794756424f090b5585eba61553c56c0cee055a31674c64e00e18> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search for local businesses and places." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_local_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/487e342c99f55f926ff01bf2ae77ae4499b4585ea223574cc9b025f7537df294> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Execute an API request through the Cloudflare client." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Aexecute> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/489fd4c500cd77689b550dfb570fbee83ef39bdf75093ca426d0d431c1b224ac> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 3 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/49b1321d9dcaa22d6b811c1586c7c2e476bb26ca1677577bb5dcbfe6a6fe0e54> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Git MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/4b399b404af56c776002de78482682a3b74cea5099a5b79d31fddabb170ba04e> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/anthropics__skills__docx.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/docx> ;
+    acg:reviewedSource <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> .
+
+<urn:acg:data:observation/4d99f8d9894248ffd4928188af94e7b4202ec461d2e7747b5d492652c5c50e12> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Persistent knowledge graph memory with entity and relation operations." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/memory> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/4da807c5e0891d09c7d386ba690cc6e902459d96fcbceb953f21cd855ada296c> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Fetch an AWS documentation page as Markdown." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Aread_documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/4e6543b42e1aec0dd3de142dd997dc72c7de206dc9663a20a4420518a6134ba9> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 6 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/4eae29ab671f807e589ec408e25e63f0d4405ce60d7b214c2490c89b0d520967> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Read the knowledge graph." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Aread_graph> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/52f61203f47e71f5c552783a6c9bdb5218c642bcf5f978bc36a0468a37c216ca> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search Cloudflare developer documentation and interact with Cloudflare APIs using code mode." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/54daef7494a07d12cae42c58e358c3b3a376269b5704d20b83f1ccbd10c40aab> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/microsoft/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/azure-cosmos-db-py> ;
+    acg:reviewedSource <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> .
+
+<urn:acg:data:observation/55cc10f1836e00b63af2d4d0d0be290aae5ba110380decda8c6ac8889c9029ca> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "MIT" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/vercel-react-best-practices> ;
+    acg:reviewedSource <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> .
+
+<urn:acg:data:observation/576f6ed257e03cb3330fff2be468ce1298ded4fadb21b9e199168d5370073893> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/github> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/57e4758eccf1bd69165c1f41828de6df67b5b4717c0175a1003a6c410cdc2a1f> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "brave_local_search" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_local_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/596f49127351b811d17bbe551e65e3064eaba4a5f10e9f874aac0e2db2fbbe66> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "AWS Documentation MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/59732f190f931879d04ddc89f3ca9195c4f9014eb40dd3ce7d7bffa1008eca49> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/microsoft__skills__azure-cosmos-db-py.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/azure-cosmos-db-py> ;
+    acg:reviewedSource <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> .
+
+<urn:acg:data:observation/598acf824156c6c2c16b55871a874b38d62a4fbded7e2884b1afe272a0722a2f> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/brave-search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/60711339bb490a59495b3f41dce4f4e66e7dff844c6f2f891d8c15b9918b9177> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 4 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/60e79dba0cd3a5462d59558e2f58bf8e56a051843ed177dcf8be8c7e4e2ed600> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Create a repository commit." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_commit> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/62f2fa932ef68f446b9ce6db3b20b6b9938877b496d628fe483a010cf7cfd856> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "read_documentation" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Aread_documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/62f358f55a9458358216b6f3a7ed86cca9326955683431977342c11570ff07bd> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/mcp-builder> ;
+    acg:reviewedSource <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> .
+
+<urn:acg:data:observation/6309a4056af268560c6fb2c4acfa8e930d8123c8d765dbbe60175df834d014e6> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search graph nodes by query." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Asearch_nodes> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/638a1331bd29db797d967b72aafcd19e28c3720f96c3c5e37f7a052d2d5ea3b8> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/docx> ;
+    acg:reviewedSource <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> .
+
+<urn:acg:data:observation/63d15aaad56cc7afa7426e84f774c7ae04154a653421c835a547981393fea2fe> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/vercel-react-best-practices> ;
+    acg:reviewedSource <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> .
+
+<urn:acg:data:observation/642ef4f32b159d54068368cfd34ac4b405977370c5170462c2efe4481dae1171> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/vercel-web-design-guidelines> ;
+    acg:reviewedSource <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> .
+
+<urn:acg:data:observation/667ecc79100b631d6cf5684a0dd9eabe9e17c3264071600eed94f205d3a50e10> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_status" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_status> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/686d62b2e3ecf1476d4afc3d9c4b8a9643094f62f7088391fe858c4f16be8809> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "search_nodes" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Asearch_nodes> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/68ef1c813930e1e4ddf2f5b611b584d1b94b188a5401fe4ae174f75dcd11a8b7> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 6 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/memory> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/6a7845bc244cb7d2fe47bf9b82c97f3a2ef5d8a24163e2ef553c13d1106f95f1> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search AWS documentation." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Asearch_documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/6cab45da68a3737cc403365c2ce77bd4d50b5dc6a4cce1d794ac257124ac5c60> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Searches, retrieves, and synthesizes official Google developer documentation across Google Cloud, AI/Gemini, Android, Chrome, Web, Flutter, Go, Firebase, and other Google developer platforms. Integrates with the Developer Knowledge MCP server (search_documents, get_documents, answer_query) or the Developer Knowledge REST API fallback. Use when searching for gcloud CLI commands, API syntax, IAM permissions, official documentation, architectural comparisons, or product choice overviews. Don't use for local filesystem lookups or non-Google documentation." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/retrieving-developer-knowledge> ;
+    acg:reviewedSource <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> .
+
+<urn:acg:data:observation/6d3f3dc3fe7e28670d5063621c538e33a6c0f3ff3c23bf936b102843a8b70a56> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "xlsx" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/xlsx> ;
+    acg:reviewedSource <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> .
+
+<urn:acg:data:observation/6eec207bf46411abea69353db378e27bbc240487a0fac346340d83d131006947> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/vercel-react-best-practices> ;
+    acg:reviewedSource <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> .
+
+<urn:acg:data:observation/6f4c4a6a81b854d3330043faa81de3caa77561e24c4ec858cbadaced60b6067d> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/google/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/retrieving-developer-knowledge> ;
+    acg:reviewedSource <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> .
+
+<urn:acg:data:observation/71d07c415b21ab014ec241d297cbd9e279a7fcc26711b0a855de88dcf459de32> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search the web for pages matching a query." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_web_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/725fb9e335960a3fa590e9d0bae5998229d23b94ac73c4b75641120782d61df3> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Interact with GitHub repositories, issues, and pull requests." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/github> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/744619448a3f6f8edb6a56bf72992e96e7cae831771787f7454dba9ecc605ed9> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "read_graph" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Aread_graph> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/767c5d221a407c0124da228ddbe234d57d3e8eb7c7b97263cbc87bc9e720d8e5> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/pdf> ;
+    acg:reviewedSource <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> .
+
+<urn:acg:data:observation/77fd2ff642078ded88075cf101ea9ce31c0d11fc7fd4e23c71d47642b318cfb2> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\"." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/vercel-web-design-guidelines> ;
+    acg:reviewedSource <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> .
+
+<urn:acg:data:observation/784e28fb2d52d631b80e4cfce2f70b9c8768b68699b4dd74bbd3077d067aeeb0> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "whoami" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Awhoami> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/78b6cb8fb873da77e4da1ef02bcad7f1e7ccd9f218727d6404852656fea9f06f> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 5 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/brave-search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/791386301ede09c770abbdc5253d8acbe173b6c5a87033f47b143178aab1bd1f> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/pdf> ;
+    acg:reviewedSource <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> .
+
+<urn:acg:data:observation/7a1189cebb5fc45074d2638f88bbbd42cbf0f551a60dbc0b8952b96669d676b2> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "recommend" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Arecommend> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/7a57200cd4a38bf0e9fc65425a93419314aba6eb41c2a92c15133ac41b91eeb9> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/anthropics/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/xlsx> ;
+    acg:reviewedSource <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> .
+
+<urn:acg:data:observation/7d3adc71d8be63d145a1eb7f6ac4e2f41eeb17b845dafd3a268658cf9c323c69> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/modelcontextprotocol/servers" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/git> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/7d72c7d5bab713e241a482d882a691375db67c04af74c4c828462377685b1895> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Create or overwrite a file." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Awrite_file> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/81a93e8bb445628bc4c4b26ffe470d1a15ea9662eeec6c37c1117db67c9b9b39> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "List or inspect repository branches." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_branch> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/825ed53d56324c93156ea173750408be0184b0b57ba512a7ddf1ae0d74719641> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Complete terms in LICENSE.txt" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/pdf> ;
+    acg:reviewedSource <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> .
+
+<urn:acg:data:observation/82dfc50b9826fac1765d4760204536ed66033efd069a0433d51af90ea62c8c34> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Complete terms in LICENSE.txt" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/xlsx> ;
+    acg:reviewedSource <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> .
+
+<urn:acg:data:observation/82f52b8dd186cbfe6e17f16e41876e4fff48f05939c10931b0b25d0d1adfc935> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "list_allowed_directories" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Alist_allowed_directories> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/84ca299d72d0a874269608e177898069ceb1523ca29a95cffd9eee87f2c1ebb3> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search recursively for files using patterns." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Asearch_files> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/8654fec567b877283d0f8a20b8f096c0ee78a2a2f7a6f55dbddfbd812820ab16> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/brave/brave-search-mcp-server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/brave-search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/87192ba7989c89958515266824387170a8275121187bdf91a54be2416abde233> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_branch" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_branch> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/8972bc5d3154777e1c17b0b2184ae4bc8b59bc84891ffb7a74bcb4fad40dd875> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Guides users through discovering their database requirements, recommends a Google Cloud database based on a recommendation matrix, and assists in database creation. Use when a user asks 'What database service should I use?', 'Help me pick a database', or when a user wants to create a new database on Google Cloud. Don't use for general Google Cloud maintenance, managing existing databases, or database migrations." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/cloud-databases-onboarding> ;
+    acg:reviewedSource <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> .
+
+<urn:acg:data:observation/8b831faa2c07d6835b77895da7ce71cf6eb7d9c993db577bbfdd931bbde81f93> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_log" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_log> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/8bc01793dc4a27a79970391de2ffc48217479ee9cca8232f25537ec4e091f88e> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_checkout" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_checkout> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/8cfa672108c7567d4c936a53d6f45fa65802af8a3ab3f84b2065a7a6b0735069> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "MIT" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/azure-cosmos-db-py> ;
+    acg:reviewedSource <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> .
+
+<urn:acg:data:observation/8d8a0a0d4a0c354f8fd0cc67230cbd49e2cf7e6e89562fa774119b69da2788c2> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search Cloudflare developer documentation." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Adocs> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/8f36c0d60a9b2acc7332ec6c1b2107708e82338ce61201dd3ba39127f70138d0> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/azure-cosmos-db-py> ;
+    acg:reviewedSource <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> .
+
+<urn:acg:data:observation/8fcab726da97e2545ee43a50052a1be4b2bcc13474f6977f40b96718716dba3b> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/93181cd1601ddee48951d20f8fdeb1c8b962a9c18eb43cac75f035020a2a603a> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "docs" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Adocs> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/944dc90236f653829b7c1019d95454ed5bb736c21eae53df323c1c72e4666d98> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/modelcontextprotocol/servers" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/memory> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/96816ddf1ab5e0399ca1dcfc3217bad006d3caeaae911b52a0906c9a5712d66e> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Support a structured, revisable thinking process." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/sequential-thinking%3Asequentialthinking> ;
+    acg:reviewedSource <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:observation/970a5ea8f2eb969406795a59a2c4c94bd5e07cb2d932a937594418b6c8a5ceff> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/google__skills__gcloud.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/gcloud> ;
+    acg:reviewedSource <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> .
+
+<urn:acg:data:observation/9756e78fd76ca56aa19776bf68979c57c3cf24eada52e79dc3d61ded17a13f8d> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "mcp-builder" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/mcp-builder> ;
+    acg:reviewedSource <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> .
+
+<urn:acg:data:observation/9760ae341e04e5e39bdc39705d300c633b84ce79066816cb007981cb3998ef8e> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Stage files in a repository." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_add> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/98ff0853950a9bb0e4fec913362ba5b9eb043bef26c326e724f5a8534f8b294e> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Filesystem MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/filesystem> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/997f92d3f77fdc7831db9a0ecf023d8db25fc00a0483dd26eee84989785b9ed8> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"SKILL.md\", \"reference/evaluation.md\", \"reference/mcp_best_practices.md\", \"reference/microsoft_mcp_patterns.md\", \"reference/node_mcp_server.md\", \"reference/python_mcp_server.md\", \"scripts/connections.py\", \"scripts/evaluation.py\", \"scripts/example_evaluation.xml\", \"scripts/requirements.txt\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/mcp-builder> ;
+    acg:reviewedSource <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> .
+
+<urn:acg:data:observation/99b93eeb82c6fab056914c9a0feba1ab9ed0f0d9b4d6492b9df28b8a7c78cae5> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/anthropics/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/pdf> ;
+    acg:reviewedSource <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> .
+
+<urn:acg:data:observation/9d823a0a9fdb64134dc83dc15a37ee41647706de0006617437b40293e1ab8068> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/anthropics/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/docx> ;
+    acg:reviewedSource <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> .
+
+<urn:acg:data:observation/9e8b0eca4657ab4d0450a14de52b643b941b60e49759e4acbeb57428e65e4ea3> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Brave Search MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/brave-search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/9e93ce14eac9ee51e72fb24b6af02fe8b52bd41d6ff8c157c8f8d02237f232c8> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Switch the working tree to a branch or revision." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_checkout> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/9f164ed5d822d51a3ce3e420db614c85996895f7e719d134aa3e019a7ea1684b> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "execute" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Aexecute> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/a07b54f0a4b64f8a1de3c24212f6820eec82b5cc30b1ccf96f3350219b8d195d> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/modelcontextprotocol/servers" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/sequential-thinking> ;
+    acg:reviewedSource <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:observation/a0d63d97512becac9f35231265ec2f783ba1880bdd26e5b428d2ffa8fba59e07> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Add observations to existing entities." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Aadd_observations> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/a1740a59b2f9db89a35bf5ee3eb9a02ef7d6125ee0764b5e2e0f179f39778329> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"LICENSE.txt\", \"SKILL.md\", \"scripts/office/helpers/__init__.py\", \"scripts/office/helpers/pptx_chart.py\", \"scripts/office/helpers/pptx_slide.py\", \"scripts/office/helpers/pptx_theme.py\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd\", \"scripts/office/schemas/mce/mc.xsd\", \"scripts/office/schemas/microsoft/wml-2010.xsd\", \"scripts/office/schemas/microsoft/wml-2012.xsd\", \"scripts/office/schemas/microsoft/wml-2018.xsd\", \"scripts/office/schemas/microsoft/wml-cex-2018.xsd\", \"scripts/office/schemas/microsoft/wml-cid-2016.xsd\", \"scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd\", \"scripts/office/schemas/microsoft/wml-symex-2015.xsd\", \"scripts/office/soffice.py\", \"scripts/office/validate.py\", \"scripts/office/validators/__init__.py\", \"scripts/office/validators/base.py\", \"scripts/office/validators/docx.py\", \"scripts/office/validators/pptx.py\", \"scripts/office/validators/redlining.py\", \"scripts/recalc.py\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/xlsx> ;
+    acg:reviewedSource <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> .
+
+<urn:acg:data:observation/a231cfed0b9f31bddd4ab80c3d8099fac46250ba06d4c846698807a64c99ec8b> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "write_file" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Awrite_file> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/a4b33510758aeac72db84eae952af8434e28b04111391fb05067530beb8397a4> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_diff_staged" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_diff_staged> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/a672c2e1ecd162ff4890ff1b3f91c711e2f7efc8a652b8c4ddc335a1da8406ae> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "add_observations" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Aadd_observations> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/a6dfcc1da1691f22301c9f5ada5deb4a7ed8c953fbe999a1bb459202abe89079> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "GitHub MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/github> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/a7dc8b5906bf934c9bcb3093578f9676ad201df9ffb27903786a419f3493504f> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Time MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/aa5fbfa6b36a2f80bbe5c5e1b0849037944df7e33cae9f75dcee1c2ed03c82d3> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/google/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/cloud-databases-onboarding> ;
+    acg:reviewedSource <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> .
+
+<urn:acg:data:observation/aa6c09d0d99bf70b7c0e0fb63096dbf2b17e15aea22fe470149ab1392e51b202> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Fetch a URL and extract its contents as Markdown." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/fetch%3Afetch> ;
+    acg:reviewedSource <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:observation/ababf2d8eba8449e7b05977a61e7470e588a5fc08624bbfaec3263a0b6277c15> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_show" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_show> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/abec43faed1fe0406a7c2835d503f55e9dc6815a1a87d93c7dc432fd8b2c880f> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "src/fetch/README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/fetch> ;
+    acg:reviewedSource <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:observation/ace364aead22ae5eb4d6b1c84a8d8f9d220de8912c2866db103e5ef42d333010> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "cloud-databases-onboarding" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/cloud-databases-onboarding> ;
+    acg:reviewedSource <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> .
+
+<urn:acg:data:observation/ada6b89a9e5f0a35a372d05f6bb2bd33578500a59730a7671bd7fa5c032bca98> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Get and convert times across IANA time zones." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/adab57dbca6ad9b790a7ea58ecf1544865b9333cffc915d9a9dc718320813900> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "git_add" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_add> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/ade1277ae84e5ccc41a946d65c1b4cfbcceaa70d6483b427b1ef2a7e232be722> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search the web, local businesses, videos, images, and news with Brave Search." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/brave-search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/adf664fc63b93f6502dd46c1c1e0650d79cf2d89e08ccac28685192e51d7e745> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/retrieving-developer-knowledge> ;
+    acg:reviewedSource <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> .
+
+<urn:acg:data:observation/b06db1534d3801ec744c93f320f1c7fcba254b953c48da0aa3c543aefd095560> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search the Cloudflare API specification for endpoints." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api%3Asearch> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/b15bbd213edfa59a8b9a5633dfd0949ad0e9d2f0bb9b068b2684ab9b10034b50> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "src/memory/README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/memory> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/b204c29e68e2bee16827711a33d7ec4fcfe041145146919c7bade3aa5e9edeea> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "web-design-guidelines" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/vercel-web-design-guidelines> ;
+    acg:reviewedSource <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> .
+
+<urn:acg:data:observation/b22fde54d96ead07ccbf70ffc2cdb2e25c126f9cc679179423cf7ea3267d7c4b> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/vercel-labs__agent-skills__vercel-web-design-guidelines.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/vercel-web-design-guidelines> ;
+    acg:reviewedSource <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> .
+
+<urn:acg:data:observation/ba50a5f4fd807c5c211bf6a3fb0201f429fb90a717fce91501993e6cf3b2fbcb> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search for videos." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_video_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/bd910bad11d30cce0e8946413d587b56a2cf02c8eccbfcfad7f65fc241f35130> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/docx> ;
+    acg:reviewedSource <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> .
+
+<urn:acg:data:observation/bf4dda3f6b8ce4915d159ab2744d759e8a556d76a6daf72d802714be32f73c33> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search for current news articles." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_news_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/c2678e91b4893a757897a4170eb0021e76b22ea29998104f470a6082f1291431> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "fetch" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/fetch%3Afetch> ;
+    acg:reviewedSource <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:observation/c3603e0b89d348185f2ae22c75d7207a697d20831e8bbb8e5aa4d8d446aef760> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/microsoft/skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/mcp-builder> ;
+    acg:reviewedSource <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> .
+
+<urn:acg:data:observation/c5843fb31dfde2653700df9fce3b331f705c686998a612f4cdf11786ed76fd84> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Read GitHub issue information." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/github%3Aissue_read> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/c5eb0f387d69026e49b32d5c5b2569e542e87918949b78f91dc4be75f9067c61> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/cloudflare/mcp" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/c65a76ef4325874b30524fade8f1c8bb6688269b58ed4fcb0c9d345d73f98ab4> a acg:MetadataObservation ;
+    acg:evidenceStatus "selected_documented_tools" ;
+    acg:hasObservedValue 3 ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "documented_tool_count" ;
+    acg:observesEntity <urn:acg:data:entity/github> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/c7aae6b7667174fc6b5e660abf369cff853425711bc1d52c3e4ca81079cfd0ea> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Compare a repository with a branch, commit, or revision range." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_diff> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/c895945a8dd6d69c7c1f0bdf6ea477a37cd90dd9b24c2adb28ff1493ff2b64fb> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"SKILL.md\", \"references/api-fallback.md\", \"references/attribution.md\", \"references/mcp-usage.md\", \"references/supported-domains.md\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/retrieving-developer-knowledge> ;
+    acg:reviewedSource <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> .
+
+<urn:acg:data:observation/c9f4b88f121cd88ab623999900054af736af620aedeebb083fd0c82314b0e9b0> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "sequentialthinking" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/sequential-thinking%3Asequentialthinking> ;
+    acg:reviewedSource <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:observation/cc60d5fcf32fdfe67efc21e33d6417dfcaf86df871d891b791c67ecef0d72099> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "get_available_services" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation%3Aget_available_services> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/ccf0818aed6b80b5f5e579b78699720fe50bfc58cc94cdf14cb5be1476f2a0ba> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "open_nodes" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Aopen_nodes> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/ce0f153c199134918deff6c76d52eefd84fb61730775d95c2aab7fa56221699f> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "search_files" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Asearch_files> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/ceb4a8f6cc735a6298ef347861f14ece6f71f9acabeecc59716bb080e87c91d1> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "src/aws-documentation-mcp-server/README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/ceead42384f36dea471397b29c6435db336c9ffdfee96a21415dc6786c99cb46> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "create_relations" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Acreate_relations> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/cf610d02b15084ee2f2eda4483eb9c584cc7a5bc4eebcdbd0c8c77ec7673f605> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "brave_video_search" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_video_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/d186b36bdd3bc59878cacc36b2a385f57679dac5df327b67fd24f78c21594960> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search and retrieve AWS documentation and recommendations." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/aws-documentation> ;
+    acg:reviewedSource <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:observation/d2ba453ea695d4c32b974d4ac0c2dbb88867c27077933848c71ececfdf54c08d> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/vercel-labs/agent-skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/vercel-web-design-guidelines> ;
+    acg:reviewedSource <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> .
+
+<urn:acg:data:observation/d309945c998d91dae449b62e9869290919d8a58fc207bfc9d153f360551b9e5c> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/retrieving-developer-knowledge> ;
+    acg:reviewedSource <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> .
+
+<urn:acg:data:observation/d43840422b573668f1d00fdd4c1aeae4a0ed083216cd7edf338d1e2f5ccf6e45> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Provides safety-critical validation, guardrails, and data reduction for gcloud CLI operations across Google Cloud Platform (GCP) services and infrastructure. Use when planning, generating, constructing, proposing, describing, or executing any gcloud CLI commands - including when answering questions about gcloud syntax, or formatting flags. Don't use when writing Google Cloud client library code or raw REST/gRPC API requests." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/gcloud> ;
+    acg:reviewedSource <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> .
+
+<urn:acg:data:observation/d4cb0b8512923f1e53461f6a54bb0748ef2cd9fef83b17f5f093eadbc76d904b> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Convert a time between timezones." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/time%3Aconvert_time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/d4e7a09d81db545e9a0be25651e42523b8c7225d2c9011cc9ca3705cbae3dbe0> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Show a commit or object." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_show> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/d517e1a828135310a5da158ad8f5274a9ee6dd252c863c277a13c4ac73187789> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/google__skills__retrieving-developer-knowledge.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/retrieving-developer-knowledge> ;
+    acg:reviewedSource <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> .
+
+<urn:acg:data:observation/d5e0c6722ddff18a892dd6d1c1dffc88ddd03c1ff6648b96904bf99003913ccc> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "license" ;
+    acg:observedProperty schema:license ;
+    acg:observesEntity <urn:acg:data:entity/cloud-databases-onboarding> ;
+    acg:reviewedSource <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> .
+
+<urn:acg:data:observation/d668cc01611463c13bb9cd6675efc4fb3238be91c98743fb286fe3007e202da8> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"LICENSE.txt\", \"SKILL.md\", \"scripts/__init__.py\", \"scripts/accept_changes.py\", \"scripts/comment.py\", \"scripts/merge_runs.py\", \"scripts/office/helpers/__init__.py\", \"scripts/office/helpers/pptx_chart.py\", \"scripts/office/helpers/pptx_slide.py\", \"scripts/office/helpers/pptx_theme.py\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd\", \"scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd\", \"scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd\", \"scripts/office/schemas/mce/mc.xsd\", \"scripts/office/schemas/microsoft/wml-2010.xsd\", \"scripts/office/schemas/microsoft/wml-2012.xsd\", \"scripts/office/schemas/microsoft/wml-2018.xsd\", \"scripts/office/schemas/microsoft/wml-cex-2018.xsd\", \"scripts/office/schemas/microsoft/wml-cid-2016.xsd\", \"scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd\", \"scripts/office/schemas/microsoft/wml-symex-2015.xsd\", \"scripts/office/soffice.py\", \"scripts/office/validate.py\", \"scripts/office/validators/__init__.py\", \"scripts/office/validators/base.py\", \"scripts/office/validators/docx.py\", \"scripts/office/validators/pptx.py\", \"scripts/office/validators/redlining.py\", \"scripts/templates/comments.xml\", \"scripts/templates/commentsExtended.xml\", \"scripts/templates/commentsExtensible.xml\", \"scripts/templates/commentsIds.xml\", \"scripts/templates/people.xml\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/docx> ;
+    acg:reviewedSource <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> .
+
+<urn:acg:data:observation/d8d492c33415da1bcfb110f8ee23fa880c6e40359712c6d7d6c6f25d4c737c66> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Show repository commit history." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_log> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/d9e1a158f578425f62755b3aa62f0025b295aa3aaef2986e98c6d0355ef42462> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "create_entities" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/memory%3Acreate_entities> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/db2c9c7c1ddc2d25fee57410b209c3b67c33e38ba954698b1a550a908d82fb17> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Show unstaged changes." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_diff_unstaged> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/db323470853c9d93cd36ec76b9a41987fa050b422ed44dcf93b4b1154a34d81e> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/vercel-labs/agent-skills" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/vercel-react-best-practices> ;
+    acg:reviewedSource <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> .
+
+<urn:acg:data:observation/db540711f5b94d8fa27953e3540a77a7d5c52750e76ee55299379b9009e9e065> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "azure-cosmos-db-py" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/azure-cosmos-db-py> ;
+    acg:reviewedSource <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> .
+
+<urn:acg:data:observation/de1c61d418544eda57fe493320d455d1c9d86714b1d7bfe793a5dfe496bbc401> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/vercel-labs__agent-skills__vercel-react-best-practices.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/vercel-react-best-practices> ;
+    acg:reviewedSource <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> .
+
+<urn:acg:data:observation/df51734d12d10d82ae972e90b833a33cdb7a37670f3563fb10df6ca731a4bdf7> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Create a pull request." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/github%3Acreate_pull_request> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/e173a767be7041455cc0a43794007f351168a245969f2631e00e388132a777b8> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Read files and directories from a repository." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/github%3Aget_file_contents> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/e2ff782f57fc94d8785841324612e503ac255e49d8cf227e9df15e78be00c884> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"AGENTS.md\", \"README.md\", \"SKILL.md\", \"metadata.json\", \"rules/_sections.md\", \"rules/_template.md\", \"rules/advanced-effect-event-deps.md\", \"rules/advanced-event-handler-refs.md\", \"rules/advanced-init-once.md\", \"rules/advanced-use-latest.md\", \"rules/async-api-routes.md\", \"rules/async-cheap-condition-before-await.md\", \"rules/async-defer-await.md\", \"rules/async-dependencies.md\", \"rules/async-parallel.md\", \"rules/async-suspense-boundaries.md\", \"rules/bundle-analyzable-paths.md\", \"rules/bundle-barrel-imports.md\", \"rules/bundle-conditional.md\", \"rules/bundle-defer-third-party.md\", \"rules/bundle-dynamic-imports.md\", \"rules/bundle-preload.md\", \"rules/client-event-listeners.md\", \"rules/client-localstorage-schema.md\", \"rules/client-passive-event-listeners.md\", \"rules/client-swr-dedup.md\", \"rules/js-batch-dom-css.md\", \"rules/js-cache-function-results.md\", \"rules/js-cache-property-access.md\", \"rules/js-cache-storage.md\", \"rules/js-combine-iterations.md\", \"rules/js-early-exit.md\", \"rules/js-flatmap-filter.md\", \"rules/js-hoist-regexp.md\", \"rules/js-index-maps.md\", \"rules/js-length-check-first.md\", \"rules/js-min-max-loop.md\", \"rules/js-request-idle-callback.md\", \"rules/js-set-map-lookups.md\", \"rules/js-tosorted-immutable.md\", \"rules/rendering-activity.md\", \"rules/rendering-animate-svg-wrapper.md\", \"rules/rendering-conditional-render.md\", \"rules/rendering-content-visibility.md\", \"rules/rendering-hoist-jsx.md\", \"rules/rendering-hydration-no-flicker.md\", \"rules/rendering-hydration-suppress-warning.md\", \"rules/rendering-resource-hints.md\", \"rules/rendering-script-defer-async.md\", \"rules/rendering-svg-precision.md\", \"rules/rendering-usetransition-loading.md\", \"rules/rerender-defer-reads.md\", \"rules/rerender-dependencies.md\", \"rules/rerender-derived-state-no-effect.md\", \"rules/rerender-derived-state.md\", \"rules/rerender-functional-setstate.md\", \"rules/rerender-lazy-state-init.md\", \"rules/rerender-memo-with-default-value.md\", \"rules/rerender-memo.md\", \"rules/rerender-move-effect-to-event.md\", \"rules/rerender-no-inline-components.md\", \"rules/rerender-simple-expression-in-memo.md\", \"rules/rerender-split-combined-hooks.md\", \"rules/rerender-transitions.md\", \"rules/rerender-use-deferred-value.md\", \"rules/rerender-use-ref-transient-values.md\", \"rules/server-after-nonblocking.md\", \"rules/server-auth-actions.md\", \"rules/server-cache-lru.md\", \"rules/server-cache-react.md\", \"rules/server-dedup-props.md\", \"rules/server-hoist-static-io.md\", \"rules/server-no-shared-module-state.md\", \"rules/server-parallel-fetching.md\", \"rules/server-parallel-nested-fetching.md\", \"rules/server-serialization.md\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/vercel-react-best-practices> ;
+    acg:reviewedSource <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> .
+
+<urn:acg:data:observation/e3efd46fb74b2c11f97b79ca96368c0d79c4386496e666b6664d17bdc47c782b> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/vercel-web-design-guidelines> ;
+    acg:reviewedSource <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> .
+
+<urn:acg:data:observation/e5a0c7469e37a199a8b146ab97b33db847935c50199095b23b47e8826beb65d8> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_metadata" ;
+    acg:hasObservedValue "https://github.com/modelcontextprotocol/servers" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "repository" ;
+    acg:observesEntity <urn:acg:data:entity/time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/e5a22a1d3b5a2a5368237096b5edd1b6610607662f37315e7bfe007f47012ebf> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "src/filesystem/README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/filesystem> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/e68f681e30f990cc56a26b0a4229cbc9ae9f0de5fca6493a9c6a28224b0841f1> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "read_text_file" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Aread_text_file> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/e75b10720e8ed342268ed618ad955cd9bc7ec5aaa6eec7eb413e1d97122c8e52> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "src/time/README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/time> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/e8068097d40807f231b21a981c4b1c499966692c0c909a779eed85bcdb65d22e> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Search for images." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/brave-search%3Abrave_image_search> ;
+    acg:reviewedSource <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:observation/e841215988ba42bfc9f22f74c337a34c2d7ea08ef3c30b7bbde7a0309b85bba3> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Secure file operations within configured directories." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/filesystem> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/e926248681b3313d5f0848b653c5408ac9f423cee1fd37ca09e5699fce826f56> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/anthropics__skills__pdf.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/pdf> ;
+    acg:reviewedSource <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> .
+
+<urn:acg:data:observation/e96dd392f85bcc13b30f5221ec4f50a7d3541406b9500d89d6ef9909e7b9b576> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "[\"LICENSE.txt\", \"SKILL.md\", \"forms.md\", \"reference.md\", \"scripts/check_bounding_boxes.py\", \"scripts/check_fillable_fields.py\", \"scripts/convert_pdf_to_images.py\", \"scripts/create_validation_image.py\", \"scripts/extract_form_field_info.py\", \"scripts/extract_form_structure.py\", \"scripts/fill_fillable_fields.py\", \"scripts/fill_pdf_form_with_annotations.py\"]"^^rdf:JSON ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "bundled_files" ;
+    acg:observedProperty acg:supportingFile ;
+    acg:observesEntity <urn:acg:data:entity/pdf> ;
+    acg:reviewedSource <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> .
+
+<urn:acg:data:observation/e9c02694572a26215b70c3a7b270fcfe808cfda4cb8e2b677cb9b1aee5d75247> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Memory MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/memory> ;
+    acg:reviewedSource <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:observation/ea4430cab73dc0560f0c14b8ad0f16766d5329beacb552a4b155f8006ad41583> a acg:MetadataObservation ;
+    acg:evidenceStatus "complete_skill_package_downloaded" ;
+    acg:hasObservedValue "data/downloads/skill_packages/microsoft__skills__mcp-builder.zip" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "package_archive" ;
+    acg:observesEntity <urn:acg:data:entity/mcp-builder> ;
+    acg:reviewedSource <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> .
+
+<urn:acg:data:observation/ec998afed6dc69ae4fc054264c111a086f347d38078829c0ba546a6174e586d2> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Show staged changes." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/git%3Agit_diff_staged> ;
+    acg:reviewedSource <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:observation/eddfd2fb1e273d343530c50228e82373818d93b93b3db6ca865f865b210febce> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Read the contents of a file as text." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/filesystem%3Aread_text_file> ;
+    acg:reviewedSource <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:observation/ee47fb6d25e7545ffb6ba59840c9b6446ee77cc1a74dc4704aabffe223ed54f7> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "retrieving-developer-knowledge" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/retrieving-developer-knowledge> ;
+    acg:reviewedSource <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> .
+
+<urn:acg:data:observation/f103e21b121255aff5912bd6d6f2aa1359e02ada9569dceba41a7eaa09d0ccae> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "get_file_contents" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/github%3Aget_file_contents> ;
+    acg:reviewedSource <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:observation/f1a519fe89c5b3f9ca152d7749b86b59173027f51f347d727d5d5800158bee60> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP), Node/TypeScript (MCP SDK), or C#/.NET (Microsoft MCP SDK)." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/mcp-builder> ;
+    acg:reviewedSource <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> .
+
+<urn:acg:data:observation/f1e90df51205196faeee0cd381af62d0150490f411358f036968c05f3d47e911> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Get a time a specified duration in the past." ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "description" ;
+    acg:observedProperty schema:description ;
+    acg:observesEntity <urn:acg:data:entity/time%3Aget_time_ago> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:observation/f359eb0f21b3912bd40b2c424ebfdc17ec991dd6b1a1de973388c4f80f2f43ee> a acg:MetadataObservation ;
+    acg:evidenceStatus "repository_tree_observed" ;
+    acg:hasObservedValue "src/sequentialthinking/README.md" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "readme_path" ;
+    acg:observesEntity <urn:acg:data:entity/sequential-thinking> ;
+    acg:reviewedSource <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:observation/f5208ffad6d488d5952830b6a79f41df7f8d87f617b203b8b2ca409a1a65a517> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_frontmatter" ;
+    acg:hasObservedValue "gcloud" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/gcloud> ;
+    acg:reviewedSource <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> .
+
+<urn:acg:data:observation/fc6158157c877384e8ded5f34771dbf89299ac3178d2ea0da47f19f735f5032f> a acg:MetadataObservation ;
+    acg:evidenceStatus "curator_transcribed_from_readme" ;
+    acg:hasObservedValue "Cloudflare API MCP Server" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/cloudflare-api> ;
+    acg:reviewedSource <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:observation/fe44db24d4e76d1edf5d54ee97b92d60c170a94a5505446d2d29ec54d4aaeeea> a acg:MetadataObservation ;
+    acg:evidenceStatus "not_documented_in_frontmatter" ;
+    acg:observationStatus acg:notDocumented ;
+    acg:observedFieldName "compatibility" ;
+    acg:observesEntity <urn:acg:data:entity/xlsx> ;
+    acg:reviewedSource <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> .
+
+<urn:acg:data:observation/ff764b6d8daee4e7836ec5e6d930ee41538ad05266b54afc9c29c5a17da8d344> a acg:MetadataObservation ;
+    acg:evidenceStatus "explicit_tool_name_in_readme" ;
+    acg:hasObservedValue "get_time_ago" ;
+    acg:observationStatus acg:present ;
+    acg:observedFieldName "name" ;
+    acg:observedProperty schema:name ;
+    acg:observesEntity <urn:acg:data:entity/time%3Aget_time_ago> ;
+    acg:reviewedSource <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:entity/aws-documentation%3Aget_available_services> a acg:MCPTool ;
+    schema:description "List AWS services available in China regions." ;
+    schema:name "get_available_services" ;
+    acg:documentedBy <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:entity/aws-documentation%3Aread_documentation> a acg:MCPTool ;
+    schema:description "Fetch an AWS documentation page as Markdown." ;
+    schema:name "read_documentation" ;
+    acg:documentedBy <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:entity/aws-documentation%3Aread_sections> a acg:MCPTool ;
+    schema:description "Fetch selected sections of a documentation page." ;
+    schema:name "read_sections" ;
+    acg:documentedBy <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:entity/aws-documentation%3Arecommend> a acg:MCPTool ;
+    schema:description "Get content recommendations for a documentation page." ;
+    schema:name "recommend" ;
+    acg:documentedBy <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:entity/aws-documentation%3Asearch_documentation> a acg:MCPTool ;
+    schema:description "Search AWS documentation." ;
+    schema:name "search_documentation" ;
+    acg:documentedBy <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:entity/aws-documentation%3Asearch_table> a acg:MCPTool ;
+    schema:description "Search selected rows in large documentation tables." ;
+    schema:name "search_table" ;
+    acg:documentedBy <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> .
+
+<urn:acg:data:entity/brave-search%3Abrave_image_search> a acg:MCPTool ;
+    schema:description "Search for images." ;
+    schema:name "brave_image_search" ;
+    acg:documentedBy <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:entity/brave-search%3Abrave_local_search> a acg:MCPTool ;
+    schema:description "Search for local businesses and places." ;
+    schema:name "brave_local_search" ;
+    acg:documentedBy <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:entity/brave-search%3Abrave_news_search> a acg:MCPTool ;
+    schema:description "Search for current news articles." ;
+    schema:name "brave_news_search" ;
+    acg:documentedBy <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:entity/brave-search%3Abrave_video_search> a acg:MCPTool ;
+    schema:description "Search for videos." ;
+    schema:name "brave_video_search" ;
+    acg:documentedBy <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:entity/brave-search%3Abrave_web_search> a acg:MCPTool ;
+    schema:description "Search the web for pages matching a query." ;
+    schema:name "brave_web_search" ;
+    acg:documentedBy <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> .
+
+<urn:acg:data:entity/cloudflare-api%3Adocs> a acg:MCPTool ;
+    schema:description "Search Cloudflare developer documentation." ;
+    schema:name "docs" ;
+    acg:documentedBy <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:entity/cloudflare-api%3Aexecute> a acg:MCPTool ;
+    schema:description "Execute an API request through the Cloudflare client." ;
+    schema:name "execute" ;
+    acg:documentedBy <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:entity/cloudflare-api%3Asearch> a acg:MCPTool ;
+    schema:description "Search the Cloudflare API specification for endpoints." ;
+    schema:name "search" ;
+    acg:documentedBy <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:entity/cloudflare-api%3Awhoami> a acg:MCPTool ;
+    schema:description "Identify the authenticated Cloudflare user or account." ;
+    schema:name "whoami" ;
+    acg:documentedBy <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> .
+
+<urn:acg:data:entity/fetch%3Afetch> a acg:MCPTool ;
+    schema:description "Fetch a URL and extract its contents as Markdown." ;
+    schema:name "fetch" ;
+    acg:documentedBy <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> .
+
+<urn:acg:data:entity/filesystem%3Alist_allowed_directories> a acg:MCPTool ;
+    schema:description "List directories the server can access." ;
+    schema:name "list_allowed_directories" ;
+    acg:documentedBy <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:entity/filesystem%3Aread_text_file> a acg:MCPTool ;
+    schema:description "Read the contents of a file as text." ;
+    schema:name "read_text_file" ;
+    acg:documentedBy <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:entity/filesystem%3Asearch_files> a acg:MCPTool ;
+    schema:description "Search recursively for files using patterns." ;
+    schema:name "search_files" ;
+    acg:documentedBy <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:entity/filesystem%3Awrite_file> a acg:MCPTool ;
+    schema:description "Create or overwrite a file." ;
+    schema:name "write_file" ;
+    acg:documentedBy <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> .
+
+<urn:acg:data:entity/git%3Agit_add> a acg:MCPTool ;
+    schema:description "Stage files in a repository." ;
+    schema:name "git_add" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_branch> a acg:MCPTool ;
+    schema:description "List or inspect repository branches." ;
+    schema:name "git_branch" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_checkout> a acg:MCPTool ;
+    schema:description "Switch the working tree to a branch or revision." ;
+    schema:name "git_checkout" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_commit> a acg:MCPTool ;
+    schema:description "Create a repository commit." ;
+    schema:name "git_commit" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_diff> a acg:MCPTool ;
+    schema:description "Compare a repository with a branch, commit, or revision range." ;
+    schema:name "git_diff" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_diff_staged> a acg:MCPTool ;
+    schema:description "Show staged changes." ;
+    schema:name "git_diff_staged" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_diff_unstaged> a acg:MCPTool ;
+    schema:description "Show unstaged changes." ;
+    schema:name "git_diff_unstaged" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_log> a acg:MCPTool ;
+    schema:description "Show repository commit history." ;
+    schema:name "git_log" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_show> a acg:MCPTool ;
+    schema:description "Show a commit or object." ;
+    schema:name "git_show" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/git%3Agit_status> a acg:MCPTool ;
+    schema:description "Show the working tree status." ;
+    schema:name "git_status" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> .
+
+<urn:acg:data:entity/github%3Acreate_pull_request> a acg:MCPTool ;
+    schema:description "Create a pull request." ;
+    schema:name "create_pull_request" ;
+    acg:documentedBy <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:entity/github%3Aget_file_contents> a acg:MCPTool ;
+    schema:description "Read files and directories from a repository." ;
+    schema:name "get_file_contents" ;
+    acg:documentedBy <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:entity/github%3Aissue_read> a acg:MCPTool ;
+    schema:description "Read GitHub issue information." ;
+    schema:name "issue_read" ;
+    acg:documentedBy <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> .
+
+<urn:acg:data:entity/memory%3Aadd_observations> a acg:MCPTool ;
+    schema:description "Add observations to existing entities." ;
+    schema:name "add_observations" ;
+    acg:documentedBy <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:entity/memory%3Acreate_entities> a acg:MCPTool ;
+    schema:description "Create entities in the knowledge graph." ;
+    schema:name "create_entities" ;
+    acg:documentedBy <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:entity/memory%3Acreate_relations> a acg:MCPTool ;
+    schema:description "Create relations between graph entities." ;
+    schema:name "create_relations" ;
+    acg:documentedBy <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:entity/memory%3Aopen_nodes> a acg:MCPTool ;
+    schema:description "Retrieve named graph nodes." ;
+    schema:name "open_nodes" ;
+    acg:documentedBy <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:entity/memory%3Aread_graph> a acg:MCPTool ;
+    schema:description "Read the knowledge graph." ;
+    schema:name "read_graph" ;
+    acg:documentedBy <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:entity/memory%3Asearch_nodes> a acg:MCPTool ;
+    schema:description "Search graph nodes by query." ;
+    schema:name "search_nodes" ;
+    acg:documentedBy <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> .
+
+<urn:acg:data:entity/sequential-thinking%3Asequentialthinking> a acg:MCPTool ;
+    schema:description "Support a structured, revisable thinking process." ;
+    schema:name "sequentialthinking" ;
+    acg:documentedBy <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> .
+
+<urn:acg:data:entity/time%3Aconvert_time> a acg:MCPTool ;
+    schema:description "Convert a time between timezones." ;
+    schema:name "convert_time" ;
+    acg:documentedBy <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:entity/time%3Aget_current_time> a acg:MCPTool ;
+    schema:description "Get the current time in a timezone." ;
+    schema:name "get_current_time" ;
+    acg:documentedBy <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:entity/time%3Aget_time_ago> a acg:MCPTool ;
+    schema:description "Get a time a specified duration in the past." ;
+    schema:name "get_time_ago" ;
+    acg:documentedBy <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> .
+
+<urn:acg:data:entity/aws-documentation> a acg:MCPServer ;
+    schema:description "Search and retrieve AWS documentation and recommendations." ;
+    schema:name "AWS Documentation MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> ;
+    acg:exposesTool <urn:acg:data:entity/aws-documentation%3Aget_available_services>,
+        <urn:acg:data:entity/aws-documentation%3Aread_documentation>,
+        <urn:acg:data:entity/aws-documentation%3Aread_sections>,
+        <urn:acg:data:entity/aws-documentation%3Arecommend>,
+        <urn:acg:data:entity/aws-documentation%3Asearch_documentation>,
+        <urn:acg:data:entity/aws-documentation%3Asearch_table> .
+
+<urn:acg:data:entity/brave-search> a acg:MCPServer ;
+    schema:description "Search the web, local businesses, videos, images, and news with Brave Search." ;
+    schema:name "Brave Search MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> ;
+    acg:exposesTool <urn:acg:data:entity/brave-search%3Abrave_image_search>,
+        <urn:acg:data:entity/brave-search%3Abrave_local_search>,
+        <urn:acg:data:entity/brave-search%3Abrave_news_search>,
+        <urn:acg:data:entity/brave-search%3Abrave_video_search>,
+        <urn:acg:data:entity/brave-search%3Abrave_web_search> .
+
+<urn:acg:data:entity/cloudflare-api> a acg:MCPServer ;
+    schema:description "Search Cloudflare developer documentation and interact with Cloudflare APIs using code mode." ;
+    schema:name "Cloudflare API MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> ;
+    acg:exposesTool <urn:acg:data:entity/cloudflare-api%3Adocs>,
+        <urn:acg:data:entity/cloudflare-api%3Aexecute>,
+        <urn:acg:data:entity/cloudflare-api%3Asearch>,
+        <urn:acg:data:entity/cloudflare-api%3Awhoami> .
+
+<urn:acg:data:entity/fetch> a acg:MCPServer ;
+    schema:description "Fetch web content and convert HTML to Markdown." ;
+    schema:name "Fetch MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> ;
+    acg:exposesTool <urn:acg:data:entity/fetch%3Afetch> .
+
+<urn:acg:data:entity/filesystem> a acg:MCPServer ;
+    schema:description "Secure file operations within configured directories." ;
+    schema:name "Filesystem MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> ;
+    acg:exposesTool <urn:acg:data:entity/filesystem%3Alist_allowed_directories>,
+        <urn:acg:data:entity/filesystem%3Aread_text_file>,
+        <urn:acg:data:entity/filesystem%3Asearch_files>,
+        <urn:acg:data:entity/filesystem%3Awrite_file> .
+
+<urn:acg:data:entity/git> a acg:MCPServer ;
+    schema:description "Read, search, and manipulate Git repositories." ;
+    schema:name "Git MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> ;
+    acg:exposesTool <urn:acg:data:entity/git%3Agit_add>,
+        <urn:acg:data:entity/git%3Agit_branch>,
+        <urn:acg:data:entity/git%3Agit_checkout>,
+        <urn:acg:data:entity/git%3Agit_commit>,
+        <urn:acg:data:entity/git%3Agit_diff>,
+        <urn:acg:data:entity/git%3Agit_diff_staged>,
+        <urn:acg:data:entity/git%3Agit_diff_unstaged>,
+        <urn:acg:data:entity/git%3Agit_log>,
+        <urn:acg:data:entity/git%3Agit_show>,
+        <urn:acg:data:entity/git%3Agit_status> .
+
+<urn:acg:data:entity/github> a acg:MCPServer ;
+    schema:description "Interact with GitHub repositories, issues, and pull requests." ;
+    schema:name "GitHub MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> ;
+    acg:exposesTool <urn:acg:data:entity/github%3Acreate_pull_request>,
+        <urn:acg:data:entity/github%3Aget_file_contents>,
+        <urn:acg:data:entity/github%3Aissue_read> .
+
+<urn:acg:data:entity/memory> a acg:MCPServer ;
+    schema:description "Persistent knowledge graph memory with entity and relation operations." ;
+    schema:name "Memory MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> ;
+    acg:exposesTool <urn:acg:data:entity/memory%3Aadd_observations>,
+        <urn:acg:data:entity/memory%3Acreate_entities>,
+        <urn:acg:data:entity/memory%3Acreate_relations>,
+        <urn:acg:data:entity/memory%3Aopen_nodes>,
+        <urn:acg:data:entity/memory%3Aread_graph>,
+        <urn:acg:data:entity/memory%3Asearch_nodes> .
+
+<urn:acg:data:entity/sequential-thinking> a acg:MCPServer ;
+    schema:description "A structured tool for iterative problem-solving and analysis." ;
+    schema:name "Sequential Thinking MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> ;
+    acg:exposesTool <urn:acg:data:entity/sequential-thinking%3Asequentialthinking> .
+
+<urn:acg:data:entity/time> a acg:MCPServer ;
+    schema:description "Get and convert times across IANA time zones." ;
+    schema:name "Time MCP Server" ;
+    acg:documentedBy <urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> ;
+    acg:exposesTool <urn:acg:data:entity/time%3Aconvert_time>,
+        <urn:acg:data:entity/time%3Aget_current_time>,
+        <urn:acg:data:entity/time%3Aget_time_ago> .
+
+<urn:acg:data:entity/azure-cosmos-db-py> a acg:AgentSkill ;
+    schema:description "Build Azure Cosmos DB NoSQL services with Python/FastAPI following production-grade patterns. Use when implementing database client setup with dual auth (DefaultAzureCredential + emulator), service layer classes with CRUD operations, partition key strategies, parameterized queries, or TDD patterns for Cosmos. Triggers on phrases like \"Cosmos DB\", \"NoSQL database\", \"document store\", \"add persistence\", \"database service layer\", or \"Python Cosmos SDK\"." ;
+    schema:license "MIT" ;
+    schema:name "azure-cosmos-db-py" ;
+    acg:documentedBy <urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> ;
+    acg:supportingFile "SKILL.md",
+        "assets/conftest_template.py",
+        "assets/cosmos_client_template.py",
+        "assets/service_template.py",
+        "references/client-setup.md",
+        "references/error-handling.md",
+        "references/partitioning.md",
+        "references/service-layer.md",
+        "references/testing.md" .
+
+<urn:acg:data:entity/cloud-databases-onboarding> a acg:AgentSkill ;
+    schema:description "Guides users through discovering their database requirements, recommends a Google Cloud database based on a recommendation matrix, and assists in database creation. Use when a user asks 'What database service should I use?', 'Help me pick a database', or when a user wants to create a new database on Google Cloud. Don't use for general Google Cloud maintenance, managing existing databases, or database migrations." ;
+    schema:name "cloud-databases-onboarding" ;
+    acg:documentedBy <urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> ;
+    acg:supportingFile "SKILL.md",
+        "references/attribution.md",
+        "references/onboarding_prompts.md",
+        "references/recommendation_matrix.txt",
+        "references/selection_prompts.md",
+        "scripts/database_onboarding_skill.py" .
+
+<urn:acg:data:entity/docx> a acg:AgentSkill ;
+    schema:description "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files) or Word templates (.dotx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', '.dotx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx or .dotx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation." ;
+    schema:license "Complete terms in LICENSE.txt" ;
+    schema:name "docx" ;
+    acg:documentedBy <urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> ;
+    acg:supportingFile "LICENSE.txt",
+        "SKILL.md",
+        "scripts/__init__.py",
+        "scripts/accept_changes.py",
+        "scripts/comment.py",
+        "scripts/merge_runs.py",
+        "scripts/office/helpers/__init__.py",
+        "scripts/office/helpers/pptx_chart.py",
+        "scripts/office/helpers/pptx_slide.py",
+        "scripts/office/helpers/pptx_theme.py",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+        "scripts/office/schemas/mce/mc.xsd",
+        "scripts/office/schemas/microsoft/wml-2010.xsd",
+        "scripts/office/schemas/microsoft/wml-2012.xsd",
+        "scripts/office/schemas/microsoft/wml-2018.xsd",
+        "scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+        "scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+        "scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+        "scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+        "scripts/office/soffice.py",
+        "scripts/office/validate.py",
+        "scripts/office/validators/__init__.py",
+        "scripts/office/validators/base.py",
+        "scripts/office/validators/docx.py",
+        "scripts/office/validators/pptx.py",
+        "scripts/office/validators/redlining.py",
+        "scripts/templates/comments.xml",
+        "scripts/templates/commentsExtended.xml",
+        "scripts/templates/commentsExtensible.xml",
+        "scripts/templates/commentsIds.xml",
+        "scripts/templates/people.xml" .
+
+<urn:acg:data:entity/gcloud> a acg:AgentSkill ;
+    schema:description "Provides safety-critical validation, guardrails, and data reduction for gcloud CLI operations across Google Cloud Platform (GCP) services and infrastructure. Use when planning, generating, constructing, proposing, describing, or executing any gcloud CLI commands - including when answering questions about gcloud syntax, or formatting flags. Don't use when writing Google Cloud client library code or raw REST/gRPC API requests." ;
+    schema:name "gcloud" ;
+    acg:documentedBy <urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> ;
+    acg:supportingFile "SKILL.md",
+        "references/attribution.md",
+        "references/cli-usage.md",
+        "references/mcp-usage.md" .
+
+<urn:acg:data:entity/mcp-builder> a acg:AgentSkill ;
+    schema:description "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP), Node/TypeScript (MCP SDK), or C#/.NET (Microsoft MCP SDK)." ;
+    schema:name "mcp-builder" ;
+    acg:documentedBy <urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> ;
+    acg:supportingFile "SKILL.md",
+        "reference/evaluation.md",
+        "reference/mcp_best_practices.md",
+        "reference/microsoft_mcp_patterns.md",
+        "reference/node_mcp_server.md",
+        "reference/python_mcp_server.md",
+        "scripts/connections.py",
+        "scripts/evaluation.py",
+        "scripts/example_evaluation.xml",
+        "scripts/requirements.txt" .
+
+<urn:acg:data:entity/pdf> a acg:AgentSkill ;
+    schema:description "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill." ;
+    schema:license "Complete terms in LICENSE.txt" ;
+    schema:name "pdf" ;
+    acg:documentedBy <urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> ;
+    acg:supportingFile "LICENSE.txt",
+        "SKILL.md",
+        "forms.md",
+        "reference.md",
+        "scripts/check_bounding_boxes.py",
+        "scripts/check_fillable_fields.py",
+        "scripts/convert_pdf_to_images.py",
+        "scripts/create_validation_image.py",
+        "scripts/extract_form_field_info.py",
+        "scripts/extract_form_structure.py",
+        "scripts/fill_fillable_fields.py",
+        "scripts/fill_pdf_form_with_annotations.py" .
+
+<urn:acg:data:entity/retrieving-developer-knowledge> a acg:AgentSkill ;
+    schema:description "Searches, retrieves, and synthesizes official Google developer documentation across Google Cloud, AI/Gemini, Android, Chrome, Web, Flutter, Go, Firebase, and other Google developer platforms. Integrates with the Developer Knowledge MCP server (search_documents, get_documents, answer_query) or the Developer Knowledge REST API fallback. Use when searching for gcloud CLI commands, API syntax, IAM permissions, official documentation, architectural comparisons, or product choice overviews. Don't use for local filesystem lookups or non-Google documentation." ;
+    schema:name "retrieving-developer-knowledge" ;
+    acg:documentedBy <urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> ;
+    acg:supportingFile "SKILL.md",
+        "references/api-fallback.md",
+        "references/attribution.md",
+        "references/mcp-usage.md",
+        "references/supported-domains.md" .
+
+<urn:acg:data:entity/vercel-react-best-practices> a acg:AgentSkill ;
+    schema:description "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements." ;
+    schema:license "MIT" ;
+    schema:name "vercel-react-best-practices" ;
+    acg:documentedBy <urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> ;
+    acg:supportingFile "AGENTS.md",
+        "README.md",
+        "SKILL.md",
+        "metadata.json",
+        "rules/_sections.md",
+        "rules/_template.md",
+        "rules/advanced-effect-event-deps.md",
+        "rules/advanced-event-handler-refs.md",
+        "rules/advanced-init-once.md",
+        "rules/advanced-use-latest.md",
+        "rules/async-api-routes.md",
+        "rules/async-cheap-condition-before-await.md",
+        "rules/async-defer-await.md",
+        "rules/async-dependencies.md",
+        "rules/async-parallel.md",
+        "rules/async-suspense-boundaries.md",
+        "rules/bundle-analyzable-paths.md",
+        "rules/bundle-barrel-imports.md",
+        "rules/bundle-conditional.md",
+        "rules/bundle-defer-third-party.md",
+        "rules/bundle-dynamic-imports.md",
+        "rules/bundle-preload.md",
+        "rules/client-event-listeners.md",
+        "rules/client-localstorage-schema.md",
+        "rules/client-passive-event-listeners.md",
+        "rules/client-swr-dedup.md",
+        "rules/js-batch-dom-css.md",
+        "rules/js-cache-function-results.md",
+        "rules/js-cache-property-access.md",
+        "rules/js-cache-storage.md",
+        "rules/js-combine-iterations.md",
+        "rules/js-early-exit.md",
+        "rules/js-flatmap-filter.md",
+        "rules/js-hoist-regexp.md",
+        "rules/js-index-maps.md",
+        "rules/js-length-check-first.md",
+        "rules/js-min-max-loop.md",
+        "rules/js-request-idle-callback.md",
+        "rules/js-set-map-lookups.md",
+        "rules/js-tosorted-immutable.md",
+        "rules/rendering-activity.md",
+        "rules/rendering-animate-svg-wrapper.md",
+        "rules/rendering-conditional-render.md",
+        "rules/rendering-content-visibility.md",
+        "rules/rendering-hoist-jsx.md",
+        "rules/rendering-hydration-no-flicker.md",
+        "rules/rendering-hydration-suppress-warning.md",
+        "rules/rendering-resource-hints.md",
+        "rules/rendering-script-defer-async.md",
+        "rules/rendering-svg-precision.md",
+        "rules/rendering-usetransition-loading.md",
+        "rules/rerender-defer-reads.md",
+        "rules/rerender-dependencies.md",
+        "rules/rerender-derived-state-no-effect.md",
+        "rules/rerender-derived-state.md",
+        "rules/rerender-functional-setstate.md",
+        "rules/rerender-lazy-state-init.md",
+        "rules/rerender-memo-with-default-value.md",
+        "rules/rerender-memo.md",
+        "rules/rerender-move-effect-to-event.md",
+        "rules/rerender-no-inline-components.md",
+        "rules/rerender-simple-expression-in-memo.md",
+        "rules/rerender-split-combined-hooks.md",
+        "rules/rerender-transitions.md",
+        "rules/rerender-use-deferred-value.md",
+        "rules/rerender-use-ref-transient-values.md",
+        "rules/server-after-nonblocking.md",
+        "rules/server-auth-actions.md",
+        "rules/server-cache-lru.md",
+        "rules/server-cache-react.md",
+        "rules/server-dedup-props.md",
+        "rules/server-hoist-static-io.md",
+        "rules/server-no-shared-module-state.md",
+        "rules/server-parallel-fetching.md",
+        "rules/server-parallel-nested-fetching.md",
+        "rules/server-serialization.md" .
+
+<urn:acg:data:entity/vercel-web-design-guidelines> a acg:AgentSkill ;
+    schema:description "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\"." ;
+    schema:name "web-design-guidelines" ;
+    acg:documentedBy <urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> ;
+    acg:supportingFile "SKILL.md" .
+
+<urn:acg:data:entity/xlsx> a acg:AgentSkill ;
+    schema:description "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .xltx, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved." ;
+    schema:license "Complete terms in LICENSE.txt" ;
+    schema:name "xlsx" ;
+    acg:documentedBy <urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> ;
+    acg:supportingFile "LICENSE.txt",
+        "SKILL.md",
+        "scripts/office/helpers/__init__.py",
+        "scripts/office/helpers/pptx_chart.py",
+        "scripts/office/helpers/pptx_slide.py",
+        "scripts/office/helpers/pptx_theme.py",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chart.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-chartDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-diagram.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-lockedCanvas.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-main.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-picture.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-spreadsheetDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/dml-wordprocessingDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/pml.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-additionalCharacteristics.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-bibliography.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-commonSimpleTypes.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlDataProperties.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-customXmlSchemaProperties.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesCustom.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesExtended.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-documentPropertiesVariantTypes.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-math.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/shared-relationshipReference.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/sml.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-main.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-officeDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-presentationDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-spreadsheetDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/vml-wordprocessingDrawing.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/wml.xsd",
+        "scripts/office/schemas/ISO-IEC29500-4_2016/xml.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-contentTypes.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-coreProperties.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-digSig.xsd",
+        "scripts/office/schemas/ecma/fouth-edition/opc-relationships.xsd",
+        "scripts/office/schemas/mce/mc.xsd",
+        "scripts/office/schemas/microsoft/wml-2010.xsd",
+        "scripts/office/schemas/microsoft/wml-2012.xsd",
+        "scripts/office/schemas/microsoft/wml-2018.xsd",
+        "scripts/office/schemas/microsoft/wml-cex-2018.xsd",
+        "scripts/office/schemas/microsoft/wml-cid-2016.xsd",
+        "scripts/office/schemas/microsoft/wml-sdtdatahash-2020.xsd",
+        "scripts/office/schemas/microsoft/wml-symex-2015.xsd",
+        "scripts/office/soffice.py",
+        "scripts/office/validate.py",
+        "scripts/office/validators/__init__.py",
+        "scripts/office/validators/base.py",
+        "scripts/office/validators/docx.py",
+        "scripts/office/validators/pptx.py",
+        "scripts/office/validators/redlining.py",
+        "scripts/recalc.py" .
+
+<urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36> a acg:SourceDocument ;
+    schema:url <https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/docx/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "2c5958ecac7cee2b583967a2c4981d0f4a75c579" ;
+    acg:sourceUrl "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/docx/SKILL.md" .
+
+<urn:acg:data:source/26b0affe7e041301632ad3c66606c4606c943bdc7c4e751bd21b55ffde20aae7> a acg:SourceDocument ;
+    schema:url <https://github.com/google/skills/blob/c1c95fe82454d4d38083bc9020a6dab92ece3411/skills/cloud/gcloud/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "c1c95fe82454d4d38083bc9020a6dab92ece3411" ;
+    acg:sourceUrl "https://github.com/google/skills/blob/c1c95fe82454d4d38083bc9020a6dab92ece3411/skills/cloud/gcloud/SKILL.md" .
+
+<urn:acg:data:source/2eeed516feae7b7ddfb6a24a39ef9c79eca5b9b3b2e6d458c0ebe61fe8e3be19> a acg:SourceDocument ;
+    schema:url <https://github.com/google/skills/blob/c1c95fe82454d4d38083bc9020a6dab92ece3411/skills/cloud/cloud-databases-onboarding/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "c1c95fe82454d4d38083bc9020a6dab92ece3411" ;
+    acg:sourceUrl "https://github.com/google/skills/blob/c1c95fe82454d4d38083bc9020a6dab92ece3411/skills/cloud/cloud-databases-onboarding/SKILL.md" .
+
+<urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744> a acg:SourceDocument ;
+    schema:url <https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "2c5958ecac7cee2b583967a2c4981d0f4a75c579" ;
+    acg:sourceUrl "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md" .
+
+<urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b> a acg:SourceDocument ;
+    schema:url <https://github.com/microsoft/skills/blob/4cfa010138972d45a7bb92edea90094f4f443da8/.github/skills/mcp-builder/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "4cfa010138972d45a7bb92edea90094f4f443da8" ;
+    acg:sourceUrl "https://github.com/microsoft/skills/blob/4cfa010138972d45a7bb92edea90094f4f443da8/.github/skills/mcp-builder/SKILL.md" .
+
+<urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6> a acg:SourceDocument ;
+    schema:url <https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/web-design-guidelines/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62" ;
+    acg:sourceUrl "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/web-design-guidelines/SKILL.md" .
+
+<urn:acg:data:source/aeb438e806f381077174dfe8d18b153b5d440c8838683d879257b5789fcaab17> a acg:SourceDocument ;
+    schema:url <https://github.com/google/skills/blob/c1c95fe82454d4d38083bc9020a6dab92ece3411/plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "c1c95fe82454d4d38083bc9020a6dab92ece3411" ;
+    acg:sourceUrl "https://github.com/google/skills/blob/c1c95fe82454d4d38083bc9020a6dab92ece3411/plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/SKILL.md" .
+
+<urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97> a acg:SourceDocument ;
+    schema:url <https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-best-practices/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62" ;
+    acg:sourceUrl "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-best-practices/SKILL.md" .
+
+<urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b> a acg:SourceDocument ;
+    schema:url <https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "2c5958ecac7cee2b583967a2c4981d0f4a75c579" ;
+    acg:sourceUrl "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/SKILL.md" .
+
+<urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633> a acg:SourceDocument ;
+    schema:url <https://github.com/microsoft/skills/blob/4cfa010138972d45a7bb92edea90094f4f443da8/.github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "4cfa010138972d45a7bb92edea90094f4f443da8" ;
+    acg:sourceUrl "https://github.com/microsoft/skills/blob/4cfa010138972d45a7bb92edea90094f4f443da8/.github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md" .
+
+<urn:acg:data:source/11ff11aea5701c85a4bfb58fa5d37653b653852f0c45fa4956b9e9aabf976abf> a acg:SourceDocument ;
+    schema:url <https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/sequentialthinking/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "e1dc4b18dbb948921da37f3d4224a628730b43b0" ;
+    acg:sourceUrl "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/sequentialthinking/README.md" .
+
+<urn:acg:data:source/6f150d04aac7fae12d4833dc9d3d143ebc18d1ab7a6de84b9133fbe1989063ac> a acg:SourceDocument ;
+    schema:url <https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/fetch/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "e1dc4b18dbb948921da37f3d4224a628730b43b0" ;
+    acg:sourceUrl "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/fetch/README.md" .
+
+<urn:acg:data:source/6816babe9ef870421d1c34cd6edc4fb78597071142358b935147a8fb80bbc250> a acg:SourceDocument ;
+    schema:url <https://github.com/github/github-mcp-server/blob/6fbcd00b2034502ba3001a49dfaf93593aee7069/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "6fbcd00b2034502ba3001a49dfaf93593aee7069" ;
+    acg:sourceUrl "https://github.com/github/github-mcp-server/blob/6fbcd00b2034502ba3001a49dfaf93593aee7069/README.md" .
+
+<urn:acg:data:source/bad23d71926b9806478e92f7518281899faf873a4d650b9ae97e0803a8794a9c> a acg:SourceDocument ;
+    schema:url <https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/time/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "e1dc4b18dbb948921da37f3d4224a628730b43b0" ;
+    acg:sourceUrl "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/time/README.md" .
+
+<urn:acg:data:source/27514e11dc45886248337cb5fc254e9138088051d478b56f1092c78d336de35d> a acg:SourceDocument ;
+    schema:url <https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "e1dc4b18dbb948921da37f3d4224a628730b43b0" ;
+    acg:sourceUrl "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/README.md" .
+
+<urn:acg:data:source/9e2977f40e67125b765c41c04b480ad1295ed0f8adbde7530912541c27048abb> a acg:SourceDocument ;
+    schema:url <https://github.com/cloudflare/mcp/blob/77d8f76959bbb88b8234f57f7021cbb609f7ee3d/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "77d8f76959bbb88b8234f57f7021cbb609f7ee3d" ;
+    acg:sourceUrl "https://github.com/cloudflare/mcp/blob/77d8f76959bbb88b8234f57f7021cbb609f7ee3d/README.md" .
+
+<urn:acg:data:source/6cada57adba7f2f3453e30e8406516e99ada1d6f0358a81455d4d30ba6be5d9f> a acg:SourceDocument ;
+    schema:url <https://github.com/brave/brave-search-mcp-server/blob/e7da0f1973051fe0fc4e351acf6a3e0a190fc2d2/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "e7da0f1973051fe0fc4e351acf6a3e0a190fc2d2" ;
+    acg:sourceUrl "https://github.com/brave/brave-search-mcp-server/blob/e7da0f1973051fe0fc4e351acf6a3e0a190fc2d2/README.md" .
+
+<urn:acg:data:source/d387207f80fe9587de6c398bb47dcaf0b5b3413439e8e29b205ecf49d6f5a27d> a acg:SourceDocument ;
+    schema:url <https://github.com/awslabs/mcp/blob/37d82219c8e412264f8daec8f2f6e0dd38e877a0/src/aws-documentation-mcp-server/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "37d82219c8e412264f8daec8f2f6e0dd38e877a0" ;
+    acg:sourceUrl "https://github.com/awslabs/mcp/blob/37d82219c8e412264f8daec8f2f6e0dd38e877a0/src/aws-documentation-mcp-server/README.md" .
+
+<urn:acg:data:source/ddad30b742103c37ced74a8af24970803174d72e3e426dc2dd56a02d08265c85> a acg:SourceDocument ;
+    schema:url <https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/memory/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "e1dc4b18dbb948921da37f3d4224a628730b43b0" ;
+    acg:sourceUrl "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/memory/README.md" .
+
+<urn:acg:data:source/ccb97b3b35a0fae161a07b4369e1fb49cda03b45492e1858df8441fbc6f22b30> a acg:SourceDocument ;
+    schema:url <https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/git/README.md> ;
+    acg:retrievedAt "2026-11-11"^^xsd:date ;
+    acg:revision "e1dc4b18dbb948921da37f3d4224a628730b43b0" ;
+    acg:sourceUrl "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/git/README.md" .
+

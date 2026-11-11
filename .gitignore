@@ -1,0 +1,10 @@
+# Local Python environments and interpreter cache
+.agent_capability/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Downloaded third-party source snapshots and Skill package archives
+data/raw/downloads/
