@@ -1,0 +1,271 @@
+{"content_sha256":"00d9f1678f604787f86026d26a5ebdec4573880e9e4ef44853820788584bbb36","locations":1,"skill_ids":["skl_b5f766d06bc71d88ed9d027d"],"sources":["microsoft/skills"]}
+{"content_sha256":"019b205f338274a141a25801d9d4320a9d2e65e44f175a2012ede29d58c374d2","locations":1,"skill_ids":["skl_98262cf9395457d076c212fb"],"sources":["microsoft/skills"]}
+{"content_sha256":"02a36d349fa9ce1b194f032975ad82cd04d95598059f6d14902872162688edbd","locations":1,"skill_ids":["skl_87984bc6bfc24fc3d8957986"],"sources":["microsoft/skills"]}
+{"content_sha256":"02ddb9920cf6432b1bac4ff90564365878a1b7341cda4afa989e795458e6978c","locations":1,"skill_ids":["skl_466559f3930444ef6443a6e0"],"sources":["microsoft/skills"]}
+{"content_sha256":"0345a27f116f3217e121f0ff110f8e92ac9f9c72b1fd7b3e8c61639550db3e63","locations":1,"skill_ids":["skl_fa2a86f4391c329c30d5a334"],"sources":["microsoft/skills"]}
+{"content_sha256":"036cde228f87b9e6aacbd3ec317bd504cb5639e04aec81f1b3ef631a9b240622","locations":1,"skill_ids":["skl_40625e092c94b4c51c7eff78"],"sources":["microsoft/skills"]}
+{"content_sha256":"0442148cb6e845b4c682e1adf7e253fef2dab295a47a48da210d91970205178b","locations":1,"skill_ids":["skl_011f89008856e9afdd14c897"],"sources":["microsoft/skills"]}
+{"content_sha256":"0577a016f73f918981667f7d773035d04e7b21baa2423894f87771fb8e608b4b","locations":1,"skill_ids":["skl_b44dcff247933110e7ef58cf"],"sources":["microsoft/skills"]}
+{"content_sha256":"05acd88e75ab23776d2876a1f91f6cfe2fd666c48f4f45176e7ea9d3d873b9be","locations":1,"skill_ids":["skl_2cacbce7cd9373eb4fa8d996"],"sources":["microsoft/skills"]}
+{"content_sha256":"05ec3512a9d20bbc1e63aebc1e721ecfc26be2c0332e3e9affb6e6975e3f657d","locations":2,"skill_ids":["skl_03bb35ac65a6e7c8532b7120","skl_f102289a927e4d99e99ebb1a"],"sources":["microsoft/skills"]}
+{"content_sha256":"060e032429798fb60475ef7b664e9057d1d570bc386223f6491b8d3c7ecde0c1","locations":1,"skill_ids":["skl_da6218cd415d3328ca98b727"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475","locations":1,"skill_ids":["skl_0f1c6317e37e6b0df607252e"],"sources":["anthropics/skills"]}
+{"content_sha256":"07491b57acea5747c3474bc1401e4813ce292dcf35658b33512aebd73d21609f","locations":1,"skill_ids":["skl_85354f1b57861d294dfcf81f"],"sources":["microsoft/skills"]}
+{"content_sha256":"0968850f574d452300a063c8b73f708a1cc54a7ba6adc103ce3c5a601f1a3f3e","locations":1,"skill_ids":["skl_cacad371d12fd1d3529d9372"],"sources":["microsoft/skills"]}
+{"content_sha256":"0a06cbd018005720fe56ec2d3fc52f215f4ba4019b7e78cedd08800512a51adc","locations":1,"skill_ids":["skl_16115fee0d9961bdcbd756a8"],"sources":["microsoft/skills"]}
+{"content_sha256":"0bcc0afff759ce14baba9f738d22ed00ad220268eb6bd880af761c1c2379540b","locations":1,"skill_ids":["skl_32fee7eecbbc35308e2302eb"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"0d54d36ec8774ead43825a582cfc99f7faed9d5676d3c066c15505f1847b919d","locations":1,"skill_ids":["skl_a5c03a8a89c3a0dec7ad610f"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"0d9d14bc3d32c6793a6c7e8aba29757f6a7d5105b68532a04a566420d03ecc59","locations":1,"skill_ids":["skl_22cc2c72a0a56662c261af77"],"sources":["microsoft/skills"]}
+{"content_sha256":"0dc8c8b6b89db75fa1aa0890e777a7989960804dafd4aa4b02cc4ffa64476434","locations":1,"skill_ids":["skl_17a387dacbf421c7bbf3e432"],"sources":["microsoft/skills"]}
+{"content_sha256":"0ddd4fd2c83124a6effbaa5ba99a63bee81ef16ec50c256bc840820c4f688272","locations":1,"skill_ids":["skl_97d1009b9a7436fa6dd5b1ac"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"0de50b51c08581507b497152b4fc7ac02d2c72a12dfc33c6a9782b3131abcd66","locations":1,"skill_ids":["skl_c660a68a900aa30164aa65a5"],"sources":["microsoft/skills"]}
+{"content_sha256":"0f746e9585020361bef8893f523c07782e200840da2770f7bff85290e939954c","locations":1,"skill_ids":["skl_8612601db04344c3fa618c68"],"sources":["microsoft/skills"]}
+{"content_sha256":"1001dec59391d6c024c21d74db6f99cbf92c9ff868e18cd2d57cde4ea743c5d6","locations":1,"skill_ids":["skl_e6d65a18f5087705d0adbf80"],"sources":["microsoft/skills"]}
+{"content_sha256":"108f198e45b9cd7029768e149f0cd58b0ef5b58efd66ce61c0b2698f69860c26","locations":1,"skill_ids":["skl_a1bae41048e3b1fb0d90c101"],"sources":["microsoft/skills"]}
+{"content_sha256":"110c607c2626505931621c42f6cb21f2be9f35a2d35cf828b61f5562485ec8c4","locations":1,"skill_ids":["skl_d2275a0292c1dbf23e79cb60"],"sources":["microsoft/skills"]}
+{"content_sha256":"1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe","locations":1,"skill_ids":["skl_c763c07ae2efdececc285b22"],"sources":["anthropics/skills"]}
+{"content_sha256":"120143857e5002fe8bf49328cc1b36d9a5b3fdbcd38fbaa3de298ead40f2d5c2","locations":1,"skill_ids":["skl_6b22daca566ad85b857079a7"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"13d2af8dd44cca049c8ebf8a8880cca304fc3dc419c926ef146dba35b14df412","locations":1,"skill_ids":["skl_30196168ecc77c8974f6d8d9"],"sources":["microsoft/skills"]}
+{"content_sha256":"145b8817fbfe0e3c41d4b5390dae785a8171e3e349927f1ee0993052a13616b8","locations":1,"skill_ids":["skl_61cdf43386176f26e041a476"],"sources":["microsoft/skills"]}
+{"content_sha256":"15bb9f18c67f30940b36edd5a2c050c05153ce2b3626d8ebf55604a9fbe946b2","locations":1,"skill_ids":["skl_e2114d0a020f69dda309bbb1"],"sources":["microsoft/skills"]}
+{"content_sha256":"15ce951aec071c813150e6794628664725c164223108792e15bd3db18e959da0","locations":1,"skill_ids":["skl_d92ecdb640abb58476577e2a"],"sources":["microsoft/skills"]}
+{"content_sha256":"15e43981fbfcc9b9da3ca63e55a6953a5201626c7135fee578fc3224825440ea","locations":1,"skill_ids":["skl_7e194924d5cb696834d29216"],"sources":["microsoft/skills"]}
+{"content_sha256":"16933eb5a595834dfe70c40c0b60b20aac61e6ace1c68a741a61858ccd543cd9","locations":1,"skill_ids":["skl_0c83c34063207f56cc64590b"],"sources":["microsoft/skills"]}
+{"content_sha256":"170b437bc1a60e84a9258f1f1a0d452ab4faf043c46cc97286bb5ca3939509e7","locations":1,"skill_ids":["skl_9ee7807f25cb728080b8e46a"],"sources":["microsoft/skills"]}
+{"content_sha256":"17659e2590c0a2ee45d3d630badbecad24315ac73d5aed6b5aabdf43e1e48dd8","locations":1,"skill_ids":["skl_9dd7ff589eeeb6cd437b0426"],"sources":["microsoft/skills"]}
+{"content_sha256":"17f6d77d27ede847ce910183a232d4fdcd999a7501d9a5a13391e51a91231f16","locations":1,"skill_ids":["skl_7522ef79be5f56a7565c9600"],"sources":["microsoft/skills"]}
+{"content_sha256":"180a75a03963329bd2671651ab1b90ab7e21c1307e7f822a3f649d5bebf367d1","locations":1,"skill_ids":["skl_d34458e2529b49b9ae1245d1"],"sources":["microsoft/skills"]}
+{"content_sha256":"18a5fd5be60822f045a84232a1ad2ffaad0d49411aea820f6279c9f74982e7ea","locations":1,"skill_ids":["skl_367106aa01142802c6b8d93d"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"1bc21cc25ec1c8b662f89a7e54c94948cb40f7ffcddf3d7d24131ffb2e13cd06","locations":1,"skill_ids":["skl_abb6649766bd5ea6a8d3e8ce"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"1e50ff1d6b290ba30644fb6c501802d0c689b2df0e8ed8aaab14f4f57fa5e4cd","locations":1,"skill_ids":["skl_c42348e3c38083199a45df27"],"sources":["microsoft/skills"]}
+{"content_sha256":"1f29376692b66b1bfc1f3d7074457eb7c4f3606ae9e32f56c2aba600bca8503b","locations":1,"skill_ids":["skl_9daf31580085a5bb48f10ae4"],"sources":["microsoft/skills"]}
+{"content_sha256":"1f6aa252243b60aad3dd879b24e9fcba51b6833861baa5ee97b74ff2f0b3a726","locations":1,"skill_ids":["skl_137ba30d4b5d1cff8d547756"],"sources":["microsoft/skills"]}
+{"content_sha256":"22d6666fbeb727533fce860bd123953e8d1f04c7c72edee7ffd0b2282a4c64d2","locations":1,"skill_ids":["skl_eac64b133ac51ff2eb54857e"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"238e67845e0fe7cf0333a1bfa21f9adef3e46a82b02719e28cead258bdb30781","locations":1,"skill_ids":["skl_ff8423a64669df2b184b7a4c"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"23d6c309124c4dd7f96ef7166a1998814b4eaeca7e3d654bdac2feacde7e16d1","locations":1,"skill_ids":["skl_57ed9a6b547395cc820513b1"],"sources":["microsoft/skills"]}
+{"content_sha256":"24e1f152af7ecb5dbb37a84456b596c1ebc78773b9e1f1e32e4b223931a9a2c0","locations":1,"skill_ids":["skl_f8ad23f8d38b3dbc25ac91d7"],"sources":["microsoft/skills"]}
+{"content_sha256":"257cca211f25374b4cfa2662c667659cbe54e9422656b990aad623aa242d8782","locations":1,"skill_ids":["skl_d0992248d381aa4f952ea570"],"sources":["microsoft/skills"]}
+{"content_sha256":"2684f5cb2ee3ee30f225451c6d0d99245b82d95ca10bb8897d3902a0819ebf17","locations":1,"skill_ids":["skl_0bfc2b4883214f3814acab0b"],"sources":["microsoft/skills"]}
+{"content_sha256":"273f015f58dd53f72644ab3a2d6a14b736fbd3f6a1a131be8ef4dd8d71d3678d","locations":1,"skill_ids":["skl_d7ed64abe6a74869ef4b21b0"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"292c48791c092ff185612860188f05232be627467fab098dfb91191eb7f16572","locations":1,"skill_ids":["skl_1482b2f898c3f172a23d4667"],"sources":["microsoft/skills"]}
+{"content_sha256":"2b0a220f3ec73a263cdddb7748943b445b2a10efa5385f950d0fc6730bafadc8","locations":1,"skill_ids":["skl_43deaf38a9b1faa56f298267"],"sources":["microsoft/skills"]}
+{"content_sha256":"2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4","locations":1,"skill_ids":["skl_f8206c5289014f230ad5a70f"],"sources":["anthropics/skills"]}
+{"content_sha256":"2e8965fe9d548f8f8fa1bd5b5b2af92e3a703a7f274b774a1b3889ba973e7dd3","locations":1,"skill_ids":["skl_5635474bf4711f383a96a84d"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"2ecdd3db79950efc38de599e90887a41f34e9a670949b9be8e6708578dbad6df","locations":1,"skill_ids":["skl_4ac3d505349ef90895a37ae7"],"sources":["microsoft/skills"]}
+{"content_sha256":"2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22","locations":1,"skill_ids":["skl_512638581b7f428e410513cd"],"sources":["anthropics/skills"]}
+{"content_sha256":"330aa4ea6110ffca30ef3a8e227d60fe6a3e44ee44b25560b1b5aade427dc476","locations":1,"skill_ids":["skl_611bb0ade98c68c036645ace"],"sources":["microsoft/skills"]}
+{"content_sha256":"34946fe159707d9ba75e040b654d89a2bede4b408945e476f4f88432dbc0cbfb","locations":1,"skill_ids":["skl_1aabaf7d6abf3c63d234e209"],"sources":["microsoft/skills"]}
+{"content_sha256":"352aefc8d088cdc851baf3a38d60124bbf77bc0f273c2522500967d5bd515da2","locations":1,"skill_ids":["skl_bc6f0f4ef231f6ac1d75dd3d"],"sources":["microsoft/skills"]}
+{"content_sha256":"36f2b20f79c68f86a8dfe4d539c64971eecece198646dfb9080d7afa233210fa","locations":1,"skill_ids":["skl_fbbff14c8fbb354e30aa619c"],"sources":["microsoft/skills"]}
+{"content_sha256":"3708f24ab3a0754dbd862efbd94740e01f619590567c9ff45243435ac8394e96","locations":1,"skill_ids":["skl_c2d8c12ec9bd4e5a5768c6b6"],"sources":["microsoft/skills"]}
+{"content_sha256":"3731d251910cb49587a0a83839e532fb1e70baa7750824d35b2a5e545c38da7a","locations":1,"skill_ids":["skl_a48e83a1e8fc9c7c2037201c"],"sources":["microsoft/skills"]}
+{"content_sha256":"3793d737ccb3e2c24d2de919f19ef59c35cc73598be8fdc8eb69693820ae29b5","locations":1,"skill_ids":["skl_ad847a975c845179dc76fd95"],"sources":["microsoft/skills"]}
+{"content_sha256":"39f0df196360a96e17b32f32481c696943e1176f19e8ec1f8de4942299db82c2","locations":1,"skill_ids":["skl_f2689c01fe617d6a47c17fe6"],"sources":["microsoft/skills"]}
+{"content_sha256":"3bb3d811f73db5724d3d64d572819a43467803e3e15ce20024845e9bb0a534a7","locations":1,"skill_ids":["skl_d4f41bf5d84176c864b006c2"],"sources":["microsoft/skills"]}
+{"content_sha256":"3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef","locations":1,"skill_ids":["skl_6a1f2714f0b57a3624c9609c"],"sources":["anthropics/skills"]}
+{"content_sha256":"3dd01706390b4b1765ae1a7b3829878c4d0ba8485228f824e817287c4f8990d4","locations":1,"skill_ids":["skl_c9f41f3590eea0bf7f1cb490"],"sources":["microsoft/skills"]}
+{"content_sha256":"3e2f90f372f71323b46d9f2988f955dc8e3722a9306fcd2f6b29a8bc15babf8a","locations":1,"skill_ids":["skl_6363ecbe70e23f3fe333cb43"],"sources":["microsoft/skills"]}
+{"content_sha256":"4012750a5ccbe064ca04af3835d5d1b011979d2d09d9b6df1c8128fac58e0a66","locations":1,"skill_ids":["skl_17a43ef267e292c398526161"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"40537cca17c4aa86e4ce83ced39efcbfb1204905e3cf4c4ff98f2eab011e4b7f","locations":1,"skill_ids":["skl_ef5988b8365b7b251203ec22"],"sources":["anthropics/skills"]}
+{"content_sha256":"418ca2a60d35c551e6cb645f4e82c1b704a8335486ffe74b1b3d0617a17504e5","locations":1,"skill_ids":["skl_5b38f5848b1b3d5a77a0999f"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"4241add12fefc5e51afc1a925426dd5f7d3494e642753fedb03273a3f2fcd30a","locations":1,"skill_ids":["skl_8bd7a29be0798e8e2f3f2bb9"],"sources":["microsoft/skills"]}
+{"content_sha256":"428aed569ce9865e7629c565eff62cedbcdb1155533603ed9aa75f888d8c8730","locations":1,"skill_ids":["skl_59f75ef41a57c5aec36be3c3"],"sources":["microsoft/skills"]}
+{"content_sha256":"43679ee1835646c49366ded8024246d57478a1591f75e08933ef7702c5e2a16d","locations":1,"skill_ids":["skl_3edb4ee0d50407a338c342a5"],"sources":["microsoft/skills"]}
+{"content_sha256":"43822acf1e76afe9daaa6ecdba222cfe8dee0cce0c4ffc3405cad38991e1a0a5","locations":1,"skill_ids":["skl_fbd881d5f79d7845066e4b9a"],"sources":["microsoft/skills"]}
+{"content_sha256":"44598c07681d06e88d7a26ad5a11e18170ea5cf65c1457a2bce5742dad9bbbbf","locations":1,"skill_ids":["skl_9676e8f78b3acccdbde88e04"],"sources":["microsoft/skills"]}
+{"content_sha256":"4694de74b7a67f15c59ea9a6af7d916920380b7ab54b201f6e37ab24e04ca12d","locations":1,"skill_ids":["skl_2d31deb005fb9e2f3415513a"],"sources":["microsoft/skills"]}
+{"content_sha256":"49f2540ed17d5f34a0d64fdd8b51e37cb62e6708495f7baeb40783954bf3bd3e","locations":1,"skill_ids":["skl_fd9766ba4880101774a673aa"],"sources":["microsoft/skills"]}
+{"content_sha256":"4a8d46e6e8def539b71987804fdc2d0946948e6e332c98ca831eeaea9e596401","locations":1,"skill_ids":["skl_32d5a0e8e8d4d495c9050d22"],"sources":["microsoft/skills"]}
+{"content_sha256":"4ac56c42ed0d45adf51f98f4b4150290ab98c22c2f5b7fe367f8746d48e670f3","locations":1,"skill_ids":["skl_a99311809b8f72316e13d948"],"sources":["microsoft/skills"]}
+{"content_sha256":"4b51c68f15f6155f4621be975bdbb9f41ce79097c9a7cd1784669d8f87cae665","locations":1,"skill_ids":["skl_608789529467a5a5963bd827"],"sources":["microsoft/skills"]}
+{"content_sha256":"511734ed1e019e27b301693309e426985f15ae71d1d14697c6eadbaf7416ddf9","locations":1,"skill_ids":["skl_5f4744a4b1ea006953d9350c"],"sources":["microsoft/skills"]}
+{"content_sha256":"51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2","locations":1,"skill_ids":["skl_9d06c9c6cfe091bb8115128f"],"sources":["anthropics/skills"]}
+{"content_sha256":"5300434b6d8025604bfb4e16514b27d1e380255f0a587c65d000cbdf59248ce1","locations":1,"skill_ids":["skl_880fffa2c1d7fa0f9c6ec447"],"sources":["microsoft/skills"]}
+{"content_sha256":"53303c564f27e2ccbcef3f8d35a8ac5d8f0cac18745ec2aba9bd91ba8c27200a","locations":1,"skill_ids":["skl_99ea1edc1b87f3c9c219051f"],"sources":["microsoft/skills"]}
+{"content_sha256":"55f7bee669c8c15e804990b6a5c8a31a8063db0c22e594cba802f4c0e274e792","locations":1,"skill_ids":["skl_55c3ac56994b1308ab93ce79"],"sources":["microsoft/skills"]}
+{"content_sha256":"5719cfda0fd19819d52702426992551224060ce1cb4618ed8356785b6bb010fc","locations":1,"skill_ids":["skl_75e85ece45c7526bd9352eaa"],"sources":["microsoft/skills"]}
+{"content_sha256":"58ed42a87e5b5aee1cc07f970f05da8fd860037f8a0201ce7e68a88fbee79063","locations":1,"skill_ids":["skl_c4357ac1ae09a534f127a29e"],"sources":["microsoft/skills"]}
+{"content_sha256":"5a1da9a62088eb7518937e1cba1d66e5a644083d82a22aa51f242f5915ca21ee","locations":1,"skill_ids":["skl_04945cffb6c94d2d7081dce8"],"sources":["microsoft/skills"]}
+{"content_sha256":"5af0936e6f2e52dcb045c2963b2b1f966a7ffc93682b4904cf575ea8a1ecd32f","locations":1,"skill_ids":["skl_f311fa66892fe37d57d7dfb7"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"5b4968604bb500ed5bd30d195b1f633cec3001c0adf2b56dcdf92127c6faa45f","locations":1,"skill_ids":["skl_9a1f71d8f4cc4457ee2dcb0c"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"5c0e0676db7d681e5b38c5dddf1982db0dcdc18086f6cffd22940c8a731df183","locations":1,"skill_ids":["skl_486f3e775c761ba1984d1a3f"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"5dde78db7c75f3265025c1410818d25abbed7a0bb3b5fa33c2c25ae0fbe7df50","locations":1,"skill_ids":["skl_dbcdd0584a99c17a4e5720ac"],"sources":["microsoft/skills"]}
+{"content_sha256":"5f3da3c631f76fe4a52a159c8eb055e54819eb6fd5269803b4106773a70f98fd","locations":1,"skill_ids":["skl_d3d301e8b76b784d91ac771c"],"sources":["microsoft/skills"]}
+{"content_sha256":"6087d00943083bd26c5b025597a8e56c034b6c6263b0a4c0fcfa23722a1461db","locations":1,"skill_ids":["skl_0b220593d1ee43f53e7b7650"],"sources":["microsoft/skills"]}
+{"content_sha256":"6189ce9ed410ea4eaac2b9fef554dad602919a85f9d1238588e42bb12f7be77d","locations":1,"skill_ids":["skl_4185416b579c0fabd1a4abaf"],"sources":["microsoft/skills"]}
+{"content_sha256":"621e771c22224140752ddf933923467b2d1148580194ad59d3f1f21f9f27bdc9","locations":1,"skill_ids":["skl_f67e66eb55a1e80f8641352e"],"sources":["microsoft/skills"]}
+{"content_sha256":"62f14490deb8e0713eca06ab576f6fe45d081f1cbb9452a45389a9540f39ab69","locations":1,"skill_ids":["skl_1af6a564294dd5e861e3c925"],"sources":["microsoft/skills"]}
+{"content_sha256":"639b68cdc6f9b4cdd66a111851555afee2eb82d4de37bf9cbad3be845bb00c2d","locations":1,"skill_ids":["skl_dae0bddb46a47c244f51e595"],"sources":["microsoft/skills"]}
+{"content_sha256":"63b889425dca9f3584ba88f509374ede0364ee48d71616c52902c44bc1882691","locations":1,"skill_ids":["skl_7ee06ddfde0a93a47131128c"],"sources":["microsoft/skills"]}
+{"content_sha256":"63f15b83c033131b85ecbd7635c779a12e08efe16080301688944e3157364d00","locations":1,"skill_ids":["skl_80100b4acb01f0dd71bd1ac0"],"sources":["microsoft/skills"]}
+{"content_sha256":"66fc85d1e8f354abe57d174733aaaf1877197d54cc972cc0372b0d28e8b8c852","locations":1,"skill_ids":["skl_73ae1e259db130f5607137c0"],"sources":["microsoft/skills"]}
+{"content_sha256":"6750e050df436fe23223dfe4cacaf9067f3d16ed10f6b9137453b0cb7bcd0b9b","locations":1,"skill_ids":["skl_98b4e7a5dd1a869602a3a499"],"sources":["microsoft/skills"]}
+{"content_sha256":"677a18b27f976c62c8cc3276637319bbb581dc2860750941f7ba3b688e0f9f8a","locations":1,"skill_ids":["skl_5f3e6640e50a381e3046f632"],"sources":["microsoft/skills"]}
+{"content_sha256":"6878ae49f9bdc1ed9ada3ef9c59e83450bc96751da73d44c4bfe5a1a47e14bde","locations":1,"skill_ids":["skl_3dc9fd4ef5576ed8a44ae74b"],"sources":["microsoft/skills"]}
+{"content_sha256":"68d52c6b0b786508071895979907eab932b92bfd55eee35ac30f018acafe23e5","locations":1,"skill_ids":["skl_30ff80f46afad0acf147bfa0"],"sources":["microsoft/skills"]}
+{"content_sha256":"68da74e8eaa1e7e58dfc17345014871b4fd6cbe0ba462d11de49ed6dc6be1f61","locations":1,"skill_ids":["skl_f0d70e9ac2869964a3b160fc"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"693acbddd1d2dcf774286867efbc9a5c09dce2da6f21f8e12618187a92f2106a","locations":1,"skill_ids":["skl_c6a210e006d9785e10bf3a4c"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"6a16e0ef96cb683daaf6787e488fc65fbfd69d9b220fdb1b4ef5ecee9d36e9ba","locations":1,"skill_ids":["skl_337d34a4db8c3bd333cb15f8"],"sources":["microsoft/skills"]}
+{"content_sha256":"6b4cf495990c027f146f4dab11b17a2d04c21e67fcf96af26ad56260f7a764fd","locations":1,"skill_ids":["skl_c7000c7feaeb33230cd04999"],"sources":["microsoft/skills"]}
+{"content_sha256":"6d1905fe12c4c84a3e4520ee6c03d21b205111b0c394c14e4a0d5bb322c94435","locations":1,"skill_ids":["skl_1d285ad1c36ed5acdcf5bf73"],"sources":["microsoft/skills"]}
+{"content_sha256":"6d4a9cbb3889a3dd6beca505dbc6c240454a7432f9460195c68f9b54f0a89396","locations":1,"skill_ids":["skl_64768a0dd693e4d13a2507f1"],"sources":["microsoft/skills"]}
+{"content_sha256":"6dd015ac34065253ff022f579a3c5af02aed4e495a587895acbe7a33f1c8205d","locations":1,"skill_ids":["skl_67f8f20c44eb95cbfd1027c6"],"sources":["microsoft/skills"]}
+{"content_sha256":"6e4d92ab2e19baa8136419195394789218c2a9157ddd87100cf352870b379bdc","locations":1,"skill_ids":["skl_6e216e9502122707c193c786"],"sources":["microsoft/skills"]}
+{"content_sha256":"6f452bd5f842bafc697edbb8201a091a360584c7a03881bfb63c38745899de2a","locations":1,"skill_ids":["skl_458a241152f9f8ccd16cdf73"],"sources":["microsoft/skills"]}
+{"content_sha256":"7160482888f42b277406099f73499ecfb9d7fa26c2e4ffccf445a4217f65ee3f","locations":1,"skill_ids":["skl_8f74ce075021a21b5c4c68d9"],"sources":["microsoft/skills"]}
+{"content_sha256":"71718aef3ae2343f90c9db33dee8ed9cbe146e66128c624cac069bf23d2083fe","locations":1,"skill_ids":["skl_992ed00e623471ac9df94abf"],"sources":["microsoft/skills"]}
+{"content_sha256":"71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355","locations":1,"skill_ids":["skl_40760aea188157195dffdb4b"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"75f05006d817cfd262462fda75d0e0a4495d90665cbf79e37f83fe7d96a68c3d","locations":1,"skill_ids":["skl_4c4d498f7c31a0fbfaf09be9"],"sources":["microsoft/skills"]}
+{"content_sha256":"779d1684a34a4a051e23835b99ce51909d4485d88db44df9508e3a4debdf729b","locations":1,"skill_ids":["skl_f1b7514f9c40680627c34c2f"],"sources":["microsoft/skills"]}
+{"content_sha256":"78116489577296fe710c3dbd1f50e55536f612b71b26db2d5f56ddb8bc9b95ae","locations":1,"skill_ids":["skl_8dff45308f5f3d666719d533"],"sources":["microsoft/skills"]}
+{"content_sha256":"78ae78efd24e6742b80d83f2578f1b50560c017a51a00fa21a401d9310db9538","locations":1,"skill_ids":["skl_0bbf41b5657d1a9096f2106a"],"sources":["microsoft/skills"]}
+{"content_sha256":"7a17789cb61e026a52071564b00624f2880e7b35c89fec9aa06c0dfcc8fe1e31","locations":1,"skill_ids":["skl_83847715e300b5253812b359"],"sources":["microsoft/skills"]}
+{"content_sha256":"7a348472e13aaafa5d631b39dc9198d5b90123ea00b4cac4d359cbcaf886bc45","locations":1,"skill_ids":["skl_fb1d4588a172972eebdd2224"],"sources":["microsoft/skills"]}
+{"content_sha256":"7abee3d8459e716a5e0b3d46fccf2f1e0db7c128e843b2981f2dbe97eef1a60e","locations":1,"skill_ids":["skl_f4ca54f4ac359d0824feb6b8"],"sources":["microsoft/skills"]}
+{"content_sha256":"7b3c8cbbee11c4900cec94db00927a60f69d002385194df953af665768281925","locations":1,"skill_ids":["skl_16ef193170b9cbf85ae84b2f"],"sources":["microsoft/skills"]}
+{"content_sha256":"7bac40858cf6f67eaa85c17520c5990f31cdee3b47d1743946ca9898ec9676bb","locations":1,"skill_ids":["skl_e93fa82336d37dc013c88d4b"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"7d50c3d6f7c4f85e04b62d683cab0ca3e153000385672003724f885ddb1f6bc0","locations":1,"skill_ids":["skl_b5bab7110a64589cad634dff"],"sources":["microsoft/skills"]}
+{"content_sha256":"7e869e37173d7608320554e85a444aa337c3e66cc3b7145cd33caae67b5c0abd","locations":1,"skill_ids":["skl_7cc10d496de80ecb768a1682"],"sources":["microsoft/skills"]}
+{"content_sha256":"7fbec12baeb4ccefe06786137317afb1bc7cf310362f0a38085d1ff9858b129b","locations":1,"skill_ids":["skl_5351692edffe1bf3a5d9e959"],"sources":["microsoft/skills"]}
+{"content_sha256":"800136a20b458fc322b03149237944465b1dfb1175f7f4dae2cdfec77ef4fab2","locations":1,"skill_ids":["skl_9f3adc9bb7325c3ecc53cc8d"],"sources":["microsoft/skills"]}
+{"content_sha256":"81c4043ecf3d0b86a31468de4d37ee5109052cd58ca757bf3c035c493118b869","locations":1,"skill_ids":["skl_80371c20ccd5fcfe325d35d8"],"sources":["microsoft/skills"]}
+{"content_sha256":"81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8","locations":1,"skill_ids":["skl_d52420fa182e7a1b8a79ed3f"],"sources":["anthropics/skills"]}
+{"content_sha256":"82ac42524b655f947bdd6bbd6b86a670145d296a3447555f510e37ea2d377733","locations":1,"skill_ids":["skl_96897aa709a960fa3de0d87e"],"sources":["microsoft/skills"]}
+{"content_sha256":"830fc757ce19bd9d71a879ebe1afd83cd393c2175cf35108826bf4a365c3a4d0","locations":1,"skill_ids":["skl_2f730478ffda6f8ce2df9898"],"sources":["microsoft/skills"]}
+{"content_sha256":"83964928d33e8d938e5150020f804b06ab6c4e2ed7bdbe3e4db9b4038bcd3023","locations":1,"skill_ids":["skl_1538c273b124806b56db0951"],"sources":["microsoft/skills"]}
+{"content_sha256":"8531f4fef869c12073a8d5069a0493382dab5af206b925dbb3ecb0df8fbd90f6","locations":1,"skill_ids":["skl_581c95c0a40bf144c949eab9"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"86498df46a34070e105af3f9283cb3a51f6c4c5cb489bceb092a2566efbbb527","locations":1,"skill_ids":["skl_0629b8533ef1033f913c8873"],"sources":["microsoft/skills"]}
+{"content_sha256":"8865590c029e53142edc56634914625fe23869baf7828a8181aed67e096a9e31","locations":1,"skill_ids":["skl_827fc28e5242a087fc52fe46"],"sources":["microsoft/skills"]}
+{"content_sha256":"88fcd541f96a973d546da7f0d06db97df5cc9b8e1a99a4790458a6ef2abbf74d","locations":1,"skill_ids":["skl_555d8f06354fba8eba2d6b65"],"sources":["microsoft/skills"]}
+{"content_sha256":"898e9dd9acece95418989c09e3e9824fbe81c8ecb3bb4279003edff334f63e24","locations":1,"skill_ids":["skl_0cf1447fe5e1bc0cb7dd359f"],"sources":["microsoft/skills"]}
+{"content_sha256":"89a5f581193289b80af58b980090aeed535047c8df2b55ccbaae0de40283a99d","locations":1,"skill_ids":["skl_a816eed43d7c3afd5c108d73"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"8a765d22c122b71f8726aded787a45e248ed3823fdf373cc041d3adc2a5814f5","locations":1,"skill_ids":["skl_b46da5bad34751377d16620e"],"sources":["microsoft/skills"]}
+{"content_sha256":"8d60556c55795f4ccaca1907e108e98d7469ff64bea8aaa62cb9b8a19615e024","locations":1,"skill_ids":["skl_c0da4b42357bf38ef6fe74f4"],"sources":["microsoft/skills"]}
+{"content_sha256":"8e44c8352d0347de1c439575ff6120a44068dfed62b7529ab0a23fddc5c5b498","locations":1,"skill_ids":["skl_0a8c3aaa7a2beafd5c3d06d1"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"8f8e7b7429b04c3150c7393997d6ccd433defd497ad22a7e43979cc43e309c32","locations":1,"skill_ids":["skl_d958b33a59e75ab40f99d432"],"sources":["microsoft/skills"]}
+{"content_sha256":"9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad","locations":1,"skill_ids":["skl_f1dc40e337fbb9c572ce2d08"],"sources":["anthropics/skills"]}
+{"content_sha256":"91b3ce958de44f728453572747504e8c9146f119892aa690546fd19f8d96a344","locations":1,"skill_ids":["skl_8607f16b02ed32219326c7af"],"sources":["microsoft/skills"]}
+{"content_sha256":"924066d2c6056b8e528fc8b7654b91646c4c37717dd10a96e7545fe244733a06","locations":1,"skill_ids":["skl_19974f6a03dce6be2833cc2f"],"sources":["microsoft/skills"]}
+{"content_sha256":"932029f4b71ec59213a538549d8a30b5bb9161479a6b2cd6d2cd6a1e9be224e1","locations":1,"skill_ids":["skl_a26df768641076575810842a"],"sources":["microsoft/skills"]}
+{"content_sha256":"95ae2683b30d892d165af92a350c5628b68106f395a59b448857b654e306ed91","locations":1,"skill_ids":["skl_65299c6c1211175b097ad053"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"95f952b72a93affd41483f7a44f1bb4043942794fc1d3ed070cde247e2cf1854","locations":1,"skill_ids":["skl_c6cca7b237768e27ab2530fd"],"sources":["microsoft/skills"]}
+{"content_sha256":"98539bd472258ec80a1b2718a197df2f1f85b27d43a5c96a980424e5fac6894c","locations":1,"skill_ids":["skl_f44e05c7465ffa6541765375"],"sources":["microsoft/skills"]}
+{"content_sha256":"99420f753b5eabf41ecc5e61365ae15bf11b4e3d9956b26bc20c6ea75938220e","locations":1,"skill_ids":["skl_32d699c9e92d428e9d28c579"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"9a0e4d4a1940c40420d292b311bf23c62e7b855506459984382d9dfcae3f140f","locations":1,"skill_ids":["skl_a56c9ca94a28f8016544a11c"],"sources":["microsoft/skills"]}
+{"content_sha256":"9b8fd8572cc134d45d4a7efdaca82a9628a26dd1bc4f2b51935b79fc9baa27c3","locations":1,"skill_ids":["skl_0dffb5007b5d6510009e984c"],"sources":["microsoft/skills"]}
+{"content_sha256":"9bb62a43834be7a0095dc995fa5f703329114aa47f9ccdebe227a8a8c48bd374","locations":1,"skill_ids":["skl_07c5be1c1453b59047d7527b"],"sources":["microsoft/skills"]}
+{"content_sha256":"9bec8025d0ccf14b3c2f66754966781ba42d08a57b86b103bb9ef98d9f05c58b","locations":1,"skill_ids":["skl_6745ef4c8a7a3699daa4bd5b"],"sources":["microsoft/skills"]}
+{"content_sha256":"9c216f29155345129844628e6137de6d3593690e9ce6bae80e543aff84fbb933","locations":1,"skill_ids":["skl_6659ef4f0bf9fa3f0bafbe8c"],"sources":["microsoft/skills"]}
+{"content_sha256":"9e3d2e976b1ed5ed25786a9a1df704a448408c7c0eea0a1f1c277bbf89d439e3","locations":1,"skill_ids":["skl_4491d4e5006605ffacd2f217"],"sources":["microsoft/skills"]}
+{"content_sha256":"9e8202e2524a9ed87da67a5b3eaa76e8e6038f4171f8251ad6aaefd34e82a3df","locations":1,"skill_ids":["skl_e39a99ccf83d1697561be9ed"],"sources":["anthropics/skills"]}
+{"content_sha256":"9e993db6caaba2620cf6232aa350619634ad104e61473f28e640091d39d8675b","locations":1,"skill_ids":["skl_be488a23e73679e91b94410b"],"sources":["microsoft/skills"]}
+{"content_sha256":"9ec725f50445c33b0d56b5b2d0da394a4d37946bb1feff373345c4e125f9eb8d","locations":1,"skill_ids":["skl_367ebda4dc942a585eb33cd5"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"a0d914a4de405961e793895e027c43f34ef9306dc544de14ed5d17570c01a315","locations":1,"skill_ids":["skl_23b3fe7528ab6cc37a795013"],"sources":["microsoft/skills"]}
+{"content_sha256":"a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b","locations":1,"skill_ids":["skl_405847986c6aa7dc2230e33d"],"sources":["anthropics/skills"]}
+{"content_sha256":"a2bab6b973292e2e0833b47257cfdb7354777dbdff5669db67ea6874c453bd09","locations":1,"skill_ids":["skl_42894b0c814e788b18bd6f8c"],"sources":["microsoft/skills"]}
+{"content_sha256":"a30f70d8bb195fb9d126fe356cba872367027fffe6b26020521eedb78805402e","locations":1,"skill_ids":["skl_6ec3d82cb46c37ebac58e626"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"a44de7c651217482c7ed9321d24a6d77604869886e0038307eb4ea202178d4b4","locations":1,"skill_ids":["skl_5ee3c467ddcecb6d5c305e2e"],"sources":["microsoft/skills"]}
+{"content_sha256":"a628ba7b4ed8aee7eb7a559b99f776a909bd6d7cac0f6a3fc19053a42d5ee60f","locations":1,"skill_ids":["skl_916e640f2a5356888c864fdf"],"sources":["microsoft/skills"]}
+{"content_sha256":"a64ad3c273875782b51595a54968d108eaa7081dd7007bf3c3cb05040aaf7456","locations":1,"skill_ids":["skl_348078c59f459b04665d0b4d"],"sources":["microsoft/skills"]}
+{"content_sha256":"a70f0a799c8f3cf805ada741e82af31a149b57cb1e2388d7805036492cdceb71","locations":1,"skill_ids":["skl_b1ea8c9dd9c999925941bbb8"],"sources":["microsoft/skills"]}
+{"content_sha256":"a8012a1c4324eee8b38daf43ce1f6400ecb3fa8c64763399f4247155627024ac","locations":1,"skill_ids":["skl_e2cd4df64b19e169ab63b751"],"sources":["microsoft/skills"]}
+{"content_sha256":"a87b5c2b469ddb77776770d12b7a3a1a481c72af6300b6aac96887825df063fb","locations":1,"skill_ids":["skl_f9750fba39f3554cfe52217e"],"sources":["microsoft/skills"]}
+{"content_sha256":"a8a7321f17a1097d0c418cf1e57b3c8758f25e986fb4f35f8de408f6d8c43d95","locations":1,"skill_ids":["skl_bac134f16edb5511a4a8354c"],"sources":["microsoft/skills"]}
+{"content_sha256":"a8c5911b2c67af768af99d0a1972e16c364ddd8194506d574ae90f375dca6bdf","locations":1,"skill_ids":["skl_ec8a6c497c3f8f3e57197149"],"sources":["microsoft/skills"]}
+{"content_sha256":"a8f9575b6afe037b06100c16f8725e7ed89ff2fd15931679eb1580977eccced5","locations":1,"skill_ids":["skl_2e4b4e07b3af1acf5d6e9dbc"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"aa84ee9ea16a5663b2971f4f3c66b6fcaa901d067d9d3ffdabe24dc4b22593db","locations":1,"skill_ids":["skl_79a63e133f026ed43aec6bec"],"sources":["microsoft/skills"]}
+{"content_sha256":"ad00eabdfbfbf51ee4b58d53a5444e44be2725a6d4c2603d88de1c04816ea5b4","locations":1,"skill_ids":["skl_e5482ece7ef61d7e7c03aa57"],"sources":["microsoft/skills"]}
+{"content_sha256":"ad5ac3810cbfb94b4475204c18884650faadeb7bec42ffc297bdb0d73bda760a","locations":1,"skill_ids":["skl_3875a62f895cd0e2e81e54da"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"ae0de869fdaee1a6b6b04582e723a2363d482d85a5c119f1963a2c36eff5667c","locations":1,"skill_ids":["skl_c194314ec160a7a576fdd3f9"],"sources":["microsoft/skills"]}
+{"content_sha256":"ae56d3b42323dd25ed5ab7988fad3810487d3fbadfcb348b086182305d4e0784","locations":1,"skill_ids":["skl_4f536a7d50bf309b60c4e461"],"sources":["microsoft/skills"]}
+{"content_sha256":"ae89e5f7592c2ec2c279bac49b85c0eac2c269eb6331a45a33eea185a46e172b","locations":1,"skill_ids":["skl_cae368c9b9ff5f23ab6de3a5"],"sources":["microsoft/skills"]}
+{"content_sha256":"afa6c749b8a502cb580b8a5eaee036a288ad0dcfd95da1c7723d5ef1add03087","locations":1,"skill_ids":["skl_6e02ea6243bce5376a38dcf4"],"sources":["microsoft/skills"]}
+{"content_sha256":"afb330d4d5b43c470e83693ef73caee21f99c149dd5011f8543c424a751cebc3","locations":1,"skill_ids":["skl_e4df8cf99b9f52803844f285"],"sources":["microsoft/skills"]}
+{"content_sha256":"b10709c8cadc23134bfee415010f9f0292e39f06c216df3f3dd6fc826897414c","locations":1,"skill_ids":["skl_eab4f9ad85b194b016ac003a"],"sources":["microsoft/skills"]}
+{"content_sha256":"b14e4f567c11c8c2a9d06baefc9095ab1cf7ec8e0f5851f271d77d4491ca86e4","locations":1,"skill_ids":["skl_8aba8e607651cb2a20254dfe"],"sources":["microsoft/skills"]}
+{"content_sha256":"b2098d835acf3cf6cee62ae79044c0180aee037231ef0afa1589fed1fc9c4ab3","locations":1,"skill_ids":["skl_a3dd4be8acf14e69c2a359d0"],"sources":["microsoft/skills"]}
+{"content_sha256":"b24d0babae9e85054d30765abca0043a2c310ba7dc980d1da258c39b87f8cd12","locations":1,"skill_ids":["skl_e5155428457b20ab3c61ad83"],"sources":["microsoft/skills"]}
+{"content_sha256":"b483b56d6673134497e45489c317f26ae0f1429c194db0297e43073e17e6748c","locations":1,"skill_ids":["skl_e3589c099f7752fa93a0ffa7"],"sources":["anthropics/skills"]}
+{"content_sha256":"b544007ce978993de57d9d1a23b0667ef9c0b8f33120cc79f537586bcccd3768","locations":1,"skill_ids":["skl_49220e97836b6a63dda33682"],"sources":["microsoft/skills"]}
+{"content_sha256":"b60bd282c6e01297f0eefe71594d1756dbf60a584f524c04a803ec6950b7fba2","locations":1,"skill_ids":["skl_b4428f1972d3c33dd561ecd7"],"sources":["anthropics/skills"]}
+{"content_sha256":"b6515408456d0eccf77ebd8418aec34f3f0ccdf25919a9486da24a8d0f029da8","locations":1,"skill_ids":["skl_d7d1a481e1e188acdf12dc8a"],"sources":["microsoft/skills"]}
+{"content_sha256":"b6a0a3f657d9b31b7eb59363f9bc10b688f99b1de035f581bfd765d3edc8d654","locations":1,"skill_ids":["skl_eedd052693256c74d417a129"],"sources":["microsoft/skills"]}
+{"content_sha256":"b6bcdb76e29ccc125741a75a07f0f65ee971086749a72a87d0b83c20bf9f6ea5","locations":1,"skill_ids":["skl_cf48079a1a21dc9ede8955c1"],"sources":["microsoft/skills"]}
+{"content_sha256":"b84da3a18d7e44d9598c9462a085638a7e0a8b4cfe020767ef844321960e346e","locations":1,"skill_ids":["skl_5e402b9383a253210abf2c4a"],"sources":["microsoft/skills"]}
+{"content_sha256":"b945cd3c343395e4618ea818d5527e1c7bf6374aed3e9fd7056572aa28701191","locations":1,"skill_ids":["skl_81a77a82ae30659b0f44c95f"],"sources":["microsoft/skills"]}
+{"content_sha256":"bc1147d6376fa147d04dc218a2b65062d03880502fccda146d26c5d7e951b16b","locations":1,"skill_ids":["skl_1f9c718df75ceeb845fce2ef"],"sources":["microsoft/skills"]}
+{"content_sha256":"c06bea99e75eab07fde4fae26069baa002f82f39b53f07981704c2901551dd4c","locations":1,"skill_ids":["skl_01cea63d49e19293fb942b42"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"c2c5da0e585855d44f831859a163ef1fa931df56ec3fb9d6d86ff6929f0a4e9a","locations":1,"skill_ids":["skl_5666deb47aacadee84d4995d"],"sources":["microsoft/skills"]}
+{"content_sha256":"c35893e221e28895c52143cc11bf30e41a44817796b39d4b15727dadc9796552","locations":1,"skill_ids":["skl_b24a4bbdb0c840b70098f503"],"sources":["anthropics/skills"]}
+{"content_sha256":"c44dffb388765c125899343027db5276366a5c11b5993b11b07acb06ce235527","locations":1,"skill_ids":["skl_16ea4b913849a6a3739f7988"],"sources":["microsoft/skills"]}
+{"content_sha256":"c6d8407738ccad151107fcaeef4ccc9a2a29d547fc20df319423e97f97267403","locations":1,"skill_ids":["skl_e2d8c118b902c41c36b68610"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"c864a69e59cdfa44395c449c8299c70cd55eb76241e01f205dc3f9ba2c0dc604","locations":1,"skill_ids":["skl_04dd3dc2c77690344413146e"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"c918bfc5a79fb08641f1a6ccb7529685b5ec438453edf96e96b4290871602a40","locations":1,"skill_ids":["skl_cf845aafea01b73914612029"],"sources":["microsoft/skills"]}
+{"content_sha256":"c928d09ea1c62c55b4582e53582e3f8a97fa7df84a6102be8e33aba9b1926058","locations":1,"skill_ids":["skl_db06fc5cbbb71e6cff1e7c14"],"sources":["microsoft/skills"]}
+{"content_sha256":"ca54524438e60e0cbb4465acf8f42169b83df157c7b38a4c2bdd817a03a5da06","locations":1,"skill_ids":["skl_b30d4105b2567bac75ae0349"],"sources":["microsoft/skills"]}
+{"content_sha256":"caa1e1c29cf974c8d874bf3d0a70838445e7342b570f856ddb3e4a21ef7c7e8b","locations":1,"skill_ids":["skl_7c7bda5dfcbb60747d3d12e3"],"sources":["anthropics/skills"]}
+{"content_sha256":"cb076706a81bef96568a0f71fdda9e44ab67bc76a3c40541d20046ae129f29df","locations":1,"skill_ids":["skl_b73cf146db622b3970da9fef"],"sources":["microsoft/skills"]}
+{"content_sha256":"cb8520de767456a29e99e4321903e501946b3b8de06c0cc79fa0f2b938521791","locations":1,"skill_ids":["skl_8faa9ecf82794bafecec2ef1"],"sources":["microsoft/skills"]}
+{"content_sha256":"cc67e765bcbdc359e61d43f5d02b76110f0880f5058f3118e76deaacd53c0ba0","locations":1,"skill_ids":["skl_c6b4ade64d2415c4264ccdb8"],"sources":["microsoft/skills"]}
+{"content_sha256":"cd3b4a536bab82b795960a3ba728bf74345729a6cb278a50913639d5d77609a0","locations":1,"skill_ids":["skl_6a21f427a6ffc6d8c777d19b"],"sources":["microsoft/skills"]}
+{"content_sha256":"cf527b7c89b54194a9e2475dfaa25a454ef8f8417d7674b3a714d34368f613f9","locations":1,"skill_ids":["skl_56da9e8cccd42205a9fa4529"],"sources":["microsoft/skills"]}
+{"content_sha256":"d0560012981e8e97f68c2eb69a1ad0875ec87a4d9e1f5c59fc6366b1d78dae06","locations":1,"skill_ids":["skl_27c2ed15bf5a9ccaab896dfb"],"sources":["microsoft/skills"]}
+{"content_sha256":"d0a25090ffc3e139ff2eaeca5f814a83aa61d596571d267f6a7ad534c153ba68","locations":1,"skill_ids":["skl_c0fa0a36fadc33e5d4feb258"],"sources":["microsoft/skills"]}
+{"content_sha256":"d1c7caf5f35eb7d37877dd7fc33a095037be2b34fb5d2f7f4d43bde3165bb4ee","locations":1,"skill_ids":["skl_3e7951d13a80c6b485eac29a"],"sources":["anthropics/skills"]}
+{"content_sha256":"d246f8bf17b28cca1e9d06548bb64e71b0945ea5aadfdfb3e1327e7bff30c7a2","locations":1,"skill_ids":["skl_9dddc4052bcb38b8b652e803"],"sources":["microsoft/skills"]}
+{"content_sha256":"d288827a7769dba34a4154b0981feee766ecefcd64ccd5e052f21d5e064d4d04","locations":1,"skill_ids":["skl_c8ee9ae7812bd0a055173f25"],"sources":["microsoft/skills"]}
+{"content_sha256":"d29b307591886cde7841ff3cdb5509fbee2f66ffeb8c14dc88fd2e9a0a6f8dbe","locations":1,"skill_ids":["skl_328aab5441e2304c64459a5e"],"sources":["microsoft/skills"]}
+{"content_sha256":"d378e313e247c42d33250a4f20b9b20deb0e6c7fa118ef267a8683965b15a70b","locations":1,"skill_ids":["skl_1c24cabeb08df40e1f69d5e4"],"sources":["microsoft/skills"]}
+{"content_sha256":"d448eed6264b2f9b37385997a76aa88f9ed1200fec23d44fa51111629ddb36e4","locations":1,"skill_ids":["skl_67ca0a9b11451b32654b751f"],"sources":["microsoft/skills"]}
+{"content_sha256":"d44c0e53406799c89d0bb75def5eb150b21447405aa8df6c5596e577678a7f3f","locations":1,"skill_ids":["skl_53db3e0094d6187a703f4cc0"],"sources":["microsoft/skills"]}
+{"content_sha256":"d44c25fde43a5ccfa4c16975ea75518e1d963e1c84f1da2545fb970ef79dd066","locations":1,"skill_ids":["skl_1d8b17d56b71d0b6c16c56d2"],"sources":["microsoft/skills"]}
+{"content_sha256":"d73997c6fb087bc6c0a8c8b98a23e55169fc360b2862d8ecb30d7c9103b8498e","locations":1,"skill_ids":["skl_0e7fe6afdbb73a487cf5dd40"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"d79a8fefd6753474846e72b926437d7bbcddef5cd3f4fb89fb7c03f38ac4434e","locations":1,"skill_ids":["skl_c550893d8cb31b122ae603d4"],"sources":["microsoft/skills"]}
+{"content_sha256":"d8b87cebdb290487cc2720b2a8a2f5c1888234f7e09e4fec679b0035d776b931","locations":1,"skill_ids":["skl_23cdfdaf9719c3b68e091b8b"],"sources":["microsoft/skills"]}
+{"content_sha256":"d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3","locations":1,"skill_ids":["skl_41f274b77138004770bf1e80"],"sources":["anthropics/skills"]}
+{"content_sha256":"d962599275c85eb900dc9cccae0d98ade68118cd21dfa28537ab6ef8b93595d8","locations":1,"skill_ids":["skl_613c80ce0eba9d9584ae16b4"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"daa95985eb65fade1c5bfd4de8280c864da06f56d9ce7633e032c1e7ae3717b5","locations":1,"skill_ids":["skl_a49baf15405776d55ff3bcad"],"sources":["microsoft/skills"]}
+{"content_sha256":"db1d4f786efe6d44bec1a8cdfaf4595a08753cb513ea810418d2b1fedee098ff","locations":1,"skill_ids":["skl_5e85c27f3a65cccd1011cc3c"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"dc3861907f7e1491bed0c431e15845cc96bb23b2a1c61ff6126c6d6c38e32814","locations":1,"skill_ids":["skl_c83dc773e135b3d9e355df94"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf","locations":1,"skill_ids":["skl_48bfac99ec00aab2e075eb6d"],"sources":["anthropics/skills"]}
+{"content_sha256":"dd69536e2f18a09eac999d036f963dbbf6874f44fe4ac73a6df89170de4a542b","locations":1,"skill_ids":["skl_5c25357078c0e2ddc267f9ed"],"sources":["microsoft/skills"]}
+{"content_sha256":"dfa8d4b75d5154b585ac470678d8bfee07e17af6c8bc804815f9b304763b50ba","locations":1,"skill_ids":["skl_1d0d1cd345dec0bea95c0cf9"],"sources":["microsoft/skills"]}
+{"content_sha256":"e19f62d6ccb67623f28c72715cab0b8ee8b378b9d2a2bcd0d848241c8b3af5df","locations":1,"skill_ids":["skl_201096e6e06250b09b97276a"],"sources":["microsoft/skills"]}
+{"content_sha256":"e28e8908e2a19511abab4ede57bfb967e75dba99b92b242c97c0eb23d729cc7a","locations":1,"skill_ids":["skl_fdee9f90a52755e02006da70"],"sources":["microsoft/skills"]}
+{"content_sha256":"e32900046ca768512196088f0cdfd13835c0564cdce0bfa4920b19075e507c8e","locations":1,"skill_ids":["skl_6872ecfb389c97c88d186d71"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"e37ef7d0c760fb050ccc3d5433a74fdf66d3046603e6df387208d73dd1128b4b","locations":1,"skill_ids":["skl_e39ef2fce241f11598c1ecfe"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"e38e0eaa609316b10423a9a138ed95e35099accd3f735585295c8a8f165c28a3","locations":1,"skill_ids":["skl_3adfec861d84a8889d494d99"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"e39cb5855a4e4240e037110b74abcc1b850e28761d95c668ac0568b64ca40d6e","locations":1,"skill_ids":["skl_e76f8198511386dd0fa550ce"],"sources":["microsoft/skills"]}
+{"content_sha256":"e3c45752a59fd9257df4e9766c37993df06aca8657f44da063dcab4f65a719b8","locations":1,"skill_ids":["skl_977a6831701c6621985c12eb"],"sources":["microsoft/skills"]}
+{"content_sha256":"e422b13b05cb0b17c35c49d75f307127dbe1cc65735f07556d46daee82f0bdc5","locations":1,"skill_ids":["skl_a78c29bd2ab2a5131e6dc57a"],"sources":["microsoft/skills"]}
+{"content_sha256":"e439354d8a650cf147ef008222b80e28414c1e295381616639890f901a653226","locations":1,"skill_ids":["skl_4f8d9719fbbdd3f29b5497a8"],"sources":["microsoft/skills"]}
+{"content_sha256":"e509864c9561b98dc3f6e9d8bf80824f07a1fe78978dea9ed849959c34b6f7b4","locations":1,"skill_ids":["skl_e41a9a646c50bd2c6df784b9"],"sources":["microsoft/skills"]}
+{"content_sha256":"e50e155ebeb050ed77d8d3ed17bc0ddbec46bb09830fa926bca53b4cc4ac99bf","locations":1,"skill_ids":["skl_a1e164408fedd2a8bfcbbc56"],"sources":["microsoft/skills"]}
+{"content_sha256":"e5ba18cfeb3a559ed87db8927938c2f41dabd4349c35d15a352cf81d1d864fa2","locations":1,"skill_ids":["skl_2ec5263f2c71d56ca689db3d"],"sources":["microsoft/skills"]}
+{"content_sha256":"e902c513aee8662f55c2d3d36b6e38da6dc174198942858e95980c2173635b06","locations":1,"skill_ids":["skl_47854b1cf98bf4f65cf0f06a"],"sources":["microsoft/skills"]}
+{"content_sha256":"e9686a6ef133b735704d1f677fb926857a056b8b1bb80e085d495d9136c52eae","locations":1,"skill_ids":["skl_1090b6d2cd7b597cc470d2ca"],"sources":["microsoft/skills"]}
+{"content_sha256":"ea209e06fc0dc906227ed226f6ea7a73c2352ae0aac251c9e1f30bbc0455ae37","locations":1,"skill_ids":["skl_fffff7f24e1f34f35ab0f109"],"sources":["microsoft/skills"]}
+{"content_sha256":"ea906ca338f07713912cb75f651cea5d02e25641e5afc25b1e2b72b132696fbe","locations":1,"skill_ids":["skl_4e446f4344c14a6fd0a05af5"],"sources":["GitSkills (secondary)"]}
+{"content_sha256":"ea9fe2e1883532a1e8d9a8a33d174a00498363733b0ea74fdc8f8eae1303f4c7","locations":1,"skill_ids":["skl_d00b8431b75df304b607e206"],"sources":["microsoft/skills"]}
+{"content_sha256":"eb685d91de039ed864fbd790cddf31684b017fd4a34ee1a55760d8d7cdbadefa","locations":1,"skill_ids":["skl_9a1909e129974f5d1a395981"],"sources":["anthropics/skills"]}
+{"content_sha256":"ebfc903a96b4aa25c2ef83021ef90e02306ce56cf01943244f4bc3f4f3980278","locations":1,"skill_ids":["skl_d4db9c23a9ae06306f92cd33"],"sources":["microsoft/skills"]}
+{"content_sha256":"edc52c6adc3d7503cfce4bee6fca0357f98f003b3555b4b2867daace43210f5f","locations":1,"skill_ids":["skl_5ec945bfe7663a7bcbd3c969"],"sources":["microsoft/skills"]}
+{"content_sha256":"ef3200235c5e38f311fb6af505f0193166b9b2f99326cea3410c8ecc7f743255","locations":1,"skill_ids":["skl_66f0b399e78a51043f446526"],"sources":["microsoft/skills"]}
+{"content_sha256":"ef6c083b7ddabc0c89856e6755914b2619f93efb8948e70f1bcc458c1126ecca","locations":1,"skill_ids":["skl_08fb4372607041681f201264"],"sources":["microsoft/skills"]}
+{"content_sha256":"f002fdcfca1affe824a0e39dee0ebe000473a38663a4182d8b0484520ac36c38","locations":1,"skill_ids":["skl_818c61f5686179c8dd1353ea"],"sources":["microsoft/skills"]}
+{"content_sha256":"f0920e96ac8a4b8941e0bc29591d53bcfdd3a3a61e713249d3d489c55f6d98c8","locations":1,"skill_ids":["skl_bdaf473f417d786c27f36194"],"sources":["microsoft/skills"]}
+{"content_sha256":"f0a4f37df3e8e7ed9645e947c08470fd78483f18b9587ae8cd20720022110781","locations":1,"skill_ids":["skl_d4620371f9f8b72751930775"],"sources":["microsoft/skills"]}
+{"content_sha256":"f1270ea4123116e846bf2dc7a53a9e396ed43d694cdb7be22b9a35da9a40feb6","locations":1,"skill_ids":["skl_e7334ecd58a0425f4c75242e"],"sources":["microsoft/skills"]}
+{"content_sha256":"f27992510c051355dfe68c92394d509af730da5298094ec86834ee40bbd31376","locations":1,"skill_ids":["skl_7e8eca88b16d4c8ba548147c"],"sources":["anthropics/skills"]}
+{"content_sha256":"f39181f45fd5882cc12cd513c22760f7c1d399ac4568d22e7bbf5e44311a89db","locations":1,"skill_ids":["skl_78486756dccf3d8cbab7530b"],"sources":["microsoft/skills"]}
+{"content_sha256":"f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f","locations":1,"skill_ids":["skl_0d53391ce0e01f2f64006be9"],"sources":["vercel-labs/agent-skills"]}
+{"content_sha256":"f5ef52fa1c810d80ffb89d1dd0cc427f43f88849a6aa32fd7a6ee358e8d1eef4","locations":1,"skill_ids":["skl_7f5a578f9231eb25dfbe199d"],"sources":["microsoft/skills"]}
+{"content_sha256":"f81c64f9313e75483ab37a657556eb9a9dfaa5c82d733e96bab7289ab78c4860","locations":1,"skill_ids":["skl_eb8546134201af9eb120a419"],"sources":["microsoft/skills"]}
+{"content_sha256":"f921b771ccbad9938d0bc4984fc54a6878d4c5cb253542ef676d740060bc67ca","locations":1,"skill_ids":["skl_12f3d333649f4596580c159f"],"sources":["microsoft/skills"]}
+{"content_sha256":"f98f25489aec42b2fd43856ad9766982a35d9ec39d28a7d51f4bc3b29ffd1f1e","locations":1,"skill_ids":["skl_e256acf80d58af8f54027ff4"],"sources":["microsoft/skills"]}
+{"content_sha256":"f9b30ce076b96ee944e8863b553d48851a6ffaf6ab0e94acff72745b41ccf686","locations":1,"skill_ids":["skl_8ca563415539ba5adb8a0926"],"sources":["microsoft/skills"]}
+{"content_sha256":"fd26cd3d54d9e92d3d8989b0c2be8f54ab140f41837ba1f4a03da40659f64d03","locations":1,"skill_ids":["skl_4fcb329ced51f546f1f2cd5d"],"sources":["microsoft/skills"]}
+{"content_sha256":"fd350560b4a3bfe408003366f52071db76297f0f01bb08bd3c092642985e4e90","locations":1,"skill_ids":["skl_571e9aa39426ff7debcd7027"],"sources":["microsoft/skills"]}
+{"content_sha256":"fdf30800f2ce84a13ea3c126c8f6e00ed88123d400596a78c6a2e63f173e9dbc","locations":1,"skill_ids":["skl_6a71d2956b47fb67a7abe7f9"],"sources":["microsoft/skills"]}
+{"content_sha256":"fea0132867c93d93ad3d36617d66ce66c7e68c1e26046daa9324b676bd8e00cb","locations":1,"skill_ids":["skl_10bc51c6e868b1021aab0f52"],"sources":["microsoft/skills"]}
+{"content_sha256":"ffc1f17ed69d34dd5e8130cf1fc4adf9f3ea27410e8aa90f0cc1e5385f315ce2","locations":1,"skill_ids":["skl_7abb5dc98022a099d6174b5d"],"sources":["microsoft/skills"]}

@@ -1,0 +1,161 @@
+collected_at,description,disposition,entity_type,evidence_type,field_states,input_schema,issues,name,observation_id,output_schema,raw_file,raw_locator,read_only_hint,required_parameters,schema_format,server_id,source_name,source_revision,source_url,tool_id
+2026-11-12T00:09:55.613301+00:00,Read the contents of multiple files simultaneously. This is more efficient than reading files one by one when you need to analyze or compare multiple files. Each file's content is returned with its path as a reference. Failed reads for individual files won't stop the entire operation. Only works within allowed directories.,accepted,tool,static_registration,{},"z.object({
+  paths: z
+    .array(z.string())
+    .min(1)
+    .describe(
+      ""Array of file paths to read. Each path must be a string pointing to a valid file within allowed directories."",
+    ),
+})",[],read_multiple_files,obs_b1389c55aa8b4df286ad61d4,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,read_multiple_files,true,"[""paths""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L513,tool_0a2d9042a1d8e05a5e4bfc90
+2026-11-12T00:09:55.613301+00:00,"Make line-based edits to a text file. Edits apply in order, each to the result of the ones before it, and each replaces the first match of its oldText with newText. oldText must match the file's text exactly, except that line endings (LF or CRLF) never matter and, when there is no exact match, a run of whole lines matches if each line is equal once leading and trailing whitespace is ignored (newText then takes the file's indentation). Whitespace inside a line must match. If any edit has no match, nothing is written and the error shows the closest lines of the file, numbered, to copy oldText from. Returns a git-style diff showing the changes made. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The text file to edit""),
+  edits: z
+    .array(EditOperation)
+    .describe(
+      ""The replacements to make, applied in order, each to the result of the ones before it. "" +
+        ""If any one has no match, none is written."",
+    ),
+  dryRun: z
+    .boolean()
+    .default(false)
+    .describe(""Preview changes using git-style diff format""),
+})",[],edit_file,obs_49fe3b2279d66a28a9bd1b57,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,edit_file,false,"[""path"",""edits""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L625,tool_12b29b22ce9f3a10a75e3b44
+2026-11-12T00:09:55.613301+00:00,"Move or rename files and directories. Can move files between directories and rename them in a single operation. If the destination exists, the operation will fail. Works across different directories and can be used for simple renaming within the same directory. Both source and destination must be within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  source: pathArg(""The file or directory to move or rename""),
+  destination: pathArg(
+    ""Its new path, including the name; nothing may exist there yet"",
+  ),
+})",[],move_file,obs_18370b1be0f0538e330c3c59,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,move_file,false,"[""source"",""destination""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L947,tool_14cdd492bc35caea7c42ed95
+2026-11-12T00:09:55.613301+00:00,Create a new file or completely overwrite an existing file with new content. Use with caution as it will overwrite existing files without warning. Handles text content with proper encoding. Only works within allowed directories.,accepted,tool,static_registration,{},"z.object({
+  path: pathArg(
+    ""The file to create, or to overwrite if it exists; its parent directory must exist"",
+  ),
+  content: z
+    .string()
+    .describe(""The complete text the file will contain, replacing any it had""),
+})",[],write_file,obs_b2cff06d6a9bb9e0d31e984e,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,write_file,false,"[""path"",""content""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L558,tool_15eee4b239e51a93b8c34de2
+2026-11-12T00:09:55.613301+00:00,"Append text to the end of a file, creating the file if it does not exist. The existing content is never changed or replaced. The text is appended exactly as given, with no newline added before or after it, so end it with a newline if the next append should start on a new line. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The file to append to; it is created if it does not exist""),
+  content: z
+    .string()
+    .describe(
+      ""Text to append, exactly as given. No newline is added: end it with \\n if the next append should start on a new line."",
+    ),
+})",[],append_file,obs_cb8662e734837988dfe8b3ba,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,append_file,false,"[""path"",""content""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L591,tool_17d1387e08fdb516f8ae9ea4
+2026-11-12T00:09:55.613301+00:00,"Read the complete contents of a file from the file system as text. Handles various text encodings and provides detailed error messages if the file cannot be read. Use this tool when you need to examine the contents of a single file. Use the 'head' parameter to read only the first N lines of a file, or the 'tail' parameter to read only the last N lines of a file. Operates on the file as text regardless of extension. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The file to read as text""),
+  tail: z
+    .number()
+    .int()
+    .min(0)
+    .optional()
+    .describe(""If provided, returns only the last N lines of the file""),
+  head: z
+    .number()
+    .int()
+    .min(0)
+    .optional()
+    .describe(""If provided, returns only the first N lines of the file""),
+})",[],read_text_file,obs_52e2b335174b3de1e1077825,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,read_text_file,true,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L406,tool_1e79d001370020489f2ed527
+2026-11-12T00:09:55.613301+00:00,"Get a recursive tree view of files and directories as a JSON structure. Each entry includes 'name', 'type' (file/directory), and 'children' for directories. Files have no children array, while directories always have a children array (which may be empty), except at the last level when 'depth' limits the tree: those directories are not read and have no children array. The output is formatted with 2-space indentation for readability. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The directory at the root of the tree""),
+  excludePatterns: z
+    .array(z.string())
+    .optional()
+    .default([])
+    .describe(
+      ""Patterns for entries to leave out, with their contents, matched against each entry's path relative to path. "" +
+        ""A pattern with no '*' matches that name at any depth ('node_modules' leaves out every node_modules directory); "" +
+        ""a pattern with '*' is a glob matched as written, and one ending in '/**' also leaves out the directory it names."",
+    ),
+  depth: z
+    .number()
+    .int()
+    .positive()
+    .optional()
+    .describe(
+      ""How many levels to descend: 1 lists only the entries directly in path. "" +
+        ""Directories at the last level have no children array. Omit for the whole tree."",
+    ),
+})",[],directory_tree,obs_3a6841774739bddf6c111e2c,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,directory_tree,true,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L856,tool_227a22914b6b80aecf236e37
+2026-11-12T00:09:55.613301+00:00,"List the files and directories directly inside a path, each marked [FILE] or [DIR]. Use it to see what a directory contains; when you also need each entry's size or want entries sorted by size, use list_directory_with_sizes instead, and for a recursive view use directory_tree. Returns one line per entry. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The directory to list""),
+})",[],list_directory,obs_eccdce24012e6cd95bcbe644,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,list_directory,true,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L698,tool_39708785a11e937f811b0318
+2026-11-12T00:09:55.613301+00:00,Returns the list of directories that this server is allowed to access. Subdirectories within these allowed directories are also accessible. Use this to understand which directories and their nested paths are available before trying to access files.,accepted,tool,static_registration,{},jsonSchema2020({}),[],list_allowed_directories,obs_fa3490fae91306092cc5a6d5,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,list_allowed_directories,true,[],TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L1117,tool_6bf112336e955e2bbd101efb
+2026-11-12T00:09:55.613301+00:00,"Create a new directory or ensure a directory exists. Can create multiple nested directories in one operation. If the directory already exists, this operation will succeed silently. Perfect for setting up directory structures for projects or ensuring required paths exist. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(
+    ""The directory to create, with any missing parents; an existing directory is left as is"",
+  ),
+})",[],create_directory,obs_149d9a08143b511412bacc55,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,create_directory,false,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L664,tool_7ac9a3d7ab03c83851ae7dd2
+2026-11-12T00:09:55.613301+00:00,"Retrieve detailed metadata about a file or directory. Returns comprehensive information including size, creation time, last modified time, permissions, type and hard-link count. This tool is perfect for understanding file characteristics without reading the actual content. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The file or directory to describe""),
+})",[],get_file_info,obs_b4079fd4db9afc7bc293f3a6,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,get_file_info,true,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L1082,tool_888ed052cecd843c39ee7d63
+2026-11-12T00:09:55.613301+00:00,"Find files and directories by NAME, not by content: this tool never reads or searches inside files. It walks the tree under 'path' and matches a glob pattern against each entry's path relative to 'path' (case-sensitive). Use '*.ext' to match entries directly under 'path', and '**/*.ext' or '**/name' to match at any depth. Returns full paths to all matching items. Great for finding files when you don't know their exact location. Only searches within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The directory to search under""),
+  pattern: z
+    .string()
+    .describe(
+      ""Glob matched against each entry's path relative to path, never its content: "" +
+        ""'*.ts' matches directly under path, '**/*.ts' at any depth."",
+    ),
+  excludePatterns: z
+    .array(z.string())
+    .optional()
+    .default([])
+    .describe(
+      ""Patterns for entries to leave out, with their contents, matched against each entry's path relative to path. "" +
+        ""A pattern with no '*' matches that name at any depth ('node_modules' leaves out every node_modules directory); "" +
+        ""a pattern with '*' is a glob matched as written, and one ending in '/**' also leaves out the directory it names."",
+    ),
+})",[],search_files,obs_33195e47d8399b16e2955d1f,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,search_files,true,"[""path"",""pattern""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L1027,tool_96cad46115602a86fc832a58
+2026-11-12T00:09:55.613301+00:00,"List the files and directories directly inside a path with each file's size, marked [FILE] or [DIR], sorted by name or by size, largest first (sortBy). Use it when sizes matter, such as finding the largest files; for names only, use list_directory, which returns less text. Returns one line per entry, followed by the totals. Only works within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The directory to list""),
+  sortBy: z
+    .enum([""name"", ""size""])
+    .optional()
+    .default(""name"")
+    .describe(""Sort entries by name or size""),
+})",[],list_directory_with_sizes,obs_03dbddb29bb80b55ab1e82be,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,list_directory_with_sizes,true,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L737,tool_a45f242b10cf1d48472f6001
+2026-11-12T00:09:55.613301+00:00,"Copy a file to a new location, without reading its content into the conversation. Copies one regular file, keeping its permissions and modification time; directories are not copied. If the destination exists, the operation will fail: it never overwrites. Both source and destination must be within allowed directories.",accepted,tool,static_registration,{},"z.object({
+  source: z.string().describe(""The file to copy""),
+  destination: z
+    .string()
+    .describe(""Where to create the copy; nothing may exist there yet""),
+})",[],copy_file,obs_9f6bc1cbb6af4753858872d2,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,copy_file,false,"[""source"",""destination""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L988,tool_b272d8f5a87dd532b55d7eb9
+2026-11-12T00:09:55.613301+00:00,Read a file and return it as a base64-encoded content block with its MIME type. Image and audio files are returned as image/audio content; any other file type is returned as an embedded resource. Only works within allowed directories.,accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The image, audio or other file to read as base64""),
+})",[],read_media_file,obs_380c9697827dd31ad06a17bb,"jsonSchema2020({
+        content: z.array(
+          z.union([
+            z.object({
+              type: z.enum([""image"", ""audio""]),
+              data: z.string(),
+              mimeType: z.string(),
+            }),
+            z.object({
+              type: z.literal(""resource""),
+              resource: z.object({
+                uri: z.string(),
+                // Optional, matching the SDK's BlobResourceContents shape (the handler always sets it).
+                mimeType: z.string().optional(),
+                blob: z.string(),
+              }),
+            }),
+          ]),
+        ),
+      })",data/raw/filesystem/server.ts.json,read_media_file,true,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L430,tool_dd2d903d3540ea7e7ba10dd8
+2026-11-12T00:09:55.613301+00:00,Read the complete contents of a file as text. DEPRECATED: Use read_text_file instead.,accepted,tool,static_registration,{},"z.object({
+  path: pathArg(""The file to read as text""),
+  tail: z
+    .number()
+    .int()
+    .min(0)
+    .optional()
+    .describe(""If provided, returns only the last N lines of the file""),
+  head: z
+    .number()
+    .int()
+    .min(0)
+    .optional()
+    .describe(""If provided, returns only the first N lines of the file""),
+})",[],read_file,obs_0a8ab150ee61490832c67c25,jsonSchema2020({ content: z.string() }),data/raw/filesystem/server.ts.json,read_file,true,"[""path""]",TypeScript/Zod,srv_8da04d27afcf6c39fe182b2b,modelcontextprotocol/servers,e1dc4b18dbb948921da37f3d4224a628730b43b0,https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L388,tool_e9bf440a996899c1be8481d5
