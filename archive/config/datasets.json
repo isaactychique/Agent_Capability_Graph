@@ -1,0 +1,14 @@
+{
+  "unified": {
+    "description": "Selected unified graph: original sample plus 100 additional Skills and servers with exposed tool evidence",
+    "inputs": [
+      "data/sources/expanded_sources.json",
+      "data/interim/metadata.sqlite3",
+      "metadata/data/normalized",
+      "metadata/data/enriched",
+      "config/corpus_selection.json"
+    ],
+    "graph": "data/processed/agent_capability_graph.ttl",
+    "build": "generate_rdf.py"
+  }
+}

@@ -1,0 +1,24 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+# Return only tools whose normalized exposed capability says "search web".
+SELECT DISTINCT ?serverName ?toolName ?capabilityLabel ?evidence ?reviewStatus
+WHERE {
+  ?server a acg:MCPServer ;
+          schema:name ?serverName ;
+          acg:exposesTool ?tool .
+  ?tool a acg:MCPTool ;
+        schema:name ?toolName ;
+        acg:hasCapabilityAssertion ?assertion .
+  ?assertion acg:assertedCapability ?capability ;
+             acg:basedOnSource ?source .
+  ?capability acg:capabilityAction ?action ;
+              acg:capabilityObject ?object ;
+              skos:prefLabel ?capabilityLabel .
+  ?source schema:url ?evidence .
+  OPTIONAL { ?assertion acg:reviewStatus ?reviewStatus }
+  FILTER(LCASE(STR(?action)) = "search")
+  FILTER(LCASE(STR(?object)) IN ("web", "web page", "web content"))
+}
+ORDER BY ?serverName ?toolName

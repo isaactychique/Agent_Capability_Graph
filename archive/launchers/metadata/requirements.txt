@@ -1,0 +1,2 @@
+# Compatibility path; source collection dependencies are grouped with their code.
+-r ../src/acg/ingestion/requirements.txt

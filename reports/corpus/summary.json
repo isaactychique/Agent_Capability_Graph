@@ -1,0 +1,16 @@
+{
+  "graph": "data/processed/agent_capability_graph.ttl",
+  "triples": 6765,
+  "counts": {
+    "MCPServer": 10,
+    "MCPTool": 55,
+    "AgentSkill": 110,
+    "CapabilityAssertion": 210
+  },
+  "additional_skills": 100,
+  "initial_skill_enrichments": 7,
+  "selected_metadata_servers": 2,
+  "metadata_tools": 17,
+  "merged_servers": 2,
+  "merged_tools": 5
+}

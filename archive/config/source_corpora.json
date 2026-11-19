@@ -1,0 +1,22 @@
+{
+  "curated": {
+    "description": "Initial curated sample (10 servers and 10 Skills)",
+    "inputs": [
+      "data/sources/expanded_sources.json",
+      "data/interim/metadata.sqlite3"
+    ],
+    "raw": "data/raw/downloads",
+    "collect": "collect_expanded_metadata.py",
+    "role": "source_input_only"
+  },
+  "registry": {
+    "description": "Larger colleague snapshot plus static tool registrations",
+    "inputs": [
+      "metadata/data/normalized",
+      "metadata/data/enriched"
+    ],
+    "raw": "metadata/data/raw",
+    "collect": "metadata/run_pipeline.py --collect",
+    "role": "source_input_only"
+  }
+}

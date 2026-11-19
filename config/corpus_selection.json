@@ -1,0 +1,894 @@
+{
+  "policy_version": 1,
+  "additional_skill_count": 100,
+  "policy": "Keep initial 10 Skills; prioritize requirement metadata, then revision-pinned direct evidence and repository round robin. Exclude duplicate identities/content. Selection is frozen until --refresh-selection.",
+  "server_aliases": {
+    "srv_8da04d27afcf6c39fe182b2b": "filesystem",
+    "srv_37b4beb11f35bfd13854ad89": "brave-search"
+  },
+  "skills": [
+    {
+      "skill_id": "skl_2cacbce7cd9373eb4fa8d996",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-skills/skills/azure-aigateway/SKILL.md",
+      "record_sha256": "40d5a7657bb899a570fab51e5d087b82d384888bd34232de320a1b86c92cf782"
+    },
+    {
+      "skill_id": "skl_c4357ac1ae09a534f127a29e",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-skills/skills/azure-upgrade/SKILL.md",
+      "record_sha256": "fb0689a673682998f1a06e793b9ec0662db871b6ddecd247c1255332acb7ba55"
+    },
+    {
+      "skill_id": "skl_1482b2f898c3f172a23d4667",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/foundry-iq-skills/skills/foundry-iq/SKILL.md",
+      "record_sha256": "ed3ad3b8491cde1c6d8f3a704091000da520b8fbc391103e9fc7c2ebaeefa318"
+    },
+    {
+      "skill_id": "skl_57ed9a6b547395cc820513b1",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/skills/microsoft-docs/SKILL.md",
+      "record_sha256": "cb28b67679ffe190d09358a1a5ee66b42e6131d7a268e70dadc40adc092e777d"
+    },
+    {
+      "skill_id": "skl_04dd3dc2c77690344413146e",
+      "repository_url": "https://github.com/membranedev/application-skills",
+      "skill_path": "skills/crimeometer/SKILL.md",
+      "record_sha256": "46923b02c9c1b686df8087a95c41c6c86ed9d93f33703756b51770d18fe38dcc"
+    },
+    {
+      "skill_id": "skl_f0d70e9ac2869964a3b160fc",
+      "repository_url": "https://github.com/benjaminshoemaker/ai_coding_project_base",
+      "skill_path": ".claude/skills/analyze-sessions/SKILL.md",
+      "record_sha256": "fcf2608038b104261ed3d0582c9bef6783a65eaa398fca5ba5ac0f6f594167c7"
+    },
+    {
+      "skill_id": "skl_5635474bf4711f383a96a84d",
+      "repository_url": "https://github.com/lxyeternal/MalSkillBench",
+      "skill_path": "Dataset/Skills/malware/phoenix-observability/SKILL.md",
+      "record_sha256": "4837f91de3469731b1c6f149d84e20c32e345d16756cc97c91d5463f147464ed"
+    },
+    {
+      "skill_id": "skl_a5c03a8a89c3a0dec7ad610f",
+      "repository_url": "https://github.com/majiayu000/claude-skill-registry",
+      "skill_path": "skills/planning/df-plan-objective/SKILL.md",
+      "record_sha256": "4d4955138c360a5c54dc68002b16149ed37f76d3d5af0c967a8110685225b934"
+    },
+    {
+      "skill_id": "skl_6ec3d82cb46c37ebac58e626",
+      "repository_url": "https://github.com/majiayu000/claude-skill-registry-data",
+      "skill_path": "data/manage-plan-marshall-config/SKILL.md",
+      "record_sha256": "5ff910bcdef90e096ae120021728bcc799bfe0e7c9a4a7c0563489e2f20307ed"
+    },
+    {
+      "skill_id": "skl_d00b8431b75df304b607e206",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/aks-skills/skills/aks-cost-optimization/SKILL.md",
+      "record_sha256": "af64b412a9872338fa6ba685a1b5dc593a4762e57aefe6550279b0ff80182016"
+    },
+    {
+      "skill_id": "skl_7e8eca88b16d4c8ba548147c",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/academy-guide/SKILL.md",
+      "record_sha256": "c62bf0919f3c64e674ca262e6c26a9399034cc4c4f977e5fb53b613933b4e1b9"
+    },
+    {
+      "skill_id": "skl_3adfec861d84a8889d494d99",
+      "repository_url": "https://github.com/vercel-labs/agent-skills",
+      "skill_path": "skills/composition-patterns/SKILL.md",
+      "record_sha256": "28308cd66f32a5f7b0b8559f4df6d9e747c53c482cce548d5341fbb0e47f62eb"
+    },
+    {
+      "skill_id": "skl_cacad371d12fd1d3529d9372",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/aks-skills/skills/aks-gpu-inference/SKILL.md",
+      "record_sha256": "f7525df32e29a793dc069d2dbcdf6630184e7e4ba304439ef97dfaeb25ce2378"
+    },
+    {
+      "skill_id": "skl_6a1f2714f0b57a3624c9609c",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/algorithmic-art/SKILL.md",
+      "record_sha256": "398909bdd7635e80aa59910ffc3baca99ba6767415673807c1e68607d8137da1"
+    },
+    {
+      "skill_id": "skl_17a43ef267e292c398526161",
+      "repository_url": "https://github.com/vercel-labs/agent-skills",
+      "skill_path": "skills/react-native-skills/SKILL.md",
+      "record_sha256": "f865c536cd5332b717fab433fe4b394921d5536576b9d458a486ede70b78e251"
+    },
+    {
+      "skill_id": "skl_8faa9ecf82794bafecec2ef1",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/aks-skills/skills/aks-known-issues/SKILL.md",
+      "record_sha256": "ebb9b5d413122368da9e6b07f5261a35647d918417c2d8f0260e9f74588bf02d"
+    },
+    {
+      "skill_id": "skl_c763c07ae2efdececc285b22",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/brand-guidelines/SKILL.md",
+      "record_sha256": "a2707b74a934cc2d0f1bc775393ac6ec941b209052152aa1597c006639f678e5"
+    },
+    {
+      "skill_id": "skl_c6a210e006d9785e10bf3a4c",
+      "repository_url": "https://github.com/vercel-labs/agent-skills",
+      "skill_path": "skills/react-view-transitions/SKILL.md",
+      "record_sha256": "934ac89708dd5372830a923d21d49982c4a31ab4f33eb50d112263c595de9b87"
+    },
+    {
+      "skill_id": "skl_6e02ea6243bce5376a38dcf4",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/aks-skills/skills/aks-network-capture/SKILL.md",
+      "record_sha256": "08f19cf59cbaf6a9f5a6416e9bda27432dcdc3129b1bd0f6ce9c57623f9a4fd1"
+    },
+    {
+      "skill_id": "skl_405847986c6aa7dc2230e33d",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/canvas-design/SKILL.md",
+      "record_sha256": "7b3a84ff69f660babf47f0f007937bf6656bff9a8237d48b5bed3bdd45b7f1f0"
+    },
+    {
+      "skill_id": "skl_5b38f5848b1b3d5a77a0999f",
+      "repository_url": "https://github.com/vercel-labs/agent-skills",
+      "skill_path": "skills/deploy-to-vercel/SKILL.md",
+      "record_sha256": "956386703a79a2d015fb14ed02a298a28f1350a57ab179996b5770c3f6929b25"
+    },
+    {
+      "skill_id": "skl_6a71d2956b47fb67a7abe7f9",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/aks-skills/skills/aks-troubleshooting/SKILL.md",
+      "record_sha256": "6c6aed0fa493f00c312a834cad1a555b6688bf841471b4d3223abab00e44f592"
+    },
+    {
+      "skill_id": "skl_ef5988b8365b7b251203ec22",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/claude-api/SKILL.md",
+      "record_sha256": "983bae26123bb43b8af79bb4997a0108a1acb3fa1256c1d9e651139146dda710"
+    },
+    {
+      "skill_id": "skl_01cea63d49e19293fb942b42",
+      "repository_url": "https://github.com/vercel-labs/agent-skills",
+      "skill_path": "skills/vercel-cli-with-tokens/SKILL.md",
+      "record_sha256": "ce0fd468a656649a1308a9f636c18bc70c339a8636f2fae11b481e66d6b36a25"
+    },
+    {
+      "skill_id": "skl_7cc10d496de80ecb768a1682",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/aks-skills/skills/azure-search-nav/SKILL.md",
+      "record_sha256": "37bbdacf7efe7090301f7269969a5a35507b869eda6e8015fb6aed46223a747d"
+    },
+    {
+      "skill_id": "skl_f1dc40e337fbb9c572ce2d08",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/discernment-nudge/SKILL.md",
+      "record_sha256": "588b0e9220bf4861fa5624bad7944c75f820495d61748f35b270f24a54a6e8eb"
+    },
+    {
+      "skill_id": "skl_65299c6c1211175b097ad053",
+      "repository_url": "https://github.com/vercel-labs/agent-skills",
+      "skill_path": "skills/vercel-optimize/SKILL.md",
+      "record_sha256": "7d3714c74f83be36078f3c3175347f13022aca4791e48086fc3ac5f2724a69eb"
+    },
+    {
+      "skill_id": "skl_571e9aa39426ff7debcd7027",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-advisor/skills/azure-advisor-actionability/SKILL.md",
+      "record_sha256": "305c3182944223bfdcfa248ecc04d5dc1f259148387199a846c175a74c0451ec"
+    },
+    {
+      "skill_id": "skl_41f274b77138004770bf1e80",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/frontend-design/SKILL.md",
+      "record_sha256": "a9df9c163e4287ee468528251805bbc6ddf45198a00d93b851773ae490cf27cb"
+    },
+    {
+      "skill_id": "skl_a816eed43d7c3afd5c108d73",
+      "repository_url": "https://github.com/vercel-labs/agent-skills",
+      "skill_path": "skills/writing-guidelines/SKILL.md",
+      "record_sha256": "09cc699e64e51a3b17fcdaeaf638a876baaf2e6b9a2370b7b1ec0474af0398e7"
+    },
+    {
+      "skill_id": "skl_61cdf43386176f26e041a476",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-advisor/skills/azure-advisor-cost-optimization/SKILL.md",
+      "record_sha256": "844846d647eda8cec5660677f2826f0182a53d14eeaad512d4eeb37d19a582ef"
+    },
+    {
+      "skill_id": "skl_0f1c6317e37e6b0df607252e",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/internal-comms/SKILL.md",
+      "record_sha256": "fec033485261132670db84177e2f3165425b9a596cffbf04d9f9ab28dbf2e21f"
+    },
+    {
+      "skill_id": "skl_67ca0a9b11451b32654b751f",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-advisor/skills/azure-advisor/SKILL.md",
+      "record_sha256": "096f040739284b8b307cff29d7cdc8e3f2d0b3e91a59bd0a943fb536b52f859f"
+    },
+    {
+      "skill_id": "skl_e3589c099f7752fa93a0ffa7",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/mcp-builder/SKILL.md",
+      "record_sha256": "b78eea87a8f2a31e684050b3d9ad0e953966077b03bdf6d7f75c607465f60e55"
+    },
+    {
+      "skill_id": "skl_9f3adc9bb7325c3ecc53cc8d",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-cost/skills/cost-analysis/SKILL.md",
+      "record_sha256": "066313a0907354914c8533becc01b62906339a6af923db1c2f1ceba843557896"
+    },
+    {
+      "skill_id": "skl_b4428f1972d3c33dd561ecd7",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/pptx/SKILL.md",
+      "record_sha256": "763d3097898f68becd6a8a50d7d5eb4e2735abdbcbe8e1bfb91cf0d3a157e304"
+    },
+    {
+      "skill_id": "skl_7522ef79be5f56a7565c9600",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-cost/skills/cost-estimation/SKILL.md",
+      "record_sha256": "8fb8a8bb88bbd766995eccd2a0e4620ca39a0822a5255769f2824b18fd3ae0b4"
+    },
+    {
+      "skill_id": "skl_512638581b7f428e410513cd",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/slack-gif-creator/SKILL.md",
+      "record_sha256": "eb21ad245ddb2def413c9896dd72eccc4a84783477aec01243faa8aa9abaf6da"
+    },
+    {
+      "skill_id": "skl_8bd7a29be0798e8e2f3f2bb9",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-cost/skills/cost-governance/SKILL.md",
+      "record_sha256": "09618e592dd2c92ff368d7b19aba4fb0f77c7fb175a2e554fd26e553f4c371fa"
+    },
+    {
+      "skill_id": "skl_b24a4bbdb0c840b70098f503",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/theme-factory/SKILL.md",
+      "record_sha256": "741b4e6a152c35fd54b8ce117d0a69ef48c63f2833a4776ba23a88dd0d7ea40a"
+    },
+    {
+      "skill_id": "skl_a49baf15405776d55ff3bcad",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-cost/skills/cost-optimization/SKILL.md",
+      "record_sha256": "764275e769425a28d95dada24d7a3d5e2f5f0ed2f75523c87417ce6e8f2433c9"
+    },
+    {
+      "skill_id": "skl_d52420fa182e7a1b8a79ed3f",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/web-artifacts-builder/SKILL.md",
+      "record_sha256": "8940d2e2009e000925316c8b97fd9e36eb837a9bef79ef0bf77af1e69b32356f"
+    },
+    {
+      "skill_id": "skl_3dc9fd4ef5576ed8a44ae74b",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-kusto-graph-skills/skills/azure-kusto-graph/SKILL.md",
+      "record_sha256": "91ca36162192115542fbaa96c7df7dfb2bd0631549f5822916bbe8e6c0b0d8b5"
+    },
+    {
+      "skill_id": "skl_9d06c9c6cfe091bb8115128f",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/webapp-testing/SKILL.md",
+      "record_sha256": "361c21834beae866137a063c190d0cb7cbec1dab80ed5d53c60d43a57164b64a"
+    },
+    {
+      "skill_id": "skl_c660a68a900aa30164aa65a5",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-kusto-graph-skills/skills/azure-kusto-irql-graph/SKILL.md",
+      "record_sha256": "656819494d78fcb3833388a2ba687740e4de5a6b53c3ec6929580aea15080faf"
+    },
+    {
+      "skill_id": "skl_f8206c5289014f230ad5a70f",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/doc-coauthoring/SKILL.md",
+      "record_sha256": "d3e1f98bf560f4ac89f57a9fc19966f8d1244746490bd0a312c95a9823aa6924"
+    },
+    {
+      "skill_id": "skl_c2d8c12ec9bd4e5a5768c6b6",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-kusto-graph-skills/skills/azure-kusto-irql/SKILL.md",
+      "record_sha256": "0c3efd2af74c8340babfd026c26d0089f60dd37a380a6d98d34dd9869002fd7d"
+    },
+    {
+      "skill_id": "skl_48bfac99ec00aab2e075eb6d",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "skills/skill-creator/SKILL.md",
+      "record_sha256": "ff36cccf466ebe9b752a999db8da998280976ff9cb1ff25fed0aece672c2e298"
+    },
+    {
+      "skill_id": "skl_49220e97836b6a63dda33682",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-local-skills/skills/azure-local-multi-rack/SKILL.md",
+      "record_sha256": "97f9635539365a6bc2c8c180cca4771bef28c7ee5b67dcb2fb8b7d2a6bfbb4a7"
+    },
+    {
+      "skill_id": "skl_9a1909e129974f5d1a395981",
+      "repository_url": "https://github.com/anthropics/skills",
+      "skill_path": "template/SKILL.md",
+      "record_sha256": "8fc09167746dbaf28cc661a35ed0dbda1b8ba46fbb90af93d65bf50093f30e41"
+    },
+    {
+      "skill_id": "skl_12f3d333649f4596580c159f",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-local-skills/skills/azure-local/SKILL.md",
+      "record_sha256": "42ac2c1890e13c9a1fca59a58e68be0c7db84c753fae6252ed83e1c3d463c3e7"
+    },
+    {
+      "skill_id": "skl_a1bae41048e3b1fb0d90c101",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-agents-persistent-dotnet/SKILL.md",
+      "record_sha256": "cd1605cf170a2467f0e0d85392355f57951bf207e597f6c64faf6bef5174c0d6"
+    },
+    {
+      "skill_id": "skl_e6d65a18f5087705d0adbf80",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-document-intelligence-dotnet/SKILL.md",
+      "record_sha256": "bce160666749d9a5f51f8f64c1a1c7fedee44f7357a81262d99740900767cb76"
+    },
+    {
+      "skill_id": "skl_1f9c718df75ceeb845fce2ef",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-openai-dotnet/SKILL.md",
+      "record_sha256": "6da41bd7d244a4b7bddabc9d6202c4e4b50b1d8d155a6c5ce99416533b9f0859"
+    },
+    {
+      "skill_id": "skl_db06fc5cbbb71e6cff1e7c14",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-projects-dotnet/SKILL.md",
+      "record_sha256": "db5ae71a38fcecb96888d61d2af0f035e68d94ce9eaa7a4521a0ad8d6b20aefe"
+    },
+    {
+      "skill_id": "skl_a48e83a1e8fc9c7c2037201c",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-ai-voicelive-dotnet/SKILL.md",
+      "record_sha256": "00e9aafa49ec157d4b3262ef60bf02ba3a2c582e6d4c9d75a33d7c1797e71209"
+    },
+    {
+      "skill_id": "skl_0cf1447fe5e1bc0cb7dd359f",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-eventgrid-dotnet/SKILL.md",
+      "record_sha256": "1932199fd3edb702e340b0ebd01df847d21ba5da629f40a060682f7cbe625e76"
+    },
+    {
+      "skill_id": "skl_8ca563415539ba5adb8a0926",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-eventhub-dotnet/SKILL.md",
+      "record_sha256": "1020f202298b69f023031d3ef32826946aee5edb6be29408c2256fbaa076d1c3"
+    },
+    {
+      "skill_id": "skl_1aabaf7d6abf3c63d234e209",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-identity-dotnet/SKILL.md",
+      "record_sha256": "b6fbc2250f5d8a569a44ddf728636d81aab3d6370632f30854e3e8512f6b554a"
+    },
+    {
+      "skill_id": "skl_80371c20ccd5fcfe325d35d8",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-maps-search-dotnet/SKILL.md",
+      "record_sha256": "4794395bbbfb178305a0d87709b35638bb94c46be1dac62f45511ba5e1bf49f3"
+    },
+    {
+      "skill_id": "skl_47854b1cf98bf4f65cf0f06a",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apicenter-dotnet/SKILL.md",
+      "record_sha256": "7ac93aa11fbd54ec830723cfa8bd5fc5dc698a4c5baaed08b158b0fb9fb92a33"
+    },
+    {
+      "skill_id": "skl_992ed00e623471ac9df94abf",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-apimanagement-dotnet/SKILL.md",
+      "record_sha256": "7740b6da150b9eef2d53416ddbfbdbeba98d1b2c8ef4940bfa26af374581ec65"
+    },
+    {
+      "skill_id": "skl_08fb4372607041681f201264",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-applicationinsights-dotnet/SKILL.md",
+      "record_sha256": "6b0393803a8b00c7fce46769a85f5ddd31aca04188b1b4bf02b31cff2749af35"
+    },
+    {
+      "skill_id": "skl_5f4744a4b1ea006953d9350c",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-arizeaiobservabilityeval-dotnet/SKILL.md",
+      "record_sha256": "7617fc32b5d942f40b4f4a168a4a392a2308fd5ec6120dbecd6095592f505c7b"
+    },
+    {
+      "skill_id": "skl_7ee06ddfde0a93a47131128c",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-botservice-dotnet/SKILL.md",
+      "record_sha256": "b9eef82427cdbdc78b63ec57ec40f110592345ac8e1ad0b004101225c734e72c"
+    },
+    {
+      "skill_id": "skl_555d8f06354fba8eba2d6b65",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-fabric-dotnet/SKILL.md",
+      "record_sha256": "0f2b672bea59a9b1845fef8ac26a64bee358b424691d63758fb46f29315596d8"
+    },
+    {
+      "skill_id": "skl_2ec5263f2c71d56ca689db3d",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-mongodbatlas-dotnet/SKILL.md",
+      "record_sha256": "3126ac39e90eba06cf971abefa774def3e80fff735934d683e7e3416948f635e"
+    },
+    {
+      "skill_id": "skl_78486756dccf3d8cbab7530b",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-mgmt-weightsandbiases-dotnet/SKILL.md",
+      "record_sha256": "d20c6bf72a88b0e7cf30d11b22147af73d565321cc92a14da5eb64b03838919f"
+    },
+    {
+      "skill_id": "skl_53db3e0094d6187a703f4cc0",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-cosmosdb-dotnet/SKILL.md",
+      "record_sha256": "ffa225e4ddfcdb18297143e814f376a138076315adf471d0efb10ddabe440144"
+    },
+    {
+      "skill_id": "skl_be488a23e73679e91b94410b",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-durabletask-dotnet/SKILL.md",
+      "record_sha256": "5e702be4c82e2134e99935ae1900fc2469664fe49a4c754d735d52666cde3c3c"
+    },
+    {
+      "skill_id": "skl_5e402b9383a253210abf2c4a",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-mysql-dotnet/SKILL.md",
+      "record_sha256": "0dade82cd729f06d656f5aef7e303cf988d7ff41502a9b85698db040e2c46f8b"
+    },
+    {
+      "skill_id": "skl_98262cf9395457d076c212fb",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-playwright-dotnet/SKILL.md",
+      "record_sha256": "2b4559208ae6c43b5547837ec7c4fd7b076cae1ecac76c1af43be04ab271e04d"
+    },
+    {
+      "skill_id": "skl_99ea1edc1b87f3c9c219051f",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-postgresql-dotnet/SKILL.md",
+      "record_sha256": "7db1357c929c9873e2bfafb1bd045e0a0c95f8550dbaa245a035d0cf0ba719a8"
+    },
+    {
+      "skill_id": "skl_c0da4b42357bf38ef6fe74f4",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-redis-dotnet/SKILL.md",
+      "record_sha256": "c2af47bc0a3b5d9df47502989df67bc677adbe8b57ea28d5e7804c4ef4fbb874"
+    },
+    {
+      "skill_id": "skl_c6cca7b237768e27ab2530fd",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-resource-manager-sql-dotnet/SKILL.md",
+      "record_sha256": "859a110042bbaf2b05e545f0c1cb4012e07195ffef9fbd90f5a9aab636b42d5a"
+    },
+    {
+      "skill_id": "skl_0c83c34063207f56cc64590b",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-search-documents-dotnet/SKILL.md",
+      "record_sha256": "c22fa93ff58f4a9d9462c4c8e8d3f35f3cb409e241b977fa9922db9fbd4d7702"
+    },
+    {
+      "skill_id": "skl_30ff80f46afad0acf147bfa0",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-security-keyvault-keys-dotnet/SKILL.md",
+      "record_sha256": "e973b31f51681c8a03268f3724bb5fd2d809e3a04caf527e6dbcd421f9a40991"
+    },
+    {
+      "skill_id": "skl_337d34a4db8c3bd333cb15f8",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/azure-servicebus-dotnet/SKILL.md",
+      "record_sha256": "19d90571cefe10ffdf0a99a6bd3371724dc4b058e656d9183ad67962417a4fea"
+    },
+    {
+      "skill_id": "skl_9daf31580085a5bb48f10ae4",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/m365-agents-dotnet/SKILL.md",
+      "record_sha256": "9910b228346882ea585ae0c37b238841fb8962799491e023a26824c1912d1e3c"
+    },
+    {
+      "skill_id": "skl_8aba8e607651cb2a20254dfe",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-dotnet/skills/microsoft-azure-webjobs-extensions-authentication-events-dotnet/SKILL.md",
+      "record_sha256": "32899aa3ab3c5d51ca4b4e26943ffc5ab9a2564929bfe944cf1cd5a63130b762"
+    },
+    {
+      "skill_id": "skl_466559f3930444ef6443a6e0",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-ai-agents-persistent-java/SKILL.md",
+      "record_sha256": "9f77ccb87717b9a08b95700d94d9d60e7e34ec431276aa31b9e0124d358d5d17"
+    },
+    {
+      "skill_id": "skl_e76f8198511386dd0fa550ce",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-ai-anomalydetector-java/SKILL.md",
+      "record_sha256": "c16720292759c715d7405337a4189e69fc3c380197a980601b99018dcc75e815"
+    },
+    {
+      "skill_id": "skl_fbd881d5f79d7845066e4b9a",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-ai-contentsafety-java/SKILL.md",
+      "record_sha256": "040ebaaef30707c1d315f0564c48411ffdbd9f5c2225e711398faf036a4f7f9b"
+    },
+    {
+      "skill_id": "skl_3edb4ee0d50407a338c342a5",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-ai-projects-java/SKILL.md",
+      "record_sha256": "780c480460eb7099676792384a82ab489042653a16048270565d31e044c386ee"
+    },
+    {
+      "skill_id": "skl_fffff7f24e1f34f35ab0f109",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-ai-vision-imageanalysis-java/SKILL.md",
+      "record_sha256": "4c2bf237d11b7eb248e550930fc57f18228194ce3e1d4f8eb253ade484fc5a06"
+    },
+    {
+      "skill_id": "skl_0bbf41b5657d1a9096f2106a",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-ai-voicelive-java/SKILL.md",
+      "record_sha256": "43a3d77c45f5897cd94f53822ae3087adb8ba4ae8b197ed69b2e58ae24556bae"
+    },
+    {
+      "skill_id": "skl_a1e164408fedd2a8bfcbbc56",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-appconfiguration-java/SKILL.md",
+      "record_sha256": "bf4a7fce68cf6045f1fe75d9500ecab4fd3878fd674aff115792533b6324c753"
+    },
+    {
+      "skill_id": "skl_43deaf38a9b1faa56f298267",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-communication-callautomation-java/SKILL.md",
+      "record_sha256": "d05c4777f0a75281be4b2737722ef11f41a41c3f8065ac988ce8bcdf26dbacfb"
+    },
+    {
+      "skill_id": "skl_7e194924d5cb696834d29216",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-communication-callingserver-java/SKILL.md",
+      "record_sha256": "a4584fefa1548029a9c8347da04c686aedfd33f612d177eaa3920e05ba049536"
+    },
+    {
+      "skill_id": "skl_c7000c7feaeb33230cd04999",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-communication-chat-java/SKILL.md",
+      "record_sha256": "203aa5640d600c750c0e33dbf81374595b5c213ff81ed876a4124bb02b5d08a9"
+    },
+    {
+      "skill_id": "skl_79a63e133f026ed43aec6bec",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-communication-common-java/SKILL.md",
+      "record_sha256": "3acf6a6cf29bd7f46511b2097d7e37cfb21d3f4edaf036ad44236a7325a2cb85"
+    },
+    {
+      "skill_id": "skl_8dff45308f5f3d666719d533",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-communication-sms-java/SKILL.md",
+      "record_sha256": "af31673935d0f344c338b7b41b0fb83084d37c57b902f5d403f4bc78c312201b"
+    },
+    {
+      "skill_id": "skl_348078c59f459b04665d0b4d",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-compute-batch-java/SKILL.md",
+      "record_sha256": "527859baa3390099d71c35e41409a85ede3445d83c3e034709f32d60952754af"
+    },
+    {
+      "skill_id": "skl_9676e8f78b3acccdbde88e04",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-cosmos-java/SKILL.md",
+      "record_sha256": "98f4cbc9626aabc8f6d61624a6a2ee2772f015b8c8956134504e662e7cdc41e4"
+    },
+    {
+      "skill_id": "skl_d0992248d381aa4f952ea570",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-data-tables-java/SKILL.md",
+      "record_sha256": "c960817a3d26ef725bb85389888023bd4f139881d51e386d4bb9f3e85bec5039"
+    },
+    {
+      "skill_id": "skl_55c3ac56994b1308ab93ce79",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-eventgrid-java/SKILL.md",
+      "record_sha256": "65af7ddd30a5aa862221b3a4c21e372870cdc7d2a9bb4e3cf0d3483a46e6e684"
+    },
+    {
+      "skill_id": "skl_66f0b399e78a51043f446526",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-eventhub-java/SKILL.md",
+      "record_sha256": "068e4ae40ef143d00f10df4570ebed7ff3c46b9fe352eac7b460576d805fb9cb"
+    },
+    {
+      "skill_id": "skl_9dd7ff589eeeb6cd437b0426",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-identity-java/SKILL.md",
+      "record_sha256": "969c976e3a8025c2bc521727773c1e57e5fafe0e91530626624b1f12bf3ee2d9"
+    },
+    {
+      "skill_id": "skl_07c5be1c1453b59047d7527b",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-messaging-webpubsub-java/SKILL.md",
+      "record_sha256": "b6c26f004bb6aef1223ab3a2debb4de9b5dfe843a7e731353a2976ae8b9de49d"
+    },
+    {
+      "skill_id": "skl_5ec945bfe7663a7bcbd3c969",
+      "repository_url": "https://github.com/microsoft/skills",
+      "skill_path": ".github/plugins/azure-sdk-java/skills/azure-monitor-ingestion-java/SKILL.md",
+      "record_sha256": "b0028713a2ee5a3900b21a234e60b0e02741b92f5f203a5a1b8ffca4fa229c53"
+    }
+  ],
+  "enrich_initial_skill_ids": [
+    "skl_0d53391ce0e01f2f64006be9",
+    "skl_3e7951d13a80c6b485eac29a",
+    "skl_40760aea188157195dffdb4b",
+    "skl_7c7bda5dfcbb60747d3d12e3",
+    "skl_c9f41f3590eea0bf7f1cb490",
+    "skl_e39a99ccf83d1697561be9ed",
+    "skl_f67e66eb55a1e80f8641352e"
+  ],
+  "decisions": {
+    "skl_3e7951d13a80c6b485eac29a": "enrich_initial_skill",
+    "skl_40760aea188157195dffdb4b": "enrich_initial_skill",
+    "skl_7c7bda5dfcbb60747d3d12e3": "enrich_initial_skill",
+    "skl_c9f41f3590eea0bf7f1cb490": "enrich_initial_skill",
+    "skl_e39a99ccf83d1697561be9ed": "enrich_initial_skill",
+    "skl_f102289a927e4d99e99ebb1a": "duplicate_content",
+    "skl_0d53391ce0e01f2f64006be9": "enrich_initial_skill",
+    "skl_f67e66eb55a1e80f8641352e": "enrich_initial_skill",
+    "skl_2cacbce7cd9373eb4fa8d996": "selected_explicit_requirement_metadata",
+    "skl_c4357ac1ae09a534f127a29e": "selected_explicit_requirement_metadata",
+    "skl_1482b2f898c3f172a23d4667": "selected_explicit_requirement_metadata",
+    "skl_57ed9a6b547395cc820513b1": "selected_explicit_requirement_metadata",
+    "skl_04dd3dc2c77690344413146e": "selected_explicit_requirement_metadata",
+    "skl_f0d70e9ac2869964a3b160fc": "selected_explicit_requirement_metadata",
+    "skl_5635474bf4711f383a96a84d": "selected_explicit_requirement_metadata",
+    "skl_a5c03a8a89c3a0dec7ad610f": "selected_explicit_requirement_metadata",
+    "skl_6ec3d82cb46c37ebac58e626": "selected_explicit_requirement_metadata",
+    "skl_d00b8431b75df304b607e206": "selected_source_quality_repository_round_robin",
+    "skl_7e8eca88b16d4c8ba548147c": "selected_source_quality_repository_round_robin",
+    "skl_3adfec861d84a8889d494d99": "selected_source_quality_repository_round_robin",
+    "skl_cacad371d12fd1d3529d9372": "selected_source_quality_repository_round_robin",
+    "skl_6a1f2714f0b57a3624c9609c": "selected_source_quality_repository_round_robin",
+    "skl_17a43ef267e292c398526161": "selected_source_quality_repository_round_robin",
+    "skl_8faa9ecf82794bafecec2ef1": "selected_source_quality_repository_round_robin",
+    "skl_c763c07ae2efdececc285b22": "selected_source_quality_repository_round_robin",
+    "skl_c6a210e006d9785e10bf3a4c": "selected_source_quality_repository_round_robin",
+    "skl_6e02ea6243bce5376a38dcf4": "selected_source_quality_repository_round_robin",
+    "skl_405847986c6aa7dc2230e33d": "selected_source_quality_repository_round_robin",
+    "skl_5b38f5848b1b3d5a77a0999f": "selected_source_quality_repository_round_robin",
+    "skl_6a71d2956b47fb67a7abe7f9": "selected_source_quality_repository_round_robin",
+    "skl_ef5988b8365b7b251203ec22": "selected_source_quality_repository_round_robin",
+    "skl_01cea63d49e19293fb942b42": "selected_source_quality_repository_round_robin",
+    "skl_7cc10d496de80ecb768a1682": "selected_source_quality_repository_round_robin",
+    "skl_f1dc40e337fbb9c572ce2d08": "selected_source_quality_repository_round_robin",
+    "skl_65299c6c1211175b097ad053": "selected_source_quality_repository_round_robin",
+    "skl_571e9aa39426ff7debcd7027": "selected_source_quality_repository_round_robin",
+    "skl_41f274b77138004770bf1e80": "selected_source_quality_repository_round_robin",
+    "skl_a816eed43d7c3afd5c108d73": "selected_source_quality_repository_round_robin",
+    "skl_61cdf43386176f26e041a476": "selected_source_quality_repository_round_robin",
+    "skl_0f1c6317e37e6b0df607252e": "selected_source_quality_repository_round_robin",
+    "skl_67ca0a9b11451b32654b751f": "selected_source_quality_repository_round_robin",
+    "skl_e3589c099f7752fa93a0ffa7": "selected_source_quality_repository_round_robin",
+    "skl_9f3adc9bb7325c3ecc53cc8d": "selected_source_quality_repository_round_robin",
+    "skl_b4428f1972d3c33dd561ecd7": "selected_source_quality_repository_round_robin",
+    "skl_7522ef79be5f56a7565c9600": "selected_source_quality_repository_round_robin",
+    "skl_512638581b7f428e410513cd": "selected_source_quality_repository_round_robin",
+    "skl_8bd7a29be0798e8e2f3f2bb9": "selected_source_quality_repository_round_robin",
+    "skl_b24a4bbdb0c840b70098f503": "selected_source_quality_repository_round_robin",
+    "skl_a49baf15405776d55ff3bcad": "selected_source_quality_repository_round_robin",
+    "skl_d52420fa182e7a1b8a79ed3f": "selected_source_quality_repository_round_robin",
+    "skl_3dc9fd4ef5576ed8a44ae74b": "selected_source_quality_repository_round_robin",
+    "skl_9d06c9c6cfe091bb8115128f": "selected_source_quality_repository_round_robin",
+    "skl_c660a68a900aa30164aa65a5": "selected_source_quality_repository_round_robin",
+    "skl_f8206c5289014f230ad5a70f": "selected_source_quality_repository_round_robin",
+    "skl_c2d8c12ec9bd4e5a5768c6b6": "selected_source_quality_repository_round_robin",
+    "skl_48bfac99ec00aab2e075eb6d": "selected_source_quality_repository_round_robin",
+    "skl_49220e97836b6a63dda33682": "selected_source_quality_repository_round_robin",
+    "skl_9a1909e129974f5d1a395981": "selected_source_quality_repository_round_robin",
+    "skl_12f3d333649f4596580c159f": "selected_source_quality_repository_round_robin",
+    "skl_a1bae41048e3b1fb0d90c101": "selected_source_quality_repository_round_robin",
+    "skl_e6d65a18f5087705d0adbf80": "selected_source_quality_repository_round_robin",
+    "skl_1f9c718df75ceeb845fce2ef": "selected_source_quality_repository_round_robin",
+    "skl_db06fc5cbbb71e6cff1e7c14": "selected_source_quality_repository_round_robin",
+    "skl_a48e83a1e8fc9c7c2037201c": "selected_source_quality_repository_round_robin",
+    "skl_0cf1447fe5e1bc0cb7dd359f": "selected_source_quality_repository_round_robin",
+    "skl_8ca563415539ba5adb8a0926": "selected_source_quality_repository_round_robin",
+    "skl_1aabaf7d6abf3c63d234e209": "selected_source_quality_repository_round_robin",
+    "skl_80371c20ccd5fcfe325d35d8": "selected_source_quality_repository_round_robin",
+    "skl_47854b1cf98bf4f65cf0f06a": "selected_source_quality_repository_round_robin",
+    "skl_992ed00e623471ac9df94abf": "selected_source_quality_repository_round_robin",
+    "skl_08fb4372607041681f201264": "selected_source_quality_repository_round_robin",
+    "skl_5f4744a4b1ea006953d9350c": "selected_source_quality_repository_round_robin",
+    "skl_7ee06ddfde0a93a47131128c": "selected_source_quality_repository_round_robin",
+    "skl_555d8f06354fba8eba2d6b65": "selected_source_quality_repository_round_robin",
+    "skl_2ec5263f2c71d56ca689db3d": "selected_source_quality_repository_round_robin",
+    "skl_78486756dccf3d8cbab7530b": "selected_source_quality_repository_round_robin",
+    "skl_53db3e0094d6187a703f4cc0": "selected_source_quality_repository_round_robin",
+    "skl_be488a23e73679e91b94410b": "selected_source_quality_repository_round_robin",
+    "skl_5e402b9383a253210abf2c4a": "selected_source_quality_repository_round_robin",
+    "skl_98262cf9395457d076c212fb": "selected_source_quality_repository_round_robin",
+    "skl_99ea1edc1b87f3c9c219051f": "selected_source_quality_repository_round_robin",
+    "skl_c0da4b42357bf38ef6fe74f4": "selected_source_quality_repository_round_robin",
+    "skl_c6cca7b237768e27ab2530fd": "selected_source_quality_repository_round_robin",
+    "skl_0c83c34063207f56cc64590b": "selected_source_quality_repository_round_robin",
+    "skl_30ff80f46afad0acf147bfa0": "selected_source_quality_repository_round_robin",
+    "skl_337d34a4db8c3bd333cb15f8": "selected_source_quality_repository_round_robin",
+    "skl_9daf31580085a5bb48f10ae4": "selected_source_quality_repository_round_robin",
+    "skl_8aba8e607651cb2a20254dfe": "selected_source_quality_repository_round_robin",
+    "skl_466559f3930444ef6443a6e0": "selected_source_quality_repository_round_robin",
+    "skl_e76f8198511386dd0fa550ce": "selected_source_quality_repository_round_robin",
+    "skl_fbd881d5f79d7845066e4b9a": "selected_source_quality_repository_round_robin",
+    "skl_3edb4ee0d50407a338c342a5": "selected_source_quality_repository_round_robin",
+    "skl_fffff7f24e1f34f35ab0f109": "selected_source_quality_repository_round_robin",
+    "skl_0bbf41b5657d1a9096f2106a": "selected_source_quality_repository_round_robin",
+    "skl_a1e164408fedd2a8bfcbbc56": "selected_source_quality_repository_round_robin",
+    "skl_43deaf38a9b1faa56f298267": "selected_source_quality_repository_round_robin",
+    "skl_7e194924d5cb696834d29216": "selected_source_quality_repository_round_robin",
+    "skl_c7000c7feaeb33230cd04999": "selected_source_quality_repository_round_robin",
+    "skl_79a63e133f026ed43aec6bec": "selected_source_quality_repository_round_robin",
+    "skl_8dff45308f5f3d666719d533": "selected_source_quality_repository_round_robin",
+    "skl_348078c59f459b04665d0b4d": "selected_source_quality_repository_round_robin",
+    "skl_9676e8f78b3acccdbde88e04": "selected_source_quality_repository_round_robin",
+    "skl_d0992248d381aa4f952ea570": "selected_source_quality_repository_round_robin",
+    "skl_55c3ac56994b1308ab93ce79": "selected_source_quality_repository_round_robin",
+    "skl_66f0b399e78a51043f446526": "selected_source_quality_repository_round_robin",
+    "skl_9dd7ff589eeeb6cd437b0426": "selected_source_quality_repository_round_robin",
+    "skl_07c5be1c1453b59047d7527b": "selected_source_quality_repository_round_robin",
+    "skl_5ec945bfe7663a7bcbd3c969": "selected_source_quality_repository_round_robin",
+    "skl_011f89008856e9afdd14c897": "outside_selected_sample",
+    "skl_03bb35ac65a6e7c8532b7120": "outside_selected_sample",
+    "skl_04945cffb6c94d2d7081dce8": "outside_selected_sample",
+    "skl_0629b8533ef1033f913c8873": "outside_selected_sample",
+    "skl_0a8c3aaa7a2beafd5c3d06d1": "outside_selected_sample",
+    "skl_0b220593d1ee43f53e7b7650": "outside_selected_sample",
+    "skl_0bfc2b4883214f3814acab0b": "outside_selected_sample",
+    "skl_0dffb5007b5d6510009e984c": "outside_selected_sample",
+    "skl_0e7fe6afdbb73a487cf5dd40": "outside_selected_sample",
+    "skl_1090b6d2cd7b597cc470d2ca": "outside_selected_sample",
+    "skl_10bc51c6e868b1021aab0f52": "outside_selected_sample",
+    "skl_137ba30d4b5d1cff8d547756": "outside_selected_sample",
+    "skl_1538c273b124806b56db0951": "outside_selected_sample",
+    "skl_16115fee0d9961bdcbd756a8": "outside_selected_sample",
+    "skl_16ea4b913849a6a3739f7988": "outside_selected_sample",
+    "skl_16ef193170b9cbf85ae84b2f": "outside_selected_sample",
+    "skl_17a387dacbf421c7bbf3e432": "outside_selected_sample",
+    "skl_19974f6a03dce6be2833cc2f": "outside_selected_sample",
+    "skl_1af6a564294dd5e861e3c925": "outside_selected_sample",
+    "skl_1c24cabeb08df40e1f69d5e4": "outside_selected_sample",
+    "skl_1d0d1cd345dec0bea95c0cf9": "outside_selected_sample",
+    "skl_1d285ad1c36ed5acdcf5bf73": "outside_selected_sample",
+    "skl_1d8b17d56b71d0b6c16c56d2": "outside_selected_sample",
+    "skl_201096e6e06250b09b97276a": "outside_selected_sample",
+    "skl_22cc2c72a0a56662c261af77": "outside_selected_sample",
+    "skl_23b3fe7528ab6cc37a795013": "outside_selected_sample",
+    "skl_23cdfdaf9719c3b68e091b8b": "outside_selected_sample",
+    "skl_27c2ed15bf5a9ccaab896dfb": "outside_selected_sample",
+    "skl_2d31deb005fb9e2f3415513a": "outside_selected_sample",
+    "skl_2e4b4e07b3af1acf5d6e9dbc": "outside_selected_sample",
+    "skl_2f730478ffda6f8ce2df9898": "outside_selected_sample",
+    "skl_30196168ecc77c8974f6d8d9": "outside_selected_sample",
+    "skl_328aab5441e2304c64459a5e": "outside_selected_sample",
+    "skl_32d5a0e8e8d4d495c9050d22": "outside_selected_sample",
+    "skl_32d699c9e92d428e9d28c579": "outside_selected_sample",
+    "skl_32fee7eecbbc35308e2302eb": "outside_selected_sample",
+    "skl_367106aa01142802c6b8d93d": "outside_selected_sample",
+    "skl_367ebda4dc942a585eb33cd5": "outside_selected_sample",
+    "skl_3875a62f895cd0e2e81e54da": "outside_selected_sample",
+    "skl_40625e092c94b4c51c7eff78": "outside_selected_sample",
+    "skl_4185416b579c0fabd1a4abaf": "outside_selected_sample",
+    "skl_42894b0c814e788b18bd6f8c": "outside_selected_sample",
+    "skl_4491d4e5006605ffacd2f217": "outside_selected_sample",
+    "skl_458a241152f9f8ccd16cdf73": "outside_selected_sample",
+    "skl_486f3e775c761ba1984d1a3f": "outside_selected_sample",
+    "skl_4ac3d505349ef90895a37ae7": "outside_selected_sample",
+    "skl_4c4d498f7c31a0fbfaf09be9": "outside_selected_sample",
+    "skl_4e446f4344c14a6fd0a05af5": "outside_selected_sample",
+    "skl_4f536a7d50bf309b60c4e461": "outside_selected_sample",
+    "skl_4f8d9719fbbdd3f29b5497a8": "outside_selected_sample",
+    "skl_4fcb329ced51f546f1f2cd5d": "outside_selected_sample",
+    "skl_5351692edffe1bf3a5d9e959": "outside_selected_sample",
+    "skl_5666deb47aacadee84d4995d": "outside_selected_sample",
+    "skl_56da9e8cccd42205a9fa4529": "outside_selected_sample",
+    "skl_581c95c0a40bf144c949eab9": "outside_selected_sample",
+    "skl_59f75ef41a57c5aec36be3c3": "outside_selected_sample",
+    "skl_5c25357078c0e2ddc267f9ed": "outside_selected_sample",
+    "skl_5e85c27f3a65cccd1011cc3c": "outside_selected_sample",
+    "skl_5ee3c467ddcecb6d5c305e2e": "outside_selected_sample",
+    "skl_5f3e6640e50a381e3046f632": "outside_selected_sample",
+    "skl_608789529467a5a5963bd827": "outside_selected_sample",
+    "skl_611bb0ade98c68c036645ace": "outside_selected_sample",
+    "skl_613c80ce0eba9d9584ae16b4": "outside_selected_sample",
+    "skl_6363ecbe70e23f3fe333cb43": "outside_selected_sample",
+    "skl_64768a0dd693e4d13a2507f1": "outside_selected_sample",
+    "skl_6659ef4f0bf9fa3f0bafbe8c": "outside_selected_sample",
+    "skl_6745ef4c8a7a3699daa4bd5b": "outside_selected_sample",
+    "skl_67f8f20c44eb95cbfd1027c6": "outside_selected_sample",
+    "skl_6872ecfb389c97c88d186d71": "outside_selected_sample",
+    "skl_6a21f427a6ffc6d8c777d19b": "outside_selected_sample",
+    "skl_6b22daca566ad85b857079a7": "outside_selected_sample",
+    "skl_6e216e9502122707c193c786": "outside_selected_sample",
+    "skl_73ae1e259db130f5607137c0": "outside_selected_sample",
+    "skl_75e85ece45c7526bd9352eaa": "outside_selected_sample",
+    "skl_7abb5dc98022a099d6174b5d": "outside_selected_sample",
+    "skl_7f5a578f9231eb25dfbe199d": "outside_selected_sample",
+    "skl_80100b4acb01f0dd71bd1ac0": "outside_selected_sample",
+    "skl_818c61f5686179c8dd1353ea": "outside_selected_sample",
+    "skl_81a77a82ae30659b0f44c95f": "outside_selected_sample",
+    "skl_827fc28e5242a087fc52fe46": "outside_selected_sample",
+    "skl_83847715e300b5253812b359": "outside_selected_sample",
+    "skl_85354f1b57861d294dfcf81f": "outside_selected_sample",
+    "skl_8607f16b02ed32219326c7af": "outside_selected_sample",
+    "skl_8612601db04344c3fa618c68": "outside_selected_sample",
+    "skl_87984bc6bfc24fc3d8957986": "outside_selected_sample",
+    "skl_880fffa2c1d7fa0f9c6ec447": "outside_selected_sample",
+    "skl_8f74ce075021a21b5c4c68d9": "outside_selected_sample",
+    "skl_916e640f2a5356888c864fdf": "outside_selected_sample",
+    "skl_96897aa709a960fa3de0d87e": "outside_selected_sample",
+    "skl_977a6831701c6621985c12eb": "outside_selected_sample",
+    "skl_97d1009b9a7436fa6dd5b1ac": "outside_selected_sample",
+    "skl_98b4e7a5dd1a869602a3a499": "outside_selected_sample",
+    "skl_9a1f71d8f4cc4457ee2dcb0c": "outside_selected_sample",
+    "skl_9dddc4052bcb38b8b652e803": "outside_selected_sample",
+    "skl_9ee7807f25cb728080b8e46a": "outside_selected_sample",
+    "skl_a26df768641076575810842a": "outside_selected_sample",
+    "skl_a3dd4be8acf14e69c2a359d0": "outside_selected_sample",
+    "skl_a56c9ca94a28f8016544a11c": "outside_selected_sample",
+    "skl_a78c29bd2ab2a5131e6dc57a": "outside_selected_sample",
+    "skl_a99311809b8f72316e13d948": "outside_selected_sample",
+    "skl_abb6649766bd5ea6a8d3e8ce": "outside_selected_sample",
+    "skl_ad847a975c845179dc76fd95": "outside_selected_sample",
+    "skl_b1ea8c9dd9c999925941bbb8": "outside_selected_sample",
+    "skl_b30d4105b2567bac75ae0349": "outside_selected_sample",
+    "skl_b44dcff247933110e7ef58cf": "outside_selected_sample",
+    "skl_b46da5bad34751377d16620e": "outside_selected_sample",
+    "skl_b5bab7110a64589cad634dff": "outside_selected_sample",
+    "skl_b5f766d06bc71d88ed9d027d": "outside_selected_sample",
+    "skl_b73cf146db622b3970da9fef": "outside_selected_sample",
+    "skl_bac134f16edb5511a4a8354c": "outside_selected_sample",
+    "skl_bc6f0f4ef231f6ac1d75dd3d": "outside_selected_sample",
+    "skl_bdaf473f417d786c27f36194": "outside_selected_sample",
+    "skl_c0fa0a36fadc33e5d4feb258": "outside_selected_sample",
+    "skl_c194314ec160a7a576fdd3f9": "outside_selected_sample",
+    "skl_c42348e3c38083199a45df27": "outside_selected_sample",
+    "skl_c550893d8cb31b122ae603d4": "outside_selected_sample",
+    "skl_c6b4ade64d2415c4264ccdb8": "outside_selected_sample",
+    "skl_c83dc773e135b3d9e355df94": "outside_selected_sample",
+    "skl_c8ee9ae7812bd0a055173f25": "outside_selected_sample",
+    "skl_cae368c9b9ff5f23ab6de3a5": "outside_selected_sample",
+    "skl_cf48079a1a21dc9ede8955c1": "outside_selected_sample",
+    "skl_cf845aafea01b73914612029": "outside_selected_sample",
+    "skl_d2275a0292c1dbf23e79cb60": "outside_selected_sample",
+    "skl_d34458e2529b49b9ae1245d1": "outside_selected_sample",
+    "skl_d3d301e8b76b784d91ac771c": "outside_selected_sample",
+    "skl_d4620371f9f8b72751930775": "outside_selected_sample",
+    "skl_d4db9c23a9ae06306f92cd33": "outside_selected_sample",
+    "skl_d4f41bf5d84176c864b006c2": "outside_selected_sample",
+    "skl_d7d1a481e1e188acdf12dc8a": "outside_selected_sample",
+    "skl_d7ed64abe6a74869ef4b21b0": "outside_selected_sample",
+    "skl_d92ecdb640abb58476577e2a": "outside_selected_sample",
+    "skl_d958b33a59e75ab40f99d432": "outside_selected_sample",
+    "skl_da6218cd415d3328ca98b727": "outside_selected_sample",
+    "skl_dae0bddb46a47c244f51e595": "outside_selected_sample",
+    "skl_dbcdd0584a99c17a4e5720ac": "outside_selected_sample",
+    "skl_e2114d0a020f69dda309bbb1": "outside_selected_sample",
+    "skl_e256acf80d58af8f54027ff4": "outside_selected_sample",
+    "skl_e2cd4df64b19e169ab63b751": "outside_selected_sample",
+    "skl_e2d8c118b902c41c36b68610": "outside_selected_sample",
+    "skl_e39ef2fce241f11598c1ecfe": "outside_selected_sample",
+    "skl_e41a9a646c50bd2c6df784b9": "outside_selected_sample",
+    "skl_e4df8cf99b9f52803844f285": "outside_selected_sample",
+    "skl_e5155428457b20ab3c61ad83": "outside_selected_sample",
+    "skl_e5482ece7ef61d7e7c03aa57": "outside_selected_sample",
+    "skl_e7334ecd58a0425f4c75242e": "outside_selected_sample",
+    "skl_e93fa82336d37dc013c88d4b": "outside_selected_sample",
+    "skl_eab4f9ad85b194b016ac003a": "outside_selected_sample",
+    "skl_eac64b133ac51ff2eb54857e": "outside_selected_sample",
+    "skl_eb8546134201af9eb120a419": "outside_selected_sample",
+    "skl_ec8a6c497c3f8f3e57197149": "outside_selected_sample",
+    "skl_eedd052693256c74d417a129": "outside_selected_sample",
+    "skl_f1b7514f9c40680627c34c2f": "outside_selected_sample",
+    "skl_f2689c01fe617d6a47c17fe6": "outside_selected_sample",
+    "skl_f311fa66892fe37d57d7dfb7": "outside_selected_sample",
+    "skl_f44e05c7465ffa6541765375": "outside_selected_sample",
+    "skl_f4ca54f4ac359d0824feb6b8": "outside_selected_sample",
+    "skl_f8ad23f8d38b3dbc25ac91d7": "outside_selected_sample",
+    "skl_f9750fba39f3554cfe52217e": "outside_selected_sample",
+    "skl_fa2a86f4391c329c30d5a334": "outside_selected_sample",
+    "skl_fb1d4588a172972eebdd2224": "outside_selected_sample",
+    "skl_fbbff14c8fbb354e30aa619c": "outside_selected_sample",
+    "skl_fd9766ba4880101774a673aa": "outside_selected_sample",
+    "skl_fdee9f90a52755e02006da70": "outside_selected_sample",
+    "skl_ff8423a64669df2b184b7a4c": "outside_selected_sample"
+  }
+}

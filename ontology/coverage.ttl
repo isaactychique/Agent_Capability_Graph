@@ -1,0 +1,11 @@
+@prefix acg: <urn:acg:ontology:> .
+@prefix shape: <urn:acg:shapes:> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+# Coverage is measured separately from structure. A missing mapping is unknown.
+shape:TaskCoverage a sh:NodeShape ;
+    sh:targetClass acg:MCPTool, acg:AgentSkill, acg:MCPServer ;
+    sh:property [
+        sh:path acg:hasCapabilityAssertion ; sh:minCount 1 ; sh:severity sh:Warning ;
+        sh:message "No supported task annotation recorded; review the description and source."@en
+    ] .

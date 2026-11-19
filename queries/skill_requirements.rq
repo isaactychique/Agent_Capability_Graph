@@ -1,0 +1,21 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# Replace the name in VALUES with a Skill name. Missing fields remain unbound;
+# they must not be interpreted as proof that the Skill has no requirement.
+SELECT DISTINCT ?skillName ?dependency ?compatibility ?allowedTool
+                ?hasScripts ?hasReferences ?hasAssets ?evidence
+WHERE {
+  VALUES ?skillName { "phoenix-observability" }
+  ?skill a acg:AgentSkill ;
+         schema:name ?skillName ;
+         acg:documentedBy ?source .
+  ?source schema:url ?evidence .
+  OPTIONAL { ?skill acg:dependency ?dependency }
+  OPTIONAL { ?skill acg:compatibility ?compatibility }
+  OPTIONAL { ?skill acg:allowedTool ?allowedTool }
+  OPTIONAL { ?skill acg:hasScripts ?hasScripts }
+  OPTIONAL { ?skill acg:hasReferences ?hasReferences }
+  OPTIONAL { ?skill acg:hasAssets ?hasAssets }
+}
+ORDER BY ?skillName ?dependency

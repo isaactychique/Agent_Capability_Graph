@@ -1,0 +1,62 @@
+@prefix acg: <urn:acg:ontology:> .
+@prefix shape: <urn:acg:shapes:> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# Minimum shared contract: optional metadata remains optional.
+shape:Entity a sh:NodeShape ;
+    sh:targetClass acg:MCPServer, acg:MCPTool, acg:AgentSkill ;
+    sh:nodeKind sh:IRI ;
+    sh:property [ sh:path schema:name ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:Literal ; sh:minLength 1 ] ;
+    sh:property [ sh:path acg:documentedBy ; sh:minCount 1 ; sh:nodeKind sh:IRI ; sh:class acg:SourceDocument ] ;
+    sh:property [ sh:path acg:hasCapabilityAssertion ; sh:class acg:CapabilityAssertion ; sh:nodeKind sh:IRI ] .
+
+shape:Server a sh:NodeShape ;
+    sh:targetClass acg:MCPServer ; sh:targetSubjectsOf acg:exposesTool ;
+    sh:class acg:MCPServer ;
+    sh:property [ sh:path acg:exposesTool ; sh:class acg:MCPTool ; sh:nodeKind sh:IRI ] .
+
+shape:Tool a sh:NodeShape ; sh:targetClass acg:MCPTool ;
+    sh:property [ sh:path [ sh:inversePath acg:exposesTool ] ;
+        sh:minCount 1 ; sh:maxCount 1 ; sh:class acg:MCPServer ; sh:nodeKind sh:IRI ] .
+
+shape:Source a sh:NodeShape ; sh:targetClass acg:SourceDocument ; sh:nodeKind sh:IRI ;
+    sh:property [ sh:path schema:url ; sh:minCount 1 ; sh:nodeKind sh:IRI ; sh:pattern "^https?://" ] .
+
+shape:Capability a sh:NodeShape ; sh:targetClass acg:Capability ; sh:nodeKind sh:IRI ;
+    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:nodeKind sh:Literal ; sh:minLength 1 ] .
+
+shape:Assertion a sh:NodeShape ; sh:targetClass acg:CapabilityAssertion ; sh:nodeKind sh:IRI ;
+    sh:property [ sh:path acg:assertedCapability ; sh:minCount 1 ; sh:maxCount 1 ; sh:class acg:Capability ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path acg:assertionMethod ; sh:minCount 1 ; sh:maxCount 1 ; sh:in (acg:sourceDeclared acg:curatorMapped acg:inferred) ] ;
+    sh:property [ sh:path acg:basedOnSource ; sh:minCount 1 ; sh:class acg:SourceDocument ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path [ sh:inversePath acg:hasCapabilityAssertion ] ; sh:minCount 1 ;
+        sh:or ( [ sh:class acg:MCPServer ] [ sh:class acg:MCPTool ] [ sh:class acg:AgentSkill ] ) ] .
+
+# A candidate is not a human-reviewed classification.
+shape:Assertion sh:property [
+    sh:path acg:reviewStatus ; sh:minCount 1 ; sh:maxCount 1 ;
+    sh:in ("candidate_for_human_review" "reviewed")
+] ; sh:property [ sh:path acg:derivedFromAssertion ; sh:class acg:CapabilityAssertion ] .
+
+shape:Capability sh:property [ sh:path acg:capabilityAction ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path acg:capabilityObject ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+shape:DerivedClaim a sh:NodeShape ;
+    sh:targetSubjectsOf acg:derivedFromAssertion ;
+    sh:property [ sh:path acg:assertionMethod ; sh:hasValue acg:inferred ] ;
+    sh:sparql [
+        sh:message "A server claim must be supported by a claim for the same task on one of its exposed tools."@en ;
+        sh:select """
+            PREFIX acg: <urn:acg:ontology:>
+            SELECT $this ?value WHERE {
+                $this acg:derivedFromAssertion ?value ; acg:assertedCapability ?capability .
+                FILTER NOT EXISTS {
+                    ?server acg:hasCapabilityAssertion $this ; acg:exposesTool ?tool .
+                    ?tool acg:hasCapabilityAssertion ?value .
+                    ?value acg:assertedCapability ?capability .
+                }
+            }
+        """
+    ] .

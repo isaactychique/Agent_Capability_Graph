@@ -1,0 +1,5 @@
+{
+  "source_url": "https://github.com/brave/brave-search-mcp-server/blob/2d15f633f7076791f4e9397429b09fcc79ae8609/server.json",
+  "collected_at": "2026-11-19T21:07:50.320868+00:00",
+  "data": "{\n  \"$schema\": \"https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json\",\n  \"name\": \"io.github.brave/brave-search-mcp-server\",\n  \"description\": \"Brave Search MCP Server: web results, images, videos, rich results, AI summaries, and more.\",\n  \"version\": \"2.1.3\",\n  \"repository\": {\n    \"url\": \"https://github.com/brave/brave-search-mcp-server\",\n    \"source\": \"github\"\n  },\n  \"packages\": [\n    {\n      \"registryType\": \"npm\",\n      \"registryBaseUrl\": \"https://registry.npmjs.org\",\n      \"identifier\": \"@brave/brave-search-mcp-server\",\n      \"version\": \"2.1.3\",\n      \"transport\": {\n        \"type\": \"stdio\"\n      },\n      \"environmentVariables\": [\n        {\n          \"name\": \"BRAVE_API_KEY\",\n          \"description\": \"Your API key for the service\",\n          \"format\": \"string\",\n          \"isRequired\": true,\n          \"isSecret\": true\n        }\n      ]\n    }\n  ]\n}\n"
+}

@@ -1,0 +1,17 @@
+@prefix acg: <urn:acg:ontology:> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <urn:acg:metadata:skill/skl_9a1909e129974f5d1a395981> ;
+            sh:resultMessage "No supported task annotation recorded; review the description and source."@en ;
+            sh:resultPath acg:hasCapabilityAssertion ;
+            sh:resultSeverity sh:Warning ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:message "No supported task annotation recorded; review the description and source."@en ;
+                    sh:minCount 1 ;
+                    sh:path acg:hasCapabilityAssertion ;
+                    sh:severity sh:Warning ] ] .
+

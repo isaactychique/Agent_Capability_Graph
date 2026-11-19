@@ -1,0 +1,26 @@
+{
+  "MCPServer": {
+    "total": 10,
+    "with_assertion": 10,
+    "candidate": 10,
+    "reviewed": 0,
+    "derived_from_tools": 10,
+    "unclassified": 0
+  },
+  "MCPTool": {
+    "total": 55,
+    "with_assertion": 55,
+    "candidate": 55,
+    "reviewed": 0,
+    "derived_from_tools": 0,
+    "unclassified": 0
+  },
+  "AgentSkill": {
+    "total": 110,
+    "with_assertion": 109,
+    "candidate": 109,
+    "reviewed": 0,
+    "derived_from_tools": 0,
+    "unclassified": 1
+  }
+}
