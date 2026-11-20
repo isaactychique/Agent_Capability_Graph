@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "concepts": [
+    {
+      "action": "search",
+      "object": "web",
+      "pattern": "\\bsearch(?:ing|es)?\\s+(?:(?:the|on the)\\s+)?(?:web|internet)\\b"
+    },
+    {
+      "action": "read",
+      "object": "file",
+      "pattern": "\\bread(?:ing|s)?\\s+(?:(?:the|multiple|a|text)\\s+){0,2}files?\\b"
+    },
+    {
+      "action": "write",
+      "object": "file",
+      "pattern": "\\bwrit(?:e|ing|es)\\s+(?:(?:to|a|text|multiple)\\s+){0,2}files?\\b"
+    },
+    {
+      "action": "extract",
+      "object": "PDF content",
+      "pattern": "\\bextract(?:ing|s)?\\s+(?:text|tables?|images?)(?:\\s*(?:,|and|/)\\s*(?:text|tables?|images?))*\\s+from\\s+(?:PDFs?|PDF\\s+(?:files|documents))\\b"
+    },
+    {
+      "action": "process",
+      "object": "PDF document",
+      "pattern": "\\b(?:process(?:ing|es)?|work(?:ing|s)?\\s+with)\\s+(?:PDFs?|PDF\\s+(?:files|documents))\\b"
+    },
+    {
+      "action": "process",
+      "object": "spreadsheet",
+      "pattern": "\\b(?:process(?:ing|es)?|work(?:ing|s)?\\s+with)\\s+(?:(?:Excel|a|an)\\s+)?spreadsheets?\\b"
+    },
+    {
+      "action": "create",
+      "object": "spreadsheet",
+      "pattern": "\\bcreat(?:e|ing|es)\\s+(?:(?:new|a|an|Excel)\\s+){0,2}spreadsheets?\\b"
+    },
+    {
+      "action": "test",
+      "object": "web application",
+      "pattern": "\\btest(?:ing|s)?\\s+(?:(?:local|a)\\s+){0,2}web\\s+applications?\\b"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 import copy
 import json
 from pathlib import Path
-import sqlite3
+from datetime import date
 import sys
 import unittest
 
@@ -13,6 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'src'))
 from acg import build as unified
+from acg.database import load_graph_inputs
+from acg.paths import REGISTRY
 
 A = Namespace('urn:acg:ontology:')
 S = Namespace('https://schema.org/')
@@ -41,8 +43,9 @@ class UnifiedCorpus(unittest.TestCase):
             self.assertEqual(len(set(self.graph.subjects(A.exposesTool, tool))), 1)
 
     def test_initial_evidence_preserved(self):
-        with sqlite3.connect(f'file:{unified.DEFAULT_DB}?mode=ro', uri=True) as db:
-            old = unified.curated_graph(unified.load_records(db), unified.read_collection_date(db))
+        inputs = load_graph_inputs()
+        collected = inputs['metadata']['collected_at']
+        old = unified.curated_graph(inputs['curated'], date.fromisoformat(collected[:10]))
         self.assertTrue(set(old) <= set(self.graph))
 
     def test_selection_is_additional_and_independent_of_input_order(self):

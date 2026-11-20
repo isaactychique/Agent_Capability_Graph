@@ -20,7 +20,7 @@ INTERNAL = {
     "disposition",
 }
 from acg.paths import REPORTS
-REPORT = REPORTS / "registry"
+REPORT = REPORTS / "imports/registry"
 
 
 def encode(x):
@@ -34,8 +34,8 @@ def dump(base, rows, columns=None, jsonl=True):
     base.parent.mkdir(parents=True, exist_ok=True)
     columns = columns or sorted(set().union(*(r.keys() for r in rows)))
     csv_path = base.with_suffix(".csv")
-    if base.parts[:2] in (("data", "normalized"), ("data", "enriched")):
-        csv_path = REPORT / "tables" / base.parts[1] / (base.name + ".csv")
+    if base.parts[0] in ("normalized", "enriched"):
+        csv_path = REPORT / "tables" / base.parts[0] / (base.name + ".csv")
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     with csv_path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, columns, lineterminator="\n")
@@ -83,7 +83,7 @@ def table(headers, rows):
 
 def analyze(obs, canon, events, annotations):
     (REPORT / "figures").mkdir(parents=True, exist_ok=True)
-    norm = Path("data/normalized")
+    norm = Path("normalized")
     dump(norm / "source_observations", obs)
     dump(
         REPORT / "duplicate_evidence",
@@ -92,7 +92,7 @@ def analyze(obs, canon, events, annotations):
     )
     for kind, file in FILES.items():
         dump(norm / file, [r for r in canon if r["entity_type"] == kind])
-    dump("data/enriched/capability_annotations", annotations)
+    dump("enriched/capability_annotations", annotations)
     counts = []
     fields = []
     quality = []
@@ -293,8 +293,8 @@ def inventories(obs, canon):
                 sources=sorted({r["source_name"] for r in g}),
             )
         )
-    dump("data/normalized/skill_contents", content)
+    dump("normalized/skill_contents", content)
     dump(
-        "data/normalized/quarantined_skills",
+        "normalized/quarantined_skills",
         [r for r in obs if r["disposition"] != "accepted"],
     )

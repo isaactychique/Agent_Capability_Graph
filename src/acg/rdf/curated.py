@@ -3,9 +3,6 @@
 
 import hashlib
 import json
-import sqlite3
-from datetime import date
-from pathlib import Path
 from urllib.parse import quote
 
 from rdflib import Graph, Literal, Namespace, RDF, URIRef, XSD
@@ -13,8 +10,6 @@ from rdflib.namespace import OWL, RDFS
 
 
 from acg.paths import ROOT
-DEFAULT_DB = ROOT / "data" / "interim" / "metadata.sqlite3"
-DEFAULT_ONTOLOGY = ROOT / "ontology" / "acg.ttl"
 ACG = Namespace("urn:acg:ontology:")
 DATA = Namespace("urn:acg:data:")
 SCHEMA = Namespace("https://schema.org/")
@@ -77,41 +72,6 @@ def literal_for(value):
     if isinstance(value, float):
         return Literal(value, datatype=XSD.double)
     return Literal(str(value))
-
-
-def read_collection_date(connection):
-    table = connection.execute(
-        "SELECT 1 FROM sqlite_master WHERE type='table' AND name='collection_metadata'"
-    ).fetchone()
-    if not table:
-        return None
-    row = connection.execute(
-        "SELECT value FROM collection_metadata WHERE key='collected_at'"
-    ).fetchone()
-    if not row:
-        return None
-    # Store the collection date, not the time at which RDF conversion runs.
-    return date.fromisoformat(row[0][:10])
-
-
-def load_records(connection):
-    entities = connection.execute(
-        "SELECT entity_id, entity_type, parent_server, revision FROM entity ORDER BY entity_id"
-    ).fetchall()
-    records = []
-    for entity_id, entity_type, parent_server, revision in entities:
-        rows = connection.execute(
-            """SELECT field, value_json, evidence_status, source_url
-               FROM metadata_observation WHERE entity_id=? ORDER BY field, source_url""",
-            (entity_id,),
-        ).fetchall()
-        fields = []
-        for field, value_json, status, source_url in rows:
-            value = json.loads(value_json) if value_json is not None else None
-            fields.append({"field": field, "value": value, "status": status, "source": source_url})
-        records.append({"id": entity_id, "type": entity_type, "parent": parent_server,
-                        "revision": revision, "fields": fields})
-    return records
 
 
 def add_source(graph, source_url, revision, collection_date):

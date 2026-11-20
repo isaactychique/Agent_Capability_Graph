@@ -9,7 +9,7 @@ from rdflib import Graph, Literal, Namespace, RDF, URIRef
 
 
 from acg.paths import REGISTRY as ROOT
-DATA_DIR = ROOT / "data"
+DATA_DIR = ROOT
 ACG = Namespace("urn:acg:ontology:")
 DATA = Namespace("urn:acg:metadata:")
 SCHEMA = Namespace("https://schema.org/")

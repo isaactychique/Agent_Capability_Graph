@@ -1,7 +1,5 @@
 {
-  "version": 1,
-  "status": "candidate_for_human_review",
-  "policy": "Explicit curator task mappings guarded by matching description evidence. Not a runtime guarantee. Server capabilities are derived from tool assertions. Missing mappings remain unclassified.",
+  "version": 2,
   "skills": {
     "pdf": {
       "action": "process",
@@ -822,5 +820,124 @@
       "object": "directory",
       "source_name": "modelcontextprotocol/servers"
     }
-  }
+  },
+  "entities": {
+    "urn:acg:data:entity/brave-search%3Abrave_web_search": [
+      {
+        "action": "search",
+        "object": "web",
+        "evidence_pattern": "Search\\ the\\ web",
+        "quote": "Search the web",
+        "source_url": "https://github.com/brave/brave-search-mcp-server/blob/e7da0f1973051fe0fc4e351acf6a3e0a190fc2d2/README.md",
+        "origin": "curated",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ],
+    "urn:acg:data:entity/github%3Aget_file_contents": [
+      {
+        "action": "read",
+        "object": "file",
+        "evidence_pattern": "Read\\ files",
+        "quote": "Read files",
+        "source_url": "https://github.com/github/github-mcp-server/blob/6fbcd00b2034502ba3001a49dfaf93593aee7069/README.md",
+        "origin": "curated",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ],
+    "urn:acg:data:entity/pdf": [
+      {
+        "action": "extract",
+        "object": "PDF content",
+        "evidence_pattern": "extracting\\ text/tables\\ from\\ PDFs",
+        "quote": "extracting text/tables from PDFs",
+        "source_url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md",
+        "origin": "curated",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      },
+      {
+        "action": "extract",
+        "object": "PDF content",
+        "evidence_pattern": "extracting\\ text/tables\\ from\\ PDFs",
+        "quote": "extracting text/tables from PDFs",
+        "source_url": "https://raw.githubusercontent.com/anthropics/skills/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md",
+        "origin": "registry",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ],
+    "urn:acg:data:entity/xlsx": [
+      {
+        "action": "create",
+        "object": "spreadsheet",
+        "evidence_pattern": "create\\ a\\ new\\ spreadsheet",
+        "quote": "create a new spreadsheet",
+        "source_url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/SKILL.md",
+        "origin": "curated",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      },
+      {
+        "action": "create",
+        "object": "spreadsheet",
+        "evidence_pattern": "create\\ a\\ new\\ spreadsheet",
+        "quote": "create a new spreadsheet",
+        "source_url": "https://raw.githubusercontent.com/anthropics/skills/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/SKILL.md",
+        "origin": "registry",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ],
+    "urn:acg:metadata:skill/skl_5351692edffe1bf3a5d9e959": [
+      {
+        "action": "extract",
+        "object": "PDF content",
+        "evidence_pattern": "extract\\ text\\ from\\ PDF",
+        "quote": "extract text from PDF",
+        "source_url": "https://raw.githubusercontent.com/microsoft/skills/4cfa010138972d45a7bb92edea90094f4f443da8/.github/plugins/azure-sdk-java/skills/azure-ai-formrecognizer-java/SKILL.md",
+        "origin": "registry",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ],
+    "urn:acg:metadata:skill/skl_9d06c9c6cfe091bb8115128f": [
+      {
+        "action": "test",
+        "object": "web application",
+        "evidence_pattern": "testing\\ local\\ web\\ applications",
+        "quote": "testing local web applications",
+        "source_url": "https://raw.githubusercontent.com/anthropics/skills/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/webapp-testing/SKILL.md",
+        "origin": "registry",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ],
+    "urn:acg:metadata:tool/tool_0a2d9042a1d8e05a5e4bfc90": [
+      {
+        "action": "read",
+        "object": "file",
+        "evidence_pattern": "reading\\ files",
+        "quote": "reading files",
+        "source_url": "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L513",
+        "origin": "registry",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ],
+    "urn:acg:metadata:tool/tool_dd2d903d3540ea7e7ba10dd8": [
+      {
+        "action": "read",
+        "object": "file",
+        "evidence_pattern": "Read\\ a\\ file",
+        "quote": "Read a file",
+        "source_url": "https://github.com/modelcontextprotocol/servers/blob/e1dc4b18dbb948921da37f3d4224a628730b43b0/src/filesystem/server.ts#L430",
+        "origin": "registry",
+        "generator": "description_task_v2",
+        "status": "candidate_for_human_review"
+      }
+    ]
+  },
+  "policy": "Generated from capability_vocabulary.json, capability_overrides.json and database descriptions. Explicit overrides take precedence. Automatic matches are candidates, not runtime verification."
 }

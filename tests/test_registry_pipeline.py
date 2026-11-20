@@ -5,6 +5,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from acg.paths import REGISTRY, raw_path
 from acg.ingestion.registry.collectors.sources import headmatter, registry
 from acg.ingestion.registry.processing.normalize import headers, observations, repo_url, valid_url
 from acg.ingestion.registry.processing.resolve import resolve, annotate, state, key
@@ -57,7 +58,7 @@ class ReleaseEvidence(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         previous = Path.cwd()
-        os.chdir(Path(__file__).resolve().parents[1] / "metadata")
+        os.chdir(REGISTRY)
         try:
             cls.obs = observations()
         finally:
@@ -74,7 +75,7 @@ class ReleaseEvidence(unittest.TestCase):
                 if r["entity_type"] == "tool"
             )
         )
-        self.assertTrue(all((Path(__file__).resolve().parents[1] / "metadata" / r["raw_file"]).exists() for r in self.obs))
+        self.assertTrue(all(raw_path(r).exists() for r in self.obs))
         self.assertTrue(all(r["source_url"].startswith("https://") for r in self.obs))
 
     def test_tools_and_annotations(self):

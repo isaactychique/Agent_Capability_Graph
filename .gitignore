@@ -1,5 +1,4 @@
 # Local Python environments and interpreter cache
-.agent_capability/
 .venv/
 venv/
 __pycache__/

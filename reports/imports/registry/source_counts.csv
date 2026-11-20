@@ -1,0 +1,10 @@
+accepted,distinct_accepted_ids,entity_type,normalized,quarantined,raw,source
+600,500,server,600,0,600,Official MCP Registry
+1,1,server,1,0,1,modelcontextprotocol/servers
+1,1,server,1,0,1,brave/brave-search-mcp-server
+20,20,skill,20,0,20,anthropics/skills
+211,211,skill,211,0,211,microsoft/skills
+9,9,skill,9,0,9,vercel-labs/agent-skills
+32,32,skill,180,148,180,GitSkills (secondary)
+16,16,tool,16,0,16,modelcontextprotocol/servers
+1,1,tool,1,0,1,brave/brave-search-mcp-server

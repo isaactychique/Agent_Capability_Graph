@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import textwrap
+from pathlib import Path
 from urllib.parse import quote, urlsplit
 import yaml
 from acg.ingestion.registry.collectors.sources import RAW, REG, FS, load
@@ -63,6 +64,8 @@ def headers(text):
 
 
 def base(kind, path, snap, source, idx):
+    # Keep historical source-relative locators and IDs stable after moving the cache.
+    path = Path("data") / path
     return dict(
         entity_type=kind,
         observation_id=ident("obs", str(path), idx),

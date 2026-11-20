@@ -1,86 +1,42 @@
-"""Build the project's selected, deduplicated graph directly from both source corpora."""
+"""Build the selected RDF graph exclusively from the single canonical database."""
 import argparse
 import csv
 import json
-from pathlib import Path
-import sqlite3
+from datetime import date
 
 from rdflib import Graph, Literal, Namespace, RDF, URIRef
 
-from .rdf.curated import (ACG, SCHEMA, DEFAULT_DB, ROOT, build_graph as curated_graph,
-                           entity_uri, load_records, read_collection_date)
-from .rdf.registry import build_graph as metadata_graph, iri, rows
+from .rdf.curated import ACG, SCHEMA, ROOT, build_graph as curated_graph, entity_uri
+from .rdf.registry import build_graph as metadata_graph
 
-from .selection import identity, curated_identity, quality, fingerprint, select_skills, load_selection
-from .capabilities import enrich_capabilities
+from .selection import quality
+from .capabilities import enrich_capabilities, generate_mappings
 
 PROV = Namespace('http://www.w3.org/ns/prov#')
 OUTPUT = ROOT / 'data/processed/agent_capability_graph.ttl'
 SELECTION = ROOT / 'config/corpus_selection.json'
 REPORTS = ROOT / 'reports/corpus'
-NORMALIZED = ROOT / 'metadata/data/normalized'
+from .paths import DATABASE
 
 
 def build(refresh=False):
-    manifest = json.loads((ROOT / 'data/sources/expanded_sources.json').read_text())
-    with sqlite3.connect(f'file:{DEFAULT_DB}?mode=ro', uri=True) as connection:
-        records = load_records(connection)
-        graph = curated_graph(records, read_collection_date(connection))
-    expected = {r['id']: 'MCPServer' for r in manifest['mcp_servers']}
-    expected.update({r['id']: 'AgentSkill' for r in manifest['agent_skills']})
-    actual = {r['id']: r['type'] for r in records if r['type'] != 'Tool'}
-    if actual != expected:
-        raise ValueError('SQLite does not match the initial manifest; restore the expanded collection first')
-    skills = [s for s in rows(NORMALIZED / 'agent_skills.jsonl') if s.get('disposition') == 'accepted']
-    tools = [t for t in rows(NORMALIZED / 'mcp_tools.jsonl') if t.get('disposition') == 'accepted']
-    server_ids = {t['server_id'] for t in tools}
-    servers = [s for s in rows(NORMALIZED / 'mcp_servers.jsonl')
-               if s.get('disposition') == 'accepted' and s['server_id'] in server_ids]
-    if {s['server_id'] for s in servers} != server_ids:
-        raise ValueError('Tool without accepted parent server')
-    selection = load_selection(skills, manifest['agent_skills'], refresh)
+    from .database import synchronize, load_graph_inputs
+    if refresh:
+        synchronize(refresh=True)
+    inputs = load_graph_inputs()
+    metadata = inputs['metadata']
+    manifest = metadata['manifest']
+    selection = metadata['selection']
+    records = inputs['curated']
+    collected_at = metadata.get('collected_at')
+    graph = curated_graph(records, date.fromisoformat(collected_at[:10]) if collected_at else None)
+    servers, tools, chosen = inputs['servers'], inputs['tools'], inputs['skills']
+    skills = inputs['all_skills']
     selected_ids = {s['skill_id'] for s in selection['skills']}
     overlap_ids = set(selection['enrich_initial_skill_ids'])
-    chosen = [s for s in skills if s['skill_id'] in selected_ids | overlap_ids]
-    if {s['skill_id'] for s in chosen} != selected_ids | overlap_ids:
-        raise ValueError('A selected or initial overlapping Skill disappeared')
-    initial = {curated_identity(s): entity_uri(s['id']) for s in manifest['agent_skills']}
-    if any(identity(s['repository_url'], s['skill_path']) in initial for s in chosen if s['skill_id'] in selected_ids):
-        raise ValueError('An additional Skill duplicates an initial Skill')
-    supplemental = metadata_graph(servers=servers, tools=tools, skills=chosen)
-    mapping = {}
-    merge_rows = []
-    originals = {r['id']: r for r in manifest['mcp_servers']}
-    # Explicit aliases use repo and server subdirectory/package context, never repo alone.
-    for server in servers:
-        sid = server['server_id']
-        alias = selection['server_aliases'].get(sid)
-        source = iri('server', sid)
-        if alias:
-            original = originals[alias]
-            repo = 'https://github.com/' + original['repository']
-            if identity(server['repository_url'], '') != identity(repo, ''):
-                raise ValueError(f'Server alias repository mismatch: {sid}')
-            if alias == 'filesystem' and not any(p.get('identifier') == '@modelcontextprotocol/server-filesystem'
-                                                   for p in server.get('package_identifier', [])):
-                raise ValueError('Filesystem alias package mismatch')
-            mapping[source] = entity_uri(alias)
-        merge_rows.append(('server', str(source), str(mapping.get(source, source)), 'explicit_repo_and_package_alias' if alias else 'additional_server'))
-    for tool in tools:
-        source = iri('tool', tool['tool_id'])
-        parent = mapping.get(iri('server', tool['server_id']), iri('server', tool['server_id']))
-        matches = [t for t in graph.objects(parent, ACG.exposesTool)
-                   if str(tool['name']) in {str(n) for n in graph.objects(t, SCHEMA.name)}]
-        if len(matches) > 1:
-            raise ValueError(f'Ambiguous tool identity: {tool["name"]}')
-        if matches:
-            mapping[source] = matches[0]
-        merge_rows.append(('tool', str(source), str(mapping.get(source, source)), 'same_parent_and_tool_name' if matches else 'additional_tool'))
-    for skill in chosen:
-        source = iri('skill', skill['skill_id'])
-        target = initial.get(identity(skill['repository_url'], skill['skill_path']), source)
-        mapping[source] = target
-        merge_rows.append(('skill', str(source), str(target), 'same_repo_and_skill_path' if source != target else 'additional_skill'))
+    supplemental = metadata_graph(servers=servers, tools=tools, skills=chosen, annotations=inputs['annotations'])
+    mapping = {URIRef(source): URIRef(target) for source,target in inputs['mapping'].items()}
+    merge_rows = inputs['merge_rows']
     datasets = {name: URIRef(f'urn:acg:corpus:{name}') for name in ('curated', 'registry')}
     for node, _, cls in list(graph.triples((None, RDF.type, None))):
         if cls in (ACG.MCPServer, ACG.MCPTool, ACG.AgentSkill):
@@ -109,8 +65,7 @@ def build(refresh=False):
     for prefix, namespace in supplemental.namespaces():
         if prefix in ('acg', 'schema', 'skos'):
             graph.bind(prefix, namespace)
-    if len(set(graph.subjects(RDF.type, ACG.AgentSkill))) != 110:
-        raise ValueError('Expected exactly 10 initial + 100 additional Skills')
+    generate_mappings()
     enrich_capabilities(graph, records, chosen, mapping)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     # Atomic replace prevents readers observing a partially written Turtle file.
@@ -124,7 +79,7 @@ def build(refresh=False):
         writer = csv.writer(stream, lineterminator='\n'); writer.writerow(['skill_id','name','repository','path','source_kind','revision','metadata_score','decision','evidence'])
         for s in sorted(skills, key=lambda r: (r['repository_url'], r['skill_path'])):
             writer.writerow([s['skill_id'],s['name'],s['repository_url'],s['skill_path'],s.get('source_kind'),s.get('source_revision'),quality(s),selection['decisions'].get(s['skill_id'],'not_in_frozen_selection'),s['source_url']])
-    summary = {'graph': str(OUTPUT.relative_to(ROOT)), 'triples': len(graph),
+    summary = {'graph': str(OUTPUT.relative_to(ROOT)), 'database': str(DATABASE.relative_to(ROOT)), 'triples': len(graph),
                'counts': {name: len(set(graph.subjects(RDF.type, ACG[name])))
                           for name in ('MCPServer','MCPTool','AgentSkill','CapabilityAssertion')},
                'additional_skills': len(selected_ids), 'initial_skill_enrichments': len(overlap_ids),

@@ -11,7 +11,6 @@ import csv
 import io
 import json
 import re
-import sqlite3
 import subprocess
 import urllib.error
 import urllib.request
@@ -20,10 +19,10 @@ from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
 
 
-from acg.paths import ROOT
+from acg.paths import ROOT, CURATED_IMPORT
 MANIFEST = ROOT / "data" / "sources" / "expanded_sources.json"
-DB_PATH = ROOT / "data" / "interim" / "metadata.sqlite3"
-CSV_PATH = ROOT / "reports" / "curated" / "metadata_comparison.csv"
+
+CSV_PATH = ROOT / "reports" / "imports" / "curated" / "metadata_comparison.csv"
 README_DIR = ROOT / "data" / "raw" / "downloads" / "mcp_readmes"
 SKILL_ARCHIVE_DIR = ROOT / "data" / "raw" / "downloads" / "skill_packages"
 API_ROOT = "https://api.github.com"
@@ -275,50 +274,17 @@ def collect(manifest):
 
 
 def persist(records, snapshots):
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    CURATED_IMPORT.parent.mkdir(parents=True, exist_ok=True)
     collected_at = datetime.now(timezone.utc).isoformat()
-    with sqlite3.connect(DB_PATH) as connection:
-        connection.execute("PRAGMA foreign_keys = ON")
-        connection.executescript("""
-            CREATE TABLE IF NOT EXISTS collection_metadata (
-                key TEXT PRIMARY KEY, value TEXT NOT NULL
-            );
-            CREATE TABLE IF NOT EXISTS entity (
-                entity_id TEXT PRIMARY KEY,
-                entity_type TEXT NOT NULL,
-                parent_server TEXT,
-                revision TEXT NOT NULL
-            );
-            CREATE TABLE IF NOT EXISTS metadata_observation (
-                entity_id TEXT NOT NULL REFERENCES entity(entity_id) ON DELETE CASCADE,
-                field TEXT NOT NULL,
-                value_json TEXT,
-                evidence_status TEXT NOT NULL,
-                source_url TEXT NOT NULL,
-                PRIMARY KEY (entity_id, field, source_url)
-            );
-        """)
-        connection.execute("DELETE FROM metadata_observation")
-        connection.execute("DELETE FROM entity")
-        connection.execute("DELETE FROM collection_metadata")
-        connection.executemany("INSERT INTO collection_metadata VALUES (?, ?)", [
-            ("collected_at", collected_at),
-            ("repositories", json.dumps({repository: {
-                "branch": snapshot["branch"],
-                "revision": snapshot["revision"],
-                "files": sorted(snapshot["files"]),
-            } for repository, snapshot in snapshots.items()}, sort_keys=True)),
-        ])
-        for record in records:
-            connection.execute("INSERT INTO entity VALUES (?, ?, ?, ?)", (
-                record["id"], record["type"], record["server"], record["revision"]
-            ))
-            for key, item in record["fields"].items():
-                connection.execute("INSERT INTO metadata_observation VALUES (?, ?, ?, ?, ?)", (
-                    record["id"], key,
-                    json.dumps(item["value"], ensure_ascii=False) if item["value"] is not None else None,
-                    item["status"], item["source"],
-                ))
+    imported = [{"id": record["id"], "type": record["type"], "parent": record["server"],
+                 "revision": record["revision"],
+                 "fields": [{"field": key, "value": item["value"], "status": item["status"], "source": item["source"]}
+                            for key,item in record["fields"].items()]} for record in records]
+    temp = CURATED_IMPORT.with_suffix('.json.part')
+    temp.write_text(json.dumps({"collected_at": collected_at, "records": imported,
+                               "repositories": {repo: {"branch": snap["branch"], "revision": snap["revision"]}
+                                                for repo,snap in snapshots.items()}}, indent=2, ensure_ascii=False)+'\n', encoding='utf-8')
+    temp.replace(CURATED_IMPORT)
     CSV_PATH.parent.mkdir(parents=True, exist_ok=True)
     with CSV_PATH.open("w", encoding="utf-8", newline="") as output:
         writer = csv.writer(output)
@@ -347,7 +313,7 @@ def main():
     repo_count = len(snapshots)
     print(f"MCP servers: {server_count}; documented tool samples: {tool_count}")
     print(f"Agent Skills: {skill_count}; distinct GitHub repositories: {repo_count}")
-    print(f"Database: {DB_PATH}")
+    print(f"Source import: {CURATED_IMPORT}")
     print(f"CSV: {CSV_PATH}")
     print(f"Skill package archives: {SKILL_ARCHIVE_DIR}")
     print(f"MCP README snapshots: {README_DIR}")

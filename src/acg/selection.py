@@ -2,7 +2,7 @@
 from collections import defaultdict, deque
 import hashlib
 import json
-from .paths import ROOT, SELECTION
+from .paths import ROOT, SELECTION, raw_path
 
 def identity(repo, path):
     return (repo.rstrip('/').removesuffix('.git'), path.strip('/'))
@@ -39,7 +39,7 @@ def select_skills(skills, originals, count=100):
             reasons[sid] = 'enrich_initial_skill'
         elif (not s.get('name') or not s.get('description') or not s.get('source_url')
               or not s.get('skill_path') or not s.get('repository_url')
-              or not (ROOT / 'metadata' / s['raw_file']).is_file()):
+              or not raw_path(s).is_file()):
             reasons[sid] = 'insufficient_metadata_or_missing_cached_evidence'
         elif s.get('content_hash') and s['content_hash'] in seen_hashes:
             reasons[sid] = 'duplicate_content'
@@ -89,16 +89,20 @@ def select_skills(skills, originals, count=100):
 
 def load_selection(skills, originals, refresh=False):
     by_id = {s['skill_id']: s for s in skills}
+    previous = json.loads(SELECTION.read_text()) if SELECTION.exists() else {}
+    count = previous.get('additional_skill_count', 100)
+    if isinstance(count, bool) or not isinstance(count, int) or count < 0:
+        raise ValueError('additional_skill_count must be a nonnegative integer')
     if refresh or not SELECTION.exists():
-        selected, overlap, reasons = select_skills(skills, originals)
+        selected, overlap, reasons = select_skills(skills, originals, count)
         data = {
             'policy_version': 1,
-            'additional_skill_count': 100,
+            'additional_skill_count': count,
             'policy': 'Keep initial 10 Skills; prioritize requirement metadata, then revision-pinned direct evidence and repository round robin. Exclude duplicate identities/content. Selection is frozen until --refresh-selection.',
-            'server_aliases': {
+            'server_aliases': previous.get('server_aliases', {
                 'srv_8da04d27afcf6c39fe182b2b': 'filesystem',
                 'srv_37b4beb11f35bfd13854ad89': 'brave-search',
-            },
+            }),
             'skills': [{'skill_id': s['skill_id'], 'repository_url': s['repository_url'],
                         'skill_path': s['skill_path'], 'record_sha256': fingerprint(s)} for s in selected],
             'enrich_initial_skill_ids': [s['skill_id'] for s in overlap],
@@ -106,8 +110,8 @@ def load_selection(skills, originals, refresh=False):
         }
         SELECTION.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     data = json.loads(SELECTION.read_text(encoding='utf-8'))
-    if len(data['skills']) != 100 or len({s['skill_id'] for s in data['skills']}) != 100:
-        raise ValueError('Selection must contain exactly 100 distinct additional Skills')
+    if len(data['skills']) != count or len({s['skill_id'] for s in data['skills']}) != count:
+        raise ValueError('Selection count changed; run import --refresh-selection')
     for entry in data['skills']:
         record = by_id.get(entry['skill_id'])
         if record is None or fingerprint(record) != entry['record_sha256']:

@@ -1,0 +1,824 @@
+{
+  "skills": {
+    "pdf": {
+      "action": "process",
+      "object": "PDF document",
+      "evidence_pattern": "PDF\\ files"
+    },
+    "docx": {
+      "action": "process",
+      "object": "Word document",
+      "evidence_pattern": "Word\\ documents"
+    },
+    "xlsx": {
+      "action": "process",
+      "object": "spreadsheet",
+      "evidence_pattern": "spreadsheet\\ file"
+    },
+    "pptx": {
+      "action": "process",
+      "object": "presentation",
+      "evidence_pattern": "creating\\ slide\\ decks"
+    },
+    "canvas-design": {
+      "action": "create",
+      "object": "visual art",
+      "evidence_pattern": "Create\\ beautiful\\ visual\\ art"
+    },
+    "brand-guidelines": {
+      "action": "apply",
+      "object": "brand styling",
+      "evidence_pattern": "brand\\ colors\\ and\\ typography"
+    },
+    "theme-factory": {
+      "action": "apply",
+      "object": "artifact theme",
+      "evidence_pattern": "styling\\ artifacts\\ with\\ a\\ theme"
+    },
+    "frontend-design": {
+      "action": "design",
+      "object": "user interface",
+      "evidence_pattern": "visual\\ design"
+    },
+    "web-artifacts-builder": {
+      "action": "create",
+      "object": "web artifact",
+      "evidence_pattern": "creating\\ elaborate"
+    },
+    "webapp-testing": {
+      "action": "test",
+      "object": "web application",
+      "evidence_pattern": "testing\\ local\\ web\\ applications"
+    },
+    "web-design-guidelines": {
+      "action": "review",
+      "object": "web interface",
+      "evidence_pattern": "Review\\ UI\\ code"
+    },
+    "writing-guidelines": {
+      "action": "review",
+      "object": "prose",
+      "evidence_pattern": "Review\\ docs/prose"
+    },
+    "doc-coauthoring": {
+      "action": "write",
+      "object": "documentation",
+      "evidence_pattern": "co\\-authoring\\ documentation"
+    },
+    "internal-comms": {
+      "action": "write",
+      "object": "internal communication",
+      "evidence_pattern": "write\\ all\\ kinds\\ of\\ internal\\ communications"
+    },
+    "slack-gif-creator": {
+      "action": "create",
+      "object": "animated GIF",
+      "evidence_pattern": "creating\\ animated\\ GIFs"
+    },
+    "mcp-builder": {
+      "action": "build",
+      "object": "MCP server",
+      "evidence_pattern": "creating\\ high\\-quality\\ MCP"
+    },
+    "skill-creator": {
+      "action": "create",
+      "object": "agent skill",
+      "evidence_pattern": "Create\\ new\\ skills"
+    },
+    "claude-api": {
+      "action": "develop",
+      "object": "Claude API integration",
+      "evidence_pattern": "Claude\\ API\\ /\\ Anthropic\\ SDK"
+    },
+    "cloud-databases-onboarding": {
+      "action": "select",
+      "object": "cloud database",
+      "evidence_pattern": "recommends\\ a\\ Google\\ Cloud\\ database"
+    },
+    "gcloud": {
+      "action": "validate",
+      "object": "gcloud command",
+      "evidence_pattern": "validation,\\ guardrails"
+    },
+    "retrieving-developer-knowledge": {
+      "action": "search",
+      "object": "Google developer documentation",
+      "evidence_pattern": "Searches,\\ retrieves,\\ and\\ synthesizes\\ official\\ Google\\ developer\\ documentation"
+    },
+    "microsoft-docs": {
+      "action": "query",
+      "object": "Microsoft documentation",
+      "evidence_pattern": "querying\\ official\\ documentation"
+    },
+    "cost-analysis": {
+      "action": "analyze",
+      "object": "Azure spend",
+      "evidence_pattern": "Analyze\\ actual\\ Azure\\ spend"
+    },
+    "cost-estimation": {
+      "action": "estimate",
+      "object": "Azure spend",
+      "evidence_pattern": "Forecast\\ Azure\\ spend"
+    },
+    "cost-governance": {
+      "action": "govern",
+      "object": "Azure costs",
+      "evidence_pattern": "Govern\\ Azure\\ costs"
+    },
+    "cost-optimization": {
+      "action": "optimize",
+      "object": "Azure resource costs",
+      "evidence_pattern": "Optimize\\ existing\\ Azure\\ resources"
+    },
+    "crimeometer": {
+      "action": "manage",
+      "object": "CrimeoMeter data",
+      "evidence_pattern": "interact\\ with\\ CrimeoMeter\\ data"
+    },
+    "deploy-to-vercel": {
+      "action": "deploy",
+      "object": "Vercel application",
+      "evidence_pattern": "Deploy\\ applications\\ and\\ websites"
+    },
+    "vercel-cli-with-tokens": {
+      "action": "deploy",
+      "object": "Vercel project",
+      "evidence_pattern": "Deploy\\ and\\ manage\\ projects"
+    },
+    "vercel-optimize": {
+      "action": "optimize",
+      "object": "Vercel deployment",
+      "evidence_pattern": "cost\\ and\\ performance\\ optimization"
+    },
+    "vercel-composition-patterns": {
+      "action": "refactor",
+      "object": "React component",
+      "evidence_pattern": "refactoring\\ components"
+    },
+    "vercel-react-best-practices": {
+      "action": "optimize",
+      "object": "React application",
+      "evidence_pattern": "performance\\ optimization\\ guidelines"
+    },
+    "vercel-react-native-skills": {
+      "action": "develop",
+      "object": "React Native application",
+      "evidence_pattern": "building\\ performant\\ mobile\\ apps"
+    },
+    "vercel-react-view-transitions": {
+      "action": "implement",
+      "object": "React animation",
+      "evidence_pattern": "implementing\\ smooth"
+    },
+    "phoenix-observability": {
+      "action": "observe",
+      "object": "LLM application",
+      "evidence_pattern": "LLM\\ tracing,\\ evaluation,\\ and\\ monitoring"
+    },
+    "df:plan-objective": {
+      "action": "plan",
+      "object": "objective",
+      "evidence_pattern": "Create\\ detailed\\ objective\\ plan"
+    },
+    "manage-plan-marshall-config": {
+      "action": "configure",
+      "object": "project infrastructure",
+      "evidence_pattern": "infrastructure\\ configuration"
+    },
+    "analyze-sessions": {
+      "action": "analyze",
+      "object": "agent session",
+      "evidence_pattern": "Extract automation patterns from session logs"
+    },
+    "discernment-nudge": {
+      "action": "review",
+      "object": "response reasoning",
+      "evidence_pattern": "probe\\ the\\ reasoning\\ or\\ assumptions"
+    },
+    "aks-cost-optimization": {
+      "action": "analyze",
+      "object": "AKS cost efficiency",
+      "evidence_pattern": "Analyze\\ advanced\\ AKS\\ cost\\ efficiency"
+    },
+    "aks-gpu-inference": {
+      "action": "diagnose",
+      "object": "AKS GPU incident",
+      "evidence_pattern": "Diagnose\\ Day\\-2\\ AKS\\ GPU"
+    },
+    "aks-known-issues": {
+      "action": "lookup",
+      "object": "AKS documented fix",
+      "evidence_pattern": "Lookup\\ documented\\ AKS\\ fixes"
+    },
+    "aks-network-capture": {
+      "action": "capture",
+      "object": "AKS network traffic",
+      "evidence_pattern": "Collects\\ bounded\\ packet\\ captures"
+    },
+    "aks-troubleshooting": {
+      "action": "debug",
+      "object": "AKS incident",
+      "evidence_pattern": "Debug\\ live\\ Azure\\ Kubernetes\\ Service"
+    },
+    "azure-advisor": {
+      "action": "retrieve",
+      "object": "Azure Advisor recommendation",
+      "evidence_pattern": "show\\ recommendations"
+    },
+    "azure-advisor-actionability": {
+      "action": "retrieve",
+      "object": "Azure remediation instruction",
+      "evidence_pattern": "Get\\ remediation\\ instructions"
+    },
+    "azure-advisor-cost-optimization": {
+      "action": "analyze",
+      "object": "Azure idle-resource finding",
+      "evidence_pattern": "Analyze\\ Azure\\ Advisor\\ Cost/IdleResources\\ findings"
+    },
+    "azure-ai-agents-persistent-dotnet": {
+      "action": "manage",
+      "object": "persistent AI agent",
+      "evidence_pattern": "creating\\ and\\ managing\\ AI\\ agents"
+    },
+    "azure-ai-agents-persistent-java": {
+      "action": "manage",
+      "object": "persistent AI agent",
+      "evidence_pattern": "creating\\ and\\ managing\\ AI\\ agents"
+    },
+    "azure-ai-anomalydetector-java": {
+      "action": "develop",
+      "object": "anomaly detection application",
+      "evidence_pattern": "Build\\ anomaly\\ detection\\ applications"
+    },
+    "azure-ai-contentsafety-java": {
+      "action": "develop",
+      "object": "content moderation application",
+      "evidence_pattern": "Build\\ content\\ moderation\\ applications"
+    },
+    "azure-ai-document-intelligence-dotnet": {
+      "action": "extract",
+      "object": "document data",
+      "evidence_pattern": "Extract\\ text,\\ tables,\\ and\\ structured\\ data"
+    },
+    "azure-ai-openai-dotnet": {
+      "action": "develop",
+      "object": "Azure OpenAI integration",
+      "evidence_pattern": "chat\\ completions,\\ embeddings"
+    },
+    "azure-ai-projects-dotnet": {
+      "action": "manage",
+      "object": "AI Foundry project",
+      "evidence_pattern": "AI\\ Foundry\\ project\\ management"
+    },
+    "azure-ai-projects-java": {
+      "action": "manage",
+      "object": "AI Foundry project",
+      "evidence_pattern": "AI\\ Foundry\\ project\\ management"
+    },
+    "azure-ai-vision-imageanalysis-java": {
+      "action": "develop",
+      "object": "image analysis application",
+      "evidence_pattern": "Build\\ image\\ analysis\\ applications"
+    },
+    "azure-ai-voicelive-dotnet": {
+      "action": "develop",
+      "object": "voice AI application",
+      "evidence_pattern": "Build\\ real\\-time\\ voice\\ AI\\ applications"
+    },
+    "azure-ai-voicelive-java": {
+      "action": "develop",
+      "object": "voice AI application",
+      "evidence_pattern": "Real\\-time\\ bidirectional\\ voice\\ conversations"
+    },
+    "azure-aigateway": {
+      "action": "configure",
+      "object": "Azure AI gateway",
+      "evidence_pattern": "Configure\\ Azure\\ API\\ Management\\ as\\ an\\ AI\\ Gateway"
+    },
+    "azure-appconfiguration-java": {
+      "action": "manage",
+      "object": "application configuration",
+      "evidence_pattern": "application\\ configuration\\ management"
+    },
+    "azure-communication-callautomation-java": {
+      "action": "develop",
+      "object": "call automation workflow",
+      "evidence_pattern": "Build\\ call\\ automation\\ workflows"
+    },
+    "azure-communication-callingserver-java": {
+      "action": "maintain",
+      "object": "legacy calling integration",
+      "evidence_pattern": "maintaining\\ legacy\\ code"
+    },
+    "azure-communication-chat-java": {
+      "action": "develop",
+      "object": "real-time chat application",
+      "evidence_pattern": "Build\\ real\\-time\\ chat\\ applications"
+    },
+    "azure-communication-common-java": {
+      "action": "configure",
+      "object": "ACS authentication",
+      "evidence_pattern": "shared\\ authentication\\ across\\ ACS\\ services"
+    },
+    "azure-communication-sms-java": {
+      "action": "send",
+      "object": "SMS message",
+      "evidence_pattern": "Send\\ SMS\\ messages"
+    },
+    "azure-compute-batch-java": {
+      "action": "run",
+      "object": "batch job",
+      "evidence_pattern": "Run\\ large\\-scale\\ parallel\\ and\\ HPC\\ batch\\ jobs"
+    },
+    "azure-cosmos-db-py": {
+      "action": "develop",
+      "object": "Cosmos DB application",
+      "evidence_pattern": "Build\\ Azure\\ Cosmos\\ DB\\ NoSQL\\ services"
+    },
+    "azure-cosmos-java": {
+      "action": "develop",
+      "object": "Cosmos DB application",
+      "evidence_pattern": "NoSQL\\ database\\ operations"
+    },
+    "azure-data-tables-java": {
+      "action": "develop",
+      "object": "table storage application",
+      "evidence_pattern": "Build\\ table\\ storage\\ applications"
+    },
+    "azure-eventgrid-dotnet": {
+      "action": "publish",
+      "object": "event",
+      "evidence_pattern": "publishing\\ and\\ consuming\\ events"
+    },
+    "azure-eventgrid-java": {
+      "action": "develop",
+      "object": "event-driven application",
+      "evidence_pattern": "Build\\ event\\-driven\\ applications"
+    },
+    "azure-eventhub-dotnet": {
+      "action": "stream",
+      "object": "event data",
+      "evidence_pattern": "high\\-throughput\\ event\\ streaming"
+    },
+    "azure-eventhub-java": {
+      "action": "develop",
+      "object": "event streaming application",
+      "evidence_pattern": "Build\\ real\\-time\\ streaming\\ applications"
+    },
+    "azure-identity-dotnet": {
+      "action": "configure",
+      "object": "Azure authentication",
+      "evidence_pattern": "Authentication\\ library\\ for\\ Azure\\ SDK\\ clients"
+    },
+    "azure-identity-java": {
+      "action": "configure",
+      "object": "Azure authentication",
+      "evidence_pattern": "authentication\\ with\\ Azure\\ services"
+    },
+    "azure-kusto-graph": {
+      "action": "query",
+      "object": "Kusto graph",
+      "evidence_pattern": "Build\\ and\\ query\\ Kusto\\ graphs"
+    },
+    "azure-kusto-irql": {
+      "action": "compose",
+      "object": "IRQL query",
+      "evidence_pattern": "Compose\\ IRQL"
+    },
+    "azure-kusto-irql-graph": {
+      "action": "visualize",
+      "object": "IRQL graph",
+      "evidence_pattern": "Kusto\\ Explorer\\ visualization"
+    },
+    "azure-local": {
+      "action": "operate",
+      "object": "Azure Local infrastructure",
+      "evidence_pattern": "Plan,\\ deploy,\\ operate,\\ and\\ troubleshoot\\ Azure\\ Local"
+    },
+    "azure-local-multi-rack": {
+      "action": "operate",
+      "object": "Azure Local multi-rack infrastructure",
+      "evidence_pattern": "Plan,\\ deploy,\\ operate,\\ and\\ troubleshoot\\ multi\\-rack"
+    },
+    "azure-maps-search-dotnet": {
+      "action": "develop",
+      "object": "location service",
+      "evidence_pattern": "Location\\-based\\ services"
+    },
+    "azure-messaging-webpubsub-java": {
+      "action": "develop",
+      "object": "real-time web application",
+      "evidence_pattern": "Build\\ real\\-time\\ web\\ applications"
+    },
+    "azure-mgmt-apicenter-dotnet": {
+      "action": "manage",
+      "object": "API inventory",
+      "evidence_pattern": "API\\ inventory\\ management"
+    },
+    "azure-mgmt-apimanagement-dotnet": {
+      "action": "manage",
+      "object": "Azure API Management resource",
+      "evidence_pattern": "creating/managing\\ APIM\\ services"
+    },
+    "azure-mgmt-applicationinsights-dotnet": {
+      "action": "manage",
+      "object": "Application Insights resource",
+      "evidence_pattern": "observability\\ resource\\ management"
+    },
+    "azure-mgmt-arizeaiobservabilityeval-dotnet": {
+      "action": "manage",
+      "object": "Azure Arize resource",
+      "evidence_pattern": "managing\\ Arize\\ AI\\ organizations"
+    },
+    "azure-mgmt-botservice-dotnet": {
+      "action": "manage",
+      "object": "Azure Bot resource",
+      "evidence_pattern": "creating\\ and\\ managing\\ Azure\\ Bot\\ resources"
+    },
+    "azure-mgmt-fabric-dotnet": {
+      "action": "manage",
+      "object": "Fabric capacity",
+      "evidence_pattern": "provisioning,\\ scaling,\\ suspending/resuming\\ Microsoft\\ Fabric\\ capacities"
+    },
+    "azure-mgmt-mongodbatlas-dotnet": {
+      "action": "manage",
+      "object": "Azure MongoDB Atlas organization",
+      "evidence_pattern": "Manage\\ MongoDB\\ Atlas\\ Organizations\\ as\\ Azure\\ ARM\\ resources"
+    },
+    "azure-mgmt-weightsandbiases-dotnet": {
+      "action": "manage",
+      "object": "Weights and Biases instance",
+      "evidence_pattern": "creating\\ W\\&B\\ instances"
+    },
+    "azure-monitor-ingestion-java": {
+      "action": "send",
+      "object": "Azure Monitor log",
+      "evidence_pattern": "Send\\ custom\\ logs\\ to\\ Azure\\ Monitor"
+    },
+    "azure-resource-manager-cosmosdb-dotnet": {
+      "action": "manage",
+      "object": "Cosmos DB resource",
+      "evidence_pattern": "creating/managing\\ Cosmos\\ DB\\ accounts"
+    },
+    "azure-resource-manager-durabletask-dotnet": {
+      "action": "manage",
+      "object": "Durable Task Scheduler resource",
+      "evidence_pattern": "creating/managing\\ Durable\\ Task\\ Schedulers"
+    },
+    "azure-resource-manager-mysql-dotnet": {
+      "action": "manage",
+      "object": "MySQL database resource",
+      "evidence_pattern": "Database\\ management\\ for\\ MySQL"
+    },
+    "azure-resource-manager-postgresql-dotnet": {
+      "action": "manage",
+      "object": "PostgreSQL database resource",
+      "evidence_pattern": "Database\\ management\\ for\\ PostgreSQL"
+    },
+    "azure-resource-manager-playwright-dotnet": {
+      "action": "manage",
+      "object": "Playwright Testing workspace",
+      "evidence_pattern": "creating/managing\\ Playwright\\ Testing\\ workspaces"
+    },
+    "azure-resource-manager-redis-dotnet": {
+      "action": "manage",
+      "object": "Redis cache resource",
+      "evidence_pattern": "creating/managing\\ Azure\\ Cache\\ for\\ Redis\\ instances"
+    },
+    "azure-resource-manager-sql-dotnet": {
+      "action": "manage",
+      "object": "Azure SQL resource",
+      "evidence_pattern": "creating/managing\\ SQL\\ servers"
+    },
+    "azure-search-documents-dotnet": {
+      "action": "develop",
+      "object": "search application",
+      "evidence_pattern": "building\\ search\\ applications"
+    },
+    "azure-search-nav": {
+      "action": "construct",
+      "object": "Azure portal link",
+      "evidence_pattern": "Builds\\ an\\ Azure\\ portal\\ deep\\ link"
+    },
+    "azure-security-keyvault-keys-dotnet": {
+      "action": "manage",
+      "object": "cryptographic key",
+      "evidence_pattern": "managing\\ cryptographic\\ keys"
+    },
+    "azure-servicebus-dotnet": {
+      "action": "send",
+      "object": "message",
+      "evidence_pattern": "reliable\\ message\\ delivery"
+    },
+    "azure-upgrade": {
+      "action": "upgrade",
+      "object": "Azure workload",
+      "evidence_pattern": "Assess\\ and\\ upgrade\\ Azure\\ workloads"
+    },
+    "foundry-iq": {
+      "action": "manage",
+      "object": "Foundry IQ knowledge base",
+      "evidence_pattern": "Foundry\\ IQ\\ knowledge\\ bases"
+    },
+    "m365-agents-dotnet": {
+      "action": "develop",
+      "object": "Microsoft 365 agent",
+      "evidence_pattern": "Build\\ multichannel\\ agents"
+    },
+    "microsoft-azure-webjobs-extensions-authentication-events-dotnet": {
+      "action": "customize",
+      "object": "Entra authentication",
+      "evidence_pattern": "custom\\ authentication\\ extensions"
+    },
+    "algorithmic-art": {
+      "action": "create",
+      "object": "algorithmic art",
+      "evidence_pattern": "Creating algorithmic art"
+    },
+    "academy-guide": {
+      "action": "recommend",
+      "object": "Claude learning resource",
+      "evidence_pattern": "recommends matching courses, tutorials, and use cases"
+    }
+  },
+  "tools": {
+    "memory:create_entities": {
+      "action": "create",
+      "object": "knowledge graph entity",
+      "evidence_pattern": "Create\\ entities"
+    },
+    "memory:create_relations": {
+      "action": "create",
+      "object": "knowledge graph relation",
+      "evidence_pattern": "Create\\ relations"
+    },
+    "memory:add_observations": {
+      "action": "add",
+      "object": "knowledge graph observation",
+      "evidence_pattern": "Add\\ observations"
+    },
+    "memory:search_nodes": {
+      "action": "search",
+      "object": "knowledge graph node",
+      "evidence_pattern": "Search\\ graph\\ nodes"
+    },
+    "memory:open_nodes": {
+      "action": "read",
+      "object": "knowledge graph node",
+      "evidence_pattern": "Retrieve\\ named\\ graph\\ nodes"
+    },
+    "memory:read_graph": {
+      "action": "read",
+      "object": "knowledge graph",
+      "evidence_pattern": "Read\\ the\\ knowledge\\ graph"
+    },
+    "fetch:fetch": {
+      "action": "retrieve",
+      "object": "web content",
+      "evidence_pattern": "Fetch\\ a\\ URL"
+    },
+    "git:git_status": {
+      "action": "read",
+      "object": "git status",
+      "evidence_pattern": "working\\ tree\\ status"
+    },
+    "git:git_diff_unstaged": {
+      "action": "compare",
+      "object": "git changes",
+      "evidence_pattern": "unstaged\\ changes"
+    },
+    "git:git_diff_staged": {
+      "action": "compare",
+      "object": "git changes",
+      "evidence_pattern": "staged\\ changes"
+    },
+    "git:git_diff": {
+      "action": "compare",
+      "object": "git revision",
+      "evidence_pattern": "Compare\\ a\\ repository"
+    },
+    "git:git_log": {
+      "action": "read",
+      "object": "git history",
+      "evidence_pattern": "commit\\ history"
+    },
+    "git:git_show": {
+      "action": "read",
+      "object": "git object",
+      "evidence_pattern": "Show\\ a\\ commit"
+    },
+    "git:git_branch": {
+      "action": "list",
+      "object": "git branch",
+      "evidence_pattern": "List\\ or\\ inspect\\ repository\\ branches"
+    },
+    "git:git_add": {
+      "action": "stage",
+      "object": "git changes",
+      "evidence_pattern": "Stage\\ files"
+    },
+    "git:git_commit": {
+      "action": "create",
+      "object": "git commit",
+      "evidence_pattern": "Create\\ a\\ repository\\ commit"
+    },
+    "git:git_checkout": {
+      "action": "switch",
+      "object": "git revision",
+      "evidence_pattern": "Switch\\ the\\ working\\ tree"
+    },
+    "time:get_current_time": {
+      "action": "read",
+      "object": "current time",
+      "evidence_pattern": "current\\ time"
+    },
+    "time:convert_time": {
+      "action": "convert",
+      "object": "timezone",
+      "evidence_pattern": "Convert\\ a\\ time"
+    },
+    "time:get_time_ago": {
+      "action": "calculate",
+      "object": "relative time",
+      "evidence_pattern": "specified\\ duration"
+    },
+    "sequential-thinking:sequentialthinking": {
+      "action": "structure",
+      "object": "reasoning",
+      "evidence_pattern": "structured,\\ revisable\\ thinking\\ process"
+    },
+    "github:get_file_contents": {
+      "action": "read",
+      "object": "repository file",
+      "evidence_pattern": "Read\\ files\\ and\\ directories"
+    },
+    "github:issue_read": {
+      "action": "read",
+      "object": "GitHub issue",
+      "evidence_pattern": "Read\\ GitHub\\ issue"
+    },
+    "github:create_pull_request": {
+      "action": "create",
+      "object": "pull request",
+      "evidence_pattern": "Create\\ a\\ pull\\ request"
+    },
+    "brave-search:brave_local_search": {
+      "action": "search",
+      "object": "local business",
+      "evidence_pattern": "Search\\ for\\ local\\ businesses"
+    },
+    "brave-search:brave_video_search": {
+      "action": "search",
+      "object": "video",
+      "evidence_pattern": "Search\\ for\\ videos"
+    },
+    "brave-search:brave_image_search": {
+      "action": "search",
+      "object": "image",
+      "evidence_pattern": "Search\\ for\\ images"
+    },
+    "brave-search:brave_news_search": {
+      "action": "search",
+      "object": "news",
+      "evidence_pattern": "Search\\ for\\ current\\ news"
+    },
+    "cloudflare-api:docs": {
+      "action": "search",
+      "object": "Cloudflare documentation",
+      "evidence_pattern": "Search\\ Cloudflare\\ developer\\ documentation"
+    },
+    "cloudflare-api:search": {
+      "action": "search",
+      "object": "Cloudflare API specification",
+      "evidence_pattern": "Search\\ the\\ Cloudflare\\ API\\ specification"
+    },
+    "cloudflare-api:execute": {
+      "action": "execute",
+      "object": "Cloudflare API request",
+      "evidence_pattern": "Execute\\ an\\ API\\ request"
+    },
+    "cloudflare-api:whoami": {
+      "action": "read",
+      "object": "authenticated identity",
+      "evidence_pattern": "Identify\\ the\\ authenticated"
+    },
+    "aws-documentation:read_documentation": {
+      "action": "read",
+      "object": "AWS documentation",
+      "evidence_pattern": "Fetch\\ an\\ AWS\\ documentation\\ page"
+    },
+    "aws-documentation:search_documentation": {
+      "action": "search",
+      "object": "AWS documentation",
+      "evidence_pattern": "Search\\ AWS\\ documentation"
+    },
+    "aws-documentation:read_sections": {
+      "action": "read",
+      "object": "AWS documentation section",
+      "evidence_pattern": "Fetch\\ selected\\ sections"
+    },
+    "aws-documentation:search_table": {
+      "action": "search",
+      "object": "documentation table",
+      "evidence_pattern": "Search\\ selected\\ rows"
+    },
+    "aws-documentation:recommend": {
+      "action": "recommend",
+      "object": "documentation",
+      "evidence_pattern": "Get\\ content\\ recommendations"
+    },
+    "aws-documentation:get_available_services": {
+      "action": "list",
+      "object": "AWS service",
+      "evidence_pattern": "List\\ AWS\\ services"
+    }
+  },
+  "static_tools": {
+    "read_file": {
+      "action": "read",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "read_text_file": {
+      "action": "read",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "read_media_file": {
+      "action": "read",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "read_multiple_files": {
+      "action": "read",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "write_file": {
+      "action": "write",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "append_file": {
+      "action": "write",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "edit_file": {
+      "action": "write",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "create_directory": {
+      "action": "create",
+      "object": "directory",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "list_directory": {
+      "action": "list",
+      "object": "directory",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "list_directory_with_sizes": {
+      "action": "list",
+      "object": "directory",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "directory_tree": {
+      "action": "list",
+      "object": "directory",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "move_file": {
+      "action": "move",
+      "object": "filesystem entry",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "copy_file": {
+      "action": "copy",
+      "object": "file",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "search_files": {
+      "action": "search",
+      "object": "filesystem entry",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "brave_web_search": {
+      "action": "search",
+      "object": "web",
+      "source_name": "brave/brave-search-mcp-server"
+    },
+    "get_file_info": {
+      "action": "read",
+      "object": "filesystem entry",
+      "source_name": "modelcontextprotocol/servers"
+    },
+    "list_allowed_directories": {
+      "action": "list",
+      "object": "directory",
+      "source_name": "modelcontextprotocol/servers"
+    }
+  },
+  "entities": {}
+}

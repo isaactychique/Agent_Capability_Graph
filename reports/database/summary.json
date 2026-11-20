@@ -1,0 +1,15 @@
+{
+  "database": "data/acg.sqlite3",
+  "all_entities": {
+    "MCPServer": 510,
+    "MCPTool": 55,
+    "AgentSkill": 275
+  },
+  "sample": {
+    "MCPServer": 10,
+    "MCPTool": 55,
+    "AgentSkill": 110
+  },
+  "source_records": 854,
+  "observations": 20229
+}

@@ -1,31 +1,44 @@
-# Validation SHACL
+# SHACL validation
 
 ```bash
-metadata/.venv/bin/python pipeline.py validate
-metadata/.venv/bin/python pipeline.py validate --strict
+.venv/bin/python pipeline.py validate
+.venv/bin/python pipeline.py validate --strict
 ```
 
-Le code est dans `src/acg/validation.py` et les formes dans `ontology/`.
-Le moteur pySHACL valide aussi les formes avec Meta-SHACL. Aucun raisonnement OWL
-n'est activé. Un graphe sans serveur MCP est refusé.
+The code is in `src/acg/validation.py`, and the shapes are in `ontology/`.
+The pySHACL engine also validates the shapes with Meta-SHACL. OWL reasoning is
+not enabled. A graph without an MCP server is rejected.
 
-`shapes.ttl` exige noms uniques, sources, parents des outils, tâches normalisées,
-méthodes et statuts des assertions. Les assertions dérivées d'un serveur doivent
-pointer vers une assertion de même tâche sur un de ses outils exposés.
+`shapes.ttl` requires a single name per resource, sources, parent servers for tools,
+normalized tasks, and assertion methods and statuses. A server's derived assertions
+must point to an assertion for the same task on one of its exposed tools.
 
-`coverage.ttl` signale séparément les serveurs, outils et Skills sans assertion.
-Cette absence signifie une classification manquante, pas une incapacité de la ressource.
-Le graphe conserve un cas explicite : `template-skill`, avec une description provisoire.
+`coverage.ttl` separately identifies servers, tools, and Skills without an assertion.
+This absence means a classification is missing, not that the resource lacks capabilities.
+The graph retains an explicit example: `template-skill`, which has a placeholder description.
 
-Les fichiers `reports/validation/unified/report.txt` et `report.ttl` concernent la
-structure ; `coverage.txt` et `coverage.ttl` concernent la couverture.
-Sans `--strict`, seule une erreur structurelle entraîne un code 1.
-Avec `--strict`, une ressource non classée entraîne également un code 1.
-Aucun de ces contrôles ne transforme une annotation candidate en annotation revue.
+The files `reports/validation/unified/report.txt` and `report.ttl` cover structure;
+`coverage.txt` and `coverage.ttl` cover annotation coverage.
+Without `--strict`, only a structural validation failure causes exit code 1.
+With `--strict`, an unclassified resource also causes exit code 1.
+Neither check turns a candidate annotation into a reviewed annotation.
 
-Les tests sont regroupés dans `tests/`. Installer les dépendances principales et
-celles de `src/acg/ingestion/requirements.txt` pour la suite complète, puis lancer :
+Tests are grouped under `tests/`. Install the main dependencies and those in
+`src/acg/ingestion/requirements.txt` for the complete suite, then run:
 
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+
+## Keeping reports current
+
+`build` regenerates RDF and annotation reports but does not rerun SHACL.
+`mappings` regenerates only the mapping artifact. After either vocabulary or
+review changes, use `pipeline.py run` to rebuild the graph and refresh both
+validation reports. Existing SHACL files describe the graph at their last
+validation run; do not assume they validate a subsequently rebuilt graph.
+
+A reviewed entity override is applied only if its evidence matches. SHACL checks
+shape constraints and coverage; it does not establish that an extraction is
+semantically correct or that a tool was executed successfully.

@@ -11,7 +11,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-RAW = Path("data/raw")
+RAW = Path("raw")
 REG = "https://registry.modelcontextprotocol.io"
 REPOS = ["anthropics/skills", "microsoft/skills", "vercel-labs/agent-skills"]
 FS = "modelcontextprotocol/servers"

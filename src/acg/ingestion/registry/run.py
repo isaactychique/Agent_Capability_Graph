@@ -20,7 +20,7 @@ def main(argv=None):
         collect(args.registry_pages)
         try:
             history()
-            if Path("data/raw/filesystem/package.json.json").exists():
+            if Path("raw/filesystem/package.json.json").exists():
                 linked_registry()
         except Exception as error:
             failure("registry supplement / filesystem license", error)

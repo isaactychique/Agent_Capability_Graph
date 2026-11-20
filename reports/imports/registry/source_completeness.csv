@@ -1,0 +1,10 @@
+availability,available_cells,entity_type,fields,source,total_cells
+0.6783333333333333,2035,server,"[""description"",""name"",""repository_url"",""source_revision"",""source_url""]",Official MCP Registry,3000
+1.0,5,server,"[""description"",""name"",""repository_url"",""source_revision"",""source_url""]",modelcontextprotocol/servers,5
+1.0,5,server,"[""description"",""name"",""repository_url"",""source_revision"",""source_url""]",brave/brave-search-mcp-server,5
+1.0,100,skill,"[""description"",""name"",""repository_url"",""source_revision"",""source_url""]",anthropics/skills,100
+1.0,1055,skill,"[""description"",""name"",""repository_url"",""source_revision"",""source_url""]",microsoft/skills,1055
+1.0,45,skill,"[""description"",""name"",""repository_url"",""source_revision"",""source_url""]",vercel-labs/agent-skills,45
+0.4711111111111111,424,skill,"[""description"",""name"",""repository_url"",""source_revision"",""source_url""]",GitSkills (secondary),900
+1.0,64,tool,"[""description"",""name"",""source_revision"",""source_url""]",modelcontextprotocol/servers,64
+1.0,4,tool,"[""description"",""name"",""source_revision"",""source_url""]",brave/brave-search-mcp-server,4

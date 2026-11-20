@@ -1,17 +1,20 @@
 # SPARQL queries
 
 All queries use `data/processed/agent_capability_graph.ttl` by default.
+The graph is built exclusively from the unified `data/acg.sqlite3` database;
+its current sample contains 10 servers, 55 tools and 110 Skills.
+The additional Skill count can be changed through the frozen selection configuration.
 The Python implementation is in `src/acg/query.py`; use `pipeline.py query` from the project root.
 `queries/query_rdf.py` remains an optional shortcut to the same implementation.
 
 ```bash
-metadata/.venv/bin/python pipeline.py run
-metadata/.venv/bin/python pipeline.py query tools_for_web_search.rq
-metadata/.venv/bin/python pipeline.py query skills_by_format.rq --format PDF
-metadata/.venv/bin/python pipeline.py query skills_by_format.rq --format spreadsheet
-metadata/.venv/bin/python pipeline.py query entity_capabilities.rq --name pdf
-metadata/.venv/bin/python pipeline.py query entity_capabilities.rq --name 'Filesystem MCP Server'
-metadata/.venv/bin/python pipeline.py query skill_requirements.rq
+.venv/bin/python pipeline.py run
+.venv/bin/python pipeline.py query tools_for_web_search.rq
+.venv/bin/python pipeline.py query skills_by_format.rq --format PDF
+.venv/bin/python pipeline.py query skills_by_format.rq --format spreadsheet
+.venv/bin/python pipeline.py query entity_capabilities.rq --name pdf
+.venv/bin/python pipeline.py query entity_capabilities.rq --name 'Filesystem MCP Server'
+.venv/bin/python pipeline.py query skill_requirements.rq
 ```
 
 `--graph path.ttl` selects an explicit file. The executable can be replaced by
@@ -34,9 +37,14 @@ metadata/.venv/bin/python pipeline.py query skill_requirements.rq
   was recorded, not that no requirement exists. Compatibility, allowed tools and
   bundled files remain separate signals. Some requirements originate in secondary imports.
 
-The task vocabulary is configured in `config/capability_mappings.json`. It is a
-project classification, not a primitive supplied by MCP or by the Skill format.
-Mappings must match quoted description evidence and remain candidates pending review.
+The automatic vocabulary is maintained in `config/capability_vocabulary.json`;
+manual rules and review decisions are in `config/capability_overrides.json`.
+`config/capability_mappings.json` is generated from those inputs and SQLite.
+This is a project classification, not a primitive supplied by MCP or Skill formats.
+Automatic mappings must match quoted description evidence and remain candidates.
+An entity may expose several capabilities; query rows need not equal entity counts.
+After editing vocabulary or overrides, run `pipeline.py build` to update query input.
+Running `pipeline.py mappings` alone does not refresh the RDF.
 See `reports/capabilities/review.csv` and `unclassified.csv` for the review queue.
 
 SHACL structure and coverage reports are separate under `reports/validation/unified/`.
