@@ -1,0 +1,10 @@
+parse_status,unique_contents
+parsed,1665672
+no_frontmatter,164884
+invalid_yaml,44760
+malformed_opening,1337
+unclosed_frontmatter,843
+duplicate_yaml_keys,226
+non_mapping_yaml,213
+hash_mismatch,42
+non_string_keys,4

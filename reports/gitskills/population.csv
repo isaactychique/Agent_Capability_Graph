@@ -1,0 +1,12 @@
+metric,count
+occurrences,3797117
+unique_contents,1877981
+representative_rows,1877981
+repositories_table,282200
+repositories_in_artifacts,282200
+exact_SKILL_md_occurrences,3742828
+parsed_frontmatter_contents,1665672
+nonrepresentative_rows,1919136
+both_name_description_contents,1630676
+unmatched_content_rows,0
+excess_copy_occurrences,1919136
