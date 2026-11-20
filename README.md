@@ -132,3 +132,12 @@ record alone does not establish a server's tool inventory.
 See [capabilities and persistent review](docs/capabilities.md) for extraction and
 review details. Current generated results contain 6,808 triples, 151 capability
 concepts and 214 assertions; these are snapshot counts, not fixed constraints.
+
+## Full GitSkills metadata analysis
+
+The full-corpus analysis extends the original 180-row sample at a pinned dataset
+revision. Code is in `src/acg/ingestion/gitskills/`, aggregate results are in
+`reports/gitskills/`, and tests are in `tests/test_gitskills*.py`.
+See [results, counting definitions and reproduction commands](reports/gitskills/README.md).
+Raw downloads and full derived tables remain outside Git. This analysis does not
+change the selected RDF corpus or existing source snapshots.

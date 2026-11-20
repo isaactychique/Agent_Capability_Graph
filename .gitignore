@@ -7,3 +7,9 @@ __pycache__/
 
 # Downloaded third-party source snapshots and Skill package archives
 data/raw/downloads/
+
+# Large GitSkills source/derived tables and local analysis databases
+*.parquet
+*.parquet.part
+*.duckdb
+*.duckdb.wal

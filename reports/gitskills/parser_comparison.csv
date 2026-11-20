@@ -1,0 +1,16 @@
+parse_status,upstream_frontmatter_valid,unique_contents,name_disagreements,description_disagreements
+parsed,1,1624216,0,109
+no_frontmatter,0,164884,0,0
+invalid_yaml,0,44246,10,0
+parsed,0,41456,6468,6478
+malformed_opening,0,1079,0,1
+invalid_yaml,1,514,514,514
+unclosed_frontmatter,1,454,454,454
+unclosed_frontmatter,0,389,2,6
+malformed_opening,1,258,258,258
+duplicate_yaml_keys,1,215,215,215
+non_mapping_yaml,0,213,0,0
+hash_mismatch,1,40,40,40
+duplicate_yaml_keys,0,11,3,1
+non_string_keys,1,4,4,4
+hash_mismatch,0,2,0,0

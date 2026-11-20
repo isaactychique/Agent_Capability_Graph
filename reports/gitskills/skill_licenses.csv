@@ -1,0 +1,1131 @@
+license_state,skill_license,unique_contents
+absent,,1622956
+present,MIT,122585
+unknown,,47425
+present,Apache-2.0,36607
+present,CC-BY-4.0,12219
+present,Apache 2.0,8507
+present,Complete terms in LICENSE.txt,4564
+present,CC-BY-NC-SA-4.0,3680
+present,Proprietary. LICENSE.txt has complete terms,1935
+present,MIT license,1931
+present,Unknown,907
+present,Proprietary,871
+present,MITRE ATT&CK Terms of Use apply to ATT&CK-derived content. See https://attack.mitre.org/resources/terms-of-use/,870
+present,BSD-3-Clause license,791
+present,MIT + Commons Clause,544
+present,Unspecified,524
+present,MIT-0,506
+present,Apache-2.0 license,446
+present,AGPL-3.0,389
+present,CC0-1.0,374
+present,BSD-3-Clause,290
+present,UNLICENSED,273
+present,MIT License,272
+present,Apache 2.0. Based on Anthropic's frontend-design skill. See NOTICE.md for attribution.,248
+present,GPL-3.0,246
+present,CC-BY-SA-4.0,199
+present,MathWorks BSD-3-Clause,190
+present,proprietary,163
+present,ISC,160
+present,GPL-3.0-or-later,155
+present,UNKNOWN,133
+present,Apache-2.0 AND CC-BY-4.0,112
+present,MIT OR Apache-2.0,112
+present,See ../LICENSE,110
+present,AGPL-3.0-or-later,108
+present,Proprietary — Personal Use Only,108
+present,LICENSE,107
+present,Apache-2.0. See LICENSE for complete terms.,103
+present,Sustainable Use License 1.0,99
+present,GNU GPL v3,98
+present,CC BY-NC-SA 4.0,89
+present,ELv2,84
+present,BUSL-1.1,83
+present,CC-BY-4.0 AND Apache-2.0,81
+present,Proprietary. See LICENSE.txt in project root.,79
+present,CC-BY-NC-4.0,77
+present,AGPL-3.0-only,76
+present,MPL-2.0,70
+present,GPL-3.0 license,69
+present,Apache-2.0; see LICENSE,67
+present,See repository LICENSE,61
+present,https://github.com/matplotlib/matplotlib/tree/main/LICENSE,61
+present,Proprietary — MemStack™ Pro by CW Affiliate Investments LLC. See LICENSE.txt,60
+present,AGPLv3,59
+present,Complete terms in LICENSE,57
+present,PolyForm Noncommercial 1.0.0,57
+present,3-clause BSD license,52
+present,BSL-1.1,52
+present,GPL-3.0-only,52
+present,BSD-2-Clause license,51
+present,private,51
+present,GPL-2.0 license,50
+present,Internal,50
+present,PROPRIETARY,50
+present,MIT License (NeuroClaw custom skill - freely modifiable within the project),49
+present,https://github.com/sympy/sympy/blob/master/LICENSE,48
+present,完整条款见 LICENSE.txt,46
+present,Proprietary - Remaker Digital,45
+present,LGPL-3.0-or-later,44
+present,See LICENSE file in repository root,44
+present,https://github.com/pola-rs/polars/blob/main/LICENSE,44
+present,CC BY 4.0,42
+present,Unlicense OR MIT,41
+invalid_type,,41
+present,Non-commercial evaluation only (see repo LICENSE),40
+present,Proprietary-Danantara,40
+present,Unlicense,40
+present,MIT (garrytan/gstack),39
+present,Proprietary — Tooensure LLC,39
+present,SD-3-Clause license,39
+present,SEE LICENSE IN LICENSE,39
+present,GPL-2.0,37
+present,MIT © 2026 Vũ Văn Tâm,37
+present,Vibecoded,37
+present,BSD-3-Clause (see repo LICENSE),36
+present,"Apache License, Version 2.0",35
+present,Skill distillation for personal/educational use. Do not reproduce source passages verbatim.,35
+present,(MIT AND CC-BY-SA-4.0). See LICENSE-MIT and LICENSE-CC-BY-SA-4.0,34
+present,Proprietary. license.txt has complete terms,34
+present,internal,34
+present,CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/),33
+present,UNCTAD-Internal,33
+present,GPL-2.0-or-later,31
+present,MIT / CC-BY-SA-4.0,31
+present,MIT License (NeuroClaw custom skill – freely modifiable within the project),31
+present,PubNub,31
+present,LicenseRef-NvidiaProprietary,30
+present,See LICENSE in repository root,30
+present,BSD license,29
+present,LicenseRef-Qt-Commercial OR BSD-3-Clause,29
+present,Private,29
+present,https://github.com/pydicom/pydicom/blob/main/LICENSE,29
+present,GPL,28
+present,See LICENSE.txt,28
+present,project-local,28
+present,CeCILL FREE SOFTWARE LICENSE AGREEMENT,27
+present,LGPL-3.0,27
+present,Proprietary. LICENSE has complete terms,27
+present,Elastic-2.0,26
+present,For MATLAB (https://www.mathworks.com/pricing-licensing.html) and for Octave (GNU General Public License version 3),25
+present,Proprietary. See LICENSE.txt for terms,25
+present,3 clause BSD license,24
+present,Proprietary. See License-Skills for complete terms,24
+present,AGPL,23
+present,CC BY-SA 4.0,23
+present,GPLv3 license,23
+present,LicenseRef-helmguild-mentoring-1.0,23
+present,Non-academic use of KEGG requires a commercial license,22
+present,Apache License,21
+present,pending-consent,21
+present,Apache License 2.0,20
+present,Apache License 2.0 - See repository LICENSE file,20
+present,Internal use,20
+present,MIT. See LICENSE for full terms.,20
+present,Proprietary (API key required),20
+present,Proprietary project skill,20
+present,"This skill is provided under the MIT License. IDC data itself has individual licensing (mostly CC-BY, some CC-NC) that must be respected when using the data.",20
+present,Stolen from Mario,19
+present,Termos completos em LICENSE.txt,19
+present,AGPL-3.0 (referencing Twitter's algorithm source),18
+present,GFDL-1.3-or-later,18
+present,MIT — see plugin LICENSE,18
+present,Lumena - usage interne,17
+present,apache-2.0,17
+empty,,17
+present,MIT (adapted from mattpocock/skills),16
+present,MathWorks BSD-3-Clause (see LICENSE),16
+present,CANN Open Software License Agreement Version 2.0,15
+present,CC-BY-3.0,15
+present,GPLv3,15
+present,"HMDB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (HMDB) and the original publication (see the HMDB citing page). We ask that users who download significant portions of the database cite the HMDB paper in any resulting publications.",15
+present,Project-internal,15
+present,See LICENSE,15
+present,See repository license,15
+present,(MIT AND CC-BY-SA-4.0),14
+present,BSD 3-Clause,14
+present,BSD-2-Clause,14
+present,Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0),14
+present,Derived from anthropics/financial-services-plugins (Apache-2.0). Modified for langalpha.,14
+present,Forward Proprietary,14
+present,LuxSE,14
+present,OGL-UK-3.0,14
+present,PolyForm-Noncommercial-1.0.0,14
+present,Proyecto Educativo - IE Pedacito de Cielo,14
+present,Vendor docs,14
+present,https://github.com/biodatageeks/polars-bio/blob/main/LICENSE,14
+present,Apache-2.0 WITH Commons-Clause. See LICENSE for complete terms.,13
+present,MIT © 2025 Vũ Văn Tâm,13
+present,Rutgers,13
+present,internal-only,13
+present,project-internal,13
+present,Apache 2,12
+present,Apache-2.0 HePin,12
+present,CC-BY-NC-ND-4.0,12
+present,FSL-1.1-MIT,12
+present,Free preview — full skill available in MemStack™ Pro,12
+present,Internal - Automecanik,12
+present,MIT (ZONOVA RESEARCH — coldvault.dev),12
+present,MIT + Attribution,12
+present,MIT / Commercial (for Web Awesome Pro),12
+present,MIT © ECC contributors,12
+present,NOASSERTION,12
+present,Proprietary/API,12
+present,Unlicense OR 0BSD,12
+present,Apache-2.0. See docs/legal/THIRD_PARTY_NOTICES.md for source attribution.,11
+present,CC-BY-NC,11
+present,MIT (see repository LICENSE),11
+present,MIT; adapted from https://github.com/obra/superpowers,11
+present,Proprietary - MoxyWolf LLC,11
+present,SEE LICENSE IN ../../LICENSE,11
+present,TBD,11
+present,"The Universal Permissive License (UPL), Version 1.0",11
+present,0BSD,10
+present,Commercial,10
+present,"Foothold pack, MIT",10
+present,HPL3-ECO-NC-ND-A 2026,10
+present,Internal — Alaa Technology / Koli One,10
+present,MIT License. See LICENSE file for details.,10
+present,See LICENSE.txt in repository root,10
+present,See original LICENSE,10
+present,完整條款請見 LICENSE.txt,10
+present,Apache 2.0. Scaffold based on impeccable (https://impeccable.style). See NOTICE.md.,9
+present,"Apache-2.0 — Anthropic, PBC; see /THIRD_PARTY_LICENSES.md",9
+present,Based on https://github.com/anthropics/skills,9
+present,CANN-2.0,9
+present,LGPL-2.1,9
+present,MIT (see LICENSE.txt),9
+present,Proprietary session artifact for local Copilot use,9
+present,Proprietary. See repository LICENSE,9
+present,internal course distribution; confirm before public redistribution,9
+present,see upstream repo,9
+present,Apache-2.0. See ../../docs/legal/THIRD_PARTY_NOTICES.md for source attribution.,8
+present,CC0,8
+present,CC0 1.0,8
+present,Complete terms in LICENSE.md,8
+present,Figma Developer Terms,8
+present,GPLv2-or-later,8
+present,Internal — CCI/AVCS Project,8
+present,MIT (obra/superpowers),8
+present,MIT License. Proprietary. LICENSE.txt has complete terms,8
+present,Proprietary (FailSafe Project),8
+present,Proprietary (internal AAA template),8
+present,Proprietary (repository internal),8
+present,Proprietary - APEX Business Systems Ltd.,8
+present,Proprietary.,8
+present,Proprietary. Apache-style with the AutoFlow trademark carve-out.,8
+present,SUL-1.0,8
+present,UPL-1.0,8
+present,Apache-2.0 OR CC-BY-4.0,7
+present,CC BY 4.0 - Created collaboratively by Tomás Pavan and Claude Opus 4.5,7
+present,"MIT (see LICENSE.txt — © 2025 650 Industries / Expo, vendored into taw-kit)",7
+present,Open Government Licence v3.0 (Crown copyright),7
+present,Proprietary - project local use,7
+present,Proprietary. LICENSE has complete terms.,7
+present,https://creativecommons.org/licenses/by/4.0/,7
+present,unknown,7
+present,AGPL-3.0-only OR LicenseRef-Traigent-Commercial,6
+present,Apache-2.0 (see LICENSE.txt),6
+present,Apache-2.0 — see LICENSE for terms and third-party attributions,6
+present,BSD-3-Clause-Clear,6
+present,CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/),6
+present,Internal use only,6
+present,MIT (Code Buddy original skill),6
+present,MIT License - Complete terms in LICENSE.txt,6
+present,"MIT License, complete terms in LICENSE.txt",6
+present,"MIT — use, copy, and adapt freely.",6
+present,Private/Internal,6
+present,Proprietary (Anthropic) - see source repo LICENSE,6
+present,"Proprietary - APEX Business Systems Ltd. Edmonton, AB, Canada. https://apexbusiness-systems.com",6
+present,Proprietary — MIS (Modern Intelligence Solutions) internal use,6
+present,See docs/attribution.md,6
+present,mit,6
+present,© 2025 Daisyloop Technologies Inc. See LICENSE.txt,6
+present,Apache,5
+present,Apache 2.0 (patterns derived from Uno Platform documentation),5
+present,Apache 2.0. See NOTICE.md for full attribution to the design lineage this skill stands on.,5
+present,CC-BY-3.0-US (deck content © 2009 Microsoft Corporation),5
+present,CC-BY-4.0 OR Apache-2.0,5
+present,EUPL-1.2,5
+present,Free-to-use,5
+present,Internal Use Only,5
+present,MIT (see repo LICENSE),5
+present,MIT © 2026 Leonxlnx,5
+present,MIT — see LICENSE.txt,5
+present,N/A,5
+present,Proprietary (Batshit system skill),5
+present,Proprietary. See LICENSE for complete terms.,5
+present,Proprietary. See parent repository LICENSE,5
+present,Proprietary. See repository terms.,5
+present,SEE LICENSE IN LICENSE.md,5
+present,See root LICENSE,5
+present,Stolen from Armin (mitsuhiko),5
+present,open,5
+present,personal,5
+present,{{license}},5
+present,ASL-1.0,4
+present,All-Rights-Reserved,4
+present,Apache 2.0 (Impeccable) + MIT (custom extensions),4
+present,Apache 2.0 (see LICENSE.txt),4
+present,Apache 2.0 — see LICENSE.txt,4
+present,Apache 2.0. Based on Anthropic's frontend-design skill.,4
+present,Apache 2.0. Copyright 2026 Andres Ladino.,4
+present,Apache-2.0. Complete terms in LICENSE.txt,4
+present,Biopython License (BSD-like),4
+present,Canvas Notebook Sustainable Use License,4
+present,Custom,4
+present,Internal project use,4
+present,LICENSE-CC-BY-NC-SA 4.0 in LICENSE.txt,4
+present,LicenseRef-NVIDIA,4
+present,"MIT (see LICENSE.txt — © 2025 650 Industries / Expo, vendored into vibe-kit)",4
+present,MIT - Complete terms in LICENSE.txt,4
+present,MIT-compatible Baron-owned local guidance; attribution lives in NOTICE.md,4
+present,MIT. Extension of the Sublime skill. See NOTICE.md for attribution.,4
+present,MIT. LICENSE.txt has complete terms,4
+present,MIT. See LICENSE.txt,4
+present,ODbL-1.0,4
+present,Original clean-room skill for Yachiyo. No third-party skill content included.,4
+present,Personal,4
+present,Prismtek Source Available,4
+present,Proprietary - Viagent,4
+present,Proprietary - internal repository use only,4
+present,Proprietary — © WhatsAble. All rights reserved.,4
+present,Proprietary. Local workspace tool.,4
+present,Proprietary. See LICENSE for complete terms,4
+present,Proprietary. See LICENSE in repository root,4
+present,Proprietary. See LICENSE.txt for complete terms.,4
+present,See LICENSE in repository,4
+present,UBOS Constitutional License,4
+present,default,4
+present,internal-use,4
+present,전체 약관은 LICENSE.txt 참조,4
+present,AGPL-3,3
+present,Apache 2.0. Adapted from pbakaus/impeccable.,3
+present,Apache 2.0. Based on Paul Bakaus's impeccable. See NOTICE.md.,3
+present,Apache License 2.0. https://github.com/google/atheris/blob/775b08fb1a781142540995e8a2817c48ffae343f/LICENSE,3
+present,Apache-2.0 (adapted from google-deepmind/science-skills),3
+present,Apache-2.0 (derivative work),3
+present,Apache-2.0 WITH LLVM-exception,3
+present,Biopython License Agreement,3
+present,CC BY 4.0 - Created collaboratively by Tomás Pavan and Claude Opus 4,3
+present,CC BY-NC 4.0,3
+present,CC-0,3
+present,CC-BY 4.0,3
+present,CC-BY-NC 4.0,3
+present,CC-BY-ND-4.0,3
+present,CC-BY-SA-3.0,3
+present,Copyright © 2026 少煊（年少有为，名声煊赫）<429668385@qq.com>. All rights reserved.,3
+present,EPL-1.0,3
+present,Elastic License (see LICENSE.txt in repository root),3
+present,"FPC (Fais pas chier), https://clauzel.eu/FPC/",3
+present,For use with any agent skills system,3
+present,From mitsuhiko/agent-stuff,3
+present,GPL-3.0-or-Later,3
+present,INTERNAL,3
+present,Internal Tool,3
+present,KohakuTerrarium License 1.0,3
+present,LGPL,3
+present,LGPL/GPL,3
+present,LICENSE.txt,3
+present,LICENSE.txt 中的完整條款,3
+present,LicenseRef-Proprietary,3
+present,MIT (https://github.com/bitjaru/styleseed/blob/main/LICENSE),3
+present,MIT (ported from anthropics/claude-code/plugins/feature-dev),3
+present,MIT - see LICENSE.txt,3
+present,MIT License - 详见 LICENSE.txt,3
+present,MIT © phazurlabs,3
+present,MIT — Copyright (c) Luca Mezzalira,3
+present,MIT — see LICENSE and THIRD_PARTY_NOTICES.md,3
+present,MIT — see LICENSE in pm-skills-lab repo,3
+present,"MIT, Apache-2.0",3
+present,MIT. Complete terms in LICENSE.txt,3
+present,Not declared,3
+present,Personal use,3
+present,PostgreSQL,3
+present,Project-specific,3
+present,Proprietary © 2026,3
+present,"Proprietary — © movaMedia, Inc.",3
+present,Proprietary. For internal team use.,3
+present,Proprietary. Internal project skill.,3
+present,Proprietary. See LICENSE-SKILLS.md for complete terms,3
+present,Proprietary. Uso interno deste repositório.,3
+present,Proprietário. LICENSE.txt tem termos completos,3
+present,Repository-internal,3
+present,Same as the omac repository,3
+present,Source — Anthropic Skills (https://github.com/anthropics/skills). Used under their published terms.,3
+present,UNLICENSE,3
+present,W3C Software and Document License,3
+present,WTFPL,3
+present,commercial,3
+present,https://github.com/mitsuhiko/agent-stuff,3
+present,original (see skills/ATTRIBUTIONS.md),3
+present,../../LICENSE.md,2
+present,APACHE 2.0,2
+present,Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html),2
+present,Apache 2.0. Forked and adapted from Anthropic's frontend-design skill. See NOTICE.md for attribution.,2
+present,Apache-2.0 (derived from github.com/anthropics/skills),2
+present,Apache-2.0 (for skill definition); Service usage subject to Polaris AI DataInsight Terms of Service.,2
+present,Apache-2.0 (upstream: Anthropic skills repo) — see LICENSE.txt,2
+present,Apache-2.0 OR MIT,2
+present,Apache-2.0. See LICENSE.txt.,2
+present,BSD,2
+present,BSL,2
+present,Based on Anthropic's skill-creator (MIT) - see LICENSE.txt,2
+present,"CC BY 4.0 — Matias Fernandez, OATR Project, 2026",2
+present,CC BY 4.0 — design principles adapted from Madina Gbotoe (madinagbotoe.com),2
+present,CC BY-NC-ND 4.0,2
+present,CC BY-NC-SA 4.0 - 详见 LICENSE.txt,2
+present,CC BY-SA 4.0 (Creative Commons Attribution-ShareAlike 4.0 International),2
+present,CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/,2
+present,CC-BY-4.0 (patterns derived from Microsoft Learn documentation),2
+present,Complete terms in LICENSE (MIT),2
+present,Complete terms in file LICENSE,2
+present,Copyright (c) 2026 Salla,2
+present,Copyright Airship. All rights reserved.,2
+present,Create original algorithmic art rather than copying existing artists' work to avoid copyright violations. Complete terms in LICENSE.txt,2
+present,Dual MIT / Apache-2.0,2
+present,Educational sample,2
+present,FSL-1.1-ALv2,2
+present,Free to use. Created by Velikiy (velikoss) Kirill,2
+present,GPL-3.0 (GNU Octave); MATLAB requires commercial license,2
+present,GPL-3.0+,2
+present,ISC (repo LICENSE) + project conventions in this file,2
+present,IntelliFlow CRM Internal,2
+present,Internal project guidance,2
+present,Internal use.,2
+present,MIT (adapted from anthropics/claude-plugins-official/plugins/claude-md-management/skills/claude-md-improver),2
+present,MIT (ported from anthropics/claude-code/plugins/code-review),2
+present,MIT (ported from anthropics/claude-code/plugins/feature-dev/agents/code-architect),2
+present,MIT (ported from anthropics/claude-code/plugins/feature-dev/agents/code-reviewer),2
+present,MIT (see LICENSE at repo root),2
+present,MIT (see LICENSE),2
+present,MIT (see the repository LICENSE file),2
+present,MIT AND Apache-2.0,2
+present,MIT AND CC0-1.0,2
+present,MIT License (aggregated from multiple sources),2
+present,MIT License - See LICENSE.txt,2
+present,MIT License - see LICENSE.txt,2
+present,"MIT License, Copyright (c) 2026 ti&m AG, Copyright (c) 2026 Matt Pocock",2
+present,MIT License. Complete terms in LICENSE.txt,2
+present,MIT — 100% profits fund recovery programs,2
+present,MIT — Copyright (c) 2026 Mohamed Elharery (https://github.com/Harery). All rights reserved. Repo: https://github.com/Harery/Praetor,2
+present,MIT — see LICENSE,2
+present,MIT-compatible synthesis plus public-domain style guidance,2
+present,MIT. Complete terms in LICENSE,2
+present,MIT. LICENSE.txt has complete terms.,2
+present,MIT. See LICENSE for complete terms,2
+present,MIT. See LICENSE.,2
+present,MIT. See LICENSE.txt for complete terms.,2
+present,MongoDB,2
+present,None,2
+present,OSL-3.0,2
+present,Open Parliament Licence v3.0 (Crown copyright; Parliament-operated),2
+present,PSF,2
+present,PSF-based,2
+present,PolyForm Internal Use License 1.0.0,2
+present,PolyForm Shield License 1.0.0,2
+present,Private - SahayakAI Internal,2
+present,Proprietary (CrisPRO / JediLabs internal),2
+present,Proprietary (Rama) + MIT (integration),2
+present,"Proprietary - APEX Business Systems Ltd. Edmonton, AB, Canada.",2
+present,Proprietary MartiXDev internal usage,2
+present,"Proprietary — APEX Business Systems Ltd. Edmonton, AB, Canada",2
+present,"Proprietary — APEX Business Systems Ltd. Edmonton, AB, Canada.",2
+present,"Proprietary — APEX Business Systems Ltd. Edmonton, AB, Canada. https://apexbusiness-systems.com",2
+present,Proprietary. Brand references are used only as observed visual inspiration.,2
+present,Proprietary. Inner Animal Media platform law.,2
+present,Proprietary. LICENSE.txt has complete terms.,2
+present,Proprietary. See LICENSE.txt,2
+present,Proprietary. See project package context.,2
+present,Proprietary. 完整條款請見 LICENSE.txt,2
+present,Proprietário. LICENSE.txt contém os termos completos,2
+present,Public domain - shared for AI engineering community,2
+present,Recomby.ai — same terms as the recomby-geo plugin root LICENSE,2
+present,SEE LICENSE IN UPSTREAM SOURCE,2
+present,SEE LICENSE IN license,2
+present,SSPL,2
+present,See LICENSE in root of repository,2
+present,See LICENSE.md - free for open-source & personal use; commercial license required for closed-source commercial use.,2
+present,See repository LICENSE.,2
+present,Source data 政府資料開放授權條款-1版 (各機關). Skill itself Apache-2.0.,2
+present,agpl-3.0,2
+present,arXiv perpetual non-exclusive,2
+present,https://github.com/mattpocock/skills,2
+present,imported,2
+present,mixed,2
+present,none,2
+present,project,2
+present,project-specific,2
+present,public,2
+present,专有。LICENSE.txt 包含完整条款,2
+present,专有。完整条款见 LICENSE.txt,2
+present,专有。完整条款请参见 LICENSE.txt,2
+present,完全な利用規約はLICENSE.txtを参照,2
+present,完整条款见LICENSE.txt,2
+present,完整条款请参见 LICENSE.txt,2
+present,完整條款請參閱 LICENSE.txt,2
+present,원본 frontend-design 라이선스 준수 (Complete terms in original LICENSE.txt — claude-plugins-official 마켓플레이스),2
+present,<license-name>,1
+present,AGPL 3.0 - Complete terms in LICENSE,1
+present,AGPL-3.0 (referencing Twitter's open-source algorithm),1
+present,AGPL-3.0（参考 Twitter 算法源代码）,1
+present,API Terms,1
+present,"ASE Certification recommended. No license is required for working on your own vehicle, but you accept all consequences.",1
+present,Adapted from Anthropic Skills (https://github.com/anthropics/skills/tree/main/frontend-design),1
+present,Adapted from Anthropic's frontend-design skill,1
+present,Adapted from Anthropic's official frontend-design skill (MIT),1
+present,Adapted from getsentry/skills,1
+present,Adapted from nafiurrahmanniloy/figma-skill (MIT),1
+present,"Adapted from the Google-independent GPTs ""Raw5 v4"" prompt pack (안창현). Originals untouched.",1
+present,All Rights Reserved,1
+present,All rights reserved,1
+present,Apache 2.0 (based on Anthropic's skills repo),1
+present,Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html),1
+present,Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0),1
+present,Apache 2.0 (patterns derived from Uno Platform documentation and production migrations),1
+present,Apache 2.0 - Based on open-source frontend-design principles,1
+present,"Apache 2.0 License""",1
+present,"Apache 2.0 derivative of pbakaus/impeccable, adapted for Kilo Code. See NOTICE.md.",1
+present,Apache 2.0 — complete terms in LICENSE.txt,1
+present,Apache 2.0-derived guidance.,1
+present,Apache 2.0. Adapted from Impeccable by Paul Bakaus (Apache 2.0). See NOTICE.md for attribution.,1
+present,Apache 2.0. Adapted from frontend-design principles for Flutter mobile development.,1
+present,Apache 2.0. Basado en Impeccable de Paul Bakaus y el frontend-design skill de Anthropic.,1
+present,Apache 2.0. Based on Anthropic's DESIGN.md skill. See NOTICE.md for attribution.,1
+present,Apache 2.0. Based on Anthropic's frontend-design skill + Impeccable by pbakaus. See NOTICE.md for attribution.,1
+present,"Apache 2.0. Based on Anthropic's frontend-design skill + Paul Bakaus's Impeccable, adapted for iOS/SwiftUI. See NOTICE.md for attribution.",1
+present,Apache 2.0. Based on Anthropic's frontend-design skill and Impeccable adaptation. See NOTICE.md for attribution.,1
+present,Apache 2.0. Based on Anthropic's frontend-design skill. See impeccable/NOTICE.md for attribution.,1
+present,Apache 2.0. Based on Anthropic's frontend-design skill; upstream release skill-v3.5.0.,1
+present,Apache 2.0. Based on Anthropic's i-frontend-design skill. See NOTICE.md for attribution.,1
+present,"Apache 2.0. Based on Impeccable (https://impeccable.style) by Paul Bakaus, which extends Anthropic's frontend-design skill. See NOTICE.md.",1
+present,Apache 2.0. Based on impeccable v2.1.7 by Paul Bakaus. See NOTICE.md.,1
+present,Apache 2.0. Based on pbakaus/impeccable frontend-design skill. Original based on Anthropic's frontend-design skill. See pbakaus/impeccable NOTICE.md for attribution.,1
+present,Apache 2.0. Based on pbakaus/impeccable polish skill.,1
+present,Apache 2.0. Complete terms in LICENSE.txt,1
+present,Apache 2.0. Derived from the Impeccable frontend design skill in this repository.,1
+present,Apache 2.0. Forked house skill for Terraform operations and delivery.,1
+present,Apache 2.0. Incorporates Anthropic's frontend-design skill and taste-skill (MIT) mechanics. See NOTICE.md for attribution.,1
+present,Apache 2.0. Inspired by the structure of the impeccable skill. See NOTICE.md for attribution.,1
+present,Apache 2.0. LICENSE.txt has complete terms,1
+present,Apache 2.0. Originally `audit` from pbakaus/impeccable. See skills/impeccable/LICENSE and skills/impeccable/NOTICE.md for attribution.,1
+present,Apache 2.0. See NOTICE.md for attribution.,1
+present,Apache 2.0/GPL,1
+present,Apache License 2.0 (see LICENSE.txt),1
+present,Apache-0,1
+present,Apache-0.0,1
+present,Apache-2.0 (FlowForge),1
+present,Apache-2.0 (MCP spec + skills ext); see UPSTREAM.md,1
+present,Apache-2.0 (NOTICE.md),1
+present,Apache-2.0 (OpenCLI) + MIT (Bridge),1
+present,"Apache-2.0 (adapted from Anthropic skill-creator, see LICENSE.txt)",1
+present,Apache-2.0 (adapted from github.com/jmwright/cadquery-llm-skill),1
+present,Apache-2.0 (based on anthropics/skills with modifications),1
+present,Apache-2.0 (based on portions of pbakaus/impeccable — see https://github.com/RaNDoM6913/claude-code-superkit/blob/main/packages/frontend-ui/NOTICE.md),1
+present,"Apache-2.0 (component data derives from AOSP, Apache-2.0)",1
+present,Apache-2.0 (derived from jgraph/drawio-mcp). See LICENSE.txt,1
+present,Apache-2.0 (from github.com/anthropics/skills),1
+present,Apache-2.0 (per upstream repository; see metadata.source),1
+present,Apache-2.0 (see ../LICENSE),1
+present,Apache-2.0 (see LICENSE file),1
+present,Apache-2.0 (see LICENSE),1
+present,Apache-2.0 (see LICENSE.txt for attribution),1
+present,Apache-2.0 (see LICENSE.txt). Fonts under SIL OFL (see canvas-fonts/*.txt).,1
+present,Apache-2.0 (see bundled LICENSE.txt),1
+present,Apache-2.0 (see https://github.com/mitsuhiko/agent-stuff),1
+present,Apache-2.0 (skills) / source-available (doc skills — do not redistribute),1
+present,Apache-2.0 (software),1
+present,Apache-2.0 (software); CC-BY-4.0 (data),1
+present,"Apache-2.0 (upstream: Anthropic skills repo, hardened) — see LICENSE.txt",1
+present,Apache-2.0 (with attribution to pbakaus/impeccable),1
+present,Apache-2.0 OR BSD-3-Clause,1
+present,Apache-2.0 OR CC-BY-SA-4.0,1
+present,Apache-2.0 WITH brand-clause,1
+present,Apache-2.0 license (software),1
+present,Apache-2.0 — complete terms in LICENSE.txt,1
+present,"Apache-2.0 — forked from Anthropic's `canvas-design` skill. Philosophy-first two-step method retained; aesthetic re-grounded in `design-taste`. See `## Sources`.",1
+present,Apache-2.0 — forked from Anthropic's official `frontend-design` plugin skill (full terms in that plugin's LICENSE.txt). Adapted to Dinesh's register and the design-taste / craft-critique skill boundaries.,1
+present,Apache-2.0 — full terms in LICENSE.txt,1
+present,Apache-2.0 — https://github.com/anthropics/skills,1
+present,Apache-2.0-or-similar-upstream,1
+present,Apache-2.0.,1
+present,"Apache-2.0. Adapted from pbakaus/impeccable, which is based on Anthropic's frontend-design skill. See NOTICE.md.",1
+present,"Apache-2.0. Based on Anthropic's frontend-design skill (https://github.com/anthropics/skills, Copyright 2025 Anthropic PBC); extended by Impeccable (Copyright 2025-2026 Paul Bakaus).",1
+present,Apache-2.0. LICENSE.txt has complete terms.,1
+present,Apache-2.0. See LICENSE file for details.,1
+present,Apache-2.0; adapted from anthropics/skills frontend-design,1
+present,Apache-2.0; includes MIT-derived prompt material attributed in NOTICE,1
+present,Apache-2.0; see LICENSE.txt,1
+present,"BSD 2-Clause ""Simplified""",1
+present,BSD 3-Clause (original dcm2niix license). See https://github.com/rordenlab/dcm2niix/blob/master/LICENSE for complete terms.,1
+present,BSD 3-Clause (original nii2dcm license). See https://github.com/tomaroberts/nii2dcm/blob/main/LICENSE for complete terms.,1
+present,BSD License (reference implementation),1
+present,BSD-3-Clause (https://opensource.org/licenses/BSD-3-Clause),1
+present,BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0,1
+present,BUSL-1.1 — Free commercial use WITH official contract addresses ONLY.,1
+present,Based on Anthropic's frontend-design skill and Impeccable (Apache 2.0). See respective repos for full license terms.,1
+present,Based on Anthropic's frontend-design skill.,1
+present,Based on Anthropic's xlsx skill (https://github.com/anthropics/skills),1
+present,Based on emilkowalski/skill (github.com/emilkowalski/skill),1
+present,Based on obra/superpowers,1
+present,Based on pbakaus/impeccable (Apache 2.0). See https://github.com/pbakaus/impeccable,1
+present,"Based on the CSharpGuidelines by Arjan Eindhoven & Dennis Doomen, licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Source: https://github.com/dennisdoomen/CSharpGuidelines",1
+present,Biopython License,1
+present,Business Source License 1.1,1
+present,CC BY 3.0,1
+present,CC BY 4.0 (KISA Checklist Reference),1
+present,CC BY 4.0 (https://github.com/hotherio/conventional-knowledge-commits),1
+present,CC BY 4.0 (wiki content); see references/FAQLicensing.md and https://creativecommons.org/licenses/by/4.0/,1
+present,"CC BY 4.0 — Diocélio Dornela Goulart, 2026. Ver LICENSE.",1
+present,CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/,1
+present,CC BY-NC 4.0 (Copyright RadianN_kswg). 商用利用の誘導は禁止。,1
+present,CC BY-NC-SA 4.0 (see FigureYa repository),1
+present,"CC BY-NC-SA 4.0 concepts from maintainablecss.com, adapted for project use",1
+present,CC BY-SA 4.0 (OWASP-aligned reference usage),1
+present,CC BY-SA 4.0 derivative guidance from Awesome-Agent-Skills-for-Empirical-Research,1
+present,CC-BY,1
+present,"CC-BY-3.0-US (deck content © 2009 Microsoft Corporation; AI suit CC BY 4.0, Stacey Vetzal 2026)",1
+present,CC-BY-NC 4.0 (TRIBE v2 model weights). Wrapper code MIT.,1
+present,CC-BY-NC-ND,1
+present,CC-BY-NC-SA,1
+present,CC-BY-NC-SA-3.0-IGO,1
+present,CC-BY-SA-4.0 source docs; skill instructions proprietary to the creator,1
+present,CC0 (OpenAlex data) / Apache-2.0 (adapted from google-deepmind/science-skills),1
+present,"CC0 — public domain, free for use by any AI system or human operator.",1
+present,CC0-1.0 (original tips); MIT (this adaptation),1
+present,CC0-1.0 for original skill text; source text not bundled,1
+present,CPR and first aid certification recommended. Background check required for commercial childcare.,1
+present,CampLog project,1
+present,"Catalogue and code: this repo (forgetmenot). Underlying feeds: UK Parliament, Open Government Licence v3.0 (Crown copyright).",1
+present,CeCILL-2.1,1
+present,Classmate terms in LICENSE.txt,1
+present,Comercial - Avalanche / Denderson Rodrigues,1
+present,Commercial (Pro) / Free (Community),1
+present,Commercial use allowed; no redistribution of this skill package itself.,1
+present,Complete terms in LICENSE (repo root),1
+present,"Complete terms in LICENSE.txt (Anthropic original, locally modified)",1
+present,Complete terms in LICENSE.txt (Apache 2.0),1
+present,Complete terms in LICENSE.txt (adapted from the Anthropic `claude-api` skill; see NOTICE.md).,1
+present,Complete terms in LICENSE.txt (see https://github.com/anthropics/skills),1
+present,Complete terms in LICENSE.txt---,1
+present,Complete terms in LICENSE.txt/,1
+present,Complete terms in https://github.com/anthropics/skills/blob/main/LICENSE.txt,1
+present,Complete terms in the agent-ks plugin LICENSE file.,1
+present,Complete terms in upstream hithink-* skill LICENSE.txt files,1
+present,Consulte LICENSE.txt para termos completos,1
+present,Content adapted from https://github.com/sporto/elm-patterns by Sebastian Porto,1
+present,Content adapted with credit to the original author; see Credit section below.,1
+present,Content distilled from a general SaaS marketing skill pack and rewritten for indie/open-source projects. See the attribution note at the end of this file.,1
+present,Copyright (c) 2026 弗兰克小斯基（Frankski）. All rights reserved.,1
+present,Cosmetology or barber license required in most states for commercial work.,1
+present,"Create original visual designs, never copying existing artists' work to avoid copyright violations. Complete terms in LICENSE.txt",1
+present,Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC-SA 4.0),1
+present,Creative Commons Attribution-ShareAlike 3.0 (mySociety terms),1
+present,Creative Commons Attribution-ShareAlike 3.0 (mySociety),1
+present,Creative Commons Attribution-ShareAlike 4.0 (DemocracyClub),1
+present,Creative Commons Zero v1.0 Universal,1
+present,Credits: vendored from mrtooher/fable-mode (https://github.com/mrtooher/fable-mode) at b494172fa2ed28cf05f0d9dbec3449e691b3029b; upstream license not specified.,1
+present,"Current lifeguard certification (American Red Cross, YMCA, or equivalent) with CPR/AED for the Professional Rescuer required. Certification must be renewed every two years.",1
+present,Custom (see LICENSE),1
+present,Custom Attribution License — © 2026 Sami Bajwa. Star + Follow + Credit required.,1
+present,Custom Internal Use,1
+present,Custom license,1
+present,CyberSorted-Pro,1
+present,DeMoD Audio Systems internal reference,1
+present,Derived from Alibaba Java Coding Guidelines (educational use). Original © Alibaba Group.,1
+present,Derived from Anthropic skills/pdf (Proprietary). Original LICENSE.txt has complete terms.,1
+present,Derived local adaptation for pi from the installed skill-creator reference and pi skill documentation.,1
+present,Digital Agency Design System content is governed by the official usage notice and Digital Agency copyright policy; this skill is an edited/distilled derivative and is not official.,1
+present,Dual-licensed. Educational use under the MIT License; business/commercial use under the GNU General Public License v3.0. See the repository root README and LICENSE file for full terms.,1
+present,EPL,1
+present,EPL-2.0,1
+present,Ethereal OS internal. Canon — do not fork without Fernando's approval.,1
+present,Example license,1
+present,FSL-1.1-Apache-2.0,1
+present,FlowHunt Attribution License,1
+present,For competition prototype use.,1
+present,For end-user assistance only. The output is a draft for review by a licensed patent agent (专利代理师). Not a substitute for professional 专利代理 service.,1
+present,For personal use. Distilled from the Refactoring UI package owned by the user.,1
+present,For the user's own use. The bundled fonts are loaded from Google Fonts at render time and are not redistributed.,1
+present,Free to share and adapt with attribution,1
+present,Free to use with printess account,1
+present,Freeware,1
+present,From HazAT/pi-config,1
+present,From nutlope/hallmark (github.com/nutlope/hallmark) — see that repo for license,1
+present,Full terms in LICENSE.txt,1
+present,GPL v2,1
+present,GPL v3.0,1
+present,GPL-2.0 / LGPL-2.1,1
+present,GPL-2.0+,1
+present,GPL-2.0-only,1
+present,GPL-3,1
+present,GPL-3.0-or-later (see LICENSE in the participant package's source repository),1
+present,GPL-3.0-or-later OR MIT,1
+present,GPL3,1
+present,GPLv3.0-or-later,1
+present,"GSAP Standard (free, incl. all plugins as of 2025)",1
+present,Google Generative AI SDK License,1
+present,"HMDB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgement of the source material (HMDB) and the original publication (see the HMDB citing page). We ask that users who download significant portions of the database cite the HMDB paper in any resulting publications.",1
+present,Hellyeah Proprietary License,1
+present,Hippocratic-2.1,1
+present,IPL-1.0,1
+present,Idea adapted into repository skill implementation,1
+present,Identidad visual original. No incluye ni replica propiedad intelectual de FIFA.,1
+present,Inherit repository license,1
+present,Inspired by Claude skill-creator concepts,1
+present,"Inspired by Thariq Shihipar (@trq212), ""Using Claude Code: The Unreasonable Effectiveness of HTML"" (2026).",1
+present,Intel Proprietary,1
+present,Internal (Noah / Gurta). Do not redistribute.,1
+present,Internal (authored to orchestrate installed skills),1
+present,Internal - Automecanik. Inherits upstream MIT terms from anthropics/claude-plugins-official/frontend-design.,1
+present,Internal / NAV,1
+present,Internal / Weaver-controlled,1
+present,Internal MGS,1
+present,"Internal Simetrik — derived from impeccable (Apache 2.0) by Andres Ladino, 2026",1
+present,Internal Use Only - Expedia Group,1
+present,Internal project usage,1
+present,Internal team draft unless replaced by your team,1
+present,Internal use for NS5116 / CompBigData courses,1
+present,Internal use only - AV TECH Esdeveniments,1
+present,Internal use only - AdaptiveX brand assets,1
+present,Internal use only.,1
+present,Internal use — Confidential,1
+present,"Internal use, neo-embedded-linux project skill.",1
+present,Internal — Imora project skill,1
+present,Internal — Loop brand assets are proprietary.,1
+present,Internal — Novendor,1
+present,Internal — Novendor / HallBoys repeatable workflow,1
+present,Internal-use-only; see LICENSE.txt,1
+present,Journeyman Plumber License required in most jurisdictions.,1
+present,LGPL-3,1
+present,LGPL-3.0-or-later / Artistic-2.0,1
+present,LICENSE-THIRD-PARTY,1
+present,LICENSE.txt has complete terms,1
+present,LICENSE.txt に完全な条件,1
+present,LICENSE.txt의 전체 약관 참조,1
+present,Licence Ouverte 2.0,1
+present,LicenseRef-VeriClaw-Source-Available-1.1,1
+present,Licensed roofing contractor recommended. Fall protection training (OSHA 1926.501) required.,1
+present,"Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.  See the NOTICE file distributed with this work for additional information regarding copyright ownership.  The ASF licenses this file to you under the Apache License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License.  You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.",1
+present,Logion Standard Course License v1.0,1
+present,MIT (Anthropic open-source skills library),1
+present,MIT (Copyright (c) 2026 u1pns),1
+present,MIT (OmegaOS),1
+present,MIT (Vercel Labs),1
+present,MIT (adapted from DietrichGebert/ponytail),1
+present,MIT (adapted from Matt Pocock's teach skill; see ATTRIBUTION.md),1
+present,MIT (adapted from Matt Pocock's writing-great-skills skill; see ATTRIBUTION.md),1
+present,MIT (adapted from anthropics/skills/skills/skill-creator),1
+present,MIT (adapted from github.com/Jeffallan/claude-skills/api-designer),1
+present,"MIT (anthropics/claude-code), adapted and extended",1
+present,"MIT (browser-use), Apache-2.0 (playwright-mcp)",1
+present,MIT (c) GEKKOS Tech,1
+present,MIT (copied from anthropics/claude-code/plugins/frontend-design),1
+present,MIT (copied from anthropics/skills/skills/mcp-builder),1
+present,"MIT (core), Source-Available (enterprise)",1
+present,MIT (http://opensource.org/licenses/MIT),1
+present,MIT (https://spdx.org/licenses/MIT),1
+present,MIT (library); skill text is project-local,1
+present,MIT (methodology adapted from hadriansecurity/openhack),1
+present,MIT (modifications) + Apache 2.0 (original). See LICENSE.txt,1
+present,"MIT (patterns/ideas — DeerFlow itself is MIT, so code is also borrowable)",1
+present,MIT (pipeline code). CC-BY-NC 4.0 (TRIBE v2 weights). Gemma 4 model terms apply.,1
+present,MIT (ported from anthropics/claude-code-security-review/.claude/commands/security-review.md),1
+present,MIT (ported from anthropics/claude-code/plugins/feature-dev/agents/code-explorer),1
+present,MIT (ported from homunculus plugin),1
+present,MIT (same as the surrounding repo),1
+present,MIT (see LICENSE file),1
+present,MIT (see LICENSE.txt — © 2025 650 Industries / Expo),1
+present,MIT (see project root LICENSE),1
+present,"MIT (skill content); @basmilius/http-client is MIT, by Bas Milius",1
+present,"MIT (skill files) · 缠论 theory © 缠中说禅, used for study/commentary",1
+present,MIT (skill wrapper; Atlassian API terms apply),1
+present,MIT (skill wrapper; Cloudflare API terms apply),1
+present,MIT (skill wrapper; Context7 API terms apply),1
+present,MIT (skill wrapper; Discord API terms apply),1
+present,MIT (skill wrapper; Figma API terms apply),1
+present,MIT (skill wrapper; GitHub REST API terms apply),1
+present,MIT (skill wrapper; Lemon Squeezy API terms apply),1
+present,MIT (skill wrapper; Linear API terms apply),1
+present,MIT (skill wrapper; Netlify API terms apply),1
+present,MIT (skill wrapper; Notion API terms apply),1
+present,MIT (skill wrapper; PostHog API terms apply),1
+present,MIT (skill wrapper; Railway API terms apply),1
+present,MIT (skill wrapper; Resend API terms apply),1
+present,MIT (skill wrapper; Sentry API terms apply),1
+present,MIT (skill wrapper; Slack Web API terms apply),1
+present,MIT (skill wrapper; Stripe API terms apply),1
+present,MIT (skill wrapper; Supabase API terms apply),1
+present,MIT (skill wrapper; Vercel API terms apply),1
+present,MIT (skill wrapper; n8n API terms apply),1
+present,MIT (skill wrapper; wellread service terms apply),1
+present,MIT (source: https://github.com/mitsuhiko/agent-stuff/blob/e707652bc7a1a55a42c983cd78803cc2feb38be4/skills/frontend-design/SKILL.md),1
+present,"MIT (this skill's code) AND CC-BY-SA-4.0 (the syntax reference doc, derived from netresearch/jira-skill)",1
+present,MIT (this skill's wrapper); Apache Jena is Apache-2.0,1
+present,MIT (upstream),1
+present,MIT (vendored from https://github.com/nextlevelbuilder/ui-ux-pro-max-skill),1
+present,MIT (with not-legal-advice disclaimer; see LICENSE),1
+present,MIT + Apache 2.0 (Impeccable commands by pbakaus),1
+present,MIT + Enterprise (dual),1
+present,MIT / Apache-2.0,1
+present,MIT / MPL-2.0,1
+present,MIT AND CC-BY-SA-4.0,1
+present,MIT License (NeuroClaw core skill – freely modifiable within the project),1
+present,MIT License (see LICENSE file),1
+present,MIT License (vedi LICENSE),1
+present,MIT License - GSAP has its own license terms for commercial use,1
+present,MIT License - See repository LICENSE file,1
+present,MIT License - 詳見專案根目錄的 LICENSE.txt,1
+present,"MIT License, Copyright (c) 2026 ti&m AG",1
+present,MIT License. Copyright (c) 2026 fuuuuuuma.,1
+present,"MIT License. Copyright (c) 2026 fuuuuuuma. Incorporates conventions from kepano/obsidian-skills (MIT, Stephan Ango).",1
+present,"MIT License. Copyright (c) 2026 fuuuuuuma. Uses Defuddle (MIT, kepano).",1
+present,MIT License. Copyright 2025-2026 Kenneth Benavides.,1
+present,MIT OR GPL-3.0,1
+present,MIT and CC-BY-4.0 sources; local skill instructions MIT-compatible,1
+present,MIT and OGL-3.0; see NOTICE.md,1
+present,MIT license (based on K-Dense scientific-agent-skills),1
+present,MIT license. LICENSE.txt has complete terms.,1
+present,MIT or Apache 2.0,1
+present,MIT upstream reference,1
+present,MIT with Commons Clause,1
+present,MIT © 2025 Claude Skills Maintainers,1
+present,MIT © 2026 Ilm-Alan,1
+present,MIT © 2026 nextlevelbuilder,1
+present,MIT © Vercel Labs,1
+present,MIT — Complete terms in LICENSE.txt,1
+present,MIT — Fork freely for your region,1
+present,MIT — Sam Luker / Switchyard. Free to use and remix.,1
+present,MIT — Superteam Brazil / Kaue (engine); evan pack synthesis of public writings,1
+present,MIT — adapted from cloudflare/security-audit-skill. See NOTICE.,1
+present,MIT — adapted from mattpocock/skills (https://github.com/mattpocock/skills),1
+present,"MIT — forked from `animation-vocabulary` in emilkowalski/skills (© Emil Kowalski), 'Skills For Design Engineers.' Glossary kept verbatim; house wrapper + boundaries added.",1
+present,"MIT — forked from `code-review` in mattpocock/skills (© Matt Pocock), 'Skills For Real Engineers.' Adopted: the two-axis Standards/Spec split, the parallel-isolated-pass structure, and the don't-rerank-across-axes rule. Re-cast for React/Next/TS — the Standards baseline, the mode gate, and the verdict discipline are Dinesh's.",1
+present,"MIT — forked from `codebase-design` in mattpocock/skills (© Matt Pocock). Vocabulary (module/interface/depth/seam/adapter/leverage/locality), the deletion test, the two-adapter rule, and the deepening/design-it-twice moves are adopted; the TypeScript-backend/DDD framing is re-cast for React/Next/TS front-end and AI-navigability.",1
+present,MIT — forked from `diagnosing-bugs` in mattpocock/skills (© Matt Pocock). Reproduce→minimise→hypothesise→instrument→fix→regress loop and HITL bash-template adopted; personalised to shipped Next/React apps and mode-switched by bug class — see Sources.,1
+present,"MIT — forked from `handoff` in mattpocock/skills (© Matt Pocock). Kept: the suggested-skills section, secret redaction, and reference-artifacts-don't-duplicate. Changed: output aligned to the ARIA Hub session-report schema (so it feeds the registry, not OS-temp), added the mode-switch and intake gate, made it model-invokable.",1
+present,"MIT — forked from `implement` in mattpocock/skills (© Matt Pocock), 'Skills For Real Engineers.' Kept: use TDD at pre-agreed seams, typecheck/test cadence, review before commit, commit to the current branch. Re-cast as the DRIVER that sequences the SHIP wing (test-shipped-code / review-shipped-code / diagnose-bugs), scoped to shipped Next/React/TS, given a solo-first spec-source intake and a prototype guard.",1
+present,"MIT — forked from `improve-codebase-architecture` in mattpocock/skills (© Matt Pocock, 'Skills For Real Engineers'). The scan→visual-report→drill mechanic, the depth vocabulary, and the deletion test are his, retained under MIT.",1
+present,"MIT — forked from `migrate-to-shoehorn` in mattpocock/skills (© Matt Pocock). Its grep-and-replace-per-pattern workflow generalized from shoehorn to any library/API, then hardened with a characterization-net-first safety discipline (via `test-shipped-code`) — full adoption ledger in `## Sources`.",1
+present,"MIT — forked from `qa` (deprecated upstream) in mattpocock/skills (© Matt Pocock, 'Skills For Real Engineers'). The method was taken, not the deprecated status; Don't/Do tables kept over the anti-negation rule. Full kept/personalized breakdown in ## Sources.",1
+present,"MIT — forked from `request-refactor-plan` (deprecated) in mattpocock/skills (© Matt Pocock, 'Skills For Real Engineers'). Kept: plan-the-refactor-before-doing-it, explicit scope in/out, tiny always-working commits (Martin Fowler), the plan template. Rebuilt for solo/freelance — plan presented or written to a local file by default, no user-interview / GitHub-issue pipeline assumed; regression-risk ranking + characterization-tests-first added as the core.",1
+present,MIT — forked from `research` in mattpocock/skills (© Matt Pocock). Primary-source discipline and save-findings-as-one-cited-Markdown-file output adopted; personalized to Dinesh's stack + wired to craft-critique / build-research-repository.,1
+present,"MIT — forked from `resolving-merge-conflicts` in mattpocock/skills (© Matt Pocock), 'Skills For Real Engineers.' The see-state → find-source → resolve-each-hunk → run-checks → finish sequence and 'always resolve; never invent behaviour' are adopted; the never-blind-accept law, solo intent-tracing, conflict-class menu, and the rebase `--ours`/`--theirs` inversion trap are added.",1
+present,"MIT — forked from `scaffold-exercises` in mattpocock/skills (© Matt Pocock). The scaffold-to-a-passing-baseline method and the problem/solution/explainer split are generalized; the course CLI linter, section/exercise numbering, and ai-hero repo assumptions are dropped in favor of a solo local scaffold.",1
+present,"MIT — forked from `setup-matt-pocock-skills` in mattpocock/skills (© Matt Pocock). The explore→present→confirm→write flow and section-skipping adopted; solo/local default, mode-switch-up, one-block output, and Dinesh's stack re-cast.",1
+present,"MIT — forked from `setup-ts-deep-modules` in mattpocock/skills (© Matt Pocock). dependency-cruiser wiring, the entry-points-are-public / subfolders-are-private depth model, the four-rule `$1` back-reference pattern, and the prove-the-rules-bite completion criterion adopted; re-cast from monorepo packages to a single Next.js app's feature/layer boundaries, solo-first wiring, and the tie to `codebase-design`.",1
+present,"MIT — forked from `tdd` in mattpocock/skills (© Matt Pocock), 'Skills For Real Engineers.' Adopted: the red→green loop, the confirm-the-seam gate, the tautological-test warning, vertical-slice / tracer-bullet, and mock-at-boundaries. Re-cast for React/Next/TS + Vitest/Jest/Playwright, hard-scoped to shipped client code, prototype guard added.",1
+present,"MIT — forked from `teach` in mattpocock/skills (© Matt Pocock). Workspace model and learning-science vocabulary (storage vs fluency strength, zone of proximal development, desirable difficulty) adopted; primary unit swapped from Tufte HTML lessons to build-to-learn artifacts, and the resources/stack retargeted to Dinesh's React/Next/AI-eng world.",1
+present,"MIT — forked from `triage` in mattpocock/skills (© Matt Pocock). Kept: the category+state machine, the verify-before-you-brief step, and the AGENT-BRIEF discipline (behavioral, durable, testable). Changed: solo local-list default over the tracker/team roles, labels/disclaimer/out-of-scope-KB demoted to a mode-switch-up, wired to diagnose-bugs / review-shipped-code / craft-critique / name-and-control-bias.",1
+present,"MIT — forked from `wayfinder` in mattpocock/skills (© Matt Pocock). Kept: destination-first charting, map-as-index, fog-of-war, out-of-scope, the ticket types, the frontier, one-ticket-per-session. Re-cast for solo: a local MAP.md replaces the issue tracker as the default; tracker/claiming is the mode-switch-UP path.",1
+present,MIT — forked from `writing-great-skills` in mattpocock/skills (© Matt Pocock). Vocabulary and failure-mode taxonomy adopted; its anti-negation rule deliberately rejected — see 'Prohibition lists are load-bearing'.,1
+present,"MIT — forked from improve-animations in emilkowalski/skills (© Emil Kowalski, 'Skills For Design Engineers'). Kept under MIT: the audit→plan workflow, the read-only posture, the eight audit categories, and the self-contained-plan discipline.",1
+present,"MIT — free to use, remix, and adapt. Attribution appreciated.",1
+present,MIT — https://github.com/QuestForTech-Investments/claude-code-skills,1
+present,MIT — https://github.com/agamm/claude-code-owasp,1
+present,MIT — https://github.com/alirezarezvani/claude-skills,1
+present,MIT — https://github.com/anthropics/skills,1
+present,MIT — https://github.com/associativetrails/ookbook,1
+present,MIT — https://github.com/nextlevelbuilder/ui-ux-pro-max-skill,1
+present,MIT — https://github.com/vercel-labs/agent-skills,1
+present,"MIT — merges `domain-modeling` and the deprecated `ubiquitous-language` from mattpocock/skills (© Matt Pocock, 'Skills For Real Engineers'). The challenge/sharpen/scenario-test discipline, the opinionated glossary + aliases-to-avoid format, and the example-dialogue device are adopted; recast from DDD bounded-contexts to Dinesh's solo/freelance three-surface reality (client · design · code), and the anti-negation rule is rejected (Don't/Do tables kept).",1
+present,MIT — same as the other skills in this repo,1
+present,MIT — see THIRD_PARTY_NOTICES.md,1
+present,MIT — ver archivo LICENSE,1
+present,MIT 许可证,1
+present,MIT-0 — see LICENSE in the repository root,1
+present,MIT-CMU,1
+present,MIT-compatible Baron-owned local guidance; attribution lives in LICENSE.txt and NOTICE.md,1
+present,MIT-compatible adaptation notes; review bundled assets before redistribution.,1
+present,MIT-derived guidance; see references/oh-my-pi-render-mermaid.md,1
+present,MIT-with-Ethics,1
+present,MIT. Adapted from vercel-labs web-interface-guidelines and web-design-guidelines skill. See NOTICE.md.,1
+present,MIT. Adapted from vercel-labs/agent-skills composition-patterns. See NOTICE.md.,1
+present,MIT. Adapted from wshobson/agents tailwind-design-system. See NOTICE.md.,1
+present,MIT. Complete terms in LICENSE.,1
+present,MIT. Copyright (c) 2026 Leonxlnx. See LICENSE.,1
+present,MIT. Curated from PostHog's official skills (github.com/PostHog/skills).,1
+present,MIT. Inspired by Anthropic's frontend-design skill and pbakaus's Impeccable. See NOTICE.md for attribution.,1
+present,MIT. LICENSE has complete terms,1
+present,"MIT. Palette templates and the medium rules are adapted from beautiful-feishu-whiteboard (MIT, © Zara Zhang @zarazhangrui); the composition, critique, fit-check, and gated-pipeline layers are original additions. Design-judgment approach inspired by the impeccable / frontend-design skills (no code copied).",1
+present,MIT. See LICENSE,1
+present,MIT. See LICENSE in repository root.,1
+present,MIT. See LICENSE.txt for complete terms,1
+present,MIT. See LICENSE.txt.,1
+present,MIT. 完整条款见 LICENSE.txt。,1
+present,MIT; adapted from https://github.com/jthack/claude-goal,1
+present,MIT; adapted from openclaw/agent-skills.,1
+present,MIT; adapted from tanviet12/vbsec,1
+present,MIT; inspired by https://github.com/JuliusBrussee/caveman,1
+present,MIT; see LICENSE.txt,1
+present,MONAD Framework Internal,1
+present,MPL,1
+present,"MPL2.0, see LICENSE",1
+present,Maintenance,1
+present,Master Electrician License required. All work must comply with NEC 2023 and local amendments.,1
+present,"Medical degree (MD/DO), completed surgical residency, board certification, hospital privileges, and malpractice insurance required. This is not negotiable.",1
+present,Migrated from .github/skills/frontend-design and .github/instructions for this repository.,1
+present,Mixed open-source licenses. pypdf — BSD. pdfplumber — MIT. pypdfium2 — Apache/BSD. pdf2image — MIT. pytesseract — Apache-2.0. poppler-utils — GPL-2. qpdf — Apache-2.0. See references/ files for per-library details.,1
+present,Mixed — Anthropic-derived components governed by LICENSE.txt; user-authored routing logic and dolphin/opendataloader integration are unlicensed.,1
+present,Modified MIT,1
+present,Mozilla Public License Version 2.0,1
+present,Multiple — see LICENSES/ and REUSE.toml,1
+present,NCSA,1
+present,NONE (by github.com/Master0fFate),1
+present,No license required. A community studio membership with shelf space and kiln access is the practical prerequisite.,1
+present,No license required. DOT certification required for commercial moving across state lines.,1
+present,No license required. ISA Arborist certification recommended for tree work above 10 feet.,1
+present,No license required. ServSafe certification recommended for commercial applications.,1
+present,Non-Commercial,1
+present,Noncommercial only. See LICENSE for full terms.,1
+present,Not specified,1
+present,OGL-UK-3.0 AND CC-BY-4.0,1
+present,Open Government Licence v3.0 (Crown copyright); skill text MIT.,1
+present,"Open Government Licence v3.0 (Crown copyright, ICO)",1
+present,"Open Government Licence v3.0 (Crown copyright, NAO)",1
+present,"Open Government Licence v3.0 (Crown copyright, OBR)",1
+present,"Open Government Licence v3.0 (Crown copyright, Scottish Parliamentary Corporate Body)",1
+present,"Open Government Licence v3.0 (Crown copyright, UK Statistics Authority)",1
+present,Open Government Licence v3.0 (Crown copyright; Environment Agency),1
+present,Open Government Licence v3.0 (Crown copyright; Food Standards Agency),1
+present,Open Government Licence v3.0 (Crown copyright; Northern Ireland Assembly),1
+present,Open Government Licence v3.0 (Crown copyright; ONS via Nomis at the University of Durham),1
+present,Open Government Licence v3.0 (Crown copyright; Ordnance Survey OpenData),1
+present,Open Government Licence v3.0 (Crown copyright; Scottish Government),1
+present,Open Government Licence v3.0 (Crown copyright; Senedd Cymru),1
+present,Open Government Licence v3.0 (Crown copyright; legislation.gov.uk content); skill text MIT.,1
+present,"Open Government Licence v3.0 (Electoral Commission, Crown copyright)",1
+present,Open Government Licence v3.0 (catalogue) — individual datasets vary,1
+present,Open Parliament Licence v3.0 (Crown copyright; House of Commons Library),1
+present,Open Parliament Licence v3.0 (upstream Parliament IDs); CC0 (Wikidata); see per-source notes in the README,1
+present,"Open Parliament Licence v3.0 + MIT (the repo's mix); this skill itself is documentation, no licence terms beyond the repo's.",1
+present,Open Parliament Licence v3.0 / OGL v3.0 for Parliament sources; CC0 for Wikidata; third-party licences vary (noted inline).,1
+present,Open source (uses MIT from shadcn-svelte),1
+present,"Open-Meteo API (free, no attribution required)",1
+present,Optional license identifier,1
+present,"Original content. No proprietary Apple IDE code, binaries, or internal data are included or reproduced anywhere in this skill -- see ""What this is (and isn't)"" below.",1
+present,Other,1
+present,PHP License,1
+present,Per-scheme; the distributed bundle is open / public-domain / copyleft only (noncommercial schemes are metadata-only). Each concept carries its scheme's licence — check the manifest.,1
+present,Personal local skill,1
+present,Personal-Use-Only,1
+present,PolyForm Noncommercial 1.0.0. See LICENSE file.,1
+present,PolyForm Noncommercial-1.0.0 source-available project notes,1
+present,PolyForm-Internal-Use-1.0.0,1
+present,Ported from Anthropic Skills Repository and adapted for Harry AI Studio,1
+present,PostgreSQL License,1
+present,Private project — internal use only,1
+present,Privilege Guard is provided under an open-source license. Commercial deployments requiring custom integration or extended support should contact the development team for enterprise licensing options.,1
+present,Project internal development guide,1
+present,Project-local guidance,1
+present,Project-specific skill,1
+present,Proprietaria. Consulte LICENSE.txt para os termos completos,1
+present,Proprietary (Anthropic),1
+present,Proprietary (Anthropic). Condensed excerpt; see LICENSE in anthropics/skills.,1
+present,Proprietary (Copyright 2026 Xurmatillo; see LICENSE),1
+present,Proprietary (Information Experts brand assets). The AvantGarde and Avenir fonts are commercially licensed; this skill ships only free fallback fonts.,1
+present,"Proprietary (YK Sugi, All Rights Reserved)",1
+present,Proprietary (for internal use),1
+present,Proprietary (free core edition),1
+present,Proprietary (project-local skill),1
+present,"Proprietary - APEX Business Systems Ltd. Edmonton, AB, Canada. All Rights Reserved © 2026",1
+present,"Proprietary - APEX Business Systems Ltd. Edmonton, AB, Canada. https://apexbusiness-systems.com | https://apexomnihub.icu",1
+present,Proprietary - All Rights Reserved,1
+present,Proprietary - ArbitrageX Team,1
+present,Proprietary - Internal project use only,1
+present,Proprietary - LeanOS Engineering Layer,1
+present,Proprietary - Macrobond Financial AB (see LICENCE),1
+present,Proprietary - MemStack Pro by CW Affiliate Investments LLC. See LICENSE.txt,1
+present,Proprietary - See parent docx skill LICENSE.txt,1
+present,Proprietary - Sentient.io Brand Guidelines v1.5-AI,1
+present,Proprietary - for local/internal use,1
+present,Proprietary - repository local use only,1
+present,Proprietary - © 2026 Julián Sabos González - All Rights Reserved,1
+present,Proprietary source-available,1
+present,Proprietary to Euricom. Use within Euricom only.,1
+present,Proprietary — De Azevedo Lima & Rebonatto,1
+present,Proprietary — Ezoic internal & partner use only,1
+present,Proprietary — HMR brand assets.,1
+present,Proprietary — Inner Animal Media,1
+present,"Proprietary — Sisense, Inc. All rights reserved.",1
+present,Proprietary — TL Development LLC,1
+present,Proprietary — ULBS Brand,1
+present,"Proprietary — UPX Technologies, Inc. All rights reserved.",1
+present,"Proprietary — adopted by ADR 0019, Sprint 21.",1
+present,Proprietary — built for the user's acquisition strategy.,1
+present,Proprietary — internal Worth use only,1
+present,Proprietary — internal to Zettersten/bible-study,1
+present,Proprietary — internal workspace conduct,1
+present,Proprietary — see LICENSE file. Sold as a single-user license via ClawHub.,1
+present,Proprietary-ACU,1
+present,Proprietary-MGS,1
+present,Proprietary. Adapt for internal use.,1
+present,Proprietary. All rights reserved.,1
+present,Proprietary. Built for Ahmet's analyst/job-search workflow.,1
+present,Proprietary. ComPDFKit SDK license obtained via online activation API.,1
+present,Proprietary. Complete terms in LICENSE.txt,1
+present,Proprietary. Contact author for redistribution terms.,1
+present,Proprietary. Contact hello@tumban.com for terms.,1
+present,Proprietary. For internal WHU use unless explicitly cleared for external distribution.,1
+present,Proprietary. For internal research writeups only.,1
+present,Proprietary. Inherits pptx LICENSE terms.,1
+present,Proprietary. LICENSE.txt contém os termos completos,1
+present,Proprietary. LICENSE.txt has full terms,1
+present,Proprietary. LICENSE.txt 含有完整条款,1
+present,Proprietary. Part of GoClaw bundled skills.,1
+present,Proprietary. Personal use.,1
+present,Proprietary. Repository-local workflow reference.,1
+present,Proprietary. See LICENSE.txt for complete terms,1
+present,Proprietary. See LICENSE.txt for medical device regulations and compliance.,1
+present,Proprietary. See LICENSE.txt for terms.,1
+present,Proprietary. See LICENSE.txt.,1
+present,Proprietary. See https://docs.isambard.ac.uk/policies/ for terms.,1
+present,Proprietary. See https://policies.gitbook.com/terms-of-service for GitBook terms.,1
+present,Proprietary. This skill is for Ting-Yi (蔡秀吉)'s personal research only.,1
+present,Proprietary. teenage engineering brand observed from public sources; design system implementation by jasoncnh.,1
+present,Proprietary. 完整的条款见 LICENSE.txt,1
+present,Proprietary. 형(Jason) 개인 사용.,1
+present,Proprietária. LICENSE.txt contém os termos completos,1
+present,Proprietária. LICENSE.txt possui os termos completos,1
+present,Proprietário (Inovaize / Yuris). Uso interno de desenvolvimento.,1
+present,Provided as-is for plugin development assistance.,1
+present,Public Domain,1
+present,Public Domain (Unlicense),1
+present,"Public domain. Original PEP 8 by Guido van Rossum, Barry Warsaw, Alyssa Coghlan.",1
+present,Python Software Foundation License,1
+present,REFERENCE LINK ONLY — no content vendored; see THIRD_PARTY_NOTICES.md § good-code-bad-code-review for attribution + posture,1
+present,ROOT - https://rootsrc.org,1
+present,Refer to https://github.com/cirne/zmail for project license and terms.,1
+present,"Refer to upstream repo LICENSE (GPL-3.0 for CUE core, MIT for Action API modules as marked in doc/Action_API_Doc.md).",1
+present,Research License (MIT-compatible),1
+present,Research-use-only,1
+present,Reusable playbook. Adapt freely for your own engagements.,1
+present,SEE-UPSTREAM-REPOSITORY,1
+present,Same terms as the council-forge repository (root LICENSE),1
+present,See LICENSE / model cards (per-model; recorded in the registry).,1
+present,See LICENSE and NOTICE.md,1
+present,See LICENSE at plugin root,1
+present,See LICENSE file,1
+present,See LICENSE in project root,1
+present,See LICENSE.md and THIRD_PARTY_NOTICES.md,1
+present,See LICENSE.md in project root,1
+present,See LICENSE.md in the source repository,1
+present,See LICENSE.md — free for open-source & personal use; commercial license required for closed-source commercial use.,1
+present,See LICENSE.txt for full terms,1
+present,See LICENSE.txt for terms,1
+present,See LICENSE.txt in this skill directory,1
+present,See LICENSE; MIT applies only to scripts/gedcom_builder.py,1
+present,See https://docs.malbeclabs.com/,1
+present,See https://github.com/nbbaier/agent-skills,1
+present,See original documentation,1
+present,See repository LICENSE.txt,1
+present,See repository license terms for this skill and bundled corpus.,1
+present,See repository root,1
+present,See upstream repository for original license terms.,1
+present,See upstream source repository licensing before redistribution or reuse.,1
+present,Shards Inc — All Rights Reserved,1
+present,"Skill distillation for personal and educational use only.
+This skill summarizes analytical frameworks from ""The Most Important Thing Illuminated""
+(Columbia University Press, 2013) by Howard Marks. It does not reproduce book passages
+verbatim. Do not use for commercial redistribution. All intellectual property belongs
+to the respective authors and publisher.",1
+present,Skill distillation for personal and educational use.,1
+present,Skill distillation of Common Stocks and Uncommon Profits by Philip A. Fisher (1958). For personal and educational use. Do not reproduce source passages verbatim.,1
+present,"Skill distillation of 《一本书读懂财报》 by Xiao Xing (肖星), Tsinghua University School of Economics and Management, revised 2019. For personal and educational use. Do not reproduce source passages verbatim.",1
+present,Skill implementation guide for personal/educational use.,1
+present,Skill text MIT-style for this repo; Topaz itself is GPLv3.,1
+present,Source data mirror from v2.ly.govapi.tw (非官方但合法公開). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (交通部及各營運單位). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (交通部觀光署 + 各縣市政府觀光局 + 國家公園署). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (內政部 + 中選會). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (勞動部 + 勞保局 + 主計總處 + ILOSH). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (司法院). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (教育部及所屬機關). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (文化部 + 故宮 + 各國立博物館 + 國家圖書館). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (環境部 / 中央氣象署 / 水利署 / 林務局 / 海洋委員會). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (經濟部 + 台電 + 中油 + 自來水公司). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (經濟部智慧財產局). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (考選部). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (衛生福利部及所屬機關). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (農業部及所屬機關). Skill itself Apache-2.0.,1
+present,Source data 政府資料開放授權條款-1版 (金管會 / 證交所 / 央行 / 財政部). Skill itself Apache-2.0.,1
+present,Source-available (see github.com/anthropics/skills),1
+present,Stolen from Armin who stole it from Mario,1
+present,Stolen from Armin who stole it from someone else,1
+present,Stolen from Armin who stoled it from Mario,1
+present,Stolen from https://github.com/mitsuhiko/agent-stuff,1
+present,Stripe,1
+present,Sustainable Use License,1
+present,Template methodology by Hirohiko Araki; skill adaptation CC BY 4.0,1
+present,"This skill is based on work by Anthropic. Original copyright © Anthropic. Modifications copyright © DevTrev. Licensed under the Apache License, Version 2.0",1
+present,Universal — ใช้ได้กับทุกโปรเจกต์ n8n,1
+present,"Unknown (arXiv content under various licenses, see paper metadata)",1
+present,Unknown (bioRxiv content licensed by individual authors),1
+present,Upstream license not declared in source folder,1
+present,Upstream repository license applies; verify before redistribution,1
+present,Uso acadêmico (mestrado). Ver README.md.,1
+present,Uso interno educativo. Los activos visuales (logos del Tec) son propiedad del Tecnológico de Monterrey; usar sólo para entregables institucionales.,1
+present,"Uso livre. Skill autônoma, sem dependências de terceiros além de fontes open-source (OFL/Apache).",1
+present,VSL-1.0,1
+present,Vim License,1
+present,W3C Document License,1
+present,W3C Software and Document License (W3C doc); IETF Trust / BSD (I-D),1
+present,WPScan License (free non-commercial),1
+present,Web UI free tier; whcli MIT; commercial paid plans,1
+present,"Wikipedia ""Signs of AI writing"" (CC BY-SA 4.0) + ""Stop Slop"" by Hardik Pandya (MIT)",1
+present,X Developer Agreement and Policy (https://developer.x.com/en/developer-terms/agreement-and-policy.html),1
+present,alfred-platform internal — see the parent monorepo's LICENSE,1
+present,anthropics/skills/blob/main/skills/frontend-design/SKILL.md,1
+present,copyright 2026,1
+present,enterprise,1
+present,free,1
+present,generated-personal-use,1
+present,https://github.com/openpiv/openpiv-python/blob/master/LICENSE,1
+present,https://github.com/scipy/scipy/blob/main/LICENSE.txt,1
+present,https://opensource.org/licenses/MIT,1
+present,lobbycat-internal,1
+present,mit2,1
+present,mung naQ LICENSE.txtDaq tu'lu'.,1
+present,niclole_208,1
+present,operator-reviewed,1
+present,per source repo,1
+present,"private (course content, do not redistribute)",1
+present,"private (research notes — Exa-sourced URLs, not redistributable course material)",1
+present,see ../../../LICENSE,1
+present,see LICENSE,1
+present,see LICENSE.txt,1
+present,see each repo,1
+present,see references/LICENSE.md,1
+present,"see source (hackmd, Sparna)",1
+present,see upstream LICENSE.txt,1
+present,self made skill,1
+present,typeui.sh redistributed; original at https://typeui.sh,1
+present,vibecoded,1
+present,zlib,1
+present,© 2020 Vertiv Group Corp. All rights reserved.,1
+present,"© Anthropic PBC — vendored verbatim from anthropics/claude-code plugins/frontend-design (Commercial Terms of Service, https://www.anthropic.com/legal/commercial-terms)",1
+present,Điều khoản đầy đủ trong LICENSE.txt,1
+present,专有。LICENSE.txt 包含完整条款。,1
+present,专有。LICENSE.txt包含完整条款,1
+present,专有许可。完整条款请参阅 LICENSE.txt,1
+present,专有许可证。完整条款见 LICENSE.txt,1
+present,内部方法论，整合自《短剧 Shots Prompt 制作手册》（抽卡师手册）。,1
+present,内部方法论，整合自项目 Keyframe 制作方法论文档与实战案例。,1
+present,完全な条項は LICENSE.txt を参照,1
+present,完全な条項はLICENSE.txtを参照,1
+present,完整条款详见 LICENSE.txt,1
+present,完整条款请参阅 LICENSE.txt,1
+present,完整条款请见 LICENSE.txt,1
+present,完整條款見 LICENSE.txt,1
+present,專有。LICENSE.txt 包含完整條款,1
+present,改进版自有；技术与命名来自独立创作者 秒秒Guo（Lingbo Guo）的「三重心智模型 / Trident」prompt（mmguo.dev/prompts/trident）。,1
+present,改进版自有；灵感与原型来自独立创作者 秒秒Guo（Lingbo Guo）的 Dr. Sharp prompt（mmguo.dev/prompts/dr-sharp）。,1
+present,本仓库自有；研究引用见 docs/research/ 各文件与 references/00-research-map.md。,1
+present,本仓库自有；研究引用见各 reference 文件 Sources。,1
+present,詳見 LICENSE.txt,1
+present,麻省理工学院,1
+present,내부용,1
+present,독점 소유. 전체 약관은 LICENSE.txt 참조,1
+present,독점 소유권. LICENSE.txt에 전체 조건이 있습니다,1
+present,독점 소유권. 전체 약관은 LICENSE.txt 참조,1
