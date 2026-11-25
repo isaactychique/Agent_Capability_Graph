@@ -1,0 +1,112 @@
+test_evidence_must_match_and_names_alone_are_insufficient (test_capabilities.TaskAnnotations.test_evidence_must_match_and_names_alone_are_insufficient) ... ok
+test_server_claims_are_derived_from_exposed_tools (test_capabilities.TaskAnnotations.test_server_claims_are_derived_from_exposed_tools) ... ok
+test_shacl_rejects_a_server_claim_supported_by_an_unrelated_tool (test_capabilities.TaskAnnotations.test_shacl_rejects_a_server_claim_supported_by_an_unrelated_tool) ... <reused-venv>/lib/python3.14/site-packages/pyshacl/rdfutil/load.py:356: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  target_ds.default_context.namespace_manager = target_ds.namespace_manager
+<reused-venv>/lib/python3.14/site-packages/pyshacl/rdfutil/load.py:357: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  default_g = target_ds.default_context
+<reused-venv>/lib/python3.14/site-packages/pyshacl/rdfutil/load.py:497: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  dest_g = target_g.default_context
+<reused-venv>/lib/python3.14/site-packages/pyshacl/shapes_graph.py:75: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  g = self.graph.default_context
+<reused-venv>/lib/python3.14/site-packages/rdflib/graph.py:2340: DeprecationWarning: Dataset.default_context is deprecated, use Dataset.default_graph instead.
+  if context == self.default_context:
+<reused-venv>/lib/python3.14/site-packages/rdflib/graph.py:804: DeprecationWarning: Dataset.identifier is deprecated and will be removed in future versions.
+  return hash(self.identifier)
+ok
+test_template_is_unclassified_and_reported_by_coverage_shacl (test_capabilities.TaskAnnotations.test_template_is_unclassified_and_reported_by_coverage_shacl) ... ok
+test_web_query_does_not_confuse_fetch_or_documentation_search (test_capabilities.TaskAnnotations.test_web_query_does_not_confuse_fetch_or_documentation_search) ... ok
+test_both_sources_and_conflicting_descriptions_are_preserved (test_database.CanonicalDatabase.test_both_sources_and_conflicting_descriptions_are_preserved) ... ok
+test_each_source_record_is_linked_to_canonical_entity_and_observations (test_database.CanonicalDatabase.test_each_source_record_is_linked_to_canonical_entity_and_observations) ... ok
+test_foreign_keys_and_sample_scope (test_database.CanonicalDatabase.test_foreign_keys_and_sample_scope) ... ok
+test_graph_inputs_can_be_read_without_source_files (test_database.CanonicalDatabase.test_graph_inputs_can_be_read_without_source_files) ... /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x108d2d210>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x108d2d120>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/decoder.py:361: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x108d2d3f0>
+  obj, end = self.scan_once(s, idx)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_duplicate_server_keeps_union_of_tools (test_database.IdentityMerge.test_duplicate_server_keeps_union_of_tools) ... ok
+test_monorepo_with_different_packages_does_not_merge (test_database.IdentityMerge.test_monorepo_with_different_packages_does_not_merge) ... ok
+test_same_package_in_different_repositories_does_not_merge (test_database.IdentityMerge.test_same_package_in_different_repositories_does_not_merge) ... ok
+test_selected_server_inherits_tools_from_every_duplicate (test_database.IdentityMerge.test_selected_server_inherits_tools_from_every_duplicate) ... ok
+test_skill_merge_requires_same_repository_and_path (test_database.IdentityMerge.test_skill_merge_requires_same_repository_and_path) ... ok
+test_copies_licenses_and_denominators (test_gitskills.EndToEnd.test_copies_licenses_and_denominators) ... Loaded occurrence columns (without bodies)
+Parsed part-00000.parquet: 3 representatives
+{
+  "occurrences": 4,
+  "unique_contents": 3,
+  "representative_rows": 3,
+  "repositories_table": 2,
+  "repositories_in_artifacts": 2,
+  "exact_SKILL_md_occurrences": 4,
+  "parsed_frontmatter_contents": 2,
+  "nonrepresentative_rows": 1,
+  "both_name_description_contents": 2,
+  "unmatched_content_rows": 0,
+  "excess_copy_occurrences": 1,
+  "names_with_different_contents": 1,
+  "named_contents_in_conflicts": 2
+}
+Completed: /var/folders/w6/wblnd4sn7yz0wnk_nhxkjw3m0000gn/T/tmp4ygh412q/results
+Loaded occurrence columns (without bodies)
+Reuse parsed part-00000.parquet
+{
+  "occurrences": 4,
+  "unique_contents": 3,
+  "representative_rows": 3,
+  "repositories_table": 2,
+  "repositories_in_artifacts": 2,
+  "exact_SKILL_md_occurrences": 4,
+  "parsed_frontmatter_contents": 2,
+  "nonrepresentative_rows": 1,
+  "both_name_description_contents": 2,
+  "unmatched_content_rows": 0,
+  "excess_copy_occurrences": 1,
+  "names_with_different_contents": 1,
+  "named_contents_in_conflicts": 2
+}
+Completed: /var/folders/w6/wblnd4sn7yz0wnk_nhxkjw3m0000gn/T/tmp4ygh412q/results
+ok
+test_crlf_and_nonmapping (test_gitskills.Frontmatter.test_crlf_and_nonmapping) ... ok
+test_duplicate_and_merge (test_gitskills.Frontmatter.test_duplicate_and_merge) ... ok
+test_states_and_hash (test_gitskills.Frontmatter.test_states_and_hash) ... ok
+test_global_totals_reconcile (test_gitskills_results.Results.test_global_totals_reconcile) ... ok
+test_value_counts_reconcile_with_existing_baseline (test_nov26.AggregateEvidenceTests.test_value_counts_reconcile_with_existing_baseline) ... /opt/homebrew/Cellar/python@3.14/3.14.0/Frameworks/Python.framework/Versions/3.14/lib/python3.14/csv.py:185: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x108d2d5d0>
+  d = dict(zip(self.fieldnames, row))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_direct_projection_is_not_lost_or_given_false_provenance (test_nov26.PromptTests.test_direct_projection_is_not_lost_or_given_false_provenance) ... ok
+test_response_gate (test_nov26.PromptTests.test_response_gate) ... ok
+test_positive_and_negative_cases (test_nov26.QueryTests.test_positive_and_negative_cases) ... ok
+test_grouping (test_nov26.ValueTests.test_grouping) ... ok
+test_hash_is_byte_identity (test_nov26.ValueTests.test_hash_is_byte_identity) ... ok
+test_vocabulary_gate_and_render (test_nov26.VocabularyContractTests.test_vocabulary_gate_and_render) ... ok
+test_absence (test_registry_pipeline.Parsing.test_absence) ... ok
+test_repeated_cursor (test_registry_pipeline.Parsing.test_repeated_cursor) ... ok
+test_repository_and_urls (test_registry_pipeline.Parsing.test_repository_and_urls) ... ok
+test_yaml (test_registry_pipeline.Parsing.test_yaml) ... ok
+test_foreign_keys_and_sources (test_registry_pipeline.ReleaseEvidence.test_foreign_keys_and_sources) ... ok
+test_release_dedup (test_registry_pipeline.ReleaseEvidence.test_release_dedup) ... ok
+test_static_annotation_requires_the_registered_source_scope (test_registry_pipeline.ReleaseEvidence.test_static_annotation_requires_the_registered_source_scope) ... ok
+test_tools_and_annotations (test_registry_pipeline.ReleaseEvidence.test_tools_and_annotations) ... ok
+test_versions (test_registry_pipeline.ReleaseEvidence.test_versions) ... ok
+test_changed_selected_record_requires_explicit_refresh (test_unified_graph.UnifiedCorpus.test_changed_selected_record_requires_explicit_refresh) ... ok
+test_initial_evidence_preserved (test_unified_graph.UnifiedCorpus.test_initial_evidence_preserved) ... <reused-venv>/lib/python3.14/site-packages/rdflib/term.py:1313: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x10edd9e40>
+  def __hash__(self) -> int:  # type: ignore[override]
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_merged_web_tool_has_registration_evidence (test_unified_graph.UnifiedCorpus.test_merged_web_tool_has_registration_evidence) ... ok
+test_requested_scope_and_no_duplicate_servers (test_unified_graph.UnifiedCorpus.test_requested_scope_and_no_duplicate_servers) ... ok
+test_selection_is_additional_and_independent_of_input_order (test_unified_graph.UnifiedCorpus.test_selection_is_additional_and_independent_of_input_order) ... ok
+test_shacl_rejects_missing_name_parent_and_evidence (test_unified_graph.UnifiedCorpus.test_shacl_rejects_missing_name_parent_and_evidence) ... <reused-venv>/lib/python3.14/site-packages/rdflib/graph.py:820: DeprecationWarning: Dataset.identifier is deprecated and will be removed in future versions.
+  return isinstance(other, Graph) and self.identifier == other.identifier
+ok
+test_spreadsheet_query_groups_multiple_sources_for_one_skill (test_unified_graph.UnifiedCorpus.test_spreadsheet_query_groups_multiple_sources_for_one_skill) ... ok
+
+----------------------------------------------------------------------
+Ran 42 tests in 1.617s
+
+OK

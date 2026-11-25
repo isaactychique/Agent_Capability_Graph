@@ -141,3 +141,14 @@ revision. Code is in `src/acg/ingestion/gitskills/`, aggregate results are in
 See [results, counting definitions and reproduction commands](reports/gitskills/README.md).
 Raw downloads and full derived tables remain outside Git. This analysis does not
 change the selected RDF corpus or existing source snapshots.
+
+## November 26: metadata values and competency questions
+
+- [20 competency questions and proposed Lin/Isaac split](docs/nov26/competency_questions.md)
+- [Additional metadata values and ontology recommendations](docs/nov26/metadata_mapping.md)
+- [Exact-content deduplication: guarantees and limits](docs/nov26/deduplication.md)
+- [Capability extraction prompt and integration handoff](docs/nov26/capability_extraction.md)
+- [CQ11–20 snapshot results](reports/nov26/query_audit.json)
+
+The joint question list and production SKOS vocabulary still require coordination;
+query execution does not imply retrieval accuracy or completed LLM integration.

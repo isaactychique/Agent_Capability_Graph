@@ -1,0 +1,113 @@
+{
+  "graph_sha256": "d35e8b8c7a548c7d1f0ad41cf05123aaf776e3a96e53bd2f59aa5debcf342d65",
+  "triples": 6808,
+  "entities": {
+    "MCPServer": 10,
+    "MCPTool": 55,
+    "AgentSkill": 110,
+    "Capability": 151,
+    "CapabilityAssertion": 214
+  },
+  "queries": [
+    {
+      "id": "CQ11",
+      "rows": 104,
+      "rows_with_value": 99,
+      "distinct_skills": 99,
+      "rows_with_field_source": 10,
+      "query_sha256": "4840452d583f9c9f0fd6d5e06060306c7c08971c91c41a3a02f910587361b8ac",
+      "status": "executed",
+      "interpretation": "Recorded observations/projections; inspect representation and missing field-level provenance; no semantic accuracy claim"
+    },
+    {
+      "id": "CQ12",
+      "rows": 0,
+      "rows_with_value": 0,
+      "distinct_skills": 0,
+      "rows_with_field_source": 0,
+      "query_sha256": "16218349c499fb588e89c641b863f037c7a20fdf82e5ce7a58be37d8f740ec8b",
+      "status": "executed",
+      "interpretation": "No match in this snapshot; not evidence of real-world absence"
+    },
+    {
+      "id": "CQ13",
+      "rows": 0,
+      "rows_with_value": 0,
+      "distinct_skills": 0,
+      "rows_with_field_source": 0,
+      "query_sha256": "493cfd5f19604c463cbb103c71014a563fe1edd4955c8c9137eef7700214a350",
+      "status": "executed",
+      "interpretation": "No match in this snapshot; not evidence of real-world absence"
+    },
+    {
+      "id": "CQ14",
+      "rows": 0,
+      "rows_with_value": 0,
+      "distinct_skills": 0,
+      "rows_with_field_source": 0,
+      "query_sha256": "5a895d5f7c5bbfe32a67a6f512fa544ad436a44330e5a37f7e757905f0396d98",
+      "status": "executed",
+      "interpretation": "No match in this snapshot; not evidence of real-world absence"
+    },
+    {
+      "id": "CQ15",
+      "rows": 17,
+      "rows_with_value": 17,
+      "distinct_skills": 3,
+      "rows_with_field_source": 0,
+      "query_sha256": "83156e084b3f39f2a61511984b445e60bb324d3269fe01f0c95ded0156bf54de",
+      "status": "executed",
+      "interpretation": "Recorded observations/projections; inspect representation and missing field-level provenance; no semantic accuracy claim"
+    },
+    {
+      "id": "CQ16",
+      "rows": 16,
+      "rows_with_value": 6,
+      "distinct_skills": 16,
+      "rows_with_field_source": 10,
+      "query_sha256": "ab7b797e573998a5eefc65cf74ce2640f680317c75019075d9fdf7c2115417c0",
+      "status": "executed",
+      "interpretation": "Recorded observations/projections; inspect representation and missing field-level provenance; no semantic accuracy claim"
+    },
+    {
+      "id": "CQ17",
+      "rows": 0,
+      "rows_with_value": 0,
+      "distinct_skills": 0,
+      "rows_with_field_source": 0,
+      "query_sha256": "0aa0861cd18e881bd8de67baa61f0a5108eb8cd0a809ea3221068937bb41f4e1",
+      "status": "executed",
+      "interpretation": "No match in this snapshot; not evidence of real-world absence"
+    },
+    {
+      "id": "CQ18",
+      "rows": 0,
+      "rows_with_value": 0,
+      "distinct_skills": 0,
+      "rows_with_field_source": 0,
+      "query_sha256": "355abfa71a9e5efd73a5f59a238d4215f251095d4b76a1bdf89e79bf0db7bc9b",
+      "status": "executed",
+      "interpretation": "No match in this snapshot; not evidence of real-world absence"
+    },
+    {
+      "id": "CQ19",
+      "rows": 111,
+      "rows_with_value": null,
+      "distinct_skills": 109,
+      "rows_with_field_source": 111,
+      "query_sha256": "29c798e4d7b870cee8cded6660814df5776cd833c80ac68824c4016339b24524",
+      "status": "executed",
+      "interpretation": "Recorded observations/projections; inspect representation and missing field-level provenance; no semantic accuracy claim"
+    },
+    {
+      "id": "CQ20",
+      "rows": 1,
+      "rows_with_value": null,
+      "distinct_skills": null,
+      "rows_with_field_source": null,
+      "query_sha256": "be6f2b0af603ddff2f822c6444bb48a13da460fe5069e08a94d8e84f3ef4549d",
+      "status": "executed",
+      "interpretation": "Recorded observations/projections; inspect representation and missing field-level provenance; no semantic accuracy claim"
+    }
+  ]
+}

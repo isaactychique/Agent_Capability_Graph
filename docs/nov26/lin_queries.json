@@ -1,0 +1,112 @@
+[
+  {
+    "id": "CQ11",
+    "owner": "Lin",
+    "question": "Which Skills have a recorded license declaration, and what source supports it?",
+    "query": "queries/nov26/cq11_license.rq",
+    "fields": [
+      "license",
+      "skill_license",
+      "metadata.license"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ12",
+    "owner": "Lin",
+    "question": "Which Skills have a recorded version, preserving top-level versus metadata scope?",
+    "query": "queries/nov26/cq12_version.rq",
+    "fields": [
+      "version",
+      "metadata.version"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ13",
+    "owner": "Lin",
+    "question": "Which Skills have declared tags or categories that I can inspect before choosing?",
+    "query": "queries/nov26/cq13_tags.rq",
+    "fields": [
+      "tags",
+      "metadata.tags",
+      "category",
+      "metadata.category"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ14",
+    "owner": "Lin",
+    "question": "Who is the declared author of each Skill, and where was that attribution found?",
+    "query": "queries/nov26/cq14_author.rq",
+    "fields": [
+      "author",
+      "metadata.author"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ15",
+    "owner": "Lin",
+    "question": "Which tool permissions are declared for each Skill?",
+    "query": "queries/nov26/cq15_allowed_tools.rq",
+    "fields": [
+      "allowed_tools",
+      "allowed-tools",
+      "metadata.allowed-tools"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ16",
+    "owner": "Lin",
+    "question": "What environment or dependency requirements are recorded for each Skill?",
+    "query": "queries/nov26/cq16_compatibility.rq",
+    "fields": [
+      "compatibility",
+      "dependencies",
+      "dependency",
+      "metadata.compatibility"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ17",
+    "owner": "Lin",
+    "question": "What explicit user/model invocation settings are recorded for Skills?",
+    "query": "queries/nov26/cq17_invocation.rq",
+    "fields": [
+      "user-invocable",
+      "disable-model-invocation",
+      "metadata.user-invocable",
+      "metadata.disable-model-invocation"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ18",
+    "owner": "Lin",
+    "question": "What argument hints are available to guide invocation of a Skill?",
+    "query": "queries/nov26/cq18_argument_hint.rq",
+    "fields": [
+      "argument-hint",
+      "metadata.argument-hint"
+    ],
+    "answer_unit": "skill-field-source-value observation (including missing-value observations)"
+  },
+  {
+    "id": "CQ19",
+    "owner": "Lin",
+    "question": "Which source and revision support a Skill's proposed capability?",
+    "query": "queries/nov26/cq19_provenance.rq",
+    "answer_unit": "skill-capability-source assertion evidence"
+  },
+  {
+    "id": "CQ20",
+    "owner": "Lin",
+    "question": "Which distinct Skill identities share exactly the same recorded name?",
+    "query": "queries/nov26/cq20_names.rq",
+    "answer_unit": "unordered pair of distinct skill identities with equal RDF name literal"
+  }
+]
