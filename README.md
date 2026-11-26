@@ -330,3 +330,28 @@ work follows the agreed vocabulary and extraction deliverables.
 - [SPARQL usage](queries/README.md)
 - [Report guide](reports/README.md)
 - [Proposed public URI design](docs/uri_design.md)
+
+The full-corpus analysis extends the original 180-row sample at a pinned dataset
+revision. Code is in `src/acg/ingestion/gitskills/`, aggregate results are in
+`reports/gitskills/`, and tests are in `tests/test_gitskills*.py`.
+See [results, counting definitions and reproduction commands](reports/gitskills/README.md).
+Raw downloads and full derived tables remain outside Git. This analysis does not
+change the selected RDF corpus or existing source snapshots.
+
+## November 26: Lin's metadata analysis and review proposal
+
+- [Lin's original 20-question proposal and proposed split](docs/nov26/competency_questions.md)
+- [Additional metadata values and ontology recommendations](docs/nov26/metadata_mapping.md)
+- [Exact-content deduplication: guarantees and limits](docs/nov26/deduplication.md)
+- [Capability extraction prompt and integration handoff](docs/nov26/capability_extraction.md)
+- [CQ11–20 snapshot results](reports/nov26/query_audit.json)
+
+The joint question list and production SKOS vocabulary still require coordination;
+query execution does not imply retrieval accuracy or completed LLM integration.
+
+The maintained [atomic competency catalogue](queries/competency_questions.md)
+uses different CQ identifiers from Lin's original proposal under `docs/nov26/`.
+Those identifiers are local to each catalogue and require joint reconciliation.
+The pipeline prompt remains `prompts/capability_extraction_v1.txt`; Lin's
+description-only contract is preserved separately as
+`prompts/capability_extraction_description_v1.txt` with its renderer.

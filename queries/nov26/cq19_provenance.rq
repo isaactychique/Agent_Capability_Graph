@@ -1,0 +1,15 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# CQ19: Which source and revision support a Skill's proposed capability?
+SELECT DISTINCT ?skill ?name ?capability ?method ?review ?source ?url ?revision ?evidence
+WHERE {
+  ?skill a acg:AgentSkill ; schema:name ?name ; acg:hasCapabilityAssertion ?claim .
+  ?claim acg:assertedCapability ?capability ; acg:basedOnSource ?source .
+  OPTIONAL { ?claim acg:assertionMethod ?method }
+  OPTIONAL { ?claim acg:reviewStatus ?review }
+  OPTIONAL { ?claim acg:evidenceText ?evidence }
+  OPTIONAL { ?source schema:url ?url }
+  OPTIONAL { ?source acg:revision ?revision }
+}
+ORDER BY ?skill ?capability ?source
