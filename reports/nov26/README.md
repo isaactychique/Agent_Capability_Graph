@@ -29,10 +29,16 @@ existing observation structure for those source values.
 CQ CSVs record all rows, including unbound fields. Row counts can change when
 Isaac updates the graph; reproduce instead of asserting these counts permanently.
 
-Validation: `python -m unittest discover -s tests -v` passed 42 tests.
+Validation: `python -m unittest discover -s tests -v` passed 46 tests.
 Before this contribution, `test_unified_graph.py` referenced functions removed
 from `acg.build` during pipeline reorganization, causing a setup error.
 The minimal test repair reads the canonical database and imports selection
 functions from `acg.selection`. Production pipeline behavior is unchanged.
 The suite emits existing rdflib deprecation/resource warnings; there were no
 remaining failures. Query fixtures are synthetic and separate from corpus data.
+
+Additional pre-merge review reproduced all ten query exports byte-for-byte and
+checked all 174 published value examples against 167 pinned source contents.
+Fixed prompt substitution so template-like text in vocabulary data remains literal,
+and made malformed response-status validation consistently raise ValueError.
+No existing production pipeline, ontology, graph, database or mappings were changed.

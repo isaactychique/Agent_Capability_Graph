@@ -103,3 +103,41 @@ class VocabularyContractTests(unittest.TestCase):
             self.assertIn(vocab['version'],output)
             p.write_text(text.replace('skos:definition','skos:note'))
             with self.assertRaises(ValueError):load_vocabulary(p)
+
+
+class ReviewRegressionTests(unittest.TestCase):
+    def test_template_markers_in_vocabulary_remain_literal(self):
+        from src.acg.capability_prompt import render
+        vocabulary = {'version': 'v1', 'concepts': [{'definition': '{{RESOURCE_JSON}}'}]}
+        resource = {'resource_id': 'r', 'description': 'Quoted "description"'}
+        rendered = render(vocabulary, resource)
+        payload = rendered.split('VOCABULARY_JSON:\n', 1)[1].split('\n\nRESOURCE_JSON:', 1)[0]
+        self.assertEqual(json.loads(payload), vocabulary)
+
+    def test_malformed_status_has_consistent_validation_error(self):
+        from src.acg.capability_prompt import validate_response
+        resource = {'resource_id': 'r', 'description': 'text'}
+        vocabulary = {'version': 'v1', 'concepts': []}
+        response = {'resource_id': 'r', 'vocabulary_version': 'v1', 'status': [],
+                    'assignments': [], 'suggestions': [], 'reason': 'test'}
+        with self.assertRaises(ValueError):
+            validate_response(response, vocabulary, resource)
+
+    def test_hash_validation_rejects_modified_text(self):
+        from src.acg.ingestion.gitskills.parser import parse_content
+        content = '---\nname: sample\ndescription: Example\n---\nText'
+        sha = blob(content)
+        self.assertEqual(parse_content(content, sha, True)[0], 'parsed')
+        self.assertEqual(parse_content(content + '\n', sha, True)[0], 'hash_mismatch')
+        self.assertEqual(parse_content(content.replace('\n', '\r\n'), sha, True)[0], 'hash_mismatch')
+
+    def test_projection_queries_exclude_tools_and_untyped_resources(self):
+        for number, predicate in [(11, Namespace('https://schema.org/').license),
+                                  (15, A.allowedTool), (16, A.compatibility)]:
+            g = Graph().parse(ROOT / 'tests/fixtures/nov26/query_fixture.ttl')
+            for entity in [E.one, E.tool, E.untyped]:
+                g.add((entity, predicate, Literal('recorded value')))
+            query = next((ROOT / 'queries/nov26').glob(f'cq{number}_*.rq'))
+            rows = list(g.query(query.read_text()))
+            self.assertEqual(len(rows), 1)
+            self.assertEqual(rows[0].asdict()['skill'], E.one)
