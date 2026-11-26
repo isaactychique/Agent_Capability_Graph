@@ -1,0 +1,7 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?serverName ?prompt ?promptName WHERE {
+ ?server a acg:MCPServer ; schema:name ?serverName ; acg:exposesPrompt ?prompt .
+ OPTIONAL { ?prompt schema:name ?promptName }
+} ORDER BY ?serverName

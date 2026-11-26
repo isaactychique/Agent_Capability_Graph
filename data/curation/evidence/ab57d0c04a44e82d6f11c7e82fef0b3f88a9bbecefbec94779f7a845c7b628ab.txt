@@ -1,0 +1,3 @@
+Create detailed objective plan (JOB.md) with verification loop.
+Use when the user wants to plan an objective, create execution plans, or prepare for building.
+Triggers on: "plan objective", "create plans", "plan the next objective", "let's plan", "prepare objective", "make plans for"

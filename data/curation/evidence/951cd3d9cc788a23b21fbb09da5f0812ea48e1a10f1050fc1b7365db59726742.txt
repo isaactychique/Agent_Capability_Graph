@@ -1,0 +1,1 @@
+Search selected rows in large documentation tables.

@@ -1,0 +1,1 @@
+Read the complete contents of a file as text. DEPRECATED: Use read_text_file instead.

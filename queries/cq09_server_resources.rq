@@ -1,0 +1,7 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?serverName ?resource ?resourceName WHERE {
+ ?server a acg:MCPServer ; schema:name ?serverName ; acg:exposesResource ?resource .
+ OPTIONAL { ?resource schema:name ?resourceName }
+} ORDER BY ?serverName

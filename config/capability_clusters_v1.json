@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "status": "draft_for_joint_review",
+  "policy": "Lexical clustering proposals, not LLM or human-reviewed classifications. Unmatched labels remain unresolved. Multiple matches require review.",
+  "rules": [
+    {
+      "concept_id": "information-retrieval",
+      "pattern": "search|retrieve|documentation|lookup"
+    },
+    {
+      "concept_id": "file-management",
+      "pattern": "file|directory|filesystem"
+    },
+    {
+      "concept_id": "document-processing",
+      "pattern": "pdf|word document|presentation|document translation|document intelligence"
+    },
+    {
+      "concept_id": "spreadsheet-processing",
+      "pattern": "spreadsheet|workbook|excel"
+    },
+    {
+      "concept_id": "visual-content",
+      "pattern": "visual art|algorithmic art|gif|animation|artifact theme|brand styling"
+    },
+    {
+      "concept_id": "software-development",
+      "pattern": "develop|implement|api integration|agent skill|mcp server|web artifact|component|react native|authentication extension"
+    },
+    {
+      "concept_id": "code-quality",
+      "pattern": "review|refactor|web interface|user interface"
+    },
+    {
+      "concept_id": "software-testing",
+      "pattern": "test|playwright"
+    },
+    {
+      "concept_id": "version-control",
+      "pattern": "git |github|pull request|repository file"
+    },
+    {
+      "concept_id": "cloud-management",
+      "pattern": "azure|cloudflare api request|vercel|cloud resource|project infrastructure|foundry|fabric capacity"
+    },
+    {
+      "concept_id": "database-management",
+      "pattern": "database|cosmos|mysql|postgres|redis|sql server|mongodb"
+    },
+    {
+      "concept_id": "observability",
+      "pattern": "observe|observability|monitor|log|diagnos|debug|incident|network traffic"
+    },
+    {
+      "concept_id": "cost-management",
+      "pattern": "cost|spend"
+    },
+    {
+      "concept_id": "security-identity",
+      "pattern": "cryptographic|identity|security|authentication"
+    },
+    {
+      "concept_id": "knowledge-management",
+      "pattern": "knowledge graph|knowledge base"
+    },
+    {
+      "concept_id": "communication",
+      "pattern": "internal communication|message|communication"
+    },
+    {
+      "concept_id": "writing",
+      "pattern": "write documentation|prose|writing|coauthor"
+    },
+    {
+      "concept_id": "time-operations",
+      "pattern": "timezone|current time|relative time"
+    },
+    {
+      "concept_id": "reasoning-planning",
+      "pattern": "reasoning|objective|agent session"
+    },
+    {
+      "concept_id": "performance-optimization",
+      "pattern": "optimize|optimization|performance"
+    }
+  ]
+}

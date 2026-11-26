@@ -1,0 +1,12 @@
+Performs web searches using the Brave Search API and returns comprehensive search results with rich metadata.
+
+    When to use:
+        - General web searches for information, facts, or current topics
+        - Location-based queries (restaurants, businesses, points of interest)
+        - News searches for recent events or breaking stories
+        - Finding videos, discussions, or FAQ content
+        - Research requiring diverse result types (web pages, images, reviews, etc.)
+
+    Returns a JSON list of web results with title, description, and URL.
+
+    When the "results_filter" parameter is empty, JSON results may also contain FAQ, Discussions, News, and Video results.

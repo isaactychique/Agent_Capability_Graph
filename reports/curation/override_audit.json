@@ -1,0 +1,9 @@
+{
+  "events": 163,
+  "active_rules": 163,
+  "output_matches_history": true,
+  "history_head": "5e0e0b07de6c0ac446290f75302008f6eb6cd7500c0716c97a4a6571271df702",
+  "active_legacy_rules": 163,
+  "active_rules_without_captured_evidence": 0,
+  "limitations": "Hashes are integrity checks, not authenticated signatures. Historical decisions remain unreviewed; semantic correctness is not established."
+}

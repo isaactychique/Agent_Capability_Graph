@@ -1,0 +1,11 @@
+# CQ06 — See competency_questions.md for the atomic question.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?entity ?entityName ?claim ?source ?evidence ?quote WHERE {
+ VALUES ?entityName { __NAME__ }
+ ?entity schema:name ?entityName ; acg:hasCapabilityAssertion ?claim .
+ ?claim acg:basedOnSource ?source .
+ OPTIONAL { ?source schema:url ?evidence }
+ OPTIONAL { ?claim acg:evidenceText ?quote }
+} ORDER BY ?entity ?claim ?source

@@ -1,0 +1,6 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?entityName ?version WHERE {
+ ?entity schema:name ?entityName ; schema:softwareVersion ?version .
+} ORDER BY ?entityName

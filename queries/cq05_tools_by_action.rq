@@ -1,0 +1,18 @@
+# CQ05 — See competency_questions.md for scope and limitations.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# A verb groups operations; the object, evidence and status retain their scope.
+SELECT ?serverName ?toolName ?action ?object ?method ?status
+       (GROUP_CONCAT(DISTINCT STR(?url); separator=" ; ") AS ?evidence)
+WHERE {
+  VALUES ?requestedAction { __ACTION__ }
+  ?server a acg:MCPServer ; schema:name ?serverName ; acg:exposesTool ?tool .
+  ?tool a acg:MCPTool ; schema:name ?toolName ; acg:hasCapabilityAssertion ?claim .
+  ?claim acg:assertedCapability ?capability ; acg:assertionMethod ?method ;
+         acg:reviewStatus ?status ; acg:basedOnSource/schema:url ?url .
+  ?capability acg:capabilityAction ?action ; acg:capabilityObject ?object .
+  FILTER(LCASE(STR(?action)) = LCASE(STR(?requestedAction)))
+}
+GROUP BY ?server ?tool ?serverName ?toolName ?action ?object ?method ?status
+ORDER BY ?serverName ?toolName ?object

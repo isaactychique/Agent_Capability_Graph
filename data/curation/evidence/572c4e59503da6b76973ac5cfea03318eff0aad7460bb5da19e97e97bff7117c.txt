@@ -1,0 +1,1 @@
+Switch the working tree to a branch or revision.

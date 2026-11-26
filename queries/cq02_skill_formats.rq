@@ -1,0 +1,23 @@
+# CQ02 — See competency_questions.md for scope and limitations.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# Pass the format on the command line (e.g. PDF, spreadsheet, Excel, or CSV).
+# These are candidates based on the
+# source-provided Skill description; inspect evidence before calling it support.
+SELECT ?format ?skillName (MIN(STR(?candidateDescription)) AS ?description)
+       (GROUP_CONCAT(DISTINCT STR(?sourceUrl); separator=" ; ") AS ?evidence)
+WHERE {
+  VALUES ?format { "__FORMAT__" }
+  ?skill a acg:AgentSkill ;
+         schema:name ?skillName ;
+         schema:description ?candidateDescription ;
+         acg:documentedBy ?source .
+  ?source schema:url ?sourceUrl .
+  FILTER(REGEX(STR(?candidateDescription), STR(?format), "i"))
+  # Remove descriptions that mention the format only to exclude it.
+  FILTER(!REGEX(STR(?candidateDescription),
+       "do not use for[^.]{0,100}(PDF|spreadsheet|Excel|CSV)", "i"))
+}
+GROUP BY ?format ?skill ?skillName
+ORDER BY ?skillName ?skill

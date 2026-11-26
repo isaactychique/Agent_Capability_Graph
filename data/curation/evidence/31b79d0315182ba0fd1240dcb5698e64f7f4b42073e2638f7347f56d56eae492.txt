@@ -1,0 +1,1 @@
+Analyze advanced AKS cost efficiency. WHEN: "AKS NAP readiness", "AKS bin packing", "AKS node scaling bottleneck", "AKS blocked scale-down", "AKS storage cost". DO NOT USE AS DIRECT ENTRY FOR: overall AKS cost assessments or rightsizing/VPA/CAS/Spot (azure-kubernetes); spend/anomalies/commitments (cost-analysis/cost-optimization); incidents (aks-troubleshooting).

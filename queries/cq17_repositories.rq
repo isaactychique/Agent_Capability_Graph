@@ -1,0 +1,8 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?entityName ?repository WHERE {
+ ?entity schema:name ?entityName .
+ { ?entity acg:repositoryUrl ?repository }
+ UNION { ?entity schema:codeRepository ?repository }
+} ORDER BY ?entityName

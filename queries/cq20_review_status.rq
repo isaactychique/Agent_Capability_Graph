@@ -1,0 +1,6 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?status (COUNT(DISTINCT ?claim) AS ?assertionCount) WHERE {
+ ?claim a acg:CapabilityAssertion ; acg:reviewStatus ?status .
+} GROUP BY ?status ORDER BY ?status

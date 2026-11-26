@@ -1,0 +1,14 @@
+# CQ16 — See competency_questions.md for the atomic question.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?skill ?skillName ?bundleKind WHERE {
+ VALUES ?bundleKind { __BUNDLE__ }
+ VALUES (?kind ?predicate) {
+ ("scripts" acg:hasScripts) ("references" acg:hasReferences) ("assets" acg:hasAssets)
+ }
+ FILTER(?kind = ?bundleKind)
+ ?skill a acg:AgentSkill ; schema:name ?skillName .
+ { ?skill ?predicate true }
+ UNION { ?skill acg:supportingFile ?file . FILTER(STRSTARTS(STR(?file), CONCAT(STR(?bundleKind), "/"))) }
+} ORDER BY ?skillName ?skill

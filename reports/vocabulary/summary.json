@@ -1,0 +1,11 @@
+{
+  "vocabulary_concepts": 20,
+  "observed_legacy_concepts": 154,
+  "graph_sha256": "a0e6251de18905cc5e15bb63033f0e694fa9aaa315c5154749a7fcbca4ad069a",
+  "statuses": {
+    "candidate": 113,
+    "ambiguous": 23,
+    "unresolved": 18
+  },
+  "review_status": "pending"
+}

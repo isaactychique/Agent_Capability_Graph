@@ -1,0 +1,7 @@
+# CQ12B — See competency_questions.md for the atomic question.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?skill ?skillName ?allowedTool WHERE {
+ ?skill a acg:AgentSkill ; schema:name ?skillName ; acg:allowedTool ?allowedTool .
+} ORDER BY ?skillName ?allowedTool

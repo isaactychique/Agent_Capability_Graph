@@ -1,0 +1,13 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# License observations preserve their own source; entity-level values also appear separately.
+SELECT DISTINCT ?entityName ?license ?source WHERE {
+ { ?entity schema:name ?entityName ; schema:license ?license }
+ UNION {
+  ?observation a acg:MetadataObservation ; acg:observesEntity ?entity ;
+    acg:observedFieldName "license" ; acg:hasObservedValue ?license .
+  ?entity schema:name ?entityName .
+  OPTIONAL { ?observation acg:reviewedSource ?source }
+ }
+} ORDER BY ?entityName

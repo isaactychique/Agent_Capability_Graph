@@ -1,0 +1,6 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?skillName ?compatibility WHERE {
+ ?skill a acg:AgentSkill ; schema:name ?skillName ; acg:compatibility ?compatibility .
+} ORDER BY ?skillName

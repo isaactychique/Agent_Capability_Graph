@@ -1,0 +1,155 @@
+capability_uri,label,proposed_concepts,status,decision
+urn:acg:metadata:capability/add%2Fknowledge%20graph%20observation,add knowledge graph observation,knowledge-management,candidate,pending
+urn:acg:metadata:capability/analyze%2FAKS%20cost%20efficiency,analyze AKS cost efficiency,cost-management,candidate,pending
+urn:acg:metadata:capability/analyze%2FAzure%20idle-resource%20finding,analyze Azure idle-resource finding,cloud-management,candidate,pending
+urn:acg:metadata:capability/analyze%2FAzure%20spend,analyze Azure spend,cloud-management ; cost-management,ambiguous,pending
+urn:acg:metadata:capability/analyze%2Fagent%20session,analyze agent session,reasoning-planning,candidate,pending
+urn:acg:metadata:capability/apply%2Fartifact%20theme,apply artifact theme,visual-content,candidate,pending
+urn:acg:metadata:capability/apply%2Fbrand%20styling,apply brand styling,visual-content,candidate,pending
+urn:acg:metadata:capability/build%2FMCP%20server,build MCP server,software-development,candidate,pending
+urn:acg:metadata:capability/calculate%2Frelative%20time,calculate relative time,time-operations,candidate,pending
+urn:acg:metadata:capability/capture%2FAKS%20network%20traffic,capture AKS network traffic,observability,candidate,pending
+urn:acg:metadata:capability/compare%2Fgit%20changes,compare git changes,version-control,candidate,pending
+urn:acg:metadata:capability/compare%2Fgit%20revision,compare git revision,version-control,candidate,pending
+urn:acg:metadata:capability/compose%2FIRQL%20query,compose IRQL query,,unresolved,pending
+urn:acg:metadata:capability/configure%2FACS%20authentication,configure ACS authentication,security-identity,candidate,pending
+urn:acg:metadata:capability/configure%2FAzure%20AI%20gateway,configure Azure AI gateway,cloud-management,candidate,pending
+urn:acg:metadata:capability/configure%2FAzure%20authentication,configure Azure authentication,cloud-management ; security-identity,ambiguous,pending
+urn:acg:metadata:capability/configure%2Fproject%20infrastructure,configure project infrastructure,cloud-management,candidate,pending
+urn:acg:metadata:capability/construct%2FAzure%20portal%20link,construct Azure portal link,cloud-management,candidate,pending
+urn:acg:metadata:capability/convert%2Ftimezone,convert timezone,time-operations,candidate,pending
+urn:acg:metadata:capability/copy%2Ffile,copy file,file-management,candidate,pending
+urn:acg:metadata:capability/create%2FPDF%20document,create PDF document,document-processing,candidate,pending
+urn:acg:metadata:capability/create%2Fagent%20skill,create agent skill,software-development,candidate,pending
+urn:acg:metadata:capability/create%2Falgorithmic%20art,create algorithmic art,visual-content,candidate,pending
+urn:acg:metadata:capability/create%2Fanimated%20GIF,create animated GIF,visual-content,candidate,pending
+urn:acg:metadata:capability/create%2Fdirectory,create directory,file-management,candidate,pending
+urn:acg:metadata:capability/create%2Fgit%20commit,create git commit,version-control,candidate,pending
+urn:acg:metadata:capability/create%2Fknowledge%20graph%20entity,create knowledge graph entity,knowledge-management,candidate,pending
+urn:acg:metadata:capability/create%2Fknowledge%20graph%20relation,create knowledge graph relation,knowledge-management,candidate,pending
+urn:acg:metadata:capability/create%2Fpull%20request,create pull request,version-control,candidate,pending
+urn:acg:metadata:capability/create%2Fspreadsheet,create spreadsheet,spreadsheet-processing,candidate,pending
+urn:acg:metadata:capability/create%2Fvisual%20art,create visual art,visual-content,candidate,pending
+urn:acg:metadata:capability/create%2Fweb%20artifact,create web artifact,software-development,candidate,pending
+urn:acg:metadata:capability/customize%2FEntra%20authentication,customize Entra authentication,security-identity,candidate,pending
+urn:acg:metadata:capability/debug%2FAKS%20incident,debug AKS incident,observability,candidate,pending
+urn:acg:metadata:capability/deploy%2FVercel%20application,deploy Vercel application,cloud-management,candidate,pending
+urn:acg:metadata:capability/deploy%2FVercel%20project,deploy Vercel project,cloud-management,candidate,pending
+urn:acg:metadata:capability/design%2Fuser%20interface,design user interface,code-quality,candidate,pending
+urn:acg:metadata:capability/develop%2FAzure%20OpenAI%20integration,develop Azure OpenAI integration,software-development ; cloud-management,ambiguous,pending
+urn:acg:metadata:capability/develop%2FClaude%20API%20integration,develop Claude API integration,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2FCosmos%20DB%20application,develop Cosmos DB application,software-development ; database-management,ambiguous,pending
+urn:acg:metadata:capability/develop%2FMicrosoft%20365%20agent,develop Microsoft 365 agent,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2FReact%20Native%20application,develop React Native application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fanomaly%20detection%20application,develop anomaly detection application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fcall%20automation%20workflow,develop call automation workflow,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fcontent%20moderation%20application,develop content moderation application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fevent%20streaming%20application,develop event streaming application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fevent-driven%20application,develop event-driven application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fimage%20analysis%20application,develop image analysis application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Flocation%20service,develop location service,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Freal-time%20chat%20application,develop real-time chat application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Freal-time%20web%20application,develop real-time web application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fsearch%20application,develop search application,information-retrieval ; software-development,ambiguous,pending
+urn:acg:metadata:capability/develop%2Ftable%20storage%20application,develop table storage application,software-development,candidate,pending
+urn:acg:metadata:capability/develop%2Fvoice%20AI%20application,develop voice AI application,software-development,candidate,pending
+urn:acg:metadata:capability/diagnose%2FAKS%20GPU%20incident,diagnose AKS GPU incident,observability,candidate,pending
+urn:acg:metadata:capability/estimate%2FAzure%20spend,estimate Azure spend,cloud-management ; cost-management,ambiguous,pending
+urn:acg:metadata:capability/execute%2FCloudflare%20API%20request,execute Cloudflare API request,cloud-management,candidate,pending
+urn:acg:metadata:capability/extract%2FPDF%20content,extract PDF content,document-processing,candidate,pending
+urn:acg:metadata:capability/extract%2Fdocument%20data,extract document data,,unresolved,pending
+urn:acg:metadata:capability/govern%2FAzure%20costs,govern Azure costs,cloud-management ; cost-management,ambiguous,pending
+urn:acg:metadata:capability/implement%2FReact%20animation,implement React animation,visual-content ; software-development,ambiguous,pending
+urn:acg:metadata:capability/list%2FAWS%20service,list AWS service,,unresolved,pending
+urn:acg:metadata:capability/list%2Fdirectory,list directory,file-management,candidate,pending
+urn:acg:metadata:capability/list%2Fgit%20branch,list git branch,version-control,candidate,pending
+urn:acg:metadata:capability/lookup%2FAKS%20documented%20fix,lookup AKS documented fix,information-retrieval,candidate,pending
+urn:acg:metadata:capability/maintain%2Flegacy%20calling%20integration,maintain legacy calling integration,,unresolved,pending
+urn:acg:metadata:capability/manage%2FAI%20Foundry%20project,manage AI Foundry project,cloud-management,candidate,pending
+urn:acg:metadata:capability/manage%2FAPI%20inventory,manage API inventory,,unresolved,pending
+urn:acg:metadata:capability/manage%2FApplication%20Insights%20resource,manage Application Insights resource,,unresolved,pending
+urn:acg:metadata:capability/manage%2FAzure%20API%20Management%20resource,manage Azure API Management resource,cloud-management,candidate,pending
+urn:acg:metadata:capability/manage%2FAzure%20Arize%20resource,manage Azure Arize resource,cloud-management,candidate,pending
+urn:acg:metadata:capability/manage%2FAzure%20Bot%20resource,manage Azure Bot resource,cloud-management,candidate,pending
+urn:acg:metadata:capability/manage%2FAzure%20MongoDB%20Atlas%20organization,manage Azure MongoDB Atlas organization,cloud-management ; database-management,ambiguous,pending
+urn:acg:metadata:capability/manage%2FAzure%20SQL%20resource,manage Azure SQL resource,cloud-management,candidate,pending
+urn:acg:metadata:capability/manage%2FCosmos%20DB%20resource,manage Cosmos DB resource,database-management,candidate,pending
+urn:acg:metadata:capability/manage%2FCrimeoMeter%20data,manage CrimeoMeter data,,unresolved,pending
+urn:acg:metadata:capability/manage%2FDurable%20Task%20Scheduler%20resource,manage Durable Task Scheduler resource,,unresolved,pending
+urn:acg:metadata:capability/manage%2FFabric%20capacity,manage Fabric capacity,cloud-management,candidate,pending
+urn:acg:metadata:capability/manage%2FFoundry%20IQ%20knowledge%20base,manage Foundry IQ knowledge base,cloud-management ; knowledge-management,ambiguous,pending
+urn:acg:metadata:capability/manage%2FMySQL%20database%20resource,manage MySQL database resource,database-management,candidate,pending
+urn:acg:metadata:capability/manage%2FPlaywright%20Testing%20workspace,manage Playwright Testing workspace,software-testing,candidate,pending
+urn:acg:metadata:capability/manage%2FPostgreSQL%20database%20resource,manage PostgreSQL database resource,database-management,candidate,pending
+urn:acg:metadata:capability/manage%2FRedis%20cache%20resource,manage Redis cache resource,database-management,candidate,pending
+urn:acg:metadata:capability/manage%2FWeights%20and%20Biases%20instance,manage Weights and Biases instance,,unresolved,pending
+urn:acg:metadata:capability/manage%2Fapplication%20configuration,manage application configuration,,unresolved,pending
+urn:acg:metadata:capability/manage%2Fcryptographic%20key,manage cryptographic key,security-identity,candidate,pending
+urn:acg:metadata:capability/manage%2Fpersistent%20AI%20agent,manage persistent AI agent,,unresolved,pending
+urn:acg:metadata:capability/merge%2FPDF%20document,merge PDF document,document-processing,candidate,pending
+urn:acg:metadata:capability/move%2Ffilesystem%20entry,move filesystem entry,file-management,candidate,pending
+urn:acg:metadata:capability/observe%2FLLM%20application,observe LLM application,observability,candidate,pending
+urn:acg:metadata:capability/operate%2FAzure%20Local%20infrastructure,operate Azure Local infrastructure,cloud-management,candidate,pending
+urn:acg:metadata:capability/operate%2FAzure%20Local%20multi-rack%20infrastructure,operate Azure Local multi-rack infrastructure,cloud-management,candidate,pending
+urn:acg:metadata:capability/optimize%2FAzure%20resource%20costs,optimize Azure resource costs,cloud-management ; cost-management ; performance-optimization,ambiguous,pending
+urn:acg:metadata:capability/optimize%2FReact%20application,optimize React application,performance-optimization,candidate,pending
+urn:acg:metadata:capability/optimize%2FVercel%20deployment,optimize Vercel deployment,cloud-management ; performance-optimization,ambiguous,pending
+urn:acg:metadata:capability/plan%2Fobjective,plan objective,reasoning-planning,candidate,pending
+urn:acg:metadata:capability/process%2FPDF%20document,process PDF document,document-processing,candidate,pending
+urn:acg:metadata:capability/process%2FWord%20document,process Word document,document-processing,candidate,pending
+urn:acg:metadata:capability/process%2Fpresentation,process presentation,document-processing,candidate,pending
+urn:acg:metadata:capability/process%2Fspreadsheet,process spreadsheet,spreadsheet-processing,candidate,pending
+urn:acg:metadata:capability/publish%2Fevent,publish event,,unresolved,pending
+urn:acg:metadata:capability/query%2FKusto%20graph,query Kusto graph,,unresolved,pending
+urn:acg:metadata:capability/query%2FMicrosoft%20documentation,query Microsoft documentation,information-retrieval,candidate,pending
+urn:acg:metadata:capability/read%2FAWS%20documentation,read AWS documentation,information-retrieval,candidate,pending
+urn:acg:metadata:capability/read%2FAWS%20documentation%20section,read AWS documentation section,information-retrieval,candidate,pending
+urn:acg:metadata:capability/read%2FGitHub%20issue,read GitHub issue,version-control,candidate,pending
+urn:acg:metadata:capability/read%2Fauthenticated%20identity,read authenticated identity,security-identity,candidate,pending
+urn:acg:metadata:capability/read%2Fcurrent%20time,read current time,time-operations,candidate,pending
+urn:acg:metadata:capability/read%2Ffile,read file,file-management,candidate,pending
+urn:acg:metadata:capability/read%2Ffilesystem%20entry,read filesystem entry,file-management,candidate,pending
+urn:acg:metadata:capability/read%2Fgit%20history,read git history,version-control,candidate,pending
+urn:acg:metadata:capability/read%2Fgit%20object,read git object,version-control,candidate,pending
+urn:acg:metadata:capability/read%2Fgit%20status,read git status,version-control,candidate,pending
+urn:acg:metadata:capability/read%2Fknowledge%20graph,read knowledge graph,knowledge-management,candidate,pending
+urn:acg:metadata:capability/read%2Fknowledge%20graph%20node,read knowledge graph node,knowledge-management,candidate,pending
+urn:acg:metadata:capability/read%2Frepository%20file,read repository file,file-management ; version-control,ambiguous,pending
+urn:acg:metadata:capability/recommend%2FClaude%20learning%20resource,recommend Claude learning resource,,unresolved,pending
+urn:acg:metadata:capability/recommend%2Fdocumentation,recommend documentation,information-retrieval,candidate,pending
+urn:acg:metadata:capability/refactor%2FReact%20component,refactor React component,software-development ; code-quality,ambiguous,pending
+urn:acg:metadata:capability/retrieve%2FAzure%20Advisor%20recommendation,retrieve Azure Advisor recommendation,information-retrieval ; cloud-management,ambiguous,pending
+urn:acg:metadata:capability/retrieve%2FAzure%20remediation%20instruction,retrieve Azure remediation instruction,information-retrieval ; cloud-management,ambiguous,pending
+urn:acg:metadata:capability/retrieve%2Fweb%20content,retrieve web content,information-retrieval,candidate,pending
+urn:acg:metadata:capability/review%2Fprose,review prose,code-quality ; writing,ambiguous,pending
+urn:acg:metadata:capability/review%2Fresponse%20reasoning,review response reasoning,code-quality ; reasoning-planning,ambiguous,pending
+urn:acg:metadata:capability/review%2Fweb%20interface,review web interface,code-quality,candidate,pending
+urn:acg:metadata:capability/run%2Fbatch%20job,run batch job,,unresolved,pending
+urn:acg:metadata:capability/search%2FAWS%20documentation,search AWS documentation,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2FCloudflare%20API%20specification,search Cloudflare API specification,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2FCloudflare%20documentation,search Cloudflare documentation,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2FGoogle%20developer%20documentation,search Google developer documentation,information-retrieval ; software-development,ambiguous,pending
+urn:acg:metadata:capability/search%2Fdocumentation%20table,search documentation table,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2Ffilesystem%20entry,search filesystem entry,information-retrieval ; file-management,ambiguous,pending
+urn:acg:metadata:capability/search%2Fimage,search image,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2Fknowledge%20graph%20node,search knowledge graph node,information-retrieval ; knowledge-management,ambiguous,pending
+urn:acg:metadata:capability/search%2Flocal%20business,search local business,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2Fnews,search news,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2Fvideo,search video,information-retrieval,candidate,pending
+urn:acg:metadata:capability/search%2Fweb,search web,information-retrieval,candidate,pending
+urn:acg:metadata:capability/select%2Fcloud%20database,select cloud database,database-management,candidate,pending
+urn:acg:metadata:capability/send%2FAzure%20Monitor%20log,send Azure Monitor log,cloud-management ; observability,ambiguous,pending
+urn:acg:metadata:capability/send%2FSMS%20message,send SMS message,communication,candidate,pending
+urn:acg:metadata:capability/send%2Fmessage,send message,communication,candidate,pending
+urn:acg:metadata:capability/split%2FPDF%20document,split PDF document,document-processing,candidate,pending
+urn:acg:metadata:capability/stage%2Fgit%20changes,stage git changes,version-control,candidate,pending
+urn:acg:metadata:capability/stream%2Fevent%20data,stream event data,,unresolved,pending
+urn:acg:metadata:capability/structure%2Freasoning,structure reasoning,reasoning-planning,candidate,pending
+urn:acg:metadata:capability/switch%2Fgit%20revision,switch git revision,version-control,candidate,pending
+urn:acg:metadata:capability/test%2Fweb%20application,test web application,software-testing,candidate,pending
+urn:acg:metadata:capability/upgrade%2FAzure%20workload,upgrade Azure workload,cloud-management,candidate,pending
+urn:acg:metadata:capability/validate%2Fgcloud%20command,validate gcloud command,,unresolved,pending
+urn:acg:metadata:capability/visualize%2FIRQL%20graph,visualize IRQL graph,,unresolved,pending
+urn:acg:metadata:capability/write%2Fdocumentation,write documentation,information-retrieval ; writing,ambiguous,pending
+urn:acg:metadata:capability/write%2Ffile,write file,file-management,candidate,pending
+urn:acg:metadata:capability/write%2Finternal%20communication,write internal communication,communication,candidate,pending

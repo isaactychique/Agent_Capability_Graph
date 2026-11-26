@@ -1,0 +1,7 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?entityName ?signal ?description WHERE {
+ ?entity schema:name ?entityName ; acg:hasRiskSignal ?signal .
+ OPTIONAL { ?signal schema:description ?description }
+} ORDER BY ?entityName

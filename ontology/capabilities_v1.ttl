@@ -1,0 +1,187 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix cap: <urn:acg:vocabulary:v1:> .
+
+cap:scheme a skos:ConceptScheme ;
+    skos:prefLabel "Agent Capability Vocabulary v1"@en ;
+    dct:description "Draft closed vocabulary for software-agent resources; 20 selectable concepts. Local provisional identifiers, pending public URI migration."@en .
+
+cap:information-retrieval a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "information-retrieval" ;
+    skos:prefLabel "Information retrieval"@en ;
+    skos:definition "Search, retrieve or navigate information, Web content and documentation."@en ;
+    skos:scopeNote "Exclude arbitrary file modification and database administration."@en .
+cap:scheme skos:hasTopConcept cap:information-retrieval .
+
+cap:file-management a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "file-management" ;
+    skos:prefLabel "File and directory management"@en ;
+    skos:definition "Read, write, organize or inspect files and directories."@en ;
+    skos:scopeNote "Exclude document-content transformations."@en .
+cap:scheme skos:hasTopConcept cap:file-management .
+
+cap:document-processing a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "document-processing" ;
+    skos:prefLabel "Document processing"@en ;
+    skos:definition "Create, read, extract, transform or translate PDF, Word, presentations and other documents."@en ;
+    skos:scopeNote "Spreadsheets have a separate category."@en .
+cap:scheme skos:hasTopConcept cap:document-processing .
+
+cap:spreadsheet-processing a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "spreadsheet-processing" ;
+    skos:prefLabel "Spreadsheet processing"@en ;
+    skos:definition "Create, edit, calculate or convert spreadsheets and tabular workbooks."@en ;
+    skos:scopeNote "Database administration is separate."@en .
+cap:scheme skos:hasTopConcept cap:spreadsheet-processing .
+
+cap:visual-content a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "visual-content" ;
+    skos:prefLabel "Visual content creation"@en ;
+    skos:definition "Create visual art, images, animation, diagrams, GIFs and visual themes."@en ;
+    skos:scopeNote "Exclude software interface implementation without a visual creation task."@en .
+cap:scheme skos:hasTopConcept cap:visual-content .
+
+cap:software-development a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "software-development" ;
+    skos:prefLabel "Software development"@en ;
+    skos:definition "Implement or integrate applications, APIs, SDKs and agent software."@en ;
+    skos:scopeNote "Testing, review and deployment have separate categories."@en .
+cap:scheme skos:hasTopConcept cap:software-development .
+
+cap:code-quality a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "code-quality" ;
+    skos:prefLabel "Code and interface review"@en ;
+    skos:definition "Review code, interfaces or architecture and improve maintainability."@en ;
+    skos:scopeNote "Exclude runtime testing."@en .
+cap:scheme skos:hasTopConcept cap:code-quality .
+
+cap:software-testing a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "software-testing" ;
+    skos:prefLabel "Software testing"@en ;
+    skos:definition "Execute or design application tests and browser automation."@en ;
+    skos:scopeNote "Deployment does not imply testing."@en .
+cap:scheme skos:hasTopConcept cap:software-testing .
+
+cap:version-control a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "version-control" ;
+    skos:prefLabel "Version control and collaboration"@en ;
+    skos:definition "Inspect and modify Git repositories, commits, branches, issues and pull requests."@en ;
+    skos:scopeNote "General file operations remain file management."@en .
+cap:scheme skos:hasTopConcept cap:version-control .
+
+cap:cloud-management a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "cloud-management" ;
+    skos:prefLabel "Cloud infrastructure management"@en ;
+    skos:definition "Provision, configure, manage, upgrade or deploy cloud infrastructure and hosted applications."@en ;
+    skos:scopeNote "Cost analysis and databases have dedicated categories."@en .
+cap:scheme skos:hasTopConcept cap:cloud-management .
+
+cap:database-management a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "database-management" ;
+    skos:prefLabel "Database management"@en ;
+    skos:definition "Select, configure or administer database services and data storage."@en ;
+    skos:scopeNote "Knowledge graph operations have a separate category."@en .
+cap:scheme skos:hasTopConcept cap:database-management .
+
+cap:observability a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "observability" ;
+    skos:prefLabel "Observability and diagnostics"@en ;
+    skos:definition "Inspect telemetry, trace, monitor, diagnose or debug running systems."@en ;
+    skos:scopeNote "Risk assessment and code review are separate."@en .
+cap:scheme skos:hasTopConcept cap:observability .
+
+cap:cost-management a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "cost-management" ;
+    skos:prefLabel "Cloud cost management"@en ;
+    skos:definition "Estimate, analyze, optimize or govern cloud spending and efficiency."@en ;
+    skos:scopeNote "General performance optimization is separate."@en .
+cap:scheme skos:hasTopConcept cap:cost-management .
+
+cap:security-identity a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "security-identity" ;
+    skos:prefLabel "Security and identity operations"@en ;
+    skos:definition "Manage authentication, authorization, secrets, cryptographic keys or identities."@en ;
+    skos:scopeNote "A security-related mention alone is not a permission grant."@en .
+cap:scheme skos:hasTopConcept cap:security-identity .
+
+cap:knowledge-management a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "knowledge-management" ;
+    skos:prefLabel "Knowledge graph and knowledge-base management"@en ;
+    skos:definition "Create, read or maintain entities, relations, observations and knowledge bases."@en ;
+    skos:scopeNote "Generic search alone is information retrieval."@en .
+cap:scheme skos:hasTopConcept cap:knowledge-management .
+
+cap:communication a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "communication" ;
+    skos:prefLabel "Communication and messaging"@en ;
+    skos:definition "Compose or send messages and internal communications."@en ;
+    skos:scopeNote "Long-form documentation writing is separate."@en .
+cap:scheme skos:hasTopConcept cap:communication .
+
+cap:writing a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "writing" ;
+    skos:prefLabel "Writing and documentation"@en ;
+    skos:definition "Write, coauthor or edit prose and documentation."@en ;
+    skos:scopeNote "Documentation search is information retrieval."@en .
+cap:scheme skos:hasTopConcept cap:writing .
+
+cap:time-operations a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "time-operations" ;
+    skos:prefLabel "Time and timezone operations"@en ;
+    skos:definition "Read time, calculate durations or convert timezones."@en ;
+    skos:scopeNote "Unrelated data conversions remain in their task domain."@en .
+cap:scheme skos:hasTopConcept cap:time-operations .
+
+cap:reasoning-planning a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "reasoning-planning" ;
+    skos:prefLabel "Reasoning and planning"@en ;
+    skos:definition "Structure reasoning, plan objectives or analyze agent reasoning."@en ;
+    skos:scopeNote "This does not guarantee general autonomous reasoning."@en .
+cap:scheme skos:hasTopConcept cap:reasoning-planning .
+
+cap:performance-optimization a skos:Concept ;
+    skos:inScheme cap:scheme ;
+    skos:topConceptOf cap:scheme ;
+    skos:notation "performance-optimization" ;
+    skos:prefLabel "Software performance optimization"@en ;
+    skos:definition "Improve application performance, efficiency or deployment performance."@en ;
+    skos:scopeNote "Cloud spending optimization is cost management."@en .
+cap:scheme skos:hasTopConcept cap:performance-optimization .

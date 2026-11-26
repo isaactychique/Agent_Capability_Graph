@@ -1,0 +1,1 @@
+Identify the authenticated Cloudflare user or account.

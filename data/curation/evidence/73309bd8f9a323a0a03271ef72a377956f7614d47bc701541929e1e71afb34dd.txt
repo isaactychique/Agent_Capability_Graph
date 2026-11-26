@@ -1,0 +1,1 @@
+Get a time a specified duration in the past.

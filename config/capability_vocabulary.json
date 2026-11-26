@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "concepts": [
     {
       "action": "search",
@@ -40,6 +40,36 @@
       "action": "test",
       "object": "web application",
       "pattern": "\\btest(?:ing|s)?\\s+(?:(?:local|a)\\s+){0,2}web\\s+applications?\\b"
+    },
+    {
+      "action": "extract",
+      "object": "PDF content",
+      "pattern": "(?i)\\bextract(?:ing)?\\s+(?:text|tables?)\\s+from\\s+PDFs?\\b"
+    },
+    {
+      "action": "merge",
+      "object": "PDF document",
+      "pattern": "(?i)\\bmerg(?:e|ing)\\s+(?:multiple\\s+)?PDFs?\\b"
+    },
+    {
+      "action": "split",
+      "object": "PDF document",
+      "pattern": "(?i)\\bsplit(?:ting)?\\s+(?:a\\s+)?PDFs?\\b"
+    },
+    {
+      "action": "create",
+      "object": "PDF document",
+      "pattern": "(?i)\\bcreat(?:e|ing)\\s+(?:a\\s+|new\\s+)?PDFs?\\b"
+    },
+    {
+      "action": "convert",
+      "object": "PDF document",
+      "pattern": "(?i)\\bconvert(?:ing)?\\s+[^.\\n]{0,40}\\s+to\\s+PDF\\b"
+    },
+    {
+      "action": "edit",
+      "object": "spreadsheet",
+      "pattern": "(?i)\\bedit(?:ing)?\\s+(?:an?\\s+|existing\\s+)?(?:Excel\\s+)?(?:spreadsheet|xlsx)\\b"
     }
   ]
 }

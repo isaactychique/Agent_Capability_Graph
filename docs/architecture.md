@@ -1,5 +1,10 @@
 # One database, one selected RDF graph
 
+For the full visual walkthrough, see [complete workflow](workflow.md): source
+ingestion, SQLite, deterministic extraction, optional LLM branch, RDF assembly,
+validation, review and query execution. This document focuses on storage and
+identity reconciliation.
+
 All imported MCP server, tool and Skill information is consolidated in
 `data/acg.sqlite3`. `pipeline.py build` reads this single database. It does not
 open separate SQLite/JSONL corpora and reconcile them again on every RDF build.
@@ -67,6 +72,7 @@ replace another source's tool list.
 | `observation` | Source-backed values, revisions and evidence statuses |
 | `tool_annotation` | Imported static-registration assertions linked to canonical tools |
 | `imported_observation` | Complete registry observations, including version/disposition information |
+| `skill_document` | Full Skill snapshots, source URLs, revision, hash and explicit availability states |
 | `content_inventory` | Source content fingerprints and locations |
 | `metadata` | Selection, manifest, collection metadata and schema version |
 
@@ -144,8 +150,8 @@ the selected source records or invalidating their fingerprints.
    `config/corpus_selection.json` before that refresh. The original Skills remain.
 5. Run `pipeline.py run` to regenerate mappings, RDF, inventory and SHACL reports.
 
-`import` also refreshes mappings. `mappings` alone updates configuration output,
-not the RDF; `build` updates RDF and annotation/corpus reports, but not SHACL reports.
+`import` also refreshes mappings. `mappings` updates configuration output and
+document-candidate reports, not the RDF; `build` updates RDF and annotation/corpus reports, but not SHACL reports.
 The database is rebuilt from snapshots rather than acting as an append-only log:
 retain old source evidence separately when historical snapshots are required.
 
@@ -154,3 +160,28 @@ Implementation remains split by responsibility: `cli.py` dispatches commands,
 assembles RDF, `capabilities.py` extracts and applies task proposals, and query,
 inventory and validation modules serve their corresponding commands. Collectors
 and normalization code remain under `ingestion/`; they are not separate pipelines.
+
+
+## Skill body ingestion
+
+`skill_documents.py` imports available pinned archives and verified complete cache
+entries into SQLite during `import`. It extracts source-located candidates during
+mapping generation, without executing Skill instructions. Missing full documents
+are inventoried separately from missing capability mappings. This preserves the
+single-database build boundary and the existing sample selection.
+
+
+The optional `collect --source skill-documents` command obtains pinned direct
+Skill bodies and verifies their existing SHA-256 before synchronizing SQLite.
+It does not change the selected Skill set or normalized record fingerprints.
+Full-body snapshots sit beside registry imports; offline builds use the SQLite
+copy. Secondary imports without direct pinned source evidence are skipped.
+
+
+## Research questions and identifier policy
+
+[Competency questions](competency_questions.md) define the query-level goals and
+limitations. [URI design](uri_design.md) specifies proposed persistent HTTPS
+identifiers and coordinated migration requirements. The proposed base is `https://w3id.org/agent-capability-graph`; w3id.org
+registration and target hosting are pending. The active graph retains its
+provisional URN namespace.

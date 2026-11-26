@@ -188,7 +188,10 @@ def synchronize(refresh=False):
                 db.execute('INSERT INTO tool_annotation VALUES(?,?,?)',(r['annotation_id'],mapping[('registry',r['tool_id'])],encode(r)))
             for file,table in [('source_observations.jsonl','imported_observation'),('skill_contents.jsonl','content_inventory')]:
                 db.executemany(f'INSERT INTO {table}(payload_json) VALUES(?)',[(encode(r),) for r in rows(NORMALIZED/file)])
-            metadata={'schema_version':1,'collected_at':imported.get('collected_at'),'manifest':manifest,'selection':selection,'curated_collection_metadata':imported.get('collection_metadata',imported.get('repositories',{}))}
+            from .skill_documents import DOCUMENT_SCHEMA, import_documents
+            db.execute(DOCUMENT_SCHEMA)
+            import_documents(db)
+            metadata={'schema_version':2,'collected_at':imported.get('collected_at'),'manifest':manifest,'selection':selection,'curated_collection_metadata':imported.get('collection_metadata',imported.get('repositories',{}))}
             db.executemany('INSERT INTO metadata VALUES(?,?)',[(k,encode(v)) for k,v in metadata.items()])
             if db.execute('PRAGMA foreign_key_check').fetchall():raise ValueError('Broken canonical foreign keys')
             if db.execute('PRAGMA integrity_check').fetchone()[0]!='ok':raise ValueError('SQLite integrity check failed')

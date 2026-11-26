@@ -86,6 +86,10 @@ def build(refresh=False):
                'selected_metadata_servers': len(servers), 'metadata_tools': len(tools),
                'merged_servers': sum(1 for r in merge_rows if r[0]=='server' and r[1]!=r[2]),
                'merged_tools': sum(1 for r in merge_rows if r[0]=='tool' and r[1]!=r[2])}
+    from .override_history import provenance
+    import hashlib
+    summary['override_provenance'] = provenance()
+    summary['graph_sha256'] = hashlib.sha256(OUTPUT.read_bytes()).hexdigest()
     (REPORTS / 'summary.json').write_text(json.dumps(summary,indent=2)+'\n', encoding='utf-8')
     print(f"Built {OUTPUT.relative_to(ROOT)}: "
           f"{summary['counts']['MCPServer']} servers, {summary['counts']['MCPTool']} tools, "

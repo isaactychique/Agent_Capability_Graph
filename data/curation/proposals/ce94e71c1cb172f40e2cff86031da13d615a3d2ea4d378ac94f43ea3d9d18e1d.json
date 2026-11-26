@@ -1,0 +1,47 @@
+{
+  "section": "skills",
+  "key": "pdf",
+  "operation": "set",
+  "base_rule_sha256": "946cbcca3131374f609b2f7d850474a1d793ea69205cc6c76c0ad45cb689f882",
+  "rule": {
+    "action": "process",
+    "object": "PDF document",
+    "evidence_pattern": "PDF\\ files"
+  },
+  "actor": "",
+  "rationale": "",
+  "basis": "source_based_revision",
+  "original_author": null,
+  "original_prompt": null,
+  "evidence": [
+    {
+      "entity": "urn:acg:data:entity/pdf",
+      "origin": "curated",
+      "source_id": "pdf",
+      "name": "pdf",
+      "kind": "AgentSkill",
+      "source_url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md",
+      "revision": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "evidence_kind": "description",
+      "text_sha256": "d1906e2fc005cb80c70b054ca9a61cbcaa67f14c348463f18c7c3bd41e682d02",
+      "quote": "PDF files",
+      "start": 59,
+      "end": 68
+    },
+    {
+      "entity": "urn:acg:data:entity/pdf",
+      "origin": "registry",
+      "source_id": "skl_3e7951d13a80c6b485eac29a",
+      "name": "pdf",
+      "kind": "AgentSkill",
+      "source_url": "https://raw.githubusercontent.com/anthropics/skills/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md",
+      "revision": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "source_name": "anthropics/skills",
+      "evidence_kind": "description",
+      "text_sha256": "d1906e2fc005cb80c70b054ca9a61cbcaa67f14c348463f18c7c3bd41e682d02",
+      "quote": "PDF files",
+      "start": 59,
+      "end": 68
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Compare a repository with a branch, commit, or revision range.

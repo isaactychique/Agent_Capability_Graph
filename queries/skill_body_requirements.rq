@@ -1,0 +1,15 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# Candidate statements with conditions preserved, not a mandatory package list.
+SELECT ?skillName ?kind ?statement ?quote ?line
+       (GROUP_CONCAT(DISTINCT STR(?sourceUrl); separator=" ; ") AS ?evidence) ?status
+WHERE {
+  VALUES ?skillName { __NAME__ }
+  VALUES ?kind { "requirement_statement" "installation_instruction" }
+  ?skill a acg:AgentSkill ; schema:name ?skillName ; acg:hasSkillFactAssertion ?claim .
+  ?claim acg:factKind ?kind ; acg:factValue ?statement ; acg:evidenceText ?quote ;
+         acg:evidenceLine ?line ; acg:basedOnSource/schema:url ?sourceUrl ; acg:reviewStatus ?status .
+}
+GROUP BY ?skill ?skillName ?kind ?statement ?quote ?line ?status
+ORDER BY ?kind ?line

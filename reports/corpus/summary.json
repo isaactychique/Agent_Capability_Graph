@@ -1,17 +1,25 @@
 {
   "graph": "data/processed/agent_capability_graph.ttl",
   "database": "data/acg.sqlite3",
-  "triples": 6808,
+  "triples": 7751,
   "counts": {
     "MCPServer": 10,
     "MCPTool": 55,
     "AgentSkill": 110,
-    "CapabilityAssertion": 214
+    "CapabilityAssertion": 221
   },
   "additional_skills": 100,
   "initial_skill_enrichments": 7,
   "selected_metadata_servers": 2,
   "metadata_tools": 17,
   "merged_servers": 2,
-  "merged_tools": 5
+  "merged_tools": 5,
+  "override_provenance": {
+    "status": "recorded",
+    "history_head": "5e0e0b07de6c0ac446290f75302008f6eb6cd7500c0716c97a4a6571271df702",
+    "history_sha256": "88fafc3562c0c9abaf0472ca505ad5e79d70ac6f8c9b721798319b891cd50097",
+    "overrides_sha256": "abb999d3643d05c6c3cc6dde5264288de5b3929e24c52a13db775f9dc5fe5eeb",
+    "historical_authorship": "unknown_unless_explicitly_recorded"
+  },
+  "graph_sha256": "a0e6251de18905cc5e15bb63033f0e694fa9aaa315c5154749a7fcbca4ad069a"
 }

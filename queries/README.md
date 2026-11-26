@@ -1,5 +1,8 @@
 # SPARQL queries
 
+See the maintained [competency questions](competency_questions.md) for
+question definitions, expected examples and counterexamples.
+
 All queries use `data/processed/agent_capability_graph.ttl` by default.
 The graph is built exclusively from the unified `data/acg.sqlite3` database;
 its current sample contains 10 servers, 55 tools and 110 Skills.
@@ -14,7 +17,7 @@ The Python implementation is in `src/acg/query.py`; use `pipeline.py query` from
 .venv/bin/python pipeline.py query skills_by_format.rq --format spreadsheet
 .venv/bin/python pipeline.py query entity_capabilities.rq --name pdf
 .venv/bin/python pipeline.py query entity_capabilities.rq --name 'Filesystem MCP Server'
-.venv/bin/python pipeline.py query skill_requirements.rq
+.venv/bin/python pipeline.py query skill_requirements.rq --name phoenix-observability
 ```
 
 `--graph path.ttl` selects an explicit file. The executable can be replaced by
@@ -32,8 +35,8 @@ The Python implementation is in `src/acg/query.py`; use `pipeline.py query` from
   their method, review status and evidence type. Server assertions are explicitly
   derived from tool assertions. Several tasks or different resources sharing a name
   can produce several rows.
-- `skill_requirements.rq` defaults to `phoenix-observability` in its `VALUES` clause;
-  edit the name to inspect another Skill. Missing dependency facts mean no requirement
+- `skill_requirements.rq --name phoenix-observability` selects a Skill by name;
+  pass another name to inspect a different Skill. Missing dependency facts mean no requirement
   was recorded, not that no requirement exists. Compatibility, allowed tools and
   bundled files remain separate signals. Some requirements originate in secondary imports.
 
@@ -49,3 +52,70 @@ See `reports/capabilities/review.csv` and `unclassified.csv` for the review queu
 
 SHACL structure and coverage reports are separate under `reports/validation/unified/`.
 The placeholder `template-skill` is deliberately unclassified.
+
+
+## Full-document evidence
+
+```bash
+.venv/bin/python pipeline.py query skill_body_evidence.rq
+```
+
+This query returns format mentions, requirement statements and installation
+instructions from stored Skill bodies, with quotes, line numbers, sources and
+review status. These candidates do not replace declared dependencies returned
+by `skill_requirements.rq`. Some cached Skills lack complete documents; absence
+of a body candidate therefore does not establish absence of a requirement.
+
+
+For focused body-based discovery:
+
+```bash
+.venv/bin/python pipeline.py query skills_body_by_format.rq --format PDF
+.venv/bin/python pipeline.py query skill_body_requirements.rq --name xlsx
+```
+
+The first query matches an exact normalized format mention (case insensitive),
+not verified support. The second preserves dependency statements and installation
+conditions; it does not flatten them into mandatory package requirements.
+
+
+Identical evidence statements from GitHub and raw URLs are grouped into one
+result row with aggregated source URLs. Different lines and different canonical
+Skills remain separate, even when their preferred names coincide.
+
+
+## Grouping tools by action
+
+```bash
+.venv/bin/python pipeline.py query tool_action_groups.rq
+.venv/bin/python pipeline.py query tools_by_action.rq --action search
+.venv/bin/python pipeline.py query tools_by_action.rq --action convert
+.venv/bin/python pipeline.py query tools_by_action.rq --action list
+```
+
+Group counts are distinct canonical tool/server counts. Objects remain explicit,
+so sharing a verb does not imply identical capabilities. These queries inspect
+existing mappings; they do not perform unrestricted linguistic analysis or runtime
+verification. The public HTTPS URI migration is documented in
+[URI design](../docs/uri_design.md); current prefixes remain URNs.
+
+
+## Numbered competency catalogue
+
+All original identifiers CQ01–CQ20 now have numbered `.rq` files. Two compound
+questions were split into CQ07b and CQ12b, giving **22 atomic questions** grouped
+by tools, Skills, MCP servers and transversal concerns in
+[competency_questions.md](competency_questions.md).
+
+```bash
+.venv/bin/python pipeline.py competency-questions
+.venv/bin/python pipeline.py query cq03_skill_dependencies.rq --name phoenix-observability
+.venv/bin/python pipeline.py query cq07b_tool_required_parameters.rq
+.venv/bin/python pipeline.py query cq12b_skill_allowed_tools.rq
+.venv/bin/python pipeline.py query cq16_skill_bundles.rq --bundle scripts
+```
+
+The coverage report records 25 executions (two CQ02 formats and three CQ16
+bundle kinds). Descriptive query filenames above remain exploration helpers;
+numbered files are the catalogue entry points. The catalogue documents all input
+parameters and answer limitations. Empty results describe missing matching facts.

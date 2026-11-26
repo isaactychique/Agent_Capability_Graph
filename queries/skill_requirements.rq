@@ -1,12 +1,12 @@
 PREFIX acg: <urn:acg:ontology:>
 PREFIX schema: <https://schema.org/>
 
-# Replace the name in VALUES with a Skill name. Missing fields remain unbound;
+# Pass --name to select a Skill. Missing fields remain unbound;
 # they must not be interpreted as proof that the Skill has no requirement.
 SELECT DISTINCT ?skillName ?dependency ?compatibility ?allowedTool
                 ?hasScripts ?hasReferences ?hasAssets ?evidence
 WHERE {
-  VALUES ?skillName { "phoenix-observability" }
+  VALUES ?skillName { __NAME__ }
   ?skill a acg:AgentSkill ;
          schema:name ?skillName ;
          acg:documentedBy ?source .

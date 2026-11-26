@@ -1,0 +1,42 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlist[itemize]{nosep,leftmargin=*}
+
+\title{Agent Capability Graph\\\large Fifth Progress Report}
+\author{Isaac Tychique}
+\date{Reporting period: November 20--26, 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Continuation of my previous work}
+Following my fourth report, I continued improving the RDF knowledge graph and its pipeline. I focused on capability annotation provenance, competency questions, and the preparation of capability extraction using a controlled vocabulary.
+
+\section*{Work completed}
+\begin{itemize}
+    \item \textbf{Capability provenance.} I clarified the distinction between source metadata, explicit rules preserved in \texttt{capability\_overrides.json}, and mappings generated in \texttt{capability\_mappings.json}. I implemented a decision history and snapshots of supporting source passages to make rules auditable and reconstructable. Legacy rules remain explicitly marked as unreviewed; their original creation prompt is unavailable.
+
+    \item \textbf{Skill document analysis.} I extended the processing of \texttt{SKILL.md} files to preserve format mentions, installation instructions, and candidate requirement statements with quotations, sources, and document positions. I distinguish these signals from explicitly declared dependencies.
+
+    \item \textbf{Controlled SKOS vocabulary.} I prepared a version-one vocabulary containing 20 concepts to group detailed capabilities. For the 154 concepts currently in the graph, the grouping proposes 113 unique matches, 23 ambiguous cases, and 18 unmatched cases. I retain these proposals for review rather than treating them as approved classifications.
+
+    \item \textbf{Preparation of LLM extraction.} I wrote a versioned prompt requiring capability selection from the supplied vocabulary, supporting evidence, and abstention when the description is insufficient. I integrated request preparation and response validation into the pipeline. I generated eight offline requests for five Skills; I have not yet run extraction against the EURECOM LLM service.
+
+    \item \textbf{Competency questions and SPARQL.} I organized the questions in a dedicated Markdown file under \texttt{queries/}, grouped into tools, Skills, MCP servers, and transversal questions. I split compound questions: the 20 original identifiers now cover 22 atomic questions, each linked to a SPARQL query. All 25 parameterized executions complete without errors; some return no results because the corresponding data is missing.
+
+    \item \textbf{Architecture and identifiers.} I documented the complete workflow, data sources, and project limitations. I also prepared an HTTPS URI design using a future \texttt{w3id.org} prefix. This prefix has not been reserved, and the graph still uses its current URN identifiers.
+\end{itemize}
+
+\section*{Current status and next steps}
+My selected graph contains \textbf{10 MCP servers, 55 tools, and 110 Skills}, with \textbf{7,751 triples and 221 capability assertions}. Structural SHACL validation passes. I retain a coverage warning for \texttt{template-skill}, whose placeholder description does not justify assigning a capability. I do not present any annotation as human-reviewed.
+
+I will now review the vocabulary and prompt with my colleague, resolve ambiguous groupings, and connect the EURECOM LLM service. I will then prepare reference answers to compare graph-based discovery with keyword, tag, and embedding baselines. This evaluation has not yet been conducted.
+
+\end{document}

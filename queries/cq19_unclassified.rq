@@ -1,0 +1,8 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT ?entity ?name ?type WHERE {
+ VALUES ?type { acg:AgentSkill acg:MCPTool acg:MCPServer }
+ ?entity a ?type ; schema:name ?name .
+ FILTER NOT EXISTS { ?entity acg:hasCapabilityAssertion ?claim }
+} ORDER BY ?type ?name

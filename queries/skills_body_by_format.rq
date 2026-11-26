@@ -1,0 +1,16 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# Explicit format mentions in task-oriented body text; inspect context before
+# calling these format-support capabilities. XLSX and spreadsheet remain distinct mentions.
+SELECT ?skillName ?format ?quote ?line
+       (GROUP_CONCAT(DISTINCT STR(?sourceUrl); separator=" ; ") AS ?evidence) ?status
+WHERE {
+  VALUES ?requestedFormat { "__FORMAT__" }
+  ?skill a acg:AgentSkill ; schema:name ?skillName ; acg:hasSkillFactAssertion ?claim .
+  ?claim acg:factKind "format_mention" ; acg:factValue ?format ; acg:evidenceText ?quote ;
+         acg:evidenceLine ?line ; acg:basedOnSource/schema:url ?sourceUrl ; acg:reviewStatus ?status .
+  FILTER(LCASE(STR(?format)) = LCASE(STR(?requestedFormat)))
+}
+GROUP BY ?skill ?skillName ?format ?quote ?line ?status
+ORDER BY ?skillName ?line

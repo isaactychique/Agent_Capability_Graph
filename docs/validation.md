@@ -34,7 +34,7 @@ python -m unittest discover -s tests -v
 ## Keeping reports current
 
 `build` regenerates RDF and annotation reports but does not rerun SHACL.
-`mappings` regenerates only the mapping artifact. After either vocabulary or
+`mappings` regenerates the mapping artifact and document-candidate reports. After either vocabulary or
 review changes, use `pipeline.py run` to rebuild the graph and refresh both
 validation reports. Existing SHACL files describe the graph at their last
 validation run; do not assume they validate a subsequently rebuilt graph.
@@ -42,3 +42,10 @@ validation run; do not assume they validate a subsequently rebuilt graph.
 A reviewed entity override is applied only if its evidence matches. SHACL checks
 shape constraints and coverage; it does not establish that an extraction is
 semantically correct or that a tool was executed successfully.
+
+
+Full-document candidates additionally use `shape:SkillFact` and
+`shape:LocatedEvidence`: allowed fact kinds, source links, candidate status,
+SHA-256 format, nonnegative character offsets and positive line numbers are
+checked. Quote equality to stored source text is enforced by the Python builder;
+SHACL does not have access to the document text in SQLite.

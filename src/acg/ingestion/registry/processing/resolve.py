@@ -123,7 +123,8 @@ def resolve(rows):
 # Deliberately small vocabulary. Each mapping is tied to a verified static registration.
 from acg.paths import ROOT
 
-STATIC_TASKS = json.loads((ROOT / "config/capability_overrides.json").read_text(encoding="utf-8"))["static_tools"]
+from acg.override_history import load_overrides
+STATIC_TASKS = load_overrides()["static_tools"]
 ACTIONS = {name: (rule["action"], rule["object"]) for name, rule in STATIC_TASKS.items()}
 
 

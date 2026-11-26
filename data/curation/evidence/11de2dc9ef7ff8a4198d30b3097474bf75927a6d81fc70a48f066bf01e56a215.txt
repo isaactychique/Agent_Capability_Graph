@@ -1,0 +1,1 @@
+CrimeoMeter integration. Manage Deals, Persons, Organizations, Leads, Projects, Activities and more. Use when the user wants to interact with CrimeoMeter data.

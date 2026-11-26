@@ -33,9 +33,13 @@ def stored_descriptions():
 
 def generate_mappings():
     """Build a disposable artifact from vocabulary, overrides and stored evidence."""
-    overrides = json.loads((ROOT / 'config/capability_overrides.json').read_text())
+    from .override_history import load_overrides, provenance, decision_index
+    overrides = load_overrides()
     vocabulary = json.loads((ROOT / 'config/capability_vocabulary.json').read_text())
-    rules = {'version': 2, **overrides, 'entities': {}}
+    rules = {'version': 3, **overrides, 'entities': {}, 'override_provenance': provenance()}
+    for (section,key),event_id in decision_index().items():
+        if section != 'entities' and key in rules.get(section,{}):
+            rules[section][key]['decision_event'] = event_id
     proposals = {}
     for entity, origin, text, url in stored_descriptions():
         for concept in vocabulary['concepts']:
@@ -49,12 +53,30 @@ def generate_mappings():
                             source_url=url, origin=origin, generator='description_task_v2',
                             status='candidate_for_human_review')
                 proposals.setdefault(entity, {})[(rule['action'], rule['object'], url)] = rule
+    from .skill_documents import documents, located_matches, fact_candidates, write_document_reports
+    docs = documents()
+    facts = []
+    for doc in docs:
+        if doc['status'] != 'available':
+            continue
+        for rule in located_matches(doc, vocabulary):
+            proposals.setdefault(doc['entity'], {})[(rule['action'], rule['object'], doc['source_url'], rule['start'])] = rule
+        for fact in fact_candidates(doc):
+            candidate = dict(entity=doc['entity'], status='candidate_for_human_review', **fact)
+            if candidate not in facts:
+                facts.append(candidate)
+    rules['body_facts'] = facts
+    write_document_reports(docs, facts)
     # Canonical-entity overrides replace automatic proposals for that entity.
     rules['entities'] = {entity: list(group.values()) for entity, group in sorted(proposals.items())}
+    events = decision_index()
     for entity, value in overrides.get('entities', {}).items():
-        rules['entities'][entity] = value if isinstance(value, list) else [value]
+        values = value if isinstance(value, list) else [value]
+        for rule in values:
+            if ('entities',entity) in events: rule['decision_event'] = events[('entities',entity)]
+        rules['entities'][entity] = values
     rules['policy'] = ('Generated from capability_vocabulary.json, capability_overrides.json '
-                       'and database descriptions. Explicit overrides take precedence. '
+                       'and stored descriptions/full SKILL.md snapshots. Explicit overrides take precedence. '
                        'Automatic matches are candidates, not runtime verification.')
     path = ROOT / 'config/capability_mappings.json'
     temp = path.with_suffix('.json.part')
@@ -86,13 +108,51 @@ def add_candidate(graph, entity, rule, rule_id, evidence, source, kind):
     graph.add((assertion, ACG.evidenceText, Literal(match.group(0))))
     graph.add((assertion, ACG.evidenceType, Literal(kind)))
     graph.add((assertion, ACG.mappingRule, Literal(rule_id)))
+    if rule.get('evidence_type') == 'skill_body':
+        add_location(graph, assertion, rule)
     graph.add((assertion, ACG.reviewStatus, Literal('reviewed' if rule.get('status') == 'reviewed' else 'candidate_for_human_review')))
     return True
 
 
+def add_location(graph, claim, rule):
+    for field, predicate in [('line','evidenceLine'), ('start','evidenceStart'),
+                             ('end','evidenceEnd'), ('content_sha256','contentSha256')]:
+        graph.add((claim, ACG[predicate], Literal(rule[field])))
+
+
+def add_body_facts(graph, rules, docs):
+    """Emit source-located candidates separately from declared dependencies."""
+    for rule in rules.get('body_facts', []):
+        entity = URIRef(rule['entity'])
+        if (entity, RDF.type, ACG.AgentSkill) not in graph:
+            continue
+        doc = docs.get((rule['entity'], rule['origin'], rule['source_url']))
+        if not doc or doc['content_sha256'] != rule['content_sha256']:
+            continue
+        if doc['text'][rule['start']:rule['end']] != rule['quote']:
+            continue
+        source = source_uri(rule['source_url']) if rule['origin'] == 'curated' else iri('source', rule['source_url'])
+        graph.add((source, RDF.type, ACG.SourceDocument))
+        graph.add((source, SCHEMA.url, URIRef(rule['source_url'])))
+        if rule.get('revision'):
+            graph.add((source, ACG.revision, Literal(rule['revision'])))
+        claim = assertion_id(entity, rule['kind'], rule['value'], source, rule['start'])
+        graph.add((entity, ACG.hasSkillFactAssertion, claim))
+        graph.add((claim, RDF.type, ACG.SkillFactAssertion))
+        for predicate, value in [('factKind',rule['kind']), ('factValue',rule['value']),
+                                 ('evidenceText',rule['quote']), ('evidenceType','skill_body'),
+                                 ('reviewStatus','candidate_for_human_review')]:
+            graph.add((claim, ACG[predicate], Literal(value)))
+        graph.add((claim, ACG.basedOnSource, source))
+        add_location(graph, claim, rule)
+
+
 def enrich_capabilities(graph, records, selected_skills, mapping):
     rules = json.loads((ROOT / 'config/capability_mappings.json').read_text(encoding='utf-8'))
-    explicit = json.loads((ROOT / 'config/capability_overrides.json').read_text()).get('entities', {})
+    from .override_history import load_overrides
+    explicit = load_overrides().get('entities', {})
+    from .skill_documents import documents
+    docs = {(d['entity'],d['origin'],d['source_url']):d for d in documents() if d['status']=='available'}
     by_entity = {}
     for r in records:
         if r['type'] not in ('Tool', 'AgentSkill'):
@@ -128,7 +188,19 @@ def enrich_capabilities(graph, records, selected_skills, mapping):
                 continue
             if not rule.get('evidence_pattern'):
                 raise ValueError(f"Empty evidence pattern for {row['key']}")
-            for evidence, source, kind in row['evidence']:
+            evidence_rows = row['evidence']
+            if rule.get('evidence_type') == 'skill_body':
+                doc = docs.get((str(entity), rule['origin'], rule['source_url']))
+                if (not doc or doc['content_sha256'] != rule['content_sha256']
+                        or doc['text'][rule['start']:rule['end']] != rule['quote']):
+                    continue
+                source = source_uri(rule['source_url']) if rule['origin'] == 'curated' else iri('source', rule['source_url'])
+                graph.add((source, RDF.type, ACG.SourceDocument))
+                graph.add((source, SCHEMA.url, URIRef(rule['source_url'])))
+                if rule.get('revision'):
+                    graph.add((source, ACG.revision, Literal(rule['revision'])))
+                evidence_rows = [(rule['quote'], source, 'skill_body')]
+            for evidence, source, kind in evidence_rows:
                 if rule.get('source_url'):
                     expected = source_uri(rule['source_url']) if rule.get('origin') == 'curated' else iri('source', rule['source_url'])
                     if source != expected:
@@ -139,6 +211,9 @@ def enrich_capabilities(graph, records, selected_skills, mapping):
                     continue
                 if add_candidate(graph, entity, rule, f"{row['kind']}:{row['key']}@{rules['version']}", evidence, source, kind):
                     break
+    add_body_facts(graph, rules, docs)
+    from .llm_extraction import apply_results
+    apply_results(graph)
     derive_servers(graph)
     write_review_queue(graph, by_entity, rules)
 
@@ -170,7 +245,7 @@ def write_review_queue(graph, descriptions, rules):
     folder.mkdir(parents=True, exist_ok=True)
     with (folder / 'review.csv').open('w', newline='', encoding='utf-8') as stream:
         writer = csv.writer(stream, lineterminator='\n')
-        writer.writerow(['entity','name','capability','method','status','evidence_type','quote','source_urls','supporting_assertions'])
+        writer.writerow(['entity','name','capability','method','status','evidence_type','quote','source_urls','supporting_assertions','line','start','end','content_sha256'])
         for entity in sorted(set(graph.subjects(ACG.hasCapabilityAssertion, None)), key=str):
             for claim in sorted(graph.objects(entity, ACG.hasCapabilityAssertion), key=str):
                 capability = graph.value(claim, ACG.assertedCapability)
@@ -179,7 +254,10 @@ def write_review_queue(graph, descriptions, rules):
                 writer.writerow([entity, graph.value(entity, SCHEMA.name), graph.value(capability, SKOS.prefLabel),
                                  graph.value(claim, ACG.assertionMethod), graph.value(claim, ACG.reviewStatus),
                                  graph.value(claim, ACG.evidenceType), graph.value(claim, ACG.evidenceText) or '',
-                                 ' ; '.join(urls), ' ; '.join(sorted(map(str, graph.objects(claim, ACG.derivedFromAssertion))))])
+                                 ' ; '.join(urls), ' ; '.join(sorted(map(str, graph.objects(claim, ACG.derivedFromAssertion)))),
+                                 graph.value(claim, ACG.evidenceLine) or '',
+                                 graph.value(claim, ACG.evidenceStart) if graph.value(claim, ACG.evidenceStart) is not None else '',
+                                 graph.value(claim, ACG.evidenceEnd) or '', graph.value(claim, ACG.contentSha256) or ''])
     with (folder / 'unclassified.csv').open('w', newline='', encoding='utf-8') as stream:
         writer = csv.writer(stream, lineterminator='\n')
         writer.writerow(['entity','name','reason','description'])

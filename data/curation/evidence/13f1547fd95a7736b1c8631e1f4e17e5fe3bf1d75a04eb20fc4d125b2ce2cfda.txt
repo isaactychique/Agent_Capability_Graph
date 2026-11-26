@@ -1,0 +1,1 @@
+Get remediation instructions for selected Azure Advisor recommendations. WHEN: fix a selected recommendation, generate remediation commands. DO NOT USE FOR: unused-resource discovery, savings or deletion prevalidation (use azure-advisor-cost-optimization).

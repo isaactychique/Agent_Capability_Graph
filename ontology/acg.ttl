@@ -297,3 +297,22 @@ acg:mappingRule a owl:DatatypeProperty ; rdfs:range xsd:string .
 acg:derivedFromAssertion a owl:ObjectProperty ;
     rdfs:domain acg:CapabilityAssertion ; rdfs:range acg:CapabilityAssertion ;
     rdfs:comment "Links a server capability claim to the tool claim(s) supporting it."@en .
+
+# Source-located Skill body candidates remain separate from declared facts.
+acg:SkillFactAssertion a owl:Class ;
+    rdfs:label "Skill body fact candidate"@en ;
+    rdfs:comment "An unreviewed format mention, requirement statement or installation instruction extracted from a stored SKILL.md."@en .
+acg:hasSkillFactAssertion a owl:ObjectProperty ; rdfs:domain acg:AgentSkill ; rdfs:range acg:SkillFactAssertion .
+acg:factKind a owl:DatatypeProperty ; rdfs:range xsd:string .
+acg:factValue a owl:DatatypeProperty ; rdfs:range xsd:string .
+acg:evidenceLine a owl:DatatypeProperty ; rdfs:range xsd:integer ;
+    rdfs:comment "One-based line in the stored UTF-8 decoded source."@en .
+acg:evidenceStart a owl:DatatypeProperty ; rdfs:range xsd:integer ;
+    rdfs:comment "Zero-based Unicode character offset, inclusive."@en .
+acg:evidenceEnd a owl:DatatypeProperty ; rdfs:range xsd:integer ;
+    rdfs:comment "Zero-based Unicode character offset, exclusive."@en .
+acg:contentSha256 a owl:DatatypeProperty ; rdfs:range xsd:string ;
+    rdfs:comment "SHA-256 of the stored document encoded as UTF-8."@en .
+
+acg:llmModel a owl:DatatypeProperty ; rdfs:range xsd:string ;
+    rdfs:comment "Model name recorded for a saved, evidence-validated LLM extraction response; not a guarantee of semantic correctness."@en .

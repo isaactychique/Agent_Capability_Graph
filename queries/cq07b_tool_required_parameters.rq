@@ -1,0 +1,7 @@
+# CQ07B — See competency_questions.md for the atomic question.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?tool ?toolName ?requiredParameter WHERE {
+ ?tool a acg:MCPTool ; schema:name ?toolName ; acg:requiredParameter ?requiredParameter .
+} ORDER BY ?toolName ?requiredParameter

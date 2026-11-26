@@ -1,0 +1,16 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# Count canonical resources, not assertions or matching description occurrences.
+# All mapped actions are included; candidate annotations are not verified skills.
+SELECT ?action (COUNT(DISTINCT ?tool) AS ?toolCount)
+       (COUNT(DISTINCT ?server) AS ?serverCount)
+       (GROUP_CONCAT(DISTINCT STR(?object); separator=" ; ") AS ?objects)
+WHERE {
+  ?server a acg:MCPServer ; acg:exposesTool ?tool .
+  ?tool a acg:MCPTool ; acg:hasCapabilityAssertion ?claim .
+  ?claim acg:assertedCapability ?capability .
+  ?capability acg:capabilityAction ?action ; acg:capabilityObject ?object .
+}
+GROUP BY ?action
+ORDER BY ?action

@@ -1,0 +1,9 @@
+# CQ07 — See competency_questions.md for the atomic question.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT ?tool ?toolName ?schema ?representation WHERE {
+ ?tool a acg:MCPTool ; schema:name ?toolName .
+ { ?tool acg:inputSchema ?schema . BIND("schema" AS ?representation) }
+ UNION { ?tool acg:inputSchemaDescription ?schema . BIND("description" AS ?representation) }
+} ORDER BY ?toolName ?tool

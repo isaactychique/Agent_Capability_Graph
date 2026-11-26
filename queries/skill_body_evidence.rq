@@ -1,0 +1,12 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+
+# Full-document candidates only. A format mention is not verified format support;
+# installation instructions need not be unconditional requirements.
+SELECT DISTINCT ?skillName ?kind ?value ?quote ?line ?evidence ?status
+WHERE {
+  ?skill a acg:AgentSkill ; schema:name ?skillName ; acg:hasSkillFactAssertion ?claim .
+  ?claim acg:factKind ?kind ; acg:factValue ?value ; acg:evidenceText ?quote ;
+         acg:evidenceLine ?line ; acg:basedOnSource/schema:url ?evidence ; acg:reviewStatus ?status .
+}
+ORDER BY ?skillName ?kind ?line

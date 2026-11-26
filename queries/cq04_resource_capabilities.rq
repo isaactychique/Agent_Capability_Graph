@@ -1,0 +1,21 @@
+# CQ04 — See competency_questions.md for scope and limitations.
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+# One row per capability assertion, with its method, review status and evidence.
+SELECT ?entityName ?capabilityLabel ?method ?reviewStatus ?evidenceType
+       (GROUP_CONCAT(DISTINCT STR(?url); separator=" ; ") AS ?evidence)
+WHERE {
+  VALUES ?entityName { __NAME__ }
+  ?entity schema:name ?entityName ; acg:hasCapabilityAssertion ?claim .
+  ?claim acg:assertedCapability ?capability ;
+         acg:assertionMethod ?method ;
+         acg:reviewStatus ?reviewStatus ;
+         acg:evidenceType ?evidenceType ;
+         acg:basedOnSource ?source .
+  ?capability skos:prefLabel ?capabilityLabel .
+  ?source schema:url ?url .
+}
+GROUP BY ?entity ?claim ?entityName ?capabilityLabel ?method ?reviewStatus ?evidenceType
+ORDER BY ?capabilityLabel

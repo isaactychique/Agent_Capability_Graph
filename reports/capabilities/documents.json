@@ -1,0 +1,7 @@
+{
+  "skill_entities": 275,
+  "with_full_document": 243,
+  "without_full_document": 32,
+  "fact_candidates": 182,
+  "human_evaluation": "pending"
+}

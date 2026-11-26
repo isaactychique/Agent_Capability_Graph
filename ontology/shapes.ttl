@@ -60,3 +60,30 @@ shape:DerivedClaim a sh:NodeShape ;
             }
         """
     ] .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+shape:SkillFact a sh:NodeShape ; sh:targetClass acg:SkillFactAssertion ;
+    sh:property [ sh:path [ sh:inversePath acg:hasSkillFactAssertion ] ; sh:minCount 1 ; sh:maxCount 1 ; sh:class acg:AgentSkill ] ;
+    sh:property [ sh:path acg:factKind ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ("format_mention" "requirement_statement" "installation_instruction") ] ;
+    sh:property [ sh:path acg:factValue ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ] ;
+    sh:property [ sh:path acg:basedOnSource ; sh:minCount 1 ; sh:maxCount 1 ; sh:class acg:SourceDocument ] ;
+    sh:property [ sh:path acg:reviewStatus ; sh:hasValue "candidate_for_human_review" ; sh:maxCount 1 ] ;
+    sh:property [ sh:path acg:evidenceType ; sh:hasValue "skill_body" ; sh:maxCount 1 ] .
+
+shape:LocatedEvidence a sh:NodeShape ; sh:targetSubjectsOf acg:contentSha256 ;
+    sh:property [ sh:path acg:contentSha256 ; sh:minCount 1 ; sh:maxCount 1 ; sh:pattern "^[0-9a-f]{64}$" ] ;
+    sh:property [ sh:path acg:evidenceLine ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ] ;
+    sh:property [ sh:path acg:evidenceStart ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 0 ; sh:lessThan acg:evidenceEnd ] ;
+    sh:property [ sh:path acg:evidenceEnd ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ; sh:minInclusive 1 ] ;
+    sh:property [ sh:path acg:evidenceText ; sh:minCount 1 ; sh:maxCount 1 ; sh:minLength 1 ] .
+
+# LLM assertions must select from the published fixed-v1 scheme.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+shape:FixedVocabularyLLM a sh:NodeShape ; sh:targetSubjectsOf acg:llmModel ;
+    sh:class acg:CapabilityAssertion ;
+    sh:property [ sh:path acg:assertedCapability ; sh:node [
+        sh:property [ sh:path skos:inScheme ; sh:hasValue <urn:acg:vocabulary:v1:scheme> ]
+    ] ] ;
+    sh:property [ sh:path acg:reviewStatus ; sh:hasValue "candidate_for_human_review" ] ;
+    sh:property [ sh:path acg:evidenceType ; sh:hasValue "llm_fixed_vocabulary" ] ;
+    sh:property [ sh:path acg:contentSha256 ; sh:minCount 1 ] .
