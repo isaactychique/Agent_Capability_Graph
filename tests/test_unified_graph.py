@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'src'))
 from acg import build as unified
 from acg.database import load_graph_inputs
+from acg.selection import select_skills, load_selection
 from acg.paths import REGISTRY
 
 A = Namespace('urn:acg:ontology:')
@@ -27,8 +28,7 @@ class UnifiedCorpus(unittest.TestCase):
     def setUpClass(cls):
         cls.graph = Graph().parse(ROOT / 'data/processed/agent_capability_graph.ttl')
         cls.selection = json.loads(unified.SELECTION.read_text())
-        cls.skills = [s for s in unified.rows(unified.NORMALIZED / 'agent_skills.jsonl')
-                      if s.get('disposition') == 'accepted']
+        cls.skills = load_graph_inputs()['all_skills']
         cls.originals = json.loads((ROOT / 'data/sources/expanded_sources.json').read_text())
 
     def test_requested_scope_and_no_duplicate_servers(self):
@@ -49,8 +49,8 @@ class UnifiedCorpus(unittest.TestCase):
         self.assertTrue(set(old) <= set(self.graph))
 
     def test_selection_is_additional_and_independent_of_input_order(self):
-        chosen, overlap, _ = unified.select_skills(self.skills, self.originals['agent_skills'])
-        replay, _, _ = unified.select_skills(list(reversed(self.skills)), self.originals['agent_skills'])
+        chosen, overlap, _ = select_skills(self.skills, self.originals['agent_skills'])
+        replay, _, _ = select_skills(list(reversed(self.skills)), self.originals['agent_skills'])
         ids = [r['skill_id'] for r in chosen]
         self.assertEqual(len(set(ids)), 100)
         self.assertEqual(ids, [r['skill_id'] for r in replay])
@@ -62,7 +62,7 @@ class UnifiedCorpus(unittest.TestCase):
         chosen = {r['skill_id'] for r in self.selection['skills']}
         next(r for r in altered if r['skill_id'] in chosen)['description'] = 'Changed'
         with self.assertRaisesRegex(ValueError, 'changed or disappeared'):
-            unified.load_selection(altered, self.originals['agent_skills'])
+            load_selection(altered, self.originals['agent_skills'])
 
     def test_merged_web_tool_has_registration_evidence(self):
         tool = next(self.graph.subjects(S.name, unified.Literal('brave_web_search')))

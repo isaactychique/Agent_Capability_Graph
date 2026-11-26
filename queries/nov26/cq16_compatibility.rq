@@ -1,0 +1,28 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# CQ16: What environment or dependency requirements are recorded for each Skill?
+# Raw source declarations, not effective runtime permissions or validated semantics.
+# All observation statuses are returned; missing values are not negative facts.
+SELECT DISTINCT ?skill ?name ?field ?value ?status ?source ?url ?revision ?representation
+WHERE {
+  ?skill a acg:AgentSkill ; schema:name ?name .
+  {
+  BIND("observation" AS ?representation)
+  ?observation a acg:MetadataObservation ; acg:observesEntity ?skill ;
+      acg:observedFieldName ?field ; acg:reviewedSource ?source .
+  VALUES ?field { "compatibility" "dependencies" "dependency" "metadata.compatibility" }
+  OPTIONAL { ?observation acg:hasObservedValue ?value }
+  OPTIONAL { ?observation acg:observationStatus ?status }
+  OPTIONAL { ?source schema:url ?url }
+  OPTIONAL { ?source acg:revision ?revision }
+  }
+  UNION {
+    VALUES (?property ?field) { (acg:compatibility "compatibility") (acg:dependency "dependency") }
+    ?skill ?property ?value .
+    BIND("direct_projection" AS ?representation)
+    # Source-level links do not establish which source supports this exact field.
+    # Leave field-level source/status unbound for direct projections.
+  }
+}
+ORDER BY ?skill ?field ?source ?value

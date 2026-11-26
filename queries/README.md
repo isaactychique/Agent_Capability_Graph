@@ -49,3 +49,11 @@ See `reports/capabilities/review.csv` and `unclassified.csv` for the review queu
 
 SHACL structure and coverage reports are separate under `reports/validation/unified/`.
 The placeholder `template-skill` is deliberately unclassified.
+
+## Proposed competency questions (November 26)
+
+The [20-question proposal](../docs/nov26/competency_questions.md) preserves existing
+questions and proposes the first-half/second-half split. Lin's CQ11–20 are in
+`nov26/`; use `python pipeline.py query queries/nov26/cq15_allowed_tools.rq`.
+All ten execute against the fixed graph and have isolated positive/negative fixtures.
+See `reports/nov26/` for row counts, bound-value counts, evidence and gaps.

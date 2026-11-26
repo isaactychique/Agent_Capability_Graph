@@ -1,0 +1,14 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# CQ20: Which distinct Skill identities share exactly the same recorded name?
+# Different identities are NOT proof of different contents or behavior.
+SELECT DISTINCT ?name ?skillA ?skillB ?repositoryA ?repositoryB
+WHERE {
+  ?skillA a acg:AgentSkill ; schema:name ?name .
+  ?skillB a acg:AgentSkill ; schema:name ?name .
+  FILTER(STR(?skillA) < STR(?skillB))
+  OPTIONAL { ?skillA acg:repositoryUrl ?repositoryA }
+  OPTIONAL { ?skillB acg:repositoryUrl ?repositoryB }
+}
+ORDER BY ?name ?skillA ?skillB
