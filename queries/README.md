@@ -122,13 +122,13 @@ parameters and answer limitations. Empty results describe missing matching facts
 
 ## Lin's additional review proposal (November 26)
 
-The [20-question proposal](../docs/nov26/competency_questions.md) preserves existing
+The [20-question proposal](../docs/lin_docs%20/competency_questions.md) preserves existing
 questions and proposes the first-half/second-half split. Lin's CQ11–20 are in
-`lin_queries/`; use `python pipeline.py query queries/lin_queries/cq15_allowed_tools.rq`.
+`lin_compentency_queries/`; use `python pipeline.py query queries/lin_compentency_queries/cq15_allowed_tools.rq`.
 All ten execute against the fixed graph and have isolated positive/negative fixtures.
 See `reports/nov26/` for row counts, bound-value counts, evidence and gaps.
 
-The IDs under `lin_queries/` belong to Lin's original proposal and differ from the
+The IDs under `lin_compentency_queries/` belong to Lin's original proposal and differ from the
 maintained [atomic catalogue](competency_questions.md). They are preserved as
 review contributions, not silently substituted for the root numbered queries.
 Snapshot results in `reports/nov26/` refer to the earlier graph recorded by their

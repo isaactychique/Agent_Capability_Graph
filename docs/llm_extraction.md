@@ -111,5 +111,5 @@ inputs and returns `assignments` with concept URIs, unlike the active pipeline's
 `selected` IDs and document offsets. Its HTTPS-only vocabulary loader does not
 yet accept the draft scheme's URNs. It is an independent offline proposal for
 review, not the adapter invoked by `pipeline.py extract-capabilities`.
-See [handoff](nov26/capability_extraction.md). No live EURECOM execution is implied
+See [handoff](lin_docs%20/capability_extraction.md). No live EURECOM execution is implied
 by the presence of either contract.

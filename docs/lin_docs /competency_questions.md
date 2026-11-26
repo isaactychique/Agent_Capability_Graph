@@ -43,11 +43,11 @@ observations below refer to the original audit, not a rerun after the merge.
 
 ## Lin's implemented half
 
-Queries: `queries/lin_queries/cq11_*.rq` through `cq20_*.rq`.
+Queries: `queries/lin_compentency_queries/cq11_*.rq` through `cq20_*.rq`.
 Run from the repository root:
 
 ```sh
-python pipeline.py query queries/lin_queries/cq15_allowed_tools.rq
+python pipeline.py query queries/lin_compentency_queries/cq15_allowed_tools.rq
 python -m src.acg.ingestion.gitskills.query_audit
 python -m unittest discover -s tests -v
 ```

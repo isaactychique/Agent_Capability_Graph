@@ -30,7 +30,7 @@ unclassified Skill. No current assertion is marked as human-reviewed.
 | 22 atomic competency questions and their formulations | Proposed for joint review; 25 query executions recorded without errors |
 | Fixed SKOS vocabulary v1 | Draft of 20 concepts; requires joint review |
 | Legacy-to-v1 grouping | 154 concepts analyzed: 113 single matches, 23 ambiguous, 18 unresolved; all proposals await review |
-| Lin's metadata analysis and additional query proposal | Merged; queries in `queries/lin_queries/`; numbering requires reconciliation with the main catalogue |
+| Lin's metadata analysis and additional query proposal | Merged; queries in `queries/lin_compentency_queries/`; numbering requires reconciliation with the main catalogue |
 | Versioned LLM prompt and request preparation | Implemented; eight offline requests prepared for five selected Skills |
 | EURECOM model execution | Not run; endpoint, model and API compatibility need confirmation |
 | Keyword, tag and embedding baseline comparison | Evaluation protocol outlined; no benchmark scores measured |
@@ -183,7 +183,7 @@ Lin's vocabulary loader currently requires HTTPS concept identifiers; the draft
 `ontology/capabilities_v1.ttl` uses URNs. Namespace and contract alignment remain
 pending. The separate renderer is not the endpoint adapter used by
 `pipeline.py extract-capabilities`. See the
-[handoff notes](docs/nov26/capability_extraction.md).
+[handoff notes](docs/lin_docs%20/capability_extraction.md).
 
 ### Rule origin and traceable revisions
 
@@ -219,7 +219,7 @@ entry points are numbered files; CQ07b separates required parameters from input
 schemas, and CQ12b separates allowed tools from authentication requirements.
 The root catalogue's CQ01–CQ10 are Isaac's review batch; CQ11–CQ20 are discussion
 drafts for the second batch. Lin's independently implemented proposal lives in
-`queries/lin_queries/` and uses different meanings for several CQ identifiers.
+`queries/lin_compentency_queries/` and uses different meanings for several CQ identifiers.
 Neither catalogue is presented as the jointly approved final list.
 
 ```bash
@@ -322,7 +322,7 @@ maintained separately. Old report results should not be mistaken for a fresh run
 Lin's [full GitSkills analysis](reports/gitskills/README.md) is separate from the
 selected graph. Its raw downloads and derived full tables remain outside Git;
 its aggregate results do not mean millions of Skills entered the canonical KG.
-The merged [additional-field analysis](docs/nov26/metadata_mapping.md) includes
+The merged [additional-field analysis](docs/lin_docs%20/metadata_mapping.md) includes
 value distributions and ontology recommendations under
 `reports/gitskills/values-2026-11-26/`. Available corpus metadata does not mean
 that all fields have already been imported or projected into RDF.
@@ -350,7 +350,7 @@ work follows the agreed vocabulary and extraction deliverables.
 
 - [Complete architecture and execution workflow](docs/workflow.md)
 
-- [November 26 deliverables and remaining work](docs/november_26_deliverables.md)
+- [November 26 deliverables and remaining work](docs/5th_Report.md)
 - [Collected sources, links and draft Mattermost update](docs/data_sources.md)
 - [Competency questions](queries/competency_questions.md)
 - [Fixed-vocabulary LLM extraction and evaluation protocol](docs/llm_extraction.md)
@@ -363,23 +363,23 @@ work follows the agreed vocabulary and extraction deliverables.
 
 ## November 26: Lin's metadata analysis and review proposal
 
-- [Lin's original 20-question proposal and proposed split](docs/nov26/competency_questions.md)
-- [Additional metadata values and ontology recommendations](docs/nov26/metadata_mapping.md)
-- [Exact-content deduplication: guarantees and limits](docs/nov26/deduplication.md)
-- [Capability extraction prompt and integration handoff](docs/nov26/capability_extraction.md)
+- [Lin's original 20-question proposal and proposed split](docs/lin_docs%20/competency_questions.md)
+- [Additional metadata values and ontology recommendations](docs/lin_docs%20/metadata_mapping.md)
+- [Exact-content deduplication: guarantees and limits](docs/lin_docs%20/deduplication.md)
+- [Capability extraction prompt and integration handoff](docs/lin_docs%20/capability_extraction.md)
 - [CQ11–20 snapshot results](reports/nov26/query_audit.json)
 
 The joint question list and production SKOS vocabulary still require coordination;
 query execution does not imply retrieval accuracy or completed LLM integration.
 
 The maintained [atomic competency catalogue](queries/competency_questions.md)
-uses different CQ identifiers from Lin's original proposal under `docs/nov26/`.
+uses different CQ identifiers from Lin's original proposal under `docs/lin_docs /`.
 Those identifiers are local to each catalogue and require joint reconciliation.
-The query files now live in `queries/lin_queries/`; `docs/nov26/lin_queries.json`
+The query files now live in `queries/lin_compentency_queries/`; `docs/lin_docs /lin_queries.json`
 contains the paths used by Lin's standalone audit command:
 
 ```bash
-.venv/bin/python pipeline.py query queries/lin_queries/cq15_allowed_tools.rq
+.venv/bin/python pipeline.py query queries/lin_compentency_queries/cq15_allowed_tools.rq
 .venv/bin/python -m src.acg.ingestion.gitskills.query_audit
 ```
 

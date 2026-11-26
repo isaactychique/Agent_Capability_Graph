@@ -10,7 +10,7 @@ def run(root,output):
     graph_path=root/'data/processed/agent_capability_graph.ttl'; g=Graph().parse(graph_path)
     output.mkdir(parents=True,exist_ok=True); a=Namespace('urn:acg:ontology:')
     report={'graph_sha256':hashlib.sha256(graph_path.read_bytes()).hexdigest(),'triples':len(g),'entities':{t:len(set(g.subjects(RDF.type,a[t]))) for t in ['MCPServer','MCPTool','AgentSkill','Capability','CapabilityAssertion']},'queries':[]}
-    for rec in json.loads((root/'docs/nov26/lin_queries.json').read_text()):
+    for rec in json.loads((root/'docs/lin_docs /lin_queries.json').read_text()):
         path=root/rec['query']; result=g.query(path.read_text()); columns=[str(v) for v in result.vars]; rows=list(result)
         with (output/(rec['id']+'.csv')).open('w',newline='') as f:
             w=csv.writer(f,lineterminator='\n');w.writerow(columns);w.writerows(['' if v is None else str(v) for v in row] for row in rows)

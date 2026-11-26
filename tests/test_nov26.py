@@ -25,7 +25,7 @@ class ValueTests(unittest.TestCase):
 
 class QueryTests(unittest.TestCase):
     def test_positive_and_negative_cases(self):
-        records=json.loads((ROOT/'docs/nov26/lin_queries.json').read_text())
+        records=json.loads((ROOT/'docs/lin_docs /lin_queries.json').read_text())
         for rec in records:
             with self.subTest(cq=rec['id']):
                 g=Graph().parse(ROOT/'tests/fixtures/nov26/query_fixture.ttl')
@@ -63,7 +63,7 @@ class PromptTests(unittest.TestCase):
     def test_direct_projection_is_not_lost_or_given_false_provenance(self):
         g=Graph().parse(ROOT/'tests/fixtures/nov26/query_fixture.ttl')
         g.add((E.one,A.allowedTool,Literal('Read')))
-        rows=list(g.query((ROOT/'queries/lin_queries/cq15_allowed_tools.rq').read_text()))
+        rows=list(g.query((ROOT/'queries/lin_compentency_queries/cq15_allowed_tools.rq').read_text()))
         self.assertEqual(len(rows),1)
         self.assertEqual(str(rows[0].asdict()['representation']),'direct_projection')
         self.assertNotIn('source',rows[0].asdict())
@@ -137,7 +137,7 @@ class ReviewRegressionTests(unittest.TestCase):
             g = Graph().parse(ROOT / 'tests/fixtures/nov26/query_fixture.ttl')
             for entity in [E.one, E.tool, E.untyped]:
                 g.add((entity, predicate, Literal('recorded value')))
-            query = next((ROOT / 'queries/lin_queries').glob(f'cq{number}_*.rq'))
+            query = next((ROOT / 'queries/lin_compentency_queries').glob(f'cq{number}_*.rq'))
             rows = list(g.query(query.read_text()))
             self.assertEqual(len(rows), 1)
             self.assertEqual(rows[0].asdict()['skill'], E.one)

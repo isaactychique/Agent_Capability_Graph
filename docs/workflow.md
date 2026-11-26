@@ -126,7 +126,7 @@ flowchart LR
 | Fixed vocabulary preparation | `vocabulary.py` | Draft SKOS scheme, grouping rules, current RDF | Legacy-to-v1 proposal CSV and summary |
 | Explicit-rule provenance | `override_history.py` | Event history, evidence snapshots, proposals | Audited/materialized overrides and new declared decisions |
 | Description-only prompt contract | `capability_prompt.py` | Lin's separate prompt, description, HTTPS vocabulary | Rendered prompt and response validation; not the pipeline adapter |
-| Lin's query audit | `ingestion/gitskills/query_audit.py` | `docs/nov26/lin_queries.json`, queries in `queries/lin_queries/`, RDF | Independent snapshot CSVs and hash audit in `reports/nov26/` |
+| Lin's query audit | `ingestion/gitskills/query_audit.py` | `docs/lin_docs /lin_queries.json`, queries in `queries/lin_compentency_queries/`, RDF | Independent snapshot CSVs and hash audit in `reports/nov26/` |
 | LLM extraction | `llm_extraction.py` | Selected Skill evidence, fixed vocabulary, prompt | Offline jobs or saved model responses after explicit live execution |
 | RDF assembly | `build.py`, `rdf/` | Canonical selected inputs and annotation artifacts | One Turtle graph, corpus reports and review queue |
 | Inventory | `inventory.py` | RDF | Candidate/reviewed/unclassified counts |
@@ -480,10 +480,10 @@ and risk signals may yield no results. Optional answer fields may remain unbound
 ### Lin's independent question proposal
 
 The root numbered queries implement the maintained 22-question atomic catalogue.
-Lin's queries are preserved in `queries/lin_queries/`, with an independent
-proposal in `docs/nov26/competency_questions.md`. Identical CQ numbers can refer
+Lin's queries are preserved in `queries/lin_compentency_queries/`, with an independent
+proposal in `docs/lin_docs /competency_questions.md`. Identical CQ numbers can refer
 to different questions; the two proposals still require joint reconciliation.
-`docs/nov26/lin_queries.json` supplies the paths for the standalone audit:
+`docs/lin_docs /lin_queries.json` supplies the paths for the standalone audit:
 
 ```bash
 .venv/bin/python -m src.acg.ingestion.gitskills.query_audit
@@ -571,5 +571,5 @@ is still unconfigured. Do not interpret prepared jobs as completed extractions.
 - [Competency-question catalogue](../queries/competency_questions.md)
 - [Validation](validation.md)
 - [Supervisor demo commands](demo_commands.md)
-- [Meeting deliverables and pending work](november_26_deliverables.md)
+- [Meeting deliverables and pending work](5th_Report.md)
 - [Reports and their producers](../reports/README.md)

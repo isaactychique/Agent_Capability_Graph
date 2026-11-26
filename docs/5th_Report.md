@@ -7,12 +7,12 @@
 | Source names, links, ontology and questions for Mattermost | `data_sources.md`, including a message draft | Publish files and post after authorization |
 | Approximately 20 competency questions | `../queries/competency_questions.md`, 22 atomic proposals retaining the 20 original topic IDs | Joint wording/model review with Lin |
 | First-half SPARQL review batch | CQ01–CQ10 executable formulations; query coverage report | GitHub PR and Lin review |
-| Second-half batch | Root CQ11–CQ20 discussion drafts plus Lin's independently implemented queries in `queries/lin_queries/` | Reconcile numbering and scope, then reciprocal review |
+| Second-half batch | Root CQ11–CQ20 discussion drafts plus Lin's independently implemented queries in `queries/lin_compentency_queries/` | Reconcile numbering and scope, then reciprocal review |
 | Fixed vocabulary v1, 15–25 concepts | `ontology/capabilities_v1.ttl`, 20 concepts and auditable grouping CSV | Resolve 23 ambiguous and 18 unmatched detailed concepts; joint vocabulary approval |
 | Unclassified Skill investigation | `template-skill` confirmed to contain placeholder text | Retain abstention; decide whether templates belong in later evaluation corpus |
 | Versioned extraction prompt | `prompts/capability_extraction_v1.txt`, examples and allowed vocabulary injected per request | Joint prompt review; historical ChatGPT prompt is unavailable |
 | Automated EURECOM extraction | Offline request preparation, explicit API adapter, response validation and RDF integration | Endpoint/model/API confirmation, actual model run and review |
-| Additional metadata analysis | Lin's field-value analysis in `reports/gitskills/values-2026-11-26/` and recommendations in `docs/nov26/metadata_mapping.md` are merged | Joint ontology/import decisions and implementation of accepted fields |
+| Additional metadata analysis | Lin's field-value analysis in `reports/gitskills/values-2026-11-26/` and recommendations in `docs/lin_docs /metadata_mapping.md` are merged | Joint ontology/import decisions and implementation of accepted fields |
 | December baseline evaluation | Protocol outlined in `llm_extraction.md` | Gold relevance judgments and implemented comparison runs |
 
 ## Recorded local executions

@@ -114,7 +114,7 @@ These counts summarize existing candidate annotations, not runtime verification.
 - `llm/requests.jsonl`: eight offline prompt packets for five selected Skills.
   No EURECOM model was called. Live response artifacts will be saved separately.
 
-See [meeting deliverables](../docs/november_26_deliverables.md) for pending joint
+See [meeting deliverables](../docs/5th_Report.md) for pending joint
 review, publication and endpoint configuration. Meeting counts (149 concepts,
 6,765 triples) are historical; they are not overwritten by current counts.
 
@@ -132,7 +132,7 @@ missing historical rationale. See [the revision workflow](../docs/override_curat
 `gitskills/values-2026-11-26/` contains additional-field distributions and evidence
 examples from the full dataset. `nov26/` preserves a separate query audit whose
 graph hash identifies an older snapshot; its counts are not the current root
-catalogue's counts. Queries now reside in `queries/lin_queries/`, with paths in
-`docs/nov26/lin_queries.json`. The standalone audit command regenerates that
+catalogue's counts. Queries now reside in `queries/lin_compentency_queries/`, with paths in
+`docs/lin_docs /lin_queries.json`. The standalone audit command regenerates that
 report; normal `pipeline.py run` does not refresh it. Question numbering is local
 to each proposal until joint reconciliation.
