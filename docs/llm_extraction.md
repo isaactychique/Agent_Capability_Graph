@@ -102,3 +102,14 @@ Inspect failures due to missing documents, insufficient evidence, overly broad
 categories, lexical ambiguity and ranking. No baseline comparison scores have
 been measured yet; the existing small extraction worksheet is not a retrieval
 benchmark or a representative accuracy estimate.
+
+## Separate contract preserved after the merge
+
+Lin's `src/acg/capability_prompt.py` reads
+`prompts/capability_extraction_description_v1.txt`. It expects description-only
+inputs and returns `assignments` with concept URIs, unlike the active pipeline's
+`selected` IDs and document offsets. Its HTTPS-only vocabulary loader does not
+yet accept the draft scheme's URNs. It is an independent offline proposal for
+review, not the adapter invoked by `pipeline.py extract-capabilities`.
+See [handoff](nov26/capability_extraction.md). No live EURECOM execution is implied
+by the presence of either contract.

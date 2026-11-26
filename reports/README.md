@@ -95,7 +95,7 @@ the selected RDF resource counts.
 ## Competency questions and action groups
 
 The maintained question catalogue is in
-[competency_questions.md](../docs/competency_questions.md). The proposed public
+[competency_questions.md](../queries/competency_questions.md). The proposed public
 identity policy is in [uri_design.md](../docs/uri_design.md); HTTPS migration is
 pending acceptance of the proposed w3id.org prefix and target hosting.
 
@@ -126,3 +126,13 @@ and captured evidence availability. The authoritative history and evidence are
 in `../data/curation/`, not this generated report. The initial capture contains
 163 unreviewed legacy rules; matching current source text does not recreate their
 missing historical rationale. See [the revision workflow](../docs/override_curation.md).
+
+## Lin's merged analysis and query proposal
+
+`gitskills/values-2026-11-26/` contains additional-field distributions and evidence
+examples from the full dataset. `nov26/` preserves a separate query audit whose
+graph hash identifies an older snapshot; its counts are not the current root
+catalogue's counts. Queries now reside in `queries/lin_queries/`, with paths in
+`docs/nov26/lin_queries.json`. The standalone audit command regenerates that
+report; normal `pipeline.py run` does not refresh it. Question numbering is local
+to each proposal until joint reconciliation.

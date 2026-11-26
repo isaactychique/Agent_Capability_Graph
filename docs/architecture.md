@@ -124,7 +124,9 @@ store; `reports/corpus/` describes the selected graph.
 Task rules are compiled into `config/capability_mappings.json` from the database,
 `config/capability_vocabulary.json` and `config/capability_overrides.json`. The
 vocabulary normalizes supported phrases to shared action/object concepts.
-Overrides preserve manual rules and entity review decisions. The generated
+Overrides materialize explicit rules from the curation history and can carry
+supported review decisions; the captured legacy rules remain unreviewed. The configuration is checked against `data/curation/override_history.jsonl`
+and its evidence snapshots before use. See [curation](override_curation.md). The generated
 mappings may be removed and recreated; maintained inputs must be retained.
 Annotations keep their source proofs. Automatic proposals remain review candidates;
 explicit reviewed overrides require matching evidence before entering the RDF. SQLite consolidation does not imply
@@ -180,7 +182,7 @@ copy. Secondary imports without direct pinned source evidence are skipped.
 
 ## Research questions and identifier policy
 
-[Competency questions](competency_questions.md) define the query-level goals and
+[Competency questions](../queries/competency_questions.md) define the query-level goals and
 limitations. [URI design](uri_design.md) specifies proposed persistent HTTPS
 identifiers and coordinated migration requirements. The proposed base is `https://w3id.org/agent-capability-graph`; w3id.org
 registration and target hosting are pending. The active graph retains its

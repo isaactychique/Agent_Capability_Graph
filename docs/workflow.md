@@ -38,7 +38,10 @@ flowchart TB
     end
 
     subgraph Extraction["Capability extraction"]
-        RULES["Deterministic patterns + persistent overrides"]
+        HISTORY["Curation event history + evidence snapshots"]
+        OVERRIDES["Materialized overrides<br/>checked against history"]
+        RULES["Deterministic patterns + checked overrides"]
+        HISTORY --> OVERRIDES --> RULES
         MAP["capability_mappings.json<br/>task proposals + body fact candidates"]
         SKOS["capabilities_v1.ttl<br/>20 fixed SKOS concepts - draft"]
         PROMPT["Versioned extraction prompt"]
@@ -121,6 +124,9 @@ flowchart LR
 | Skill subset selection | `selection.py` | Metadata quality, source evidence, frozen configuration | Stored selection and fingerprints |
 | Existing task extraction | `capabilities.generate_mappings` | SQLite descriptions/bodies, patterns and overrides | Generated mappings and body-document reports |
 | Fixed vocabulary preparation | `vocabulary.py` | Draft SKOS scheme, grouping rules, current RDF | Legacy-to-v1 proposal CSV and summary |
+| Explicit-rule provenance | `override_history.py` | Event history, evidence snapshots, proposals | Audited/materialized overrides and new declared decisions |
+| Description-only prompt contract | `capability_prompt.py` | Lin's separate prompt, description, HTTPS vocabulary | Rendered prompt and response validation; not the pipeline adapter |
+| Lin's query audit | `ingestion/gitskills/query_audit.py` | `docs/nov26/lin_queries.json`, queries in `queries/lin_queries/`, RDF | Independent snapshot CSVs and hash audit in `reports/nov26/` |
 | LLM extraction | `llm_extraction.py` | Selected Skill evidence, fixed vocabulary, prompt | Offline jobs or saved model responses after explicit live execution |
 | RDF assembly | `build.py`, `rdf/` | Canonical selected inputs and annotation artifacts | One Turtle graph, corpus reports and review queue |
 | Inventory | `inventory.py` | RDF | Candidate/reviewed/unclassified counts |
@@ -244,6 +250,22 @@ statements retain their wording. Source-registration assertions are preserved
 independently of newly generated proposals. Derived server assertions retain
 supporting tool-assertion links and remain candidates.
 
+### Rule provenance and reconstruction
+
+`data/curation/override_history.jsonl` and its `evidence/` snapshots are maintained
+inputs. `override_history.load_overrides()` checks the materialized configuration
+against that history before rule generation; unrecorded edits cause a mismatch.
+The 163 captured legacy rules are not human approvals, and their original prompt,
+authorship and per-rule rationale were not recovered. Future supported revisions
+require an actor, rationale and matching evidence. A hash chain checks integrity;
+it does not authenticate authorship or prove semantic correctness.
+
+`overrides propose` creates a draft, not a decision. `overrides record` records a
+completed proposal, and `overrides rebuild` reconstructs configuration from the
+history. Generated mappings carry decision references; this does not mean every
+RDF assertion has a dedicated curation-event node. See [curation](override_curation.md)
+for supported rule sections and current limitations.
+
 ## 5. Fixed SKOS vocabulary and the LLM branch
 
 ### Two vocabularies with different responsibilities
@@ -327,6 +349,17 @@ vocabulary, source hash or chunk content no longer matches. New selections are
 candidate assertions, not human-reviewed decisions. They use the fixed concept
 IRIs; legacy detailed assertions remain available for comparison.
 
+### Separate description-only proposal from Lin
+
+`src/acg/capability_prompt.py` uses
+`prompts/capability_extraction_description_v1.txt`, with description-only inputs
+and an `assignments` response containing concept URIs. The pipeline's
+`llm_extraction.py` uses `prompts/capability_extraction_v1.txt`, document chunks,
+and `selected` IDs with offsets. The contracts cannot exchange responses.
+Lin's loader requires HTTPS vocabulary identifiers; the current draft scheme
+uses URNs, so namespace alignment remains pending. This renderer is preserved
+for joint review and is not called by `pipeline.py extract-capabilities`.
+
 ## 6. RDF assembly and provenance
 
 ```mermaid
@@ -374,7 +407,9 @@ All commands below start with `.venv/bin/python pipeline.py` from the project ro
 | `normalize` | Existing registry cache | Normalized imports/statistics, then canonical import | No |
 | `import` | Source snapshots, selection, document caches | Canonical SQLite, database reports, generated mappings/document candidates | No |
 | `database` | SQLite | Prints counts and refreshes database reports | No |
-| `mappings` | SQLite, patterns and overrides | Generated mappings, document/fact reports and retained review worksheet | No |
+| `overrides audit` | Curation history, snapshots and materialized rules | Integrity/consistency audit report | No |
+| `overrides propose --section skills --key pdf` | Existing rules and source evidence | Editable proposal; no approval | No |
+| `mappings` | SQLite, patterns and checked overrides | Generated mappings, document/fact reports and retained review worksheet | No |
 | `vocabulary` | Existing RDF, SKOS scheme, grouping rules | Legacy grouping proposals and summary | No |
 | `extract-capabilities --prepare` | Selected Skill evidence, prompt and fixed scheme | Latest offline request set | No |
 | `extract-capabilities --run --api-format openai-chat` | Prepared requests and endpoint environment | Explicit model calls, saved responses, errors and run artifacts | Yes |
@@ -436,11 +471,30 @@ assertions. The existing body review worksheet is an evaluation aid, not an
 approval input to all extractors. New LLM assertions currently remain candidates;
 a complete LLM-specific human decision workflow is still future work.
 
-[Competency questions](competency_questions.md) defines 22 proposed atomic questions.
+[Competency questions](../queries/competency_questions.md) defines 22 proposed atomic questions.
 The current report contains 25 executions because CQ02 and CQ16 are instantiated separately
 for two formats and three bundle kinds. Some questions express ontology structure that the
 collectors do not yet populate. In particular, MCP resource/prompt inventories
 and risk signals may yield no results. Optional answer fields may remain unbound.
+
+### Lin's independent question proposal
+
+The root numbered queries implement the maintained 22-question atomic catalogue.
+Lin's queries are preserved in `queries/lin_queries/`, with an independent
+proposal in `docs/nov26/competency_questions.md`. Identical CQ numbers can refer
+to different questions; the two proposals still require joint reconciliation.
+`docs/nov26/lin_queries.json` supplies the paths for the standalone audit:
+
+```bash
+.venv/bin/python -m src.acg.ingestion.gitskills.query_audit
+```
+
+This regenerates `reports/nov26/` against the current graph. The committed audit
+currently describes an older graph snapshot identified by its hash; it must not
+be confused with `reports/queries/competency_coverage.csv`. Lin's additional
+metadata-field analysis under `reports/gitskills/values-2026-11-26/` informs future
+ontology/import changes; the presence of a field in the full dataset does not
+mean it is already populated in the selected graph.
 
 ## 9. Current recorded snapshot
 
@@ -514,7 +568,8 @@ is still unconfigured. Do not interpret prepared jobs as completed extractions.
 - [Database architecture and identity rules](architecture.md)
 - [Deterministic capabilities and review](capabilities.md)
 - [Fixed-vocabulary LLM details](llm_extraction.md)
-- [Competency-question catalogue](competency_questions.md)
+- [Competency-question catalogue](../queries/competency_questions.md)
 - [Validation](validation.md)
+- [Supervisor demo commands](demo_commands.md)
 - [Meeting deliverables and pending work](november_26_deliverables.md)
 - [Reports and their producers](../reports/README.md)

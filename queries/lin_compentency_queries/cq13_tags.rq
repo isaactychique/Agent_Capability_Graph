@@ -1,0 +1,18 @@
+PREFIX acg: <urn:acg:ontology:>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+# CQ13: Which Skills have declared tags or categories that I can inspect before choosing?
+# Raw source declarations, not effective runtime permissions or validated semantics.
+# All observation statuses are returned; missing values are not negative facts.
+SELECT DISTINCT ?skill ?name ?field ?value ?status ?source ?url ?revision
+WHERE {
+  ?skill a acg:AgentSkill ; schema:name ?name .
+  ?observation a acg:MetadataObservation ; acg:observesEntity ?skill ;
+      acg:observedFieldName ?field ; acg:reviewedSource ?source .
+  VALUES ?field { "tags" "metadata.tags" "category" "metadata.category" }
+  OPTIONAL { ?observation acg:hasObservedValue ?value }
+  OPTIONAL { ?observation acg:observationStatus ?status }
+  OPTIONAL { ?source schema:url ?url }
+  OPTIONAL { ?source acg:revision ?revision }
+}
+ORDER BY ?skill ?field ?source ?value

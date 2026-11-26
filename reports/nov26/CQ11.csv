@@ -1,0 +1,105 @@
+skill,name,field,value,status,source,url,revision,representation
+urn:acg:data:entity/azure-cosmos-db-py,azure-cosmos-db-py,license,MIT,,,,,direct_projection
+urn:acg:data:entity/azure-cosmos-db-py,azure-cosmos-db-py,license,MIT,urn:acg:ontology:present,urn:acg:data:source/f16b07cc3ad46c3310da30af52e8a78e669d2dd1ea847b74d2d47e5ce08f1633,https://github.com/microsoft/skills/blob/4cfa010138972d45a7bb92edea90094f4f443da8/.github/plugins/azure-sdk-python/skills/azure-cosmos-db-py/SKILL.md,4cfa010138972d45a7bb92edea90094f4f443da8,observation
+urn:acg:data:entity/cloud-databases-onboarding,cloud-databases-onboarding,license,,urn:acg:ontology:notDocumented,urn:acg:data:source/dd44fb42b3cf74868a762c73e8d81096501706024e8f807f0002b90b9c8c02fe,https://github.com/google/skills/blob/1d0f9f2f3d9a0dd0f08c6835f4ec08d6932d0885/skills/cloud/cloud-databases-onboarding/SKILL.md,1d0f9f2f3d9a0dd0f08c6835f4ec08d6932d0885,observation
+urn:acg:data:entity/docx,docx,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:data:entity/docx,docx,license,Complete terms in LICENSE.txt,urn:acg:ontology:present,urn:acg:data:source/19316ed1e97f7bc2e4f68de8e80f9eb2c57819fa5e6d009589279bea3a300d36,https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/docx/SKILL.md,2c5958ecac7cee2b583967a2c4981d0f4a75c579,observation
+urn:acg:data:entity/gcloud,gcloud,license,,urn:acg:ontology:notDocumented,urn:acg:data:source/f65d6d9666becdc2704c1b302a3cc5b8041d9dd6d05786feca7a70979d59b1b0,https://github.com/google/skills/blob/1d0f9f2f3d9a0dd0f08c6835f4ec08d6932d0885/skills/cloud/gcloud/SKILL.md,1d0f9f2f3d9a0dd0f08c6835f4ec08d6932d0885,observation
+urn:acg:data:entity/mcp-builder,mcp-builder,license,,urn:acg:ontology:notDocumented,urn:acg:data:source/62256b1a30d0d3f14164130d554f7c9f69aa8615ff2ef825a0ff1386545d241b,https://github.com/microsoft/skills/blob/4cfa010138972d45a7bb92edea90094f4f443da8/.github/skills/mcp-builder/SKILL.md,4cfa010138972d45a7bb92edea90094f4f443da8,observation
+urn:acg:data:entity/pdf,pdf,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:data:entity/pdf,pdf,license,Complete terms in LICENSE.txt,urn:acg:ontology:present,urn:acg:data:source/2f153b542a61df7fd3b45fd1c267f90a5dc1a52e6dab38a0c34a97fbb684f744,https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md,2c5958ecac7cee2b583967a2c4981d0f4a75c579,observation
+urn:acg:data:entity/retrieving-developer-knowledge,retrieving-developer-knowledge,license,,urn:acg:ontology:notDocumented,urn:acg:data:source/35dd907b3b36b93409257c11572c3a066b9ece8a16c7401feb9f0d2522a39c96,https://github.com/google/skills/blob/1d0f9f2f3d9a0dd0f08c6835f4ec08d6932d0885/plugins/cloud/google-cloud-developer/skills/retrieving-developer-knowledge/SKILL.md,1d0f9f2f3d9a0dd0f08c6835f4ec08d6932d0885,observation
+urn:acg:data:entity/vercel-react-best-practices,vercel-react-best-practices,license,MIT,,,,,direct_projection
+urn:acg:data:entity/vercel-react-best-practices,vercel-react-best-practices,license,MIT,urn:acg:ontology:present,urn:acg:data:source/d4af4fca0b129178eca02deaab16c9241b8cfd31570c5ceae606a11bfb0cbb97,https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/react-best-practices/SKILL.md,1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62,observation
+urn:acg:data:entity/vercel-web-design-guidelines,web-design-guidelines,license,,urn:acg:ontology:notDocumented,urn:acg:data:source/aaa29cf3c0cf679079ec12c724dba8361f7dbcf4c5dae6a03a97396c204a15c6,https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/web-design-guidelines/SKILL.md,1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62,observation
+urn:acg:data:entity/xlsx,xlsx,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:data:entity/xlsx,xlsx,license,Complete terms in LICENSE.txt,urn:acg:ontology:present,urn:acg:data:source/ec7e5e0f4eaca06757f9fa0d7ebcd191b7b890471bf5a4b98b640e7cbfe59a5b,https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/SKILL.md,2c5958ecac7cee2b583967a2c4981d0f4a75c579,observation
+urn:acg:metadata:skill/skl_04dd3dc2c77690344413146e,crimeometer,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_07c5be1c1453b59047d7527b,azure-messaging-webpubsub-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_08fb4372607041681f201264,azure-mgmt-applicationinsights-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_0bbf41b5657d1a9096f2106a,azure-ai-voicelive-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_0c83c34063207f56cc64590b,azure-search-documents-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_0cf1447fe5e1bc0cb7dd359f,azure-eventgrid-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_0f1c6317e37e6b0df607252e,internal-comms,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_12f3d333649f4596580c159f,azure-local,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_1482b2f898c3f172a23d4667,foundry-iq,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_17a43ef267e292c398526161,vercel-react-native-skills,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_1aabaf7d6abf3c63d234e209,azure-identity-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_1f9c718df75ceeb845fce2ef,azure-ai-openai-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_2cacbce7cd9373eb4fa8d996,azure-aigateway,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_2ec5263f2c71d56ca689db3d,azure-mgmt-mongodbatlas-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_30ff80f46afad0acf147bfa0,azure-security-keyvault-keys-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_337d34a4db8c3bd333cb15f8,azure-servicebus-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_348078c59f459b04665d0b4d,azure-compute-batch-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_3adfec861d84a8889d494d99,vercel-composition-patterns,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_3dc9fd4ef5576ed8a44ae74b,azure-kusto-graph,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_3edb4ee0d50407a338c342a5,azure-ai-projects-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_405847986c6aa7dc2230e33d,canvas-design,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_41f274b77138004770bf1e80,frontend-design,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_43deaf38a9b1faa56f298267,azure-communication-callautomation-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_466559f3930444ef6443a6e0,azure-ai-agents-persistent-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_47854b1cf98bf4f65cf0f06a,azure-mgmt-apicenter-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_49220e97836b6a63dda33682,azure-local-multi-rack,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_512638581b7f428e410513cd,slack-gif-creator,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_53db3e0094d6187a703f4cc0,azure-resource-manager-cosmosdb-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_555d8f06354fba8eba2d6b65,azure-mgmt-fabric-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_55c3ac56994b1308ab93ce79,azure-eventgrid-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_5635474bf4711f383a96a84d,phoenix-observability,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_571e9aa39426ff7debcd7027,azure-advisor-actionability,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_5e402b9383a253210abf2c4a,azure-resource-manager-mysql-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_5ec945bfe7663a7bcbd3c969,azure-monitor-ingestion-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_5f4744a4b1ea006953d9350c,azure-mgmt-arizeaiobservabilityeval-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_61cdf43386176f26e041a476,azure-advisor-cost-optimization,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_66f0b399e78a51043f446526,azure-eventhub-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_67ca0a9b11451b32654b751f,azure-advisor,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_6a1f2714f0b57a3624c9609c,algorithmic-art,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_6a71d2956b47fb67a7abe7f9,aks-troubleshooting,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_6e02ea6243bce5376a38dcf4,aks-network-capture,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_7522ef79be5f56a7565c9600,cost-estimation,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_78486756dccf3d8cbab7530b,azure-mgmt-weightsandbiases-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_79a63e133f026ed43aec6bec,azure-communication-common-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_7cc10d496de80ecb768a1682,azure-search-nav,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_7e194924d5cb696834d29216,azure-communication-callingserver-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_7e8eca88b16d4c8ba548147c,academy-guide,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_7ee06ddfde0a93a47131128c,azure-mgmt-botservice-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_80371c20ccd5fcfe325d35d8,azure-maps-search-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_8aba8e607651cb2a20254dfe,microsoft-azure-webjobs-extensions-authentication-events-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_8bd7a29be0798e8e2f3f2bb9,cost-governance,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_8ca563415539ba5adb8a0926,azure-eventhub-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_8dff45308f5f3d666719d533,azure-communication-sms-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_8faa9ecf82794bafecec2ef1,aks-known-issues,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_9676e8f78b3acccdbde88e04,azure-cosmos-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_98262cf9395457d076c212fb,azure-resource-manager-playwright-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_992ed00e623471ac9df94abf,azure-mgmt-apimanagement-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_99ea1edc1b87f3c9c219051f,azure-resource-manager-postgresql-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_9d06c9c6cfe091bb8115128f,webapp-testing,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_9daf31580085a5bb48f10ae4,m365-agents-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_9dd7ff589eeeb6cd437b0426,azure-identity-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_9f3adc9bb7325c3ecc53cc8d,cost-analysis,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_a1bae41048e3b1fb0d90c101,azure-ai-agents-persistent-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_a1e164408fedd2a8bfcbbc56,azure-appconfiguration-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_a48e83a1e8fc9c7c2037201c,azure-ai-voicelive-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_a49baf15405776d55ff3bcad,cost-optimization,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_b24a4bbdb0c840b70098f503,theme-factory,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_b4428f1972d3c33dd561ecd7,pptx,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_be488a23e73679e91b94410b,azure-resource-manager-durabletask-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c0da4b42357bf38ef6fe74f4,azure-resource-manager-redis-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c2d8c12ec9bd4e5a5768c6b6,azure-kusto-irql,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c4357ac1ae09a534f127a29e,azure-upgrade,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c660a68a900aa30164aa65a5,azure-kusto-irql-graph,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c6a210e006d9785e10bf3a4c,vercel-react-view-transitions,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c6cca7b237768e27ab2530fd,azure-resource-manager-sql-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c7000c7feaeb33230cd04999,azure-communication-chat-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_c763c07ae2efdececc285b22,brand-guidelines,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_cacad371d12fd1d3529d9372,aks-gpu-inference,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_d00b8431b75df304b607e206,aks-cost-optimization,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_d0992248d381aa4f952ea570,azure-data-tables-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_d52420fa182e7a1b8a79ed3f,web-artifacts-builder,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_db06fc5cbbb71e6cff1e7c14,azure-ai-projects-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_e3589c099f7752fa93a0ffa7,mcp-builder,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_e6d65a18f5087705d0adbf80,azure-ai-document-intelligence-dotnet,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_e76f8198511386dd0fa550ce,azure-ai-anomalydetector-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_ef5988b8365b7b251203ec22,claude-api,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_f1dc40e337fbb9c572ce2d08,discernment-nudge,license,Complete terms in LICENSE.txt,,,,,direct_projection
+urn:acg:metadata:skill/skl_fbd881d5f79d7845066e4b9a,azure-ai-contentsafety-java,license,MIT,,,,,direct_projection
+urn:acg:metadata:skill/skl_fffff7f24e1f34f35ab0f109,azure-ai-vision-imageanalysis-java,license,MIT,,,,,direct_projection

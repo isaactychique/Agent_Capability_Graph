@@ -47,7 +47,7 @@ remain a joint review item informed by Lin's field analysis.
 
 - [Ontology](../ontology/acg.ttl)
 - [Fixed capability vocabulary v1 — draft SKOS](../ontology/capabilities_v1.ttl)
-- [22 atomic competency questions and their SPARQL formulations](competency_questions.md)
+- [22 atomic competency questions and their SPARQL formulations](../queries/competency_questions.md)
 - [Current selected graph](../data/processed/agent_capability_graph.ttl)
 - [LLM prompt, automation and evaluation plan](llm_extraction.md)
 - [Current reports](../reports/README.md)
@@ -57,7 +57,7 @@ remain a joint review item informed by Lin's field analysis.
 The current collected sources, links and corpus boundaries are documented in
 `docs/data_sources.md`. The ontology is in `ontology/acg.ttl`, the proposed fixed
 20-concept SKOS vocabulary in `ontology/capabilities_v1.ttl`, and the proposed
-22 atomic competency questions in `docs/competency_questions.md`, with linked SPARQL
+22 atomic competency questions in `queries/competency_questions.md`, with linked SPARQL
 queries. The selected graph contains 10 servers, 55 tools and 110 Skills.
 LLM extraction inputs and a versioned prompt are prepared; EURECOM endpoint
 configuration and joint review are pending. The 149-capability meeting snapshot

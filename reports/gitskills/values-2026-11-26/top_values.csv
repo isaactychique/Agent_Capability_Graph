@@ -1,0 +1,429 @@
+scope,field,value_json,contents,field_present_denominator
+metadata,allowed-tools,"[""Read"", ""Glob"", ""Grep"", ""Write"", ""AskUserQuestion""]",28,326
+metadata,allowed-tools,"[""Read"", ""Bash"", ""AskUserQuestion"", ""MCP""]",22,326
+metadata,allowed-tools,"""Read, Grep""",14,326
+metadata,allowed-tools,"""Bash(npx @playwright/cli:*)""",12,326
+metadata,allowed-tools,"[""Read"", ""Glob"", ""Grep"", ""Write""]",10,326
+metadata,allowed-tools,"""Bash(agent-browser:*), Bash(npx agent-browser:*)""",7,326
+metadata,allowed-tools,"[""Read"", ""Glob"", ""Grep"", ""Write"", ""Bash"", ""Task"", ""AskUserQuestion""]",7,326
+metadata,allowed-tools,"""Read, Grep, Glob, Edit, Write, Bash""",6,326
+metadata,allowed-tools,"[""Read"", ""Glob"", ""Grep"", ""Write"", ""Bash"", ""AskUserQuestion""]",6,326
+metadata,allowed-tools,"""Bash, Read, Glob, Grep""",5,326
+metadata,allowed-tools,"[""Read"", ""Glob"", ""Grep"", ""Write"", ""Bash""]",5,326
+metadata,allowed-tools,"[""file-reader""]",5,326
+metadata,allowed-tools,"""Read, Edit, Write, Bash""",4,326
+metadata,allowed-tools,"""Read, Grep, Glob, Bash""",4,326
+metadata,allowed-tools,"""Read, Grep, Glob, Edit, Write, Bash, WebSearch, WebFetch""",4,326
+metadata,allowed-tools,"""Read, Grep, Glob, WebFetch, WebSearch""",4,326
+metadata,allowed-tools,"""Read, Grep, Glob, WebSearch, WebFetch""",4,326
+metadata,allowed-tools,"[""Read"", ""Glob"", ""Grep""]",4,326
+metadata,allowed-tools,[],4,326
+metadata,allowed-tools,"""Bash""",3,326
+metadata,argument-hint,"""<file-or-pattern>""",204,1675
+metadata,argument-hint,"""[target]""",167,1675
+metadata,argument-hint,"""""",28,1675
+metadata,argument-hint,"""[area (feature, page, component...)]""",17,1675
+metadata,argument-hint,"""[target] [context (narrow, medium, wide, print...)]""",14,1675
+metadata,argument-hint,"""[category] [challenge-file-or-url]""",13,1675
+metadata,argument-hint,"""[page, flow, or component]""",12,1675
+metadata,argument-hint,"""[track-id | track-id:phase | track-id:task]""",12,1675
+metadata,argument-hint,"""<feature|bug|chore|refactor> <name>""",11,1675
+metadata,argument-hint,"""[track-id] [--task X.Y] [--phase N]""",11,1675
+metadata,argument-hint,"""[track-id] [--detailed]""",10,1675
+metadata,argument-hint,"""<design-description>""",9,1675
+metadata,argument-hint,"""[--resume]""",9,1675
+metadata,argument-hint,"""[chart, dashboard, or data surface]""",9,1675
+metadata,argument-hint,"""[form or flow]""",9,1675
+metadata,argument-hint,"""[search surface or result set]""",9,1675
+metadata,argument-hint,"""[security flow or surface]""",9,1675
+metadata,argument-hint,"""[UI artifact or redesign request]""",8,1675
+metadata,argument-hint,"""[component, page, or WCAG issue]""",8,1675
+metadata,argument-hint,"""[component, state, or interaction]""",8,1675
+metadata,author,"""Philipp Thoss""",3804,91035
+metadata,author,"""membrane""",3104,91035
+metadata,author,"""github-spec-kit""",2834,91035
+metadata,author,"""casemark""",2313,91035
+metadata,author,"""foundry-skills""",2071,91035
+metadata,author,"""luokai0""",1809,91035
+metadata,author,"""openspec""",1607,91035
+metadata,author,"""Microsoft""",1178,91035
+metadata,author,"""gentleman-programming""",1143,91035
+metadata,author,"""Alireza Rezvani""",1073,91035
+metadata,author,"""OpenAEC-Foundation""",1055,91035
+metadata,author,"""terminal-skills""",1029,91035
+metadata,author,"""Syncfusion Inc""",945,91035
+metadata,author,"""claudekit""",911,91035
+metadata,author,"""vercel""",857,91035
+metadata,author,"""mahipal""",689,91035
+metadata,author,"""ncdevshiv""",672,91035
+metadata,author,"""Anthropic Cybersecurity Skills""",657,91035
+metadata,author,"""samber""",648,91035
+metadata,author,"""aaron-he-zhu""",598,91035
+metadata,category,"""python-tools""",1519,32785
+metadata,category,"""development""",898,32785
+metadata,category,"""marketing""",837,32785
+metadata,category,"""cybersecurity""",674,32785
+metadata,category,"""seo""",608,32785
+metadata,category,"""c-level""",595,32785
+metadata,category,"""workflow""",564,32785
+metadata,category,"""security""",513,32785
+metadata,category,"""other""",443,32785
+metadata,category,"""engineering""",385,32785
+metadata,category,"""productivity""",373,32785
+metadata,category,"""devops""",348,32785
+metadata,category,"""business""",249,32785
+metadata,category,"""testing""",247,32785
+metadata,category,"""writing""",226,32785
+metadata,category,"""data""",206,32785
+metadata,category,"""research""",198,32785
+metadata,category,"""project-management""",189,32785
+metadata,category,"""coding""",186,32785
+metadata,category,"""documentation""",183,32785
+metadata,compatibility,"""claude-code, codex-cli""",53,400
+metadata,compatibility,"{""runtimes"": [""codex"", ""claude_code"", ""cursor"", ""antigravity"", ""windsurf""]}",20,400
+metadata,compatibility,"""claude-code""",12,400
+metadata,compatibility,"""claude-code-only""",12,400
+metadata,compatibility,"""Claude Code, Cursor""",11,400
+metadata,compatibility,"""claude, copilot, cursor""",11,400
+metadata,compatibility,"""Requires R (>= 4.0) or Python (>= 3.9). Package dependencies listed in templates.""",10,400
+metadata,compatibility,"""Requires internet access to call the first-party Xquik REST API.""",9,400
+metadata,compatibility,"""Requires spectra CLI.""",8,400
+metadata,compatibility,"[""github-copilot"", ""claude-code"", ""openai-codex""]",8,400
+metadata,compatibility,"[""all""]",7,400
+metadata,compatibility,"""Requires Python 3.10+, uv, and internet. Works with Claude Code, Codex CLI, Gemini CLI, OpenCode, Cursor, Windsurf, GitHub Copilot, Amp, or any Agent Skills-compatible product.""",6,400
+metadata,compatibility,"""Requires Cortex Code CLI installed and configured""",5,400
+metadata,compatibility,"""claude, opencode""",5,400
+metadata,compatibility,"""Requires a local Chrome session logged in by the user, Chrome remote debugging permission, Python 3 for configuration, and Node.js 22+ or a bundled Node runtime for download scripts. Uses only user-authorized access. Claude Code may need installation under .claude/skills.""",4,400
+metadata,compatibility,"{""agy"": true, ""local-assistant-runtime"": true, ""openskills"": true, ""prompt-client"": true, ""prompt-client-a"": true, ""skills-cli"": true}",4,400
+metadata,compatibility,"{""env"": [""VOSCRIPT_URL"", ""VOSCRIPT_API_KEY""]}",4,400
+metadata,compatibility,"""Knot 0.26.0+""",3,400
+metadata,compatibility,"""Requires file system access to write docs/ directory.""",3,400
+metadata,compatibility,"""Requires file system access to write the docs/ directory.""",3,400
+metadata,context,"""fork""",99,207
+metadata,context,"""brain-dependent""",10,207
+metadata,context,"""same""",10,207
+metadata,context,[],9,207
+metadata,context,"""context-agnostic""",6,207
+metadata,context,"""inline""",3,207
+metadata,context,"[""event-model""]",3,207
+metadata,context,"[""architecture-decisions"", ""event-model"", ""source-files""]",2,207
+metadata,context,"[""domain-types"", ""source-files""]",2,207
+metadata,context,"[""source-files"", ""test-files"", ""domain-types"", ""git-history""]",2,207
+metadata,context,"[""source-files"", ""test-files"", ""git-history""]",2,207
+metadata,context,"[""source-files""]",2,207
+metadata,context,"[""task-state""]",2,207
+metadata,context,"[""test-files"", ""domain-types"", ""source-files""]",2,207
+metadata,context,"[""test-files"", ""source-files""]",2,207
+metadata,context,"{""project_key"": ""Space identifier; in Meegle platform double-click the project icon to get it"", ""user_key"": ""User identifier; in Meegle platform double-click the avatar to get it (or from user_access_token response)""}",2,207
+metadata,context,"""AI-assisted development (Claude Code or similar)""",1,207
+metadata,context,"""Back-ported from fleet--canary-scout (the *.ericwittke.com fleet recon scout) during backlog #29 Phase 3. The fleet version classifies app-local vs kw-system base vs template across cloned apps. This Glintstone version classifies along Glintstone's actual seams instead: api-only vs app-only vs shared (the api↔app HTTP contract, the token CSS, a migration, or a cross-cutting gs-expert domain). It is the read-only complement to the generic canary-in-the-coalmine class-closing loop.""",1,207
+metadata,context,"""Back-ported from fleet--swarm (the *.ericwittke.com fleet swarm) during backlog #29 Phase 3. The fleet version pins fleet--canary-scout / engineer / deploy-verifier per phase and guards kw-system. This Glintstone version pins the gs-* family and guards Glintstone's reality instead: the two-tier api↔app HTTP boundary, migrations run as wittkensis, serialized deploys (one VPS release at a time), and structural source attribution.""",1,207
+metadata,context,"""Began life as the glintstone-connector skill during the ingestion migration (issue #60). Renamed to gs-expert-integrations during the 2026-05-11 knowledge architecture overhaul to match the new naming convention and to pair with gs-scout-integrations (the outside-view sibling).""",1,207
+metadata,disable-model-invocation,true,110,150
+metadata,disable-model-invocation,"""true""",29,150
+metadata,disable-model-invocation,false,8,150
+metadata,disable-model-invocation,"""false""",3,150
+metadata,license,"""Apache-2.0""",867,2034
+metadata,license,"""MIT""",657,2034
+metadata,license,"""GPL-3.0-only""",244,2034
+metadata,license,"""AGPL-3.0""",68,2034
+metadata,license,"""agpl-3.0""",41,2034
+metadata,license,"""Apache 2.0""",28,2034
+metadata,license,"""EUPL-1.2""",14,2034
+metadata,license,"""Proprietary. See LICENSE.txt""",14,2034
+metadata,license,"""GM-Social-v2.0""",11,2034
+metadata,license,"""mit""",11,2034
+metadata,license,"""CC-BY-3.0-LU""",10,2034
+metadata,license,"""MIT-0""",10,2034
+metadata,license,"""AGPL-3.0-only""",5,2034
+metadata,license,"""CC-BY-4.0""",5,2034
+metadata,license,"""Modified-MIT""",5,2034
+metadata,license,"""MIT License""",4,2034
+metadata,license,"""apache-2.0""",4,2034
+metadata,license,"""""",3,2034
+metadata,license,"""CC-BY-NC-SA-4.0""",3,2034
+metadata,license,"""Proprietary""",3,2034
+metadata,model,"""sonnet""",552,2228
+metadata,model,"""opus""",333,2228
+metadata,model,"""models/gemini-3.1-pro-preview""",321,2228
+metadata,model,"""inherit""",318,2228
+metadata,model,"""haiku""",195,2228
+metadata,model,"""gpt-5.4""",124,2228
+metadata,model,"""gpt-5.3-codex-spark""",38,2228
+metadata,model,"""gemini-2.0-flash-exp""",33,2228
+metadata,model,"""default""",28,2228
+metadata,model,"""bedrock-claude-opus-4-6""",22,2228
+metadata,model,"""deepseek-v4-pro""",22,2228
+metadata,model,"{""cursor"": ""composer-2"", ""google"": ""gemini-2.5-flash"", ""kimi"": ""k2"", ""meta"": ""llama-4-scout"", ""openai"": ""gpt-4.1-mini"", ""qwen"": ""qwen3-30b""}",20,2228
+metadata,model,"""manual""",18,2228
+metadata,model,"""remote""",16,2228
+metadata,model,"{""cursor"": ""composer-1.5"", ""google"": ""gemini-2.5-flash"", ""kimi"": ""k2"", ""meta"": ""llama-4-scout"", ""openai"": ""gpt-4.1-mini"", ""qwen"": ""qwen3-30b""}",14,2228
+metadata,model,"""claude-haiku-4.5""",13,2228
+metadata,model,"""claude-opus-4-6""",12,2228
+metadata,model,"""claude-opus-4-5-20251101""",10,2228
+metadata,model,"""gpt-5.3-codex""",9,2228
+metadata,model,"""gemini-2.5-flash""",8,2228
+metadata,tags,"[""healthcare""]",126,24076
+metadata,tags,"[""financial-services""]",123,24076
+metadata,tags,"""remotion, video, react, animation, composition""",115,24076
+metadata,tags,"[""cpg-retail""]",107,24076
+metadata,tags,"""read-only fast requires-auth""",90,24076
+metadata,tags,"""cursor-import, pstack""",46,24076
+metadata,tags,"""slow requires-auth""",46,24076
+metadata,tags,null,45,24076
+metadata,tags,"""nvidia blueprint operational""",42,24076
+metadata,tags,"""read-only slow requires-auth""",38,24076
+metadata,tags,"""destructive deletes-resource slow requires-auth""",34,24076
+metadata,tags,"[""uncategorized""]",31,24076
+metadata,tags,"""react-native, expo, performance, optimization, profiling""",29,24076
+metadata,tags,"""writing editing voice quality""",25,24076
+metadata,tags,"[""engineering""]",24,24076
+metadata,tags,"""cursor-import, cursor-team-kit""",21,24076
+metadata,tags,"""read-only fast requires-auth requires-project""",20,24076
+metadata,tags,"""read-first, video, animation, router, hyperframes, intent-routing""",17,24076
+metadata,tags,"""x,search,research,aisa""",17,24076
+metadata,tags,"""destructive deletes-resource slow requires-auth requires-deployment""",16,24076
+metadata,user-invocable,"""false""",256,806
+metadata,user-invocable,true,255,806
+metadata,user-invocable,"""true""",236,806
+metadata,user-invocable,false,59,806
+metadata,version,"""1.0.0""",31382,102965
+metadata,version,"""1.0""",30618,102965
+metadata,version,"""0.1.0""",4947,102965
+metadata,version,"""1.1.0""",3906,102965
+metadata,version,"""2.0.0""",2748,102965
+metadata,version,"""1.1""",2329,102965
+metadata,version,"""2.0""",1957,102965
+metadata,version,"""1.2.0""",1214,102965
+metadata,version,"""1.0.1""",1114,102965
+metadata,version,"""0.2.0""",855,102965
+metadata,version,"""3.0.0""",840,102965
+metadata,version,"""2.1.0""",684,102965
+metadata,version,"""34.1.29""",668,102965
+metadata,version,"""0.1""",494,102965
+metadata,version,"""1.1.1""",480,102965
+metadata,version,"""0.3.0""",459,102965
+metadata,version,"""1.3.0""",438,102965
+metadata,version,"""1.2""",424,102965
+metadata,version,"""0.0.1""",407,102965
+metadata,version,"""0.22.5""",404,102965
+top,allowed-tools,"""Bash""",3263,174889
+top,allowed-tools,"""Read, Grep, Glob""",2300,174889
+top,allowed-tools,"""Read, Glob, Grep""",2190,174889
+top,allowed-tools,"""Read Write Edit Bash Grep Glob""",1889,174889
+top,allowed-tools,"""Read, Write, Edit""",1885,174889
+top,allowed-tools,"""Bash, Read""",1795,174889
+top,allowed-tools,"""Read""",1790,174889
+top,allowed-tools,"""Read, Grep, Glob, Bash""",1759,174889
+top,allowed-tools,"""Read, Write, Edit, Bash, Glob, Grep""",1755,174889
+top,allowed-tools,"[""Bash"", ""Read""]",1605,174889
+top,allowed-tools,"[""Bash""]",1262,174889
+top,allowed-tools,"""Read, Write, Edit, Glob, Grep""",1241,174889
+top,allowed-tools,"""Read Bash""",1151,174889
+top,allowed-tools,"""Read Write Edit Bash""",1138,174889
+top,allowed-tools,"""Read, Write, Edit, Glob, Grep, Bash""",1138,174889
+top,allowed-tools,"""Bash, Read, Write""",905,174889
+top,allowed-tools,"[""Read"", ""Write"", ""Edit"", ""Bash"", ""Glob"", ""Grep""]",884,174889
+top,allowed-tools,"""Read, Write, Edit, Grep, Glob, Bash""",875,174889
+top,allowed-tools,"[""Read"", ""Write"", ""Edit"", ""Bash""]",874,174889
+top,allowed-tools,"""Read, Glob, Grep, Bash""",844,174889
+top,argument-hint,"""""",1026,102800
+top,argument-hint,"""[target]""",850,102800
+top,argument-hint,"""<command> [args] | install cli|mcp""",833,102800
+top,argument-hint,"""[url]""",319,102800
+top,argument-hint,"""What will the next session be used for?""",254,102800
+top,argument-hint,"""[task description]""",191,102800
+top,argument-hint,"""[topic]""",184,102800
+top,argument-hint,"""[area (feature, page, component...)]""",176,102800
+top,argument-hint,"""What would you like to learn about?""",135,102800
+top,argument-hint,"""[version]""",135,102800
+top,argument-hint,"""<issue-number>""",133,102800
+top,argument-hint,"""<task description>""",125,102800
+top,argument-hint,"""<feature-name>""",120,102800
+top,argument-hint,"""[description]  -- what to change; runs straight to a graded flattened Lite work""",119,102800
+top,argument-hint,"""[description]  -- what to create; runs straight to a graded flattened Lite work""",119,102800
+top,argument-hint,"""[issue-number]""",119,102800
+top,argument-hint,"""[file-path]""",115,102800
+top,argument-hint,"""<pr-number>""",108,102800
+top,argument-hint,"""[phase]""",108,102800
+top,argument-hint,"[""TARGET=<value>""]",106,102800
+top,author,"""Jeremy Longshore <jeremy@intentsolutions.io>""",11962,99374
+top,author,"""mahipal""",9629,99374
+top,author,"""cyberstrike-official""",6204,99374
+top,author,"""luo-kai""",6052,99374
+top,author,"""Hermes Agent""",2826,99374
+top,author,"""sickn33""",2556,99374
+top,author,"""Orchestra Research""",2099,99374
+top,author,"""Omni Skills Team""",1562,99374
+top,author,"""BytesAgain""",1365,99374
+top,author,"""Pranav Nagrecha""",1286,99374
+top,author,"""Klotzkette""",1151,99374
+top,author,"""renat""",1014,99374
+top,author,"""Claude Code""",1009,99374
+top,author,"""contributor""",1002,99374
+top,author,"""community""",801,99374
+top,author,"""CaseMark""",788,99374
+top,author,"{""github"": ""sickn33"", ""name"": ""sickn33 / Antigravity Community""}",767,99374
+top,author,"""AIPOCH""",672,99374
+top,author,"""Ziri Yahi""",639,99374
+top,author,"""zebbern""",526,99374
+top,category,"""development""",2086,79678
+top,category,"""devops""",1628,79678
+top,category,"""general""",1549,79678
+top,category,"""frontend""",1506,79678
+top,category,"""backend""",1417,79678
+top,category,"""security""",1375,79678
+top,category,"""configuration""",1145,79678
+top,category,"""business""",1099,79678
+top,category,"""engineering""",956,79678
+top,category,"""data""",914,79678
+top,category,"""design""",795,79678
+top,category,"""workflow""",750,79678
+top,category,"""ai""",716,79678
+top,category,"""Development & Code Tools""",653,79678
+top,category,"""Backend""",615,79678
+top,category,"""productivity""",599,79678
+top,category,"""cli-automation""",581,79678
+top,category,"""testing""",574,79678
+top,category,"""research""",568,79678
+top,category,"""community-and-events""",518,79678
+top,compatibility,"""opencode""",8076,61869
+top,compatibility,"""Requires network access and a valid Membrane account (Free tier supported).""",3104,61869
+top,compatibility,"""Requires spec-kit project structure with .specify/ directory""",2803,61869
+top,compatibility,"""Designed for Claude Code, also compatible with Codex and OpenClaw""",2597,61869
+top,compatibility,"""Designed for Claude Code""",2530,61869
+top,compatibility,"""Requires openspec CLI.""",1489,61869
+top,compatibility,"""Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or fetch_webpage to retrieve documentation.""",1012,61869
+top,compatibility,"""Requires betterprompt >= 0.1.3""",742,61869
+top,compatibility,"""Designed for Claude Code or similar AI coding agents, and for projects using Golang.""",560,61869
+top,compatibility,"{""claude-code"": true, ""codex"": true, ""cursor"": true, ""windsurf"": true}",390,61869
+top,compatibility,"""Claude Code and compatible agent-skill hosts""",363,61869
+top,compatibility,"""Requires network access. Uses mcp_microsoftdocs:microsoft_docs_fetch or WebFetch to retrieve documentation.""",359,61869
+top,compatibility,"""Requires network access and valid Maton API key""",320,61869
+top,compatibility,"""Requires spectra CLI.""",228,61869
+top,compatibility,"""Claude Code, Jesse, Codex, Hermes, Windsurf, OpenCode, Gemini CLI, Copilot, Zed, VS Code, Goose""",197,61869
+top,compatibility,"""claude, copilot, cursor""",191,61869
+top,compatibility,"""Requires Claude Code""",183,61869
+top,compatibility,"""""",170,61869
+top,compatibility,"""claude-code opencode""",170,61869
+top,compatibility,"""Codex, Claude Code, and other Agent Skills-compatible clients.""",169,61869
+top,context,"""fork""",10202,12139
+top,context,"""inline""",327,12139
+top,context,"""main""",231,12139
+top,context,"""inherit""",110,12139
+top,context,"""default""",84,12139
+top,context,"""conversation""",57,12139
+top,context,"{""intel_scope"": ""topic"", ""intent"": {""mode"": ""task""}, ""sections"": {""exclude"": [""HISTORY""]}, ""window"": ""fork""}",56,12139
+top,context,"{""intel_scope"": ""full"", ""intent"": {""mode"": ""task""}, ""sections"": {""exclude"": [""HISTORY""]}, ""window"": ""fork""}",49,12139
+top,context,"""webiny-api""",45,12139
+top,context,"""session""",35,12139
+top,context,"""inject""",34,12139
+top,context,"""direct""",30,12139
+top,context,"""""",28,12139
+top,context,"""!ls production/sprints/ 2>/dev/null\n""",27,12139
+top,context,"""current""",23,12139
+top,context,"{""intel_scope"": ""none"", ""intent"": {""mode"": ""none""}, ""window"": ""inherit""}",22,12139
+top,context,"{""intel_scope"": ""none"", ""intent"": {""mode"": ""none""}, ""sections"": {""exclude"": [""HISTORY"", ""INTEL"", ""TASK""]}, ""window"": ""isolated""}",21,12139
+top,context,"{""intel_scope"": ""topic"", ""intent"": {""mode"": ""task""}, ""sections"": {""exclude"": [""HISTORY""]}, ""window"": ""inherit""}",20,12139
+top,context,"""!git log --oneline -30 2>/dev/null\n!git tag --list --sort=-v:refname 2>/dev/null | head -5\n""",19,12139
+top,context,"""webiny-extensions""",19,12139
+top,disable-model-invocation,true,37886,49436
+top,disable-model-invocation,false,11534,49436
+top,disable-model-invocation,"""true""",5,49436
+top,disable-model-invocation,null,3,49436
+top,disable-model-invocation,"""true - Glob - AskUserQuestion""",2,49436
+top,disable-model-invocation,"""true """,2,49436
+top,disable-model-invocation,"""no""",1,49436
+top,disable-model-invocation,"""t""",1,49436
+top,disable-model-invocation,"""真的""",1,49436
+top,disable-model-invocation,"{""true_if_side_effects"": null}",1,49436
+top,license,"""MIT""",122585,207600
+top,license,"""Apache-2.0""",36607,207600
+top,license,"""CC-BY-4.0""",12219,207600
+top,license,"""Apache 2.0""",8507,207600
+top,license,"""Complete terms in LICENSE.txt""",4564,207600
+top,license,"""CC-BY-NC-SA-4.0""",3680,207600
+top,license,"""Proprietary. LICENSE.txt has complete terms""",1935,207600
+top,license,"""MIT license""",1931,207600
+top,license,"""Unknown""",907,207600
+top,license,"""Proprietary""",871,207600
+top,license,"""MITRE ATT&CK Terms of Use apply to ATT&CK-derived content. See https://attack.mitre.org/resources/terms-of-use/""",870,207600
+top,license,"""BSD-3-Clause license""",791,207600
+top,license,"""MIT + Commons Clause""",544,207600
+top,license,"""Unspecified""",524,207600
+top,license,"""MIT-0""",506,207600
+top,license,"""Apache-2.0 license""",446,207600
+top,license,"""AGPL-3.0""",389,207600
+top,license,"""CC0-1.0""",374,207600
+top,license,"""BSD-3-Clause""",290,207600
+top,license,"""UNLICENSED""",273,207600
+top,model,"""sonnet""",8569,21994
+top,model,"""opus""",4216,21994
+top,model,"""haiku""",2563,21994
+top,model,"""inherit""",1482,21994
+top,model,"""claude-sonnet-4-6""",930,21994
+top,model,"""qwen2.5-coder:14b""",847,21994
+top,model,"""claude-haiku-4-5""",261,21994
+top,model,"""claude-haiku-4-5-20251001""",234,21994
+top,model,"""claude-opus-4-6""",213,21994
+top,model,"""claude-opus-4-8""",192,21994
+top,model,"""claude-opus-4-7""",150,21994
+top,model,"""gpt-5.4""",133,21994
+top,model,"""claude-sonnet-4-5""",126,21994
+top,model,"""standard""",121,21994
+top,model,"""claude-sonnet-5""",90,21994
+top,model,"""claude-sonnet-4-5-20250929""",88,21994
+top,model,"""claude-opus-4-5-20251101""",82,21994
+top,model,"""claude-opus-4-5""",78,21994
+top,model,"""claude-sonnet-4-6[1m]""",67,21994
+top,model,"""claude-sonnet-4-20250514""",62,21994
+top,tags,"[""domain/skills"", ""artifact/skill"", ""source/skills-antigravity""]",1141,121798
+top,tags,"[""api"", ""backend"", ""server"", ""database""]",601,121798
+top,tags,[],479,121798
+top,tags,"[""api"", ""cli"", ""mcp"", ""automation"", ""ai""]",467,121798
+top,tags,"[""domain/skills"", ""artifact/skill"", ""source/skills-everything-cc""]",344,121798
+top,tags,"[""blockchain"", ""specialized"", ""blockchain""]",304,121798
+top,tags,"[""education"", ""specialized"", ""education""]",299,121798
+top,tags,"[""bio"", ""specialized"", ""bio""]",278,121798
+top,tags,"[""creative"", ""specialized"", ""creative""]",277,121798
+top,tags,"[""business"", ""specialized"", ""business""]",275,121798
+top,tags,"[""robotics"", ""specialized"", ""robotics""]",274,121798
+top,tags,"[""agreement"", ""drafting"", ""transactional""]",249,121798
+top,tags,"[""spatial"", ""specialized"", ""spatial""]",240,121798
+top,tags,"[""domain/agents"", ""artifact/skill"", ""source/skills-copilot""]",233,121798
+top,tags,"[""education"", ""expert"", ""education""]",232,121798
+top,tags,"[""blockchain"", ""expert"", ""blockchain""]",231,121798
+top,tags,"[""writing"", ""specialized"", ""writing""]",214,121798
+top,tags,"[""quantum"", ""specialized"", ""quantum""]",213,121798
+top,tags,"[""correction"", ""learned"", ""negation_reference""]",212,121798
+top,tags,"[""climate"", ""specialized"", ""climate""]",209,121798
+top,user-invocable,true,55661,76023
+top,user-invocable,false,20349,76023
+top,user-invocable,"""true""",4,76023
+top,user-invocable,"""false""",3,76023
+top,user-invocable,"""/fkst-control-plane-manual""",1,76023
+top,user-invocable,"""/fkst-control-plane-operation-manual""",1,76023
+top,user-invocable,"""continue""",1,76023
+top,user-invocable,"""false - stripe""",1,76023
+top,user-invocable,"""t""",1,76023
+top,user-invocable,null,1,76023
+top,version,"""1.0.0""",113944,230017
+top,version,"""0.1.0""",20116,230017
+top,version,"""1.0""",16626,230017
+top,version,"""2.0.0""",9562,230017
+top,version,"""1.1.0""",7519,230017
+top,version,1.0,7205,230017
+top,version,"""0.0.1""",5153,230017
+top,version,"""1.2.0""",2305,230017
+top,version,"""0.2.0""",1941,230017
+top,version,"""1.0.1""",1842,230017
+top,version,1,1732,230017
+top,version,"""2.1.0""",1563,230017
+top,version,"""3.0.0""",1555,230017
+top,version,2,1225,230017
+top,version,"""0.1.1""",1162,230017
+top,version,"""0.0.2""",1079,230017
+top,version,"""5.2.0""",1000,230017
+top,version,"""v00.33.0""",910,230017
+top,version,"""1.3.0""",857,230017
+top,version,"""18.1""",817,230017

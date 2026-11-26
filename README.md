@@ -4,9 +4,10 @@ EURECOM project for representing, discovering and comparing MCP servers, MCP too
 and Agent Skills through source-backed RDF assertions and SPARQL queries.
 
 The project maintains **one canonical SQLite database** and **one selected RDF
-graph**. Current work follows the meeting decisions: a proposed list of 20
-competency questions, a fixed 20-concept SKOS vocabulary, and reproducible LLM
-extraction that selects from this vocabulary rather than freely inventing tasks.
+graph**. Current work follows the meeting decisions: **22 atomic competency
+questions under the 20 original topic identifiers**, a draft fixed 20-concept
+SKOS vocabulary, and an implemented LLM extraction path that selects from this
+vocabulary. Offline requests are prepared; live EURECOM execution is pending.
 
 ## 1. Current state — November 26, 2026
 
@@ -29,6 +30,7 @@ unclassified Skill. No current assertion is marked as human-reviewed.
 | 22 atomic competency questions and their formulations | Proposed for joint review; 25 query executions recorded without errors |
 | Fixed SKOS vocabulary v1 | Draft of 20 concepts; requires joint review |
 | Legacy-to-v1 grouping | 154 concepts analyzed: 113 single matches, 23 ambiguous, 18 unresolved; all proposals await review |
+| Lin's metadata analysis and additional query proposal | Merged; queries in `queries/lin_queries/`; numbering requires reconciliation with the main catalogue |
 | Versioned LLM prompt and request preparation | Implemented; eight offline requests prepared for five selected Skills |
 | EURECOM model execution | Not run; endpoint, model and API compatibility need confirmation |
 | Keyword, tag and embedding baseline comparison | Evaluation protocol outlined; no benchmark scores measured |
@@ -108,7 +110,9 @@ SQLite does not silently expand a frozen Skill sample.
 For the origin of the explicit rules and a complete `pdf` example, read
 [capability provenance: from metadata to displayed answers](docs/capability_provenance.md).
 
-Descriptions and full stored Skill bodies are matched against explicit rules.
+Descriptions are matched against deterministic patterns and explicit override rules.
+A separate extractor analyzes full stored Skill bodies for supported task passages
+and candidate format/requirement statements.
 Task assertions retain action/object pairs, matching evidence and source links.
 Full-body evidence additionally records line, character offsets and SHA-256.
 Servers derive their annotations from exposed tools; this is not runtime testing.
@@ -166,6 +170,21 @@ Live execution requires the confirmed API protocol and environment variables
 explicit `openai-chat` adapter is currently implemented; compatibility is not
 assumed. Never commit credentials. See [LLM extraction](docs/llm_extraction.md).
 
+### Separate description-only contract from Lin
+
+Lin's `src/acg/capability_prompt.py` uses
+`prompts/capability_extraction_description_v1.txt`. It renders a description-only
+request and validates `assignments` containing concept URIs. The active pipeline
+instead uses `prompts/capability_extraction_v1.txt` and `selected` concept IDs
+with character offsets over document chunks. These response formats are not
+interchangeable.
+
+Lin's vocabulary loader currently requires HTTPS concept identifiers; the draft
+`ontology/capabilities_v1.ttl` uses URNs. Namespace and contract alignment remain
+pending. The separate renderer is not the endpoint adapter used by
+`pipeline.py extract-capabilities`. See the
+[handoff notes](docs/nov26/capability_extraction.md).
+
 ### Rule origin and traceable revisions
 
 The first explicit rules were exploratory assistant-assisted action/object choices
@@ -195,26 +214,30 @@ for evidence refresh, recording and recovery commands.
 ## 5. Competency questions and demonstrations
 
 The [grouped competency-question catalogue](queries/competency_questions.md) links each question to
-its queries, expected examples, counterexamples and limits. CQ01–CQ10 form
-Isaac's first review batch. CQ11–CQ20 are executable discussion drafts for Lin's
-batch, not a claim that Lin completed or approved them.
+its queries, expected examples, counterexamples and limits. All CQ01–CQ20
+entry points are numbered files; CQ07b separates required parameters from input
+schemas, and CQ12b separates allowed tools from authentication requirements.
+The root catalogue's CQ01–CQ10 are Isaac's review batch; CQ11–CQ20 are discussion
+drafts for the second batch. Lin's independently implemented proposal lives in
+`queries/lin_queries/` and uses different meanings for several CQ identifiers.
+Neither catalogue is presented as the jointly approved final list.
 
 ```bash
 .venv/bin/python pipeline.py competency-questions
-.venv/bin/python pipeline.py query tools_for_web_search.rq
-.venv/bin/python pipeline.py query tools_by_action.rq --action search
+.venv/bin/python pipeline.py query cq01_web_search.rq
+.venv/bin/python pipeline.py query cq05_tools_by_action.rq --action search
 .venv/bin/python pipeline.py query tool_action_groups.rq
-.venv/bin/python pipeline.py query skills_by_format.rq --format PDF
-.venv/bin/python pipeline.py query skills_by_format.rq --format spreadsheet
-.venv/bin/python pipeline.py query skill_requirements.rq --name phoenix-observability
+.venv/bin/python pipeline.py query cq02_skill_formats.rq --format PDF
+.venv/bin/python pipeline.py query cq02_skill_formats.rq --format spreadsheet
+.venv/bin/python pipeline.py query cq03_skill_dependencies.rq --name phoenix-observability
 .venv/bin/python pipeline.py query skill_body_requirements.rq --name xlsx
-.venv/bin/python pipeline.py query entity_capabilities.rq --name pdf
+.venv/bin/python pipeline.py query cq04_resource_capabilities.rq --name pdf
 ```
 
 The execution report is `reports/queries/competency_coverage.csv`. There are 25
 instantiations for 22 atomic questions: two formats for CQ02 and three bundle
 kinds for CQ16. Zero rows
-for resources, prompts or risk signals are currently collection gaps. Rows from
+for output schemas, resources, prompts, authentication requirements or risk signals are currently collection gaps. Rows from
 OPTIONAL queries do not prove their optional values are populated. Query
 executability, ontology expressibility, data coverage and answer correctness
 are distinct properties.
@@ -299,6 +322,10 @@ maintained separately. Old report results should not be mistaken for a fresh run
 Lin's [full GitSkills analysis](reports/gitskills/README.md) is separate from the
 selected graph. Its raw downloads and derived full tables remain outside Git;
 its aggregate results do not mean millions of Skills entered the canonical KG.
+The merged [additional-field analysis](docs/nov26/metadata_mapping.md) includes
+value distributions and ontology recommendations under
+`reports/gitskills/values-2026-11-26/`. Available corpus metadata does not mean
+that all fields have already been imported or projected into RDF.
 
 ## 9. Priorities and public identifiers
 
@@ -313,6 +340,9 @@ are pending. The graph and queries still use provisional URNs. This publication
 work follows the agreed vocabulary and extraction deliverables.
 
 ## Documentation
+
+- [Supervisor demo commands, including all numbered queries](docs/demo_commands.md)
+- [Fifth progress report (LaTeX)](docs/fifth_progress_report.tex)
 
 - [Override curation: audit, revision and reconstruction](docs/override_curation.md)
 
@@ -330,3 +360,30 @@ work follows the agreed vocabulary and extraction deliverables.
 - [SPARQL usage](queries/README.md)
 - [Report guide](reports/README.md)
 - [Proposed public URI design](docs/uri_design.md)
+
+## November 26: Lin's metadata analysis and review proposal
+
+- [Lin's original 20-question proposal and proposed split](docs/nov26/competency_questions.md)
+- [Additional metadata values and ontology recommendations](docs/nov26/metadata_mapping.md)
+- [Exact-content deduplication: guarantees and limits](docs/nov26/deduplication.md)
+- [Capability extraction prompt and integration handoff](docs/nov26/capability_extraction.md)
+- [CQ11–20 snapshot results](reports/nov26/query_audit.json)
+
+The joint question list and production SKOS vocabulary still require coordination;
+query execution does not imply retrieval accuracy or completed LLM integration.
+
+The maintained [atomic competency catalogue](queries/competency_questions.md)
+uses different CQ identifiers from Lin's original proposal under `docs/nov26/`.
+Those identifiers are local to each catalogue and require joint reconciliation.
+The query files now live in `queries/lin_queries/`; `docs/nov26/lin_queries.json`
+contains the paths used by Lin's standalone audit command:
+
+```bash
+.venv/bin/python pipeline.py query queries/lin_queries/cq15_allowed_tools.rq
+.venv/bin/python -m src.acg.ingestion.gitskills.query_audit
+```
+
+The audit command regenerates `reports/nov26/` against the current graph. Until
+rerun, those committed results describe the older graph identified by their
+recorded hash, not the current 7,751-triple build. It is separate from the main
+`pipeline.py competency-questions` report.

@@ -1,0 +1,8 @@
+@prefix acg: <urn:acg:ontology:> .
+@prefix schema: <https://schema.org/> .
+@prefix ex: <https://example.org/acg-test/> .
+ex:one a acg:AgentSkill ; schema:name "same" ; acg:hasCapabilityAssertion ex:claim .
+ex:two a acg:AgentSkill ; schema:name "same" .
+ex:tool a acg:MCPTool ; schema:name "same" .
+ex:source schema:url <https://example.org/source> ; acg:revision "fixture-revision" .
+ex:claim acg:assertedCapability ex:concept ; acg:basedOnSource ex:source ; acg:reviewStatus "candidate" .

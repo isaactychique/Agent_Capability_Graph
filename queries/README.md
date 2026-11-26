@@ -119,3 +119,17 @@ The coverage report records 25 executions (two CQ02 formats and three CQ16
 bundle kinds). Descriptive query filenames above remain exploration helpers;
 numbered files are the catalogue entry points. The catalogue documents all input
 parameters and answer limitations. Empty results describe missing matching facts.
+
+## Lin's additional review proposal (November 26)
+
+The [20-question proposal](../docs/nov26/competency_questions.md) preserves existing
+questions and proposes the first-half/second-half split. Lin's CQ11–20 are in
+`lin_queries/`; use `python pipeline.py query queries/lin_queries/cq15_allowed_tools.rq`.
+All ten execute against the fixed graph and have isolated positive/negative fixtures.
+See `reports/nov26/` for row counts, bound-value counts, evidence and gaps.
+
+The IDs under `lin_queries/` belong to Lin's original proposal and differ from the
+maintained [atomic catalogue](competency_questions.md). They are preserved as
+review contributions, not silently substituted for the root numbered queries.
+Snapshot results in `reports/nov26/` refer to the earlier graph recorded by their
+audit hashes; they are not a fresh execution against the merged graph.
