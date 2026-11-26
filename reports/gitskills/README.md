@@ -106,3 +106,10 @@ These are the reusable full metadata tables; the CSV outputs below are summaries
 
 
 Sources: [GitSkills](https://huggingface.co/datasets/mvaccargiu/gitskills), [Agent Skills specification](https://agentskills.io/specification).
+
+## Download complete row-level metadata
+
+The complete linked metadata tables are now distributed separately from the
+summary reports as [GitSkills metadata v1 release assets](https://github.com/isaactychique/Agent_Capability_Graph/releases/tag/gitskills-metadata-v1).
+See [download links, schema, joins and field semantics](../../docs/data/gitskills.md).
+Large tables remain outside Git history. This export does not modify the graph.

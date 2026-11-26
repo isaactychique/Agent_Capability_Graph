@@ -1,0 +1,434 @@
+{
+  "dataset": "mvaccargiu/gitskills",
+  "dataset_revision": "ebab17454a7c236f8f26b183567f1a126f42e3f8",
+  "dataset_url": "https://huggingface.co/datasets/mvaccargiu/gitskills/tree/ebab17454a7c236f8f26b183567f1a126f42e3f8",
+  "parser_version": "2",
+  "export_schema_version": 1,
+  "created_at": "2026-11-26T19:03:17.335014+00:00",
+  "export_script_sha256": "4f3438a5151ce0500f73c1838c5b617386c54cac890be2d64a089121d0db0284",
+  "source_git_commit": "b3b5a3fad04eaae53034486f55772991a377ff2d",
+  "checks": {
+    "contents": 1877981,
+    "occurrences": 3797117,
+    "repositories": 282200,
+    "metadata_fields": 6663894,
+    "duplicate_content_keys": 0,
+    "duplicate_repository_keys": 0,
+    "orphan_occurrence_contents": 0,
+    "orphan_occurrence_repositories": 0,
+    "orphan_fields": 0,
+    "invalid_json_values": 0,
+    "duplicate_field_keys": 0
+  },
+  "parse_status": {
+    "no_frontmatter": 164884,
+    "parsed": 1665672,
+    "unclosed_frontmatter": 843,
+    "invalid_yaml": 44760,
+    "malformed_opening": 1337,
+    "non_mapping_yaml": 213,
+    "duplicate_yaml_keys": 226,
+    "hash_mismatch": 42,
+    "non_string_keys": 4
+  },
+  "value_encoding_counts": {
+    "json": 6624842,
+    "typed_json": 39052
+  },
+  "schemas": {
+    "contents": [
+      {
+        "name": "file_sha",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "content_sha256",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "parse_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "representative_repository",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "representative_path",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "name_state",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "description_state",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "skill_license",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "license_state",
+        "type": "VARCHAR"
+      }
+    ],
+    "occurrences": [
+      {
+        "name": "repo_full_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "path",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "filename",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "location_class",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "file_sha",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "discovered_at",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "dedup_primary",
+        "type": "BIGINT"
+      },
+      {
+        "name": "content_fetched",
+        "type": "BIGINT"
+      },
+      {
+        "name": "content_sha_ok",
+        "type": "BIGINT"
+      },
+      {
+        "name": "frontmatter_valid",
+        "type": "BIGINT"
+      },
+      {
+        "name": "history_fetched",
+        "type": "BIGINT"
+      },
+      {
+        "name": "first_commit_at",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "last_commit_at",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "commit_count",
+        "type": "BIGINT"
+      },
+      {
+        "name": "composition_fetched",
+        "type": "BIGINT"
+      },
+      {
+        "name": "composition_truncated",
+        "type": "BIGINT"
+      },
+      {
+        "name": "has_scripts",
+        "type": "BIGINT"
+      },
+      {
+        "name": "has_references",
+        "type": "BIGINT"
+      },
+      {
+        "name": "sibling_count",
+        "type": "BIGINT"
+      },
+      {
+        "name": "sibling_bytes",
+        "type": "BIGINT"
+      }
+    ],
+    "repositories": [
+      {
+        "name": "repo_full_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "repository_license",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "repository_license_state",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "metadata_fetched",
+        "type": "BIGINT"
+      },
+      {
+        "name": "stars",
+        "type": "BIGINT"
+      },
+      {
+        "name": "forks",
+        "type": "BIGINT"
+      },
+      {
+        "name": "is_fork",
+        "type": "BIGINT"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "created_at",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "pushed_at",
+        "type": "VARCHAR"
+      }
+    ],
+    "metadata_fields": [
+      {
+        "name": "file_sha",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "scope",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "field",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "value_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "value_state",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "value_encoding",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "value_json",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "assets": {
+    "contents.parquet": {
+      "bytes": 325373410,
+      "sha256": "21f9769629d5ef67929a8e130da9c999751faf4952a80bd7559c4defef13af58"
+    },
+    "metadata_fields.parquet": {
+      "bytes": 281358980,
+      "sha256": "df5d4c2eca51aa2661dfe4dbd90f3cd5a846d1d372e58fdf4cdcd45fb26bf935"
+    },
+    "occurrences.parquet": {
+      "bytes": 133606014,
+      "sha256": "c67a8fc57e0b909b411c7d8aa900d4655a273bba760574d21b908421a3f5b2d7"
+    },
+    "repositories.parquet": {
+      "bytes": 16768011,
+      "sha256": "de24f4bd1b437d1bf296681d6452a3ec1598159bb216a904235521132b4612b5"
+    }
+  },
+  "source_files": [
+    {
+      "path": "data/artifacts/part-00000.parquet",
+      "size": 200145551,
+      "sha256": "390814a0efd5e9ef28c9549898a66e42b22d3bf70c4d4ef1cae3d7860ecb5c85"
+    },
+    {
+      "path": "data/artifacts/part-00001.parquet",
+      "size": 223482236,
+      "sha256": "902d5d69ff83d6ac270893921cc8e05b56edc04372437c3dc70960149863a6a7"
+    },
+    {
+      "path": "data/artifacts/part-00002.parquet",
+      "size": 174656304,
+      "sha256": "54de7d6d56f24d2c2dcc646015ac4ed6559437b2222c9d67532dd220bd90cb9e"
+    },
+    {
+      "path": "data/artifacts/part-00003.parquet",
+      "size": 192549881,
+      "sha256": "99136fac6d2dd1de9cbac6ec710a40184cb4330269b2c904c29b8e8eb2a36315"
+    },
+    {
+      "path": "data/artifacts/part-00004.parquet",
+      "size": 225245525,
+      "sha256": "b48516ea4f710b8fc73639098dc8a0ecc06f367a0ece0818eb8504b7da8f7784"
+    },
+    {
+      "path": "data/artifacts/part-00005.parquet",
+      "size": 228418776,
+      "sha256": "c0f1e9e3dc66bef96a08ef42f0fd0e0398f4adfe66117a9a1e1e3676e1e0cd67"
+    },
+    {
+      "path": "data/artifacts/part-00006.parquet",
+      "size": 228495003,
+      "sha256": "da07639ee9c623bb8364910f03515a561a26ff631a95951a690642349657364b"
+    },
+    {
+      "path": "data/artifacts/part-00007.parquet",
+      "size": 223650458,
+      "sha256": "6f91c23d2e05417345c27df04d9e6c56195b81c7ce42e6b6b98e11dfcbf047b5"
+    },
+    {
+      "path": "data/artifacts/part-00008.parquet",
+      "size": 224454609,
+      "sha256": "f37af587045942911bdb7e52950f4d6eaea4308ce28a9291ce290e9e3c2251eb"
+    },
+    {
+      "path": "data/artifacts/part-00009.parquet",
+      "size": 221102183,
+      "sha256": "e8e98450a607d64aee7ddb361c13bf7ddb1deba7e8409e7fdcaed0032c3f9b6c"
+    },
+    {
+      "path": "data/artifacts/part-00010.parquet",
+      "size": 219931493,
+      "sha256": "dc4dd850693d4c6c8aee12be1ca8bad0e1ddae43da80b0d8d00109a7f8ba339c"
+    },
+    {
+      "path": "data/artifacts/part-00011.parquet",
+      "size": 219181672,
+      "sha256": "254d3f2c8335943d86601bcfc44f9194df7afa13e07341a1317f1b477d557b19"
+    },
+    {
+      "path": "data/artifacts/part-00012.parquet",
+      "size": 217800143,
+      "sha256": "63e37872799848a23fd1d93a0333ac8681ad9a76810129c5b1c6814ee7bf7fbc"
+    },
+    {
+      "path": "data/artifacts/part-00013.parquet",
+      "size": 217412386,
+      "sha256": "99ce92ccb80032aecf46db0de63b4e830d20498a8a42b731e83c05f0d859aac5"
+    },
+    {
+      "path": "data/artifacts/part-00014.parquet",
+      "size": 215978326,
+      "sha256": "3d4ba3e58b105c90c8c0b022f88703ab3bac4907967754fa12ea47883fb09a40"
+    },
+    {
+      "path": "data/artifacts/part-00015.parquet",
+      "size": 214532394,
+      "sha256": "8a3be1ef7648df4ba01de45d0a3edb4269e45caadf869e89e853cd79b785590d"
+    },
+    {
+      "path": "data/artifacts/part-00016.parquet",
+      "size": 212166025,
+      "sha256": "e216707486104b7c0200ae24b750c154687533e97717be50ed7bf2d924b9bc0e"
+    },
+    {
+      "path": "data/artifacts/part-00017.parquet",
+      "size": 212094742,
+      "sha256": "7d5b0979feb3440335a4da20ac4d1b22ead37f7da986264ce062e387d8872ed4"
+    },
+    {
+      "path": "data/artifacts/part-00018.parquet",
+      "size": 210343847,
+      "sha256": "9921c23fa6204069b0837e1a50b6ed5864aa2be0e5882b9fa21427fd5332dad6"
+    },
+    {
+      "path": "data/artifacts/part-00019.parquet",
+      "size": 209279132,
+      "sha256": "25a628b1ec8eb532a6941931ddad42386c4aaf45f4d8b95360f3a145f39fa123"
+    },
+    {
+      "path": "data/artifacts/part-00020.parquet",
+      "size": 208389661,
+      "sha256": "32e95fa211d3a45fc629ae1547e89d31d763aa4d9626714f0b9cab406b09d040"
+    },
+    {
+      "path": "data/artifacts/part-00021.parquet",
+      "size": 209452785,
+      "sha256": "d183c61f6c8c2cef3f5d6bea397fae54da7ab8bbace5e773309ab1e902fbb48b"
+    },
+    {
+      "path": "data/artifacts/part-00022.parquet",
+      "size": 206866790,
+      "sha256": "170e38c8ef40d973bace0ae21acf9a214ec219c1b6021665a15cdff06cbb30ca"
+    },
+    {
+      "path": "data/artifacts/part-00023.parquet",
+      "size": 206250473,
+      "sha256": "5e274d660be3264b0ed5922f5d55aa80e82f3f80c74276471ffbcf863422f888"
+    },
+    {
+      "path": "data/artifacts/part-00024.parquet",
+      "size": 206460073,
+      "sha256": "d6ed5b19bdbb6068e574f142ed1cd153b576774258c5e5ef53471888205fed72"
+    },
+    {
+      "path": "data/artifacts/part-00025.parquet",
+      "size": 202954707,
+      "sha256": "b1a7c4b0df26e71e8b969dc0cea8cb68279ba4e7a7f5b0e0bf159cead82939b3"
+    },
+    {
+      "path": "data/artifacts/part-00026.parquet",
+      "size": 198399293,
+      "sha256": "fcb7a3f476104e44d264492991cc5daf40c1f71c8c04d17307e6ca51b71daa12"
+    },
+    {
+      "path": "data/artifacts/part-00027.parquet",
+      "size": 191946874,
+      "sha256": "39a4c6d16fa6f0359c83906b1f4340189d50ff467edbb325828accb811f28328"
+    },
+    {
+      "path": "data/artifacts/part-00028.parquet",
+      "size": 182876324,
+      "sha256": "9ea4c74266c2897f299b1f1ce247ae4edb20703c1944d7381b79f4f90ef7a0b8"
+    },
+    {
+      "path": "data/artifacts/part-00029.parquet",
+      "size": 187989895,
+      "sha256": "2bdbd3316d4c92af6fa11324162ab1b34a4249a32dad51da46271c8c81f033cd"
+    },
+    {
+      "path": "data/artifacts/part-00030.parquet",
+      "size": 156716786,
+      "sha256": "1b005f4d2d3ab22d707291ae56eaac02161166e3fdf8182a36ae85f7295f66a8"
+    },
+    {
+      "path": "data/mining_runs/part-00000.parquet",
+      "size": 2947,
+      "sha256": "7eb41fb48eccb4bbe3261459294a99bf08a4b435574ca2854f47d542286705a5"
+    },
+    {
+      "path": "data/repos/part-00000.parquet",
+      "size": 19653117,
+      "sha256": "3d66c362855893aebeb5c6d730697672eb67585cd8afe99e8c33786b2e5fde2e"
+    }
+  ],
+  "limits": "Parsed declarations, not verified behavior. All top-level fields and string-keyed metadata children. No original Markdown bodies or sibling files. Missing field rows require checking parse_status; no semantic deduplication."
+}
